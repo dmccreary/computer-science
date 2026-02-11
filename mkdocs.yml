@@ -13,12 +13,26 @@ nav:
 
   - Chapters:
     - Overview: chapters/index.md
-    - 1. Introduction Computer Science:
-      - Content: chapters/01-intro/index.md
-      - Quiz: chapters/01-intro/quiz.md
-    - 2. Name of Chapter 2:
-      - Content: chapters/02-name/index.md
-      - Quiz: chapters/02-name/quiz.md
+    - 1. Intro to Computer Science: chapters/01-intro-to-computer-science/index.md
+    - 2. Python Fundamentals: chapters/02-python-fundamentals/index.md
+    - 3. Boolean Logic: chapters/03-boolean-logic/index.md
+    - 4. Control Flow: chapters/04-control-flow/index.md
+    - 5. Working with Strings: chapters/05-working-with-strings/index.md
+    - 6. Functions and Modular Design: chapters/06-functions-and-modular-design/index.md
+    - 7. Higher-Order Functions: chapters/07-higher-order-functions-and-recursion/index.md
+    - 8. Lists: chapters/08-lists/index.md
+    - 9. Advanced List Operations: chapters/09-advanced-list-operations/index.md
+    - 10. Tuples and Sets: chapters/10-tuples-and-sets/index.md
+    - 11. Dictionaries: chapters/11-dictionaries/index.md
+    - 12. Classes and Objects: chapters/12-classes-and-objects/index.md
+    - 13. Inheritance and Polymorphism: chapters/13-inheritance-and-polymorphism/index.md
+    - 14. Errors and Exceptions: chapters/14-errors-and-exceptions/index.md
+    - 15. File Input and Output: chapters/15-file-input-and-output/index.md
+    - 16. Software Engineering: chapters/16-software-engineering/index.md
+    - 17. Testing and Debugging: chapters/17-testing-and-debugging/index.md
+    - 18. Searching and Sorting: chapters/18-searching-and-sorting/index.md
+    - 19. Algorithm Analysis: chapters/19-algorithm-analysis/index.md
+    - 20. Advanced Python: chapters/20-advanced-python/index.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md
