@@ -98,6 +98,14 @@ let cardRegions = [];    // [{x, y, w, h}, ...] for the 4 type cards
 // Divider Y between cards and sorter area
 let sorterY = 0;
 
+// Compute sorterY from current layout dimensions (used before first draw too)
+function computeSorterY() {
+  let gridTop = 40;
+  let gap = 8;
+  let cardH = Math.max(100, (drawHeight * 0.38 - gridTop) / 2 - gap);
+  return gridTop + 2 * (cardH + gap) + 10;
+}
+
 function updateCanvasSize() {
   const container = document.querySelector('main');
   if (container) {
@@ -121,6 +129,8 @@ function setup() {
   newRoundBtn.style('padding', '6px 16px');
   newRoundBtn.style('cursor', 'pointer');
 
+  // Compute initial sorterY so layoutSorterValues works before first draw
+  sorterY = computeSorterY();
   startNewRound();
 
   describe('Interactive Python data types explorer with four colored type cards and a drag-and-drop sorting challenge.');
@@ -161,9 +171,10 @@ function startNewRound() {
   layoutSorterValues();
 }
 
-// Position draggable values in the sorter area
+// Position draggable values in the sorter area.
+// Only repositions values that are not currently being dragged.
 function layoutSorterValues() {
-  let sorterAreaY = sorterY + 30;
+  let sorterAreaY = sorterY + 34;
   let sorterAreaH = drawHeight - sorterAreaY - 10;
   let cols = 4;
   let rows = 2;
@@ -177,12 +188,18 @@ function layoutSorterValues() {
     let row = Math.floor(i / cols);
     let cx = margin + col * cellW + cellW / 2;
     let cy = sorterAreaY + row * cellH + cellH / 2;
-    roundValues[i].x = cx - valW / 2;
-    roundValues[i].y = cy - valH / 2;
+
+    // Always update home position and size
     roundValues[i].homeX = cx - valW / 2;
     roundValues[i].homeY = cy - valH / 2;
     roundValues[i].w = valW;
     roundValues[i].h = valH;
+
+    // Only snap position if not currently being dragged
+    if (i !== dragIndex && !roundValues[i].sorted) {
+      roundValues[i].x = roundValues[i].homeX;
+      roundValues[i].y = roundValues[i].homeY;
+    }
   }
 }
 
@@ -215,7 +232,7 @@ function draw() {
   drawTypeCards();
 
   // Divider label
-  sorterY = margin + 10 + cardRegions[0].h + cardRegions[0].h + 30;
+  sorterY = computeSorterY();
   noStroke();
   fill('#555');
   textAlign(CENTER, TOP);
@@ -382,9 +399,6 @@ function drawTypeCards() {
 
 function drawTypeIcon(iconType, x, y, r, g, b) {
   // Draw simple icons using p5.js primitives
-  // Slightly lighter/translucent version of card color as background
-  let iconSize = 18;
-
   push();
   translate(x, y);
   noStroke();
