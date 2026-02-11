@@ -6,7 +6,26 @@
 - **Species**: Python snake
 - **Personality**: Friendly, encouraging, curious, adventurous, playful
 - **Catchphrases**: "Let's code this!", "Let's debug this together!", "You've got this!"
-- **Visual**: Bright green python with gold accents, wearing a gold coding hoodie with headphones around his neck
+- **Visual**: Bright green python with gold/yellow spot accents, wearing a gold coding hoodie, holding a camera
+
+### Mascot Image Assets
+
+Located in `docs/img/`:
+
+| File | Size | Usage |
+|------|------|-------|
+| `monty.png` | Full size | Source image, documentation |
+| `monty-512.png` | 512px | Large displays, hero sections |
+| `monty-192.png` | 192px | Medium displays, chapter headers |
+| `monty-180.png` | 180px | Admonitions, inline usage |
+
+When using Monty in admonitions, reference the 180px image:
+
+```markdown
+!!! mascot-welcome "Monty says: Let's code this!"
+    ![Monty](../img/monty-180.png){ align=left width="80" }
+    Welcome, coders! In this chapter...
+```
 
 ### Voice Characteristics
 
