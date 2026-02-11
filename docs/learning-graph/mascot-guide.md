@@ -71,6 +71,7 @@ Midjourney, etc.) to create consistent mascot images.
 ### Base Character Prompt
 
 ```
+Please generate a new png image on a transparent background.
 A friendly cartoon illustration of Monty the Python, a pedagogical mascot
 for an AP Computer Science textbook. Monty is a bright green python snake
 with gold accents and a warm, expressive face. Monty wears a small gold

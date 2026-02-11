@@ -72,8 +72,8 @@ nav:
 
 theme:
   name: material
-  #logo: img/logo.png
-  #favicon: img/favicon.ico
+  logo: img/monty-180.png
+  favicon: img/favicon.ico
   palette:
     # Primary color overridden in css/extra.css with Anthropic brown (RGB: 218, 120, 87)
     primary: 'blue'
