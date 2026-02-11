@@ -36,11 +36,25 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - Arithmetic Operators Explorer: sims/arithmetic-operators/index.md
     - ASCII Character Map: sims/ascii-character-map/index.md
     - Binary Number Explorer: sims/binary-number-explorer/index.md
+    - Code Readability Comparison: sims/code-readability/index.md
+    - Comparison Operator Explorer: sims/comparison-operator-explorer/index.md
     - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
     - Computational Thinking Pillars: sims/computational-thinking-pillars/index.md
+    - De Morgan's Laws Visualizer: sims/demorgans-laws/index.md
+    - Expressions vs. Statements: sims/expressions-vs-statements/index.md
     - Inside a Computer: sims/inside-a-computer/index.md
+    - Interactive Truth Table Builder: sims/truth-table-builder/index.md
+    - Logical Operator Venn Diagrams: sims/logical-operator-venn/index.md
+    - Order of Operations Visualizer: sims/boolean-order-of-ops/index.md
+    - Python Data Types Overview: sims/python-data-types/index.md
+    - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md
+    - String Operations Playground: sims/string-operations/index.md
+    - Truthiness Tester: sims/truthiness-tester/index.md
+
+
 
 
  
