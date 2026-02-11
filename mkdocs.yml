@@ -1,0 +1,103 @@
+site_name: 'Computer Science'
+site_description: 'An intelligent textbook for teaching AP Computer Science with Python.'
+site_author: 'Dan McCreary'
+repo_name: 'GitHub Repo'
+site_url: 'https://dmccreary.github.io/computer-science/'
+repo_url: 'https://github.com/dmccreary/computer-science'
+edit_uri: 'blob/master/docs'
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Course Description: course-description.md
+
+  - Chapters:
+    - Overview: chapters/index.md
+    - 1. Introduction Computer Science:
+      - Content: chapters/01-intro/index.md
+      - Quiz: chapters/01-intro/quiz.md
+    - 2. Name of Chapter 2:
+      - Content: chapters/02-name/index.md
+      - Quiz: chapters/02-name/quiz.md
+
+  - MicroSims:
+    - List of MicroSims: sims/index.md
+    - MicroSim 1: sims/name-1/index.md
+ 
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+    - Course Description Assessment: learning-graph/course-description-assessment.md
+    - Concept Enumeration: learning-graph/concept-list.md
+    - Graph Quality Analysis: learning-graph/quality-metrics.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Taxonomy Distribution Report: learning-graph/taxonomy-distribution.md
+    - Glossary Quality Report: learning-graph/glossary-quality-report.md
+    - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
+    - Quiz Generation Report: learning-graph/quiz-generation-report.md
+    - Progress Report: learning-graph/progress.md
+    - Usage Limits: claude-usage-limits.md
+    - Book Metrics: learning-graph/book-metrics.md
+    - Chapter Metrics: learning-graph/chapter-metrics.md
+    - Diagram Table: learning-graph/diagram-table.md
+    - Diagram Details: learning-graph/diagram-details.md
+    - MicroSim Quality Report: learning-graph/microsim-quality-report.md
+
+  - Prompts:
+    - List of Prompts: prompts/index.md
+    - Course Description: prompts/generate-course-description.md
+ 
+  - Glossary: glossary.md
+  - FAQ: faq.md
+  - References: references.md
+  - License: license.md
+  - Contact: contact.md
+ 
+# Dan's Microsite Standards from here down
+
+theme:
+  name: material
+  #logo: img/logo.png
+  #favicon: img/favicon.ico
+  palette:
+    # Primary color overridden in css/extra.css with Anthropic brown (RGB: 218, 120, 87)
+    primary: 'blue'
+    accent: 'orange'
+  include_sidebar: true
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    # this adds the prev and next icons in the footer
+    - navigation.footer
+    - content.action.edit
+plugins:
+  - search
+  - social
+  - social_override
+  - glightbox
+markdown_extensions:
+  - md_in_html
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+extra_css:
+   - css/extra.css
+extra_javascript: 
+   - js/extra.js
+copyright: Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+extra:
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: Computer Science
+  textbook_version: "1.0"
+  generator: false
+  #analytics:
+    #provider: google
+    #property: G-HPLDD3D3K2
