@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="description" content="Defining functions with parameters and return values, variable scope, default arguments, and docstrings in Python.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>6. Functions and Modular Design - Computer Science</title>
+        <title>Functions and Modular Design - Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,9 +62,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="6. Functions and Modular Design - Computer Science">
+        <meta property="og:title" content="Functions and Modular Design - Computer Science">
       
-        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta property="og:description" content="Defining functions with parameters and return values, variable scope, default arguments, and docstrings in Python.">
       
         <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/06-functions-and-modular-design/index.png">
       
@@ -78,9 +78,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="6. Functions and Modular Design - Computer Science">
+        <meta name="twitter:title" content="Functions and Modular Design - Computer Science">
       
-        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="twitter:description" content="Defining functions with parameters and return values, variable scope, default arguments, and docstrings in Python.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/06-functions-and-modular-design/index.png">
       
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              6. Functions and Modular Design
+              Functions and Modular Design
             
           </span>
         </div>
@@ -160,13 +160,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -198,14 +196,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -250,7 +247,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -270,10 +267,8 @@
       <a href="../../index.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -289,13 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about.md" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -314,10 +307,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -342,46 +333,85 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -394,14 +424,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -433,10 +462,8 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Intro to Computer Science
-    
   </span>
   
 
@@ -456,10 +483,8 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Python Fundamentals
-    
   </span>
   
 
@@ -479,10 +504,8 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Boolean Logic
-    
   </span>
   
 
@@ -502,10 +525,8 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -525,10 +546,8 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. Working with Strings
-    
   </span>
   
 
@@ -557,10 +576,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -570,10 +587,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -621,6 +636,318 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Functions?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Are Functions?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-your-first-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining Your First Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining Your First Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-your-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Your Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters-and-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters and Arguments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-values-getting-results-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      Return Values: Getting Results Back
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Return Values: Getting Results Back">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-none-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      The None Type
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The None Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-call-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Call Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positional-and-keyword-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positional and Keyword Arguments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-return-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Return Values
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Return Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-arguments-vs-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Arguments vs Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-scope-who-can-see-what" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Scope: Who Can See What?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Scope: Who Can See What?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-global-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Global Keyword
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Global Keyword">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-variable-scope-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Variable Scope Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docstrings-documenting-your-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docstrings: Documenting Your Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modular-design-putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular Design: Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modular Design: Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-modular-design-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Modular Design Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-patterns-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Patterns and Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Patterns and Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern-1-input-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 1: Input Validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-2-multiple-return-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 2: Multiple Return Paths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-3-building-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 3: Building Results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-4-functions-calling-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 4: Functions Calling Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pattern 4: Functions Calling Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-pattern-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Pattern Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Complete Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -640,10 +967,8 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -663,10 +988,8 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -686,10 +1009,8 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. Advanced List Operations
-    
   </span>
   
 
@@ -709,10 +1030,8 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. Tuples and Sets
-    
   </span>
   
 
@@ -732,10 +1051,8 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -755,10 +1072,8 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Classes and Objects
-    
   </span>
   
 
@@ -778,10 +1093,8 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Inheritance and Polymorphism
-    
   </span>
   
 
@@ -801,10 +1114,8 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -824,10 +1135,8 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. File Input and Output
-    
   </span>
   
 
@@ -847,10 +1156,8 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -870,10 +1177,8 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     17. Testing and Debugging
-    
   </span>
   
 
@@ -893,10 +1198,8 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     18. Searching and Sorting
-    
   </span>
   
 
@@ -916,10 +1219,8 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -939,10 +1240,8 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     20. Advanced Python
-    
   </span>
   
 
@@ -971,8 +1270,25 @@
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -986,14 +1302,11 @@
         
   
   
-  
     <a href="../../sims/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1058,7 +1371,6 @@
     
     
     
-    
       
         
         
@@ -1069,14 +1381,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1107,7 +1416,6 @@
     
     
     
-    
       
         
         
@@ -1118,14 +1426,11 @@
         
   
   
-  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1150,10 +1455,8 @@
       <a href="../../glossary.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1172,10 +1475,8 @@
       <a href="../../faq.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1194,10 +1495,8 @@
       <a href="../../references.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -1216,10 +1515,8 @@
       <a href="../../license.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1238,10 +1535,8 @@
       <a href="../../contact.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1303,6 +1598,318 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Functions?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Are Functions?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-your-first-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining Your First Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining Your First Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-your-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Your Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters-and-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters and Arguments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-values-getting-results-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      Return Values: Getting Results Back
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Return Values: Getting Results Back">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-none-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      The None Type
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The None Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-call-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Call Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positional-and-keyword-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positional and Keyword Arguments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-return-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Return Values
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Return Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-arguments-vs-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Arguments vs Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-scope-who-can-see-what" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Scope: Who Can See What?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Scope: Who Can See What?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-global-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Global Keyword
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Global Keyword">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-variable-scope-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Variable Scope Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docstrings-documenting-your-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docstrings: Documenting Your Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modular-design-putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular Design: Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modular Design: Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-modular-design-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Modular Design Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-patterns-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Patterns and Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Patterns and Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern-1-input-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 1: Input Validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-2-multiple-return-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 2: Multiple Return Paths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-3-building-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 3: Building Results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-4-functions-calling-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 4: Functions Calling Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pattern 4: Functions Calling Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-pattern-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Pattern Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Complete Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1316,7 +1923,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/06-functions-and-modular-design/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1360,7 +1966,1083 @@
 <li><a href="../05-working-with-strings/">Chapter 5: Working with Strings</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-welcome.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-welcome.png" width="80"></a>
+Welcome back, coders! This chapter is a <em>huge</em> milestone. You're about to learn about functions — the single most important tool for writing clean, organized, reusable code. Once you master functions, you'll never look at programming the same way again. Let's do this!</p>
+</div>
+<h2 id="what-are-functions">What Are Functions?</h2>
+<p>Imagine you're baking cookies. Every time you want cookies, you don't reinvent the recipe from scratch. You follow the same set of steps: preheat the oven, mix the ingredients, scoop the dough, bake for 12 minutes. That recipe is a set of reusable instructions you can follow again and again.</p>
+<p>A <strong>function</strong> in Python works the same way. It's a named block of code that performs a specific task. You write it once, and then you can use it as many times as you want — no copy-pasting needed. Functions are the recipe cards of programming.</p>
+<p>You've actually been using functions since Chapter 2 without realizing it. Every time you wrote <code>print("Hello!")</code> or <code>len("Python")</code> or <code>input("What's your name? ")</code>, you were <em>calling</em> a function that someone else already wrote for you. Now it's time to write your own.</p>
+<p>Why do functions matter? Here are the big reasons:</p>
+<ul>
+<li><strong>Reusability</strong> — Write code once, use it everywhere</li>
+<li><strong>Organization</strong> — Break big programs into smaller, manageable pieces</li>
+<li><strong>Readability</strong> — Give chunks of code meaningful names so others (and future you) can understand them</li>
+<li><strong>Debugging</strong> — When something breaks, you only need to fix it in one place</li>
+<li><strong>Collaboration</strong> — Different team members can work on different functions</li>
+</ul>
+<p>In short, functions turn spaghetti code into a well-organized recipe book.</p>
+<h4 id="diagram-function-anatomy">Diagram: Function Anatomy</h4>
+<iframe src="../../sims/function-anatomy/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Function Anatomy Interactive Diagram</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> function-anatomy<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Remember (L1)
+<strong>Bloom Verb:</strong> identify, label</p>
+<p><strong>Learning Objective:</strong> Students will be able to identify the parts of a Python function definition — the <code>def</code> keyword, function name, parameters, colon, body, and return statement — and describe the purpose of each.</p>
+<p><strong>Purpose:</strong> An interactive labeled diagram of a Python function that highlights each part when the student hovers over it, showing the name and purpose of each syntactic element.</p>
+<p><strong>Layout:</strong>
+- Center of canvas: A large, syntax-highlighted Python function displayed as styled text:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Say hello to someone."""</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="s2">"Hello, "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">"!"</span>
+    <span class="k">return</span> <span class="n">message</span>
+</code></pre></div></td></tr></tbody></table></div>
+- Each part of the function has an invisible hover zone
+- A tooltip panel on the right side shows descriptions<p></p>
+<p><strong>Hover zones and descriptions:</strong></p>
+<ol>
+<li><code>def</code> keyword — "The def keyword tells Python you're defining a new function."</li>
+<li><code>greet</code> (function name) — "The function's name. You'll use this name to call the function later."</li>
+<li><code>(name)</code> (parameter) — "Parameters are placeholders for data the function will receive. They go inside parentheses."</li>
+<li><code>:</code> (colon) — "The colon marks the beginning of the function body. Everything indented below is part of the function."</li>
+<li><code>"""Say hello to someone."""</code> (docstring) — "A docstring describes what the function does. It's the first line inside the function, wrapped in triple quotes."</li>
+<li><code>message = "Hello, " + name + "!"</code> (body) — "The body is where the function does its work. All body lines must be indented."</li>
+<li><code>return message</code> (return statement) — "The return statement sends a value back to whoever called the function."</li>
+</ol>
+<p><strong>Interactive elements:</strong>
+- Hover over any part to highlight it with a colored background and show its description in the tooltip panel
+- Click any part to "lock" the tooltip so it stays visible while you read it
+- A "Show All Labels" button draws arrows from each part to a labeled list</p>
+<p><strong>Color scheme:</strong>
+- <code>def</code> keyword: blue
+- Function name: green
+- Parameters: orange
+- Colon: gray
+- Docstring: purple
+- Body: default/white
+- Return statement: red</p>
+<p><strong>Visual style:</strong> Monospaced font for code, clean modern tooltip panel
+<strong>Responsive:</strong> Font size scales with canvas width; tooltip repositions on smaller screens</p>
+<p><strong>Instructional Rationale:</strong> Hover-to-reveal supports the Remember level by letting students explore each syntactic element at their own pace. The visual mapping between syntax and purpose builds a mental model of function structure before students write their own.</p>
+</details>
+<h2 id="defining-your-first-function">Defining Your First Function</h2>
+<p>Let's write our first function. A <strong>function definition</strong> is the code that creates a new function. It starts with the <code>def</code> keyword, followed by the function's name, parentheses, and a colon. The function's code goes on the next lines, indented by four spaces.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, world!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>That's it! You just defined a function called <code>say_hello</code>. But here's the important part: <strong>defining a function doesn't run it.</strong> It's like writing a recipe in your recipe book — the cookies don't magically appear until you actually follow the recipe.</p>
+<p>To run the function, you need to make a <strong>function call</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">say_hello</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>When Python sees this line, it jumps up to where you defined <code>say_hello</code>, runs the code inside it, then comes back to where it left off. You can call the same function as many times as you want:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">say_hello</span><span class="p">()</span>  <span class="c1"># prints "Hello, world!"</span>
+<span class="n">say_hello</span><span class="p">()</span>  <span class="c1"># prints "Hello, world!" again</span>
+<span class="n">say_hello</span><span class="p">()</span>  <span class="c1"># and again!</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's the basic pattern for defining and calling a function:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What You Write</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Define</td>
+<td><code>def function_name():</code></td>
+<td>Creates the function (stores the recipe)</td>
+</tr>
+<tr>
+<td>2. Write body</td>
+<td>Indented code below <code>def</code></td>
+<td>Describes what the function does</td>
+</tr>
+<tr>
+<td>3. Call</td>
+<td><code>function_name()</code></td>
+<td>Runs the function (follows the recipe)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="naming-your-functions">Naming Your Functions</h3>
+<p>Function names follow the same rules as variable names:</p>
+<ul>
+<li>Use lowercase letters and underscores (snake_case): <code>calculate_area</code>, <code>get_user_input</code></li>
+<li>Start with a letter or underscore, not a number</li>
+<li>Make names descriptive — <code>calculate_tax</code> is better than <code>ct</code></li>
+<li>Use verbs since functions <em>do</em> things: <code>greet_user</code>, <code>find_maximum</code>, <code>print_report</code></li>
+</ul>
+<h2 id="parameters-and-arguments">Parameters and Arguments</h2>
+<p>A function that does the exact same thing every time is useful, but limited. What if you want to customize what it does? That's where <strong>parameters</strong> come in.</p>
+<p><strong>Parameters</strong> are variables listed inside the parentheses of a function definition. They act as placeholders for data that will be provided when the function is called. Think of them like blank lines on a form — the function says "I need a name here," and you fill it in when you use the function.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>In this example, <code>name</code> is a parameter. When you call the function, you provide a value for that parameter — and that value is called an <strong>argument</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">greet</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span>    <span class="c1"># "Alice" is the argument</span>
+<span class="n">greet</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">)</span>      <span class="c1"># "Bob" is the argument</span>
+<span class="n">greet</span><span class="p">(</span><span class="s2">"Monty"</span><span class="p">)</span>    <span class="c1"># "Monty" is the argument</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Hello, Alice!
+Hello, Bob!
+Hello, Monty!
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's a quick way to remember the difference:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Where It Appears</th>
+<th>What It Is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Parameter</strong></td>
+<td>In the function <em>definition</em></td>
+<td>The placeholder (the blank line on the form)</td>
+</tr>
+<tr>
+<td><strong>Argument</strong></td>
+<td>In the function <em>call</em></td>
+<td>The actual value you fill in</td>
+</tr>
+</tbody>
+</table>
+<p>You can have multiple parameters — just separate them with commas:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>     <span class="c1"># prints "3 + 5 = 8"</span>
+<span class="n">add</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>   <span class="c1"># prints "10 + 20 = 30"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Think of a function like a vending machine. The parameters are the slots where you insert your selections (like choosing a snack and a drink). The arguments are the actual buttons you press. The function's body is all the machinery inside, and the output is the snack that drops out. Same machine, different snacks depending on what you press!</p>
+</div>
+<h2 id="return-values-getting-results-back">Return Values: Getting Results Back</h2>
+<p>So far, our functions have <em>printed</em> things. But what if you want a function to calculate a result and give it back to you so you can use it later? That's what the <strong>return statement</strong> does.</p>
+<p>The <code>return</code> keyword sends a value — called a <strong>return value</strong> — back to the code that called the function. It's like asking a friend to go check the temperature outside. You don't want them to just <em>shout</em> the temperature into the void — you want them to come back and <em>tell you</em> so you can decide whether to wear a jacket.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>       <span class="c1"># prints 8</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice the difference from before: instead of <code>print</code> inside the function, we use <code>return</code>. The function sends the value back, and we can store it in a variable, use it in another calculation, or do whatever we want with it.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">n</span>
+
+<span class="n">area</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>           <span class="c1"># area is now 49</span>
+<span class="n">double_area</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>  <span class="c1"># double_area is 98</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Area: </span><span class="si">{</span><span class="n">area</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Double: </span><span class="si">{</span><span class="n">double_area</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here are some key facts about <code>return</code>:</p>
+<ul>
+<li>A function can have multiple <code>return</code> statements (often inside <code>if/else</code> blocks), but only one will execute</li>
+<li>Once <code>return</code> runs, the function immediately stops — any code after the <code>return</code> line won't execute</li>
+<li>A function without a <code>return</code> statement automatically returns a special value called <code>None</code></li>
+</ul>
+<h3 id="the-none-type">The None Type</h3>
+<p>What happens when a function doesn't explicitly return anything? Python gives it a return value of <code>None</code>. <strong>None</strong> is a special Python value — it represents "nothing" or "no value." Its type is the <strong>None type</strong> (technically <code>NoneType</code>).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Hello!"</span><span class="p">)</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">say_hello</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>       <span class="c1"># prints: None</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">result</span><span class="p">))</span> <span class="c1"># prints: &lt;class 'NoneType'&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><code>None</code> isn't the same as zero, an empty string, or <code>False</code>. It's its own thing — it means "this variable doesn't hold any meaningful value." You'll see <code>None</code> come up often when debugging, so it's good to know what it means.</p>
+<h4 id="diagram-function-call-flow">Diagram: Function Call Flow</h4>
+<iframe src="../../sims/function-call-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Function Call Flow MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> function-call-flow<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> trace, explain</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace the flow of execution when a function is called, including how arguments are passed, how the function body runs, and how the return value flows back to the caller.</p>
+<p><strong>Purpose:</strong> An animated step-through showing a function call, visualizing the jump from caller code to the function definition and back, with arguments flowing in and the return value flowing out.</p>
+<p><strong>Canvas layout:</strong>
+- Left side: "Caller Code" panel showing:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+- Right side: "Function Definition" panel showing:
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</code></pre></div></td></tr></tbody></table></div>
+- Between the panels: animated arrows and value "bubbles" showing data flow
+- Bottom: A step-by-step narration bar explaining what's happening<p></p>
+<p><strong>Animation steps:</strong></p>
+<ol>
+<li>Highlight <code>add(3, 5)</code> in the caller — Narration: "Python sees a function call: add(3, 5)"</li>
+<li>Animate "3" bubble flowing from caller to parameter <code>a</code> — Narration: "Argument 3 is assigned to parameter a"</li>
+<li>Animate "5" bubble flowing from caller to parameter <code>b</code> — Narration: "Argument 5 is assigned to parameter b"</li>
+<li>Highlight <code>return a + b</code> in the function — Narration: "Python evaluates a + b = 3 + 5 = 8"</li>
+<li>Animate "8" bubble flowing back from function to <code>x =</code> — Narration: "The return value 8 is sent back and stored in x"</li>
+<li>Highlight <code>print(x)</code> — Narration: "Python prints x, which is 8"</li>
+</ol>
+<p><strong>Interactive controls:</strong>
+- "Step" button: Advance one step at a time
+- "Auto Play" button: Animate all steps with a 1.5-second delay
+- "Reset" button: Return to starting state
+- Speed slider to adjust animation pace</p>
+<p><strong>Visual style:</strong>
+- Code panels use monospaced font with syntax highlighting
+- Value "bubbles" are colored circles with the value displayed inside
+- Active lines have a yellow highlight
+- Arrows animate smoothly with easing</p>
+<p><strong>Responsive:</strong> Panels stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Step-through animation supports the Understand level by making the invisible execution flow visible. Students often struggle with the concept of "jumping" to a function and back — this animation makes the jump explicit. Value bubbles show how arguments become parameters and how return values flow back.</p>
+</details>
+<h2 id="positional-and-keyword-arguments">Positional and Keyword Arguments</h2>
+<p>When you call a function with multiple parameters, there are two ways to pass the arguments.</p>
+<p><strong>Positional arguments</strong> are the default. The first argument goes to the first parameter, the second argument goes to the second parameter, and so on. Order matters!</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">describe_pet</span><span class="p">(</span><span class="n">animal</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I have a </span><span class="si">{</span><span class="n">animal</span><span class="si">}</span><span class="s2"> named </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+
+<span class="n">describe_pet</span><span class="p">(</span><span class="s2">"cat"</span><span class="p">,</span> <span class="s2">"Whiskers"</span><span class="p">)</span>   <span class="c1"># I have a cat named Whiskers.</span>
+<span class="n">describe_pet</span><span class="p">(</span><span class="s2">"Whiskers"</span><span class="p">,</span> <span class="s2">"cat"</span><span class="p">)</span>   <span class="c1"># I have a Whiskers named cat. (Oops!)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>See what happened in the second call? We swapped the order, so the arguments got matched to the wrong parameters. With positional arguments, you have to remember which order to use.</p>
+<p><strong>Keyword arguments</strong> let you specify exactly which parameter gets which value by using the parameter's name:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">describe_pet</span><span class="p">(</span><span class="n">animal</span><span class="o">=</span><span class="s2">"cat"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Whiskers"</span><span class="p">)</span>   <span class="c1"># Correct!</span>
+<span class="n">describe_pet</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Whiskers"</span><span class="p">,</span> <span class="n">animal</span><span class="o">=</span><span class="s2">"cat"</span><span class="p">)</span>   <span class="c1"># Also correct!</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>With keyword arguments, order doesn't matter — Python matches each argument to the right parameter by name. This makes your code clearer, especially when a function has many parameters.</p>
+<p>You can even mix positional and keyword arguments, but there's one rule: <strong>positional arguments must come first</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">describe_pet</span><span class="p">(</span><span class="s2">"cat"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Whiskers"</span><span class="p">)</span>  <span class="c1"># OK! positional first, keyword second</span>
+<span class="n">describe_pet</span><span class="p">(</span><span class="n">animal</span><span class="o">=</span><span class="s2">"cat"</span><span class="p">,</span> <span class="s2">"Whiskers"</span><span class="p">)</span>  <span class="c1"># ERROR! keyword before positional</span>
+</code></pre></div></td></tr></tbody></table></div>
+<table>
+<thead>
+<tr>
+<th>Argument Type</th>
+<th>How It Works</th>
+<th>Order Matters?</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Positional</strong></td>
+<td>Matched by position (1st, 2nd, 3rd...)</td>
+<td>Yes</td>
+<td><code>greet("Alice", 16)</code></td>
+</tr>
+<tr>
+<td><strong>Keyword</strong></td>
+<td>Matched by parameter name</td>
+<td>No</td>
+<td><code>greet(name="Alice", age=16)</code></td>
+</tr>
+<tr>
+<td><strong>Mixed</strong></td>
+<td>Positional first, then keyword</td>
+<td>Partially</td>
+<td><code>greet("Alice", age=16)</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Monty says: Watch out!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-warning.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-warning.png" width="80"></a>
+A common mistake is putting keyword arguments before positional ones. Python will throw a <code>SyntaxError</code> if you try this. Always put positional arguments first, keyword arguments second!</p>
+</div>
+<h2 id="default-parameters">Default Parameters</h2>
+<p>Sometimes you want a parameter to have a fallback value in case the caller doesn't provide one. That's what <strong>default parameters</strong> do. You set a default value in the function definition using <code>=</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">greeting</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
+
+<span class="n">greet</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span>              <span class="c1"># prints "Hello, Alice!" (uses default)</span>
+<span class="n">greet</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"Hey there"</span><span class="p">)</span>   <span class="c1"># prints "Hey there, Bob!" (overrides default)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The parameter <code>greeting</code> has a default value of <code>"Hello"</code>. If you call <code>greet</code> with only one argument, <code>greeting</code> automatically becomes <code>"Hello"</code>. If you provide a second argument, it replaces the default.</p>
+<p>Default parameters are incredibly handy:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_tip</span><span class="p">(</span><span class="n">bill</span><span class="p">,</span> <span class="n">tip_rate</span><span class="o">=</span><span class="mf">0.18</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate the tip amount for a restaurant bill."""</span>
+    <span class="k">return</span> <span class="n">bill</span> <span class="o">*</span> <span class="n">tip_rate</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">calculate_tip</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>          <span class="c1"># $9.00 (18% default)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">calculate_tip</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">))</span>    <span class="c1"># $10.00 (20% custom)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">calculate_tip</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">))</span>    <span class="c1"># $7.50 (15% custom)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>There's one important rule: <strong>parameters with default values must come after parameters without defaults.</strong> Otherwise Python gets confused about which argument matches which parameter.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>  <span class="c1"># ERROR! Default before non-default</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">greeting</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">):</span>  <span class="c1"># Correct! Non-default first</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">greeting</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h2 id="multiple-return-values">Multiple Return Values</h2>
+<p>Here's a Python superpower: a single function can return <strong>multiple return values</strong> at once. You do this by separating the values with commas after <code>return</code>. Under the hood, Python packs them into a <em>tuple</em> (which you'll learn more about in Chapter 10).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_min_max</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">numbers</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+
+<span class="n">lowest</span><span class="p">,</span> <span class="n">highest</span> <span class="o">=</span> <span class="n">get_min_max</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lowest: </span><span class="si">{</span><span class="n">lowest</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>    <span class="c1"># Lowest: 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Highest: </span><span class="si">{</span><span class="n">highest</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  <span class="c1"># Highest: 9</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This is really useful when a function needs to compute several related pieces of information:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">analyze_scores</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="n">highest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="n">lowest</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">average</span><span class="p">,</span> <span class="n">highest</span><span class="p">,</span> <span class="n">lowest</span>
+
+<span class="n">avg</span><span class="p">,</span> <span class="n">high</span><span class="p">,</span> <span class="n">low</span> <span class="o">=</span> <span class="n">analyze_scores</span><span class="p">([</span><span class="mi">85</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">88</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average: </span><span class="si">{</span><span class="n">avg</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>    <span class="c1"># Average: 87.6</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Highest: </span><span class="si">{</span><span class="n">high</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>   <span class="c1"># Highest: 95</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lowest: </span><span class="si">{</span><span class="n">low</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>     <span class="c1"># Lowest: 78</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The left side of the assignment uses <strong>unpacking</strong> — each variable on the left matches up with one returned value on the right. If you use the wrong number of variables, Python will raise an error.</p>
+<h4 id="diagram-arguments-vs-parameters">Diagram: Arguments vs Parameters</h4>
+<iframe src="../../sims/args-vs-params/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Arguments vs Parameters Interactive Comparison</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> args-vs-params<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> differentiate, classify</p>
+<p><strong>Learning Objective:</strong> Students will be able to distinguish between parameters (in the definition) and arguments (in the call), and between positional, keyword, and default argument types.</p>
+<p><strong>Purpose:</strong> An interactive side-by-side display that shows a function definition and multiple function calls, with color-coded connections between arguments and their corresponding parameters.</p>
+<p><strong>Canvas layout:</strong>
+- Top half: Function definition displayed prominently:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">make_profile</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="s2">"Unknown"</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">, age </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">, from </span><span class="si">{</span><span class="n">city</span><span class="si">}</span><span class="s2">"</span>
+</code></pre></div></td></tr></tbody></table></div>
+- Each parameter is color-coded: <code>name</code> (blue), <code>age</code> (green), <code>city</code> (orange)
+- Bottom half: Three function call examples the student can switch between using tabs:
+  - Tab 1 "Positional": <code>make_profile("Alice", 16, "Austin")</code>
+  - Tab 2 "Keyword": <code>make_profile(age=16, name="Alice", city="Austin")</code>
+  - Tab 3 "Default Used": <code>make_profile("Alice", 16)</code><p></p>
+<p><strong>Interactive elements:</strong>
+- Click a tab to show a different function call style
+- Animated lines connect each argument to its matched parameter, using the parameter's color
+- Hover over any argument to highlight both the argument and the parameter it maps to
+- For Tab 3, the default value for <code>city</code> glows to show it's being used automatically
+- Below each call: text showing the return value output</p>
+<p><strong>Visual style:</strong>
+- Monospaced font for code
+- Smooth curved connecting lines between arguments and parameters
+- Subtle animation when switching tabs</p>
+<p><strong>Color scheme:</strong>
+- <code>name</code> parameter/argument: blue
+- <code>age</code> parameter/argument: green
+- <code>city</code> parameter/argument: orange
+- Default value indicator: dashed orange border</p>
+<p><strong>Responsive:</strong> Layout stacks vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Color-coded matching lines make the abstract mapping between arguments and parameters concrete and visible. Showing three different calling styles in tabs lets students compare positional, keyword, and default behaviors side by side. This supports the Understand level by helping students differentiate between these closely related concepts.</p>
+</details>
+<h2 id="variable-scope-who-can-see-what">Variable Scope: Who Can See What?</h2>
+<p>Here's a concept that trips up a lot of new programmers, so pay close attention. <strong>Variable scope</strong> determines <em>where</em> in your code a variable can be accessed. Not every variable is available everywhere.</p>
+<h3 id="local-variables">Local Variables</h3>
+<p>A <strong>local variable</strong> is a variable created <em>inside</em> a function. It only exists while the function is running, and it can only be used inside that function. Once the function finishes, the local variable vanishes like a Snapchat message.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+    <span class="n">area</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>   <span class="c1"># 'area' is a local variable</span>
+    <span class="k">return</span> <span class="n">area</span>
+
+<span class="n">calculate_area</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>   <span class="c1"># ERROR! 'area' doesn't exist outside the function</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The variable <code>area</code> was born inside <code>calculate_area</code> and dies when the function ends. The rest of your program has no idea it ever existed.</p>
+<p>Parameters are also local variables. In the example above, <code>length</code> and <code>width</code> only exist inside <code>calculate_area</code>.</p>
+<h3 id="global-variables">Global Variables</h3>
+<p>A <strong>global variable</strong> is a variable created <em>outside</em> of any function, in the main body of your program. It can be read from anywhere — inside functions, outside functions, everywhere.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">school_name</span> <span class="o">=</span> <span class="s2">"Westside High"</span>   <span class="c1"># global variable</span>
+
+<span class="k">def</span> <span class="nf">print_welcome</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Welcome to </span><span class="si">{</span><span class="n">school_name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>  <span class="c1"># can READ the global variable</span>
+
+<span class="n">print_welcome</span><span class="p">()</span>   <span class="c1"># prints "Welcome to Westside High!"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>But here's the catch: you can <em>read</em> a global variable from inside a function, but you <strong>cannot change it</strong> without special permission. If you try to assign a new value to it inside a function, Python creates a <em>new local variable</em> with the same name instead:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># global variable</span>
+
+<span class="k">def</span> <span class="nf">increment</span><span class="p">():</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>   <span class="c1"># ERROR! Python thinks 'count' is local</span>
+                         <span class="c1"># but it hasn't been assigned yet</span>
+
+<span class="n">increment</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This error happens because Python sees <code>count =</code> on the left side and assumes you're trying to create a local variable called <code>count</code>. But you're also trying to use <code>count</code> on the right side before it's been created locally. Confusing? It's one of Python's quirks.</p>
+<h3 id="the-global-keyword">The Global Keyword</h3>
+<p>If you truly need to modify a global variable from inside a function, you must use the <strong>global keyword</strong> to tell Python "I mean the global one, not a new local one":</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># global variable</span>
+
+<span class="k">def</span> <span class="nf">increment</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">count</span>         <span class="c1"># "I want the GLOBAL count"</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>    <span class="c1"># Now this works!</span>
+
+<span class="n">increment</span><span class="p">()</span>
+<span class="n">increment</span><span class="p">()</span>
+<span class="n">increment</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>   <span class="c1"># prints 3</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>However, using <code>global</code> is generally considered a bad habit. It makes your code harder to understand and debug because any function could change any variable at any time. It's like giving everyone in school the keys to the janitor's closet — technically possible, but things get messy fast.</p>
+<p><strong>Best practice:</strong> Instead of using global variables, pass values into functions as parameters and get results back using <code>return</code>. This keeps your functions self-contained and predictable.</p>
+<p>Here's a summary of scope rules:</p>
+<table>
+<thead>
+<tr>
+<th>Variable Type</th>
+<th>Created Where?</th>
+<th>Accessible Where?</th>
+<th>Lifespan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Local</strong></td>
+<td>Inside a function</td>
+<td>Only inside that function</td>
+<td>While the function runs</td>
+</tr>
+<tr>
+<td><strong>Global</strong></td>
+<td>Outside all functions</td>
+<td>Readable everywhere; writable only with <code>global</code> keyword</td>
+<td>Entire program</td>
+</tr>
+<tr>
+<td><strong>Parameter</strong></td>
+<td>In the function definition</td>
+<td>Only inside that function (acts like a local variable)</td>
+<td>While the function runs</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Think of scope like rooms in a house. A local variable is like a note pinned to the fridge in the kitchen — only people in the kitchen can see it. A global variable is like a message on the mailbox outside — everyone can read it. The <code>global</code> keyword is like giving someone the key to the mailbox so they can change the message.</p>
+</div>
+<h4 id="diagram-variable-scope-visualizer">Diagram: Variable Scope Visualizer</h4>
+<iframe src="../../sims/variable-scope-visualizer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Variable Scope Visualizer MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> variable-scope-visualizer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> demonstrate, predict</p>
+<p><strong>Learning Objective:</strong> Students will be able to predict the value of variables at different points in a program by understanding the rules of local and global variable scope.</p>
+<p><strong>Purpose:</strong> An interactive code execution visualizer that shows which variables exist (and their values) at each step of a program containing both global variables and function calls with local variables.</p>
+<p><strong>Canvas layout:</strong>
+- Left panel: A short Python program displayed with line numbers:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>              <span class="c1"># Line 1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>              <span class="c1"># Line 2</span>
+
+<span class="k">def</span> <span class="nf">double</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>       <span class="c1"># Line 4</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="mi">2</span>   <span class="c1"># Line 5</span>
+    <span class="k">return</span> <span class="n">result</span>    <span class="c1"># Line 6</span>
+
+<span class="n">z</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>        <span class="c1"># Line 8</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>       <span class="c1"># Line 9</span>
+</code></pre></div></td></tr></tbody></table></div>
+- Right panel: "Variable Scope" display with two sections:
+  - "Global Scope" box (blue border) showing global variables and their current values
+  - "Local Scope: double()" box (orange border) that appears/disappears when the function is active<p></p>
+<p><strong>Animation steps:</strong></p>
+<ol>
+<li>Line 1 executes — Global scope shows: <code>x = 10</code></li>
+<li>Line 2 executes — Global scope shows: <code>x = 10, y = 20</code></li>
+<li>Line 8 calls <code>double(x)</code> — Local scope box appears: <code>n = 10</code></li>
+<li>Line 5 executes — Local scope shows: <code>n = 10, result = 20</code></li>
+<li>Line 6 returns — Local scope box disappears (variables gone!), Global scope adds: <code>z = 20</code></li>
+<li>Line 9 prints — Output shown: <code>10 20 20</code></li>
+</ol>
+<p><strong>Interactive controls:</strong>
+- "Step Forward" and "Step Back" buttons
+- "Auto Play" button with speed slider
+- "Reset" button
+- Dropdown to choose from 3 different code examples:
+  - Example 1: Basic scope (shown above)
+  - Example 2: Name collision (global and local variable with the same name)
+  - Example 3: Using <code>global</code> keyword</p>
+<p><strong>Visual elements:</strong>
+- Current executing line highlighted in yellow
+- Global scope box always visible
+- Local scope box fades in when function is entered, fades out when function exits
+- Variables appear with a brief "pop" animation when created
+- Variables fade out and "disappear" when their scope ends</p>
+<p><strong>Color scheme:</strong>
+- Global scope border: blue
+- Local scope border: orange
+- Current line highlight: yellow
+- New variable animation: green flash</p>
+<p><strong>Responsive:</strong> Panels stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Step-by-step execution with a visible scope display directly addresses the Apply level by requiring students to predict outcomes before stepping forward. The appearing/disappearing local scope box vividly demonstrates that local variables have a limited lifespan. Multiple code examples let students explore edge cases like name collisions and the global keyword.</p>
+</details>
+<h2 id="docstrings-documenting-your-functions">Docstrings: Documenting Your Functions</h2>
+<p>As your programs grow, you'll write dozens (or hundreds) of functions. A month from now, will you remember what each one does? What about your teammates? That's why good programmers document their functions with <strong>docstrings</strong>.</p>
+<p>A <strong>docstring</strong> (short for "documentation string") is a string that appears as the very first line inside a function. It describes what the function does, what parameters it expects, and what it returns. Docstrings are wrapped in triple quotes (<code>"""..."""</code>).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_bmi</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">,</span> <span class="n">height_m</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate Body Mass Index (BMI).</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        weight_kg: Weight in kilograms</span>
+<span class="sd">        height_m: Height in meters</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The BMI value as a float</span>
+<span class="sd">    """</span>
+    <span class="k">return</span> <span class="n">weight_kg</span> <span class="o">/</span> <span class="p">(</span><span class="n">height_m</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Docstrings aren't just comments — Python actually stores them and makes them available through the built-in <code>help()</code> function:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">help</span><span class="p">(</span><span class="n">calculate_bmi</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Help on function calculate_bmi:
+
+calculate_bmi(weight_kg, height_m)
+    Calculate Body Mass Index (BMI).
+
+    Parameters:
+        weight_kg: Weight in kilograms
+        height_m: Height in meters
+
+    Returns:
+        The BMI value as a float
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here are some docstring best practices:</p>
+<ul>
+<li><strong>First line:</strong> A brief, one-sentence summary of what the function does</li>
+<li><strong>Parameters section:</strong> List each parameter and what it represents</li>
+<li><strong>Returns section:</strong> Describe what the function returns</li>
+<li><strong>Keep it honest:</strong> If the function changes, update the docstring too!</li>
+</ul>
+<p>Even a simple one-liner helps:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return the square of n."""</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">n</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-tip.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-tip.png" width="80"></a>
+Here's a tip from the pros: write your docstring <em>before</em> you write the function body. It forces you to think about what the function should do before you get lost in the details of <em>how</em> it does it. Future you will thank present you!</p>
+</div>
+<h2 id="modular-design-putting-it-all-together">Modular Design: Putting It All Together</h2>
+<p>Now that you know how to write functions, let's talk about <em>when</em> and <em>why</em> to use them. The philosophy of breaking a program into small, focused functions is called <strong>modular design</strong>.</p>
+<p>Imagine you're building a calculator app. You could write the entire thing as one giant block of code — but that would be messy, hard to read, and a nightmare to debug. Instead, you break it into modules (functions), each handling one task:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_numbers</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">"""Get two numbers from the user."""</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter first number: "</span><span class="p">))</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter second number: "</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return the sum of a and b."""</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return the difference of a and b."""</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">display_result</span><span class="p">(</span><span class="n">operation</span><span class="p">,</span> <span class="n">result</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Display the result of a calculation."""</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The result of </span><span class="si">{</span><span class="n">operation</span><span class="si">}</span><span class="s2"> is: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Main program</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">get_numbers</span><span class="p">()</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">display_result</span><span class="p">(</span><span class="s2">"addition"</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Each function does <em>one thing</em> and does it well. If the <code>add</code> function has a bug, you know exactly where to look. If you want to add multiplication, you just write a new function — you don't have to touch the existing code.</p>
+<p>Here are the principles of good modular design:</p>
+<ul>
+<li><strong>Single responsibility:</strong> Each function should do one thing</li>
+<li><strong>Descriptive names:</strong> A function's name should tell you what it does</li>
+<li><strong>Short and sweet:</strong> If a function is longer than 20-30 lines, consider breaking it up</li>
+<li><strong>Documented:</strong> Every function should have a docstring</li>
+<li><strong>Self-contained:</strong> Functions should rely on their parameters, not global variables</li>
+</ul>
+<h4 id="diagram-modular-design-builder">Diagram: Modular Design Builder</h4>
+<iframe src="../../sims/modular-design-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Modular Design Builder MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> modular-design-builder<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> organize, deconstruct</p>
+<p><strong>Learning Objective:</strong> Students will be able to break a monolithic program into modular functions by identifying logical units of work and creating appropriate function boundaries.</p>
+<p><strong>Purpose:</strong> An interactive exercise where students are given a block of sequential code and must drag-and-drop code lines into function groups, naming each function and connecting them with a call graph.</p>
+<p><strong>Canvas layout:</strong>
+- Left panel: "Original Code" — a 12-line sequential program displayed as movable code blocks:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>1. name = input("Name: ")
+2. age = int(input("Age: "))
+3. greeting = "Hello, " + name
+4. print(greeting)
+5. birth_year = 2026 - age
+6. print("Born in: " + str(birth_year))
+7. if age &gt;= 16:
+8.     print("You can drive!")
+9. else:
+10.    print("Not old enough to drive.")
+11. print("Thanks for using our app!")
+12. print("Goodbye, " + name)
+</code></pre></div></td></tr></tbody></table></div>
+- Right panel: "Modular Version" — empty function containers (rounded rectangles) that students can drag code lines into
+- Bottom: Three pre-labeled empty function boxes: <code>get_info()</code>, <code>check_driving()</code>, <code>show_farewell()</code>
+- A "Check My Answer" button that evaluates the student's grouping<p></p>
+<p><strong>Interactive elements:</strong>
+- Drag code lines from the left panel into the function boxes on the right
+- Each function box shows a header where the student types a function name (pre-populated with suggestions)
+- Lines snap into place inside a function box
+- A "Show Solution" button reveals one good way to modularize the code
+- "Check My Answer" provides feedback: "Lines 1-2 make sense in get_info()" etc.
+- A "Run Both" button that shows both versions produce the same output</p>
+<p><strong>Feedback:</strong>
+- Green check for correctly grouped lines
+- Orange suggestion for lines that could reasonably go in multiple functions
+- Red X for clearly misplaced lines (e.g., putting the farewell message in get_info)</p>
+<p><strong>Visual style:</strong> Code blocks are rounded rectangles with monospaced text; function containers have colored borders (blue, green, orange)
+<strong>Responsive:</strong> Panels stack vertically on small screens</p>
+<p><strong>Instructional Rationale:</strong> Drag-and-drop grouping supports the Analyze level by requiring students to examine relationships between code lines and decide which belong together based on their purpose. This active reorganization task builds intuition for modular design principles that passive reading cannot achieve.</p>
+</details>
+<h2 id="common-patterns-and-best-practices">Common Patterns and Best Practices</h2>
+<p>Let's look at some patterns you'll see again and again in well-written Python functions.</p>
+<h3 id="pattern-1-input-validation">Pattern 1: Input Validation</h3>
+<p>Functions can check that their arguments make sense before doing any work:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate the average of a list of scores."""</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>   <span class="c1"># Can't average an empty list!</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="pattern-2-multiple-return-paths">Pattern 2: Multiple Return Paths</h3>
+<p>Use <code>if/else</code> to return different values depending on conditions:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">letter_grade</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Convert a numeric score to a letter grade."""</span>
+    <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"A"</span>
+    <span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"B"</span>
+    <span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"C"</span>
+    <span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"D"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"F"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="pattern-3-building-results">Pattern 3: Building Results</h3>
+<p>Use a local variable to accumulate a result, then return it:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">count_vowels</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Count the number of vowels in a string."""</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="s2">"aeiou"</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">count_vowels</span><span class="p">(</span><span class="s2">"Hello World"</span><span class="p">))</span>  <span class="c1"># prints 3</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="pattern-4-functions-calling-functions">Pattern 4: Functions Calling Functions</h3>
+<p>Functions can call other functions — this is where modular design really shines:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_passing</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Check if a score earns a passing grade."""</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="n">letter_grade</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>   <span class="c1"># Calls the function we wrote earlier</span>
+    <span class="k">return</span> <span class="n">grade</span> <span class="o">!=</span> <span class="s2">"F"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">is_passing</span><span class="p">(</span><span class="mi">75</span><span class="p">))</span>   <span class="c1"># True</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_passing</span><span class="p">(</span><span class="mi">55</span><span class="p">))</span>   <span class="c1"># False</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h4 id="diagram-function-pattern-gallery">Diagram: Function Pattern Gallery</h4>
+<iframe src="../../sims/function-pattern-gallery/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Function Pattern Gallery Interactive Reference</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> function-pattern-gallery<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> implement, use</p>
+<p><strong>Learning Objective:</strong> Students will be able to recognize and apply common function patterns (input validation, multiple returns, result accumulation, function composition) when writing their own programs.</p>
+<p><strong>Purpose:</strong> A clickable gallery of four common function design patterns, each showing a code example with annotations explaining the pattern and when to use it.</p>
+<p><strong>Canvas layout:</strong>
+- Grid of 4 cards (2x2), each representing a pattern:
+  - Card 1: "Input Validation" — check before compute
+  - Card 2: "Multiple Return Paths" — different results for different conditions
+  - Card 3: "Result Accumulation" — build up a value in a loop
+  - Card 4: "Function Composition" — functions calling functions</p>
+<p><strong>Each card shows:</strong>
+- Pattern name (bold header)
+- A 4-6 line code example with syntax highlighting
+- A one-sentence description of when to use this pattern
+- An icon representing the pattern (shield for validation, fork for multiple paths, stack for accumulation, chain for composition)</p>
+<p><strong>Interactive elements:</strong>
+- Click a card to expand it to full width, showing:
+  - The complete code example
+  - Line-by-line annotations
+  - A "When to Use" section with bullet points
+  - A "Try It" section with a small editable code area
+- Click again or click another card to collapse/switch</p>
+<p><strong>Color scheme:</strong>
+- Validation: blue
+- Multiple returns: green
+- Accumulation: orange
+- Composition: purple</p>
+<p><strong>Visual style:</strong> Card-based layout with rounded corners and subtle shadows
+<strong>Responsive:</strong> Cards stack into a single column on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> A gallery format supports the Apply level by presenting patterns as reusable templates. Students can browse, compare, and practice each pattern independently. The card-based format mirrors how developers use reference documentation in the real world.</p>
+</details>
+<h2 id="putting-it-all-together-a-complete-example">Putting It All Together: A Complete Example</h2>
+<p>Let's combine everything from this chapter into a complete program. We'll build a simple grade report generator:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_student_name</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">"""Get the student's name from user input."""</span>
+    <span class="k">return</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter student name: "</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_scores</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">"""Get a list of test scores from user input."""</span>
+    <span class="n">scores</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">entry</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a score (or 'done'): "</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">entry</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"done"</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">entry</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">scores</span>
+
+<span class="k">def</span> <span class="nf">calculate_stats</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate and return average, highest, and lowest scores."""</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="n">highest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="n">lowest</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">average</span><span class="p">,</span> <span class="n">highest</span><span class="p">,</span> <span class="n">lowest</span>
+
+<span class="k">def</span> <span class="nf">letter_grade</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Convert a numeric score to a letter grade."""</span>
+    <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"A"</span>
+    <span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"B"</span>
+    <span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"C"</span>
+    <span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"D"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"F"</span>
+
+<span class="k">def</span> <span class="nf">print_report</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">scores</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Print a formatted grade report for a student."""</span>
+    <span class="n">avg</span><span class="p">,</span> <span class="n">high</span><span class="p">,</span> <span class="n">low</span> <span class="o">=</span> <span class="n">calculate_stats</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="n">letter_grade</span><span class="p">(</span><span class="n">avg</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">--- Grade Report for </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> ---"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Scores: </span><span class="si">{</span><span class="n">scores</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average: </span><span class="si">{</span><span class="n">avg</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Highest: </span><span class="si">{</span><span class="n">high</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lowest: </span><span class="si">{</span><span class="n">low</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Letter Grade: </span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Main program</span>
+<span class="n">student</span> <span class="o">=</span> <span class="n">get_student_name</span><span class="p">()</span>
+<span class="n">student_scores</span> <span class="o">=</span> <span class="n">get_scores</span><span class="p">()</span>
+<span class="n">print_report</span><span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="n">student_scores</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice how each function has a single job, a descriptive name, and a docstring. The main program at the bottom reads almost like plain English: get the name, get the scores, print the report. That's the beauty of modular design.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-celebrates.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-celebrates.png" width="80"></a>
+Look at you, writing clean, modular, well-documented code with functions! You've leveled up from writing simple scripts to designing organized programs. That's a massive step forward. The skills you learned in this chapter — parameters, return values, scope, docstrings — will be the foundation for everything else in this course. Great work, coder!</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>A <strong>function</strong> is a reusable block of code that performs a specific task. Define it with <code>def</code>, call it by name.</li>
+<li><strong>Parameters</strong> are placeholders in the function definition; <strong>arguments</strong> are the actual values passed in the call.</li>
+<li>The <strong>return statement</strong> sends a value back to the caller. Without one, the function returns <strong>None</strong>.</li>
+<li><strong>Positional arguments</strong> are matched by order; <strong>keyword arguments</strong> are matched by parameter name.</li>
+<li><strong>Default parameters</strong> provide fallback values when arguments are omitted.</li>
+<li>A function can return <strong>multiple values</strong> separated by commas (packed as a tuple).</li>
+<li><strong>Variable scope</strong> determines where a variable can be accessed: <strong>local variables</strong> live inside functions; <strong>global variables</strong> live outside.</li>
+<li>The <strong>global keyword</strong> lets a function modify a global variable — but avoid it when possible.</li>
+<li><strong>Docstrings</strong> document what a function does, its parameters, and its return value.</li>
+<li>Good <strong>modular design</strong> means each function does one thing, has a clear name, and is self-contained.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What is the difference between a parameter and an argument?</summary>
+<p>A <strong>parameter</strong> is a variable in the function <em>definition</em> — it's the placeholder. An <strong>argument</strong> is the actual value you pass when you <em>call</em> the function. For example, in <code>def greet(name):</code>, <code>name</code> is the parameter. In <code>greet("Alice")</code>, <code>"Alice"</code> is the argument. Think of the parameter as a blank on a form, and the argument as what you write in that blank.</p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: What does a function return if it has no return statement?</summary>
+<p>It returns <strong>None</strong>. <code>None</code> is Python's special value meaning "nothing" or "no value." Its type is <code>NoneType</code>. For example:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">say_hi</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Hi!"</span><span class="p">)</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">say_hi</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: None</span>
+</code></pre></div></td></tr></tbody></table></div><p></p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: Why is using the <code>global</code> keyword generally discouraged?</summary>
+<p>Using <code>global</code> lets any function change variables that live outside of it, which makes your program harder to understand and debug. If multiple functions can modify the same global variable, it becomes difficult to track where changes happen. <strong>Best practice</strong> is to pass values into functions as parameters and use <code>return</code> to send results back. This keeps each function self-contained and predictable.</p>
+</details>
 
 
 
@@ -1455,12 +3137,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

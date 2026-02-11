@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="description" content="Error types, exception handling with try-except, raising exceptions, custom exceptions, and assertions in Python.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>14. Errors and Exceptions - Computer Science</title>
+        <title>Errors and Exceptions - Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,9 +62,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="14. Errors and Exceptions - Computer Science">
+        <meta property="og:title" content="Errors and Exceptions - Computer Science">
       
-        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta property="og:description" content="Error types, exception handling with try-except, raising exceptions, custom exceptions, and assertions in Python.">
       
         <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/14-errors-and-exceptions/index.png">
       
@@ -78,9 +78,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="14. Errors and Exceptions - Computer Science">
+        <meta name="twitter:title" content="Errors and Exceptions - Computer Science">
       
-        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="twitter:description" content="Error types, exception handling with try-except, raising exceptions, custom exceptions, and assertions in Python.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/14-errors-and-exceptions/index.png">
       
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              14. Errors and Exceptions
+              Errors and Exceptions
             
           </span>
         </div>
@@ -160,13 +160,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -198,14 +196,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -250,7 +247,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -270,10 +267,8 @@
       <a href="../../index.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -289,13 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about.md" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -314,10 +307,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -342,46 +333,85 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -394,14 +424,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -433,10 +462,8 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Intro to Computer Science
-    
   </span>
   
 
@@ -456,10 +483,8 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Python Fundamentals
-    
   </span>
   
 
@@ -479,10 +504,8 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Boolean Logic
-    
   </span>
   
 
@@ -502,10 +525,8 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -525,10 +546,8 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. Working with Strings
-    
   </span>
   
 
@@ -548,10 +567,8 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -571,10 +588,8 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -594,10 +609,8 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -617,10 +630,8 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. Advanced List Operations
-    
   </span>
   
 
@@ -640,10 +651,8 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. Tuples and Sets
-    
   </span>
   
 
@@ -663,10 +672,8 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -686,10 +693,8 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Classes and Objects
-    
   </span>
   
 
@@ -709,10 +714,8 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Inheritance and Polymorphism
-    
   </span>
   
 
@@ -741,10 +744,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -754,10 +755,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -805,6 +804,276 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-errors-and-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Errors and Exceptions?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-types-of-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Types of Errors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Types of Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax Errors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-error-type-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Error Type Identifier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Runtime Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Errors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logic Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-types-of-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three Types of Errors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-exception-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Exception Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Exception Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typeerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      TypeError
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valueerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      ValueError
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      IndexError
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      KeyError
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="KeyError">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-python-exception-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Python Exception Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-exceptions-with-try-except" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling Exceptions with Try-Except
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Exceptions with Try-Except">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiple-except-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Except Blocks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Except Blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-try-except-block-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Try-Except Block Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-finally-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Finally Block
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Finally Block">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-try-except-finally-flow-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Try-Except-Finally Flow Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raising-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raising Exceptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Exceptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Exceptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-exception-handling-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Exception Handling Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assertions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assertions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-example-building-a-robust-input-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Example: Building a Robust Input System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -824,10 +1093,8 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. File Input and Output
-    
   </span>
   
 
@@ -847,10 +1114,8 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -870,10 +1135,8 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     17. Testing and Debugging
-    
   </span>
   
 
@@ -893,10 +1156,8 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     18. Searching and Sorting
-    
   </span>
   
 
@@ -916,10 +1177,8 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -939,10 +1198,8 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     20. Advanced Python
-    
   </span>
   
 
@@ -971,8 +1228,25 @@
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -986,14 +1260,11 @@
         
   
   
-  
     <a href="../../sims/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1058,7 +1329,6 @@
     
     
     
-    
       
         
         
@@ -1069,14 +1339,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1107,7 +1374,6 @@
     
     
     
-    
       
         
         
@@ -1118,14 +1384,11 @@
         
   
   
-  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1150,10 +1413,8 @@
       <a href="../../glossary.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1172,10 +1433,8 @@
       <a href="../../faq.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1194,10 +1453,8 @@
       <a href="../../references.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -1216,10 +1473,8 @@
       <a href="../../license.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1238,10 +1493,8 @@
       <a href="../../contact.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1303,6 +1556,276 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-errors-and-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Errors and Exceptions?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-types-of-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Types of Errors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Types of Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax Errors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-error-type-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Error Type Identifier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Runtime Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Errors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logic Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-types-of-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three Types of Errors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-exception-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Exception Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Exception Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typeerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      TypeError
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valueerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      ValueError
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      IndexError
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      KeyError
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="KeyError">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-python-exception-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Python Exception Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-exceptions-with-try-except" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling Exceptions with Try-Except
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Exceptions with Try-Except">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiple-except-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Except Blocks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Except Blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-try-except-block-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Try-Except Block Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-finally-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Finally Block
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Finally Block">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-try-except-finally-flow-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Try-Except-Finally Flow Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raising-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raising Exceptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Exceptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Exceptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-exception-handling-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Exception Handling Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assertions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assertions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-example-building-a-robust-input-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Example: Building a Robust Input System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1316,7 +1839,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/14-errors-and-exceptions/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1355,11 +1877,1351 @@
 <li><a href="../02-python-fundamentals/">Chapter 2: Python Fundamentals</a></li>
 <li><a href="../03-boolean-logic/">Chapter 3: Boolean Logic and Comparisons</a></li>
 <li><a href="../05-working-with-strings/">Chapter 5: Working with Strings</a></li>
+<li><a href="../08-lists/">Chapter 8: Lists</a></li>
 <li><a href="../11-dictionaries/">Chapter 11: Dictionaries</a></li>
 <li><a href="../12-classes-and-objects/">Chapter 12: Classes and Objects</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-welcome.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-welcome.png" width="80"></a>
+Hey coders! Let me let you in on a secret: <em>every</em> programmer makes mistakes. Even the pros who build apps used by millions of people. The difference between a beginner and an expert isn't that experts never get errors -- it's that experts know how to read them, understand them, and fix them. In this chapter, you'll learn to do exactly that. Let's turn those scary red error messages into helpful clues!</p>
+</div>
+<h2 id="what-are-errors-and-exceptions">What Are Errors and Exceptions?</h2>
+<p>When you write Python code, things don't always go as planned. Maybe you misspell a keyword, try to divide by zero, or look for an item that doesn't exist in a list. When something goes wrong, Python doesn't just silently give up -- it tells you about the problem by raising an <strong>error</strong> or <strong>exception</strong>.</p>
+<p><strong>Errors and exceptions</strong> are Python's way of saying, "Hey, something went wrong, and here's what happened." They're not punishments -- they're <em>messages</em>. Think of them like a dashboard warning light in a car. The light doesn't mean your car is ruined. It means your car is <em>telling you something needs attention</em>.</p>
+<p>Here's the good news: Python's error messages are actually quite helpful once you learn to read them. They tell you:</p>
+<ul>
+<li><strong>What</strong> went wrong (the error type)</li>
+<li><strong>Where</strong> it happened (the file and line number)</li>
+<li><strong>Why</strong> it happened (a description of the problem)</li>
+</ul>
+<p>Let's look at a quick example. Say you write this code:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello World"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Python responds with:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>  File "example.py", line 1
+    print("Hello World"
+                       ^
+SyntaxError: '(' was never closed
+</code></pre></div></td></tr></tbody></table></div>
+<p>See that? Python is pointing right at the problem -- you forgot the closing parenthesis. That's not scary; that's <em>helpful</em>.</p>
+<h2 id="the-three-types-of-errors">The Three Types of Errors</h2>
+<p>Not all errors are created equal. Python errors fall into three main categories, and understanding the difference between them is one of the most important skills you'll develop as a programmer.</p>
+<table>
+<thead>
+<tr>
+<th>Error Type</th>
+<th>When It Happens</th>
+<th>Can Python Catch It?</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Syntax Error</strong></td>
+<td>Before the program runs</td>
+<td>Yes -- won't even start</td>
+<td><code>print("hi"</code> (missing <code>)</code>)</td>
+</tr>
+<tr>
+<td><strong>Runtime Error</strong></td>
+<td>While the program is running</td>
+<td>Yes -- raises an exception</td>
+<td><code>10 / 0</code> (division by zero)</td>
+</tr>
+<tr>
+<td><strong>Logic Error</strong></td>
+<td>Program runs fine, but gives wrong results</td>
+<td>No -- Python can't detect it</td>
+<td>Using <code>+</code> when you meant <code>-</code></td>
+</tr>
+</tbody>
+</table>
+<p>Let's explore each one in detail.</p>
+<h3 id="syntax-errors">Syntax Errors</h3>
+<p>A <strong>syntax error</strong> happens when you break Python's grammar rules. Just like English has rules about where to put commas and periods, Python has rules about parentheses, colons, indentation, and keywords. If you break one of those rules, Python can't even <em>begin</em> to run your code.</p>
+<p>Syntax errors are the easiest to find because Python catches them <em>before</em> your program starts running and points right at the problem.</p>
+<p>Here are some common syntax errors:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Missing colon after if statement</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Big number"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>  File "example.py", line 1
+    if x &gt; 5
+            ^
+SyntaxError: expected ':'
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Misspelled keyword</span>
+<span class="n">fro</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>  File "example.py", line 1
+    fro i in range(10):
+        ^
+SyntaxError: invalid syntax
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Mismatched quotes</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s2">"Hello world'</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>  File "example.py", line 1
+    message = "Hello world'
+                           ^
+SyntaxError: EOL while scanning string literal
+</code></pre></div></td></tr></tbody></table></div>
+<p>The fix for syntax errors is straightforward: read the error message, look at the line it points to, and fix the typo or missing character. Think of it like a spell-checker for code.</p>
+<details>
+<summary>MicroSim: Error Type Identifier</summary>
+<h4 id="diagram-error-type-identifier">Diagram: Error Type Identifier</h4>
+<p>Type: microsim
+<strong>sim-id:</strong> error-type-identifier<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> classify, distinguish</p>
+<p><strong>Learning Objective:</strong> Students will be able to classify code snippets as containing syntax errors, runtime errors, or logic errors by analyzing the code and predicting the outcome.</p>
+<p><strong>Purpose:</strong> An interactive quiz where students are shown code snippets one at a time and must classify each as a syntax error, runtime error, or logic error. Immediate feedback explains why each classification is correct.</p>
+<p><strong>Layout:</strong>
+- Top section: Title "Error Type Identifier"
+- Middle: A code snippet displayed in a monospaced font box
+- Below the code: Three large clickable buttons labeled "Syntax Error", "Runtime Error", and "Logic Error"
+- Bottom: Feedback area showing whether the answer was correct, with an explanation
+- Score tracker in the top-right corner: "Correct: X / Total: Y"</p>
+<p><strong>Code snippets bank (10+ examples):</strong>
+1. <code>print("hello"</code> -- Syntax Error (missing closing parenthesis)
+2. <code>x = 10 / 0</code> -- Runtime Error (ZeroDivisionError)
+3. <code>average = (a + b + c) / 2</code> -- Logic Error (should divide by 3, not 2)
+4. <code>for i in range(10)</code> -- Syntax Error (missing colon)
+5. <code>names = ["Alice"]; print(names[5])</code> -- Runtime Error (IndexError)
+6. <code>area = length + width</code> -- Logic Error (should be multiplication)
+7. <code>x = int("hello")</code> -- Runtime Error (ValueError)
+8. <code>if x = 5:</code> -- Syntax Error (should be ==)
+9. <code>celsius = (fahrenheit - 32) * 9/5</code> -- Logic Error (should be * 5/9)
+10. <code>scores = {}; print(scores["math"])</code> -- Runtime Error (KeyError)</p>
+<p><strong>Interactive elements:</strong>
+- Click a category button to submit answer
+- Correct answers flash green; incorrect flash red
+- After answering, a 2-3 sentence explanation appears
+- "Next" button loads the next code snippet
+- Snippets are shuffled randomly each session</p>
+<p><strong>Visual style:</strong> Clean, dark code box with syntax highlighting, large accessible buttons
+<strong>Responsive:</strong> Canvas adjusts to window width; code font scales proportionally</p>
+<p><strong>Instructional Rationale:</strong> Classification tasks at the Understand level help students build a mental model for distinguishing error types. Immediate feedback with explanations reinforces why each error belongs to its category, building diagnostic skills students need for debugging.</p>
+</details>
+<h3 id="runtime-errors">Runtime Errors</h3>
+<p>A <strong>runtime error</strong> happens while your program is running. The code is grammatically correct (Python can read it just fine), but something goes wrong during execution. These errors are called <strong>exceptions</strong> because they represent <em>exceptional</em> situations that Python doesn't know how to handle on its own.</p>
+<p><strong>Runtime errors</strong> are trickier than syntax errors because they might not happen every time you run the program. A program might work perfectly with one set of inputs and crash with another.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># This works fine</span>
+<span class="n">numerator</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">denominator</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">numerator</span> <span class="o">/</span> <span class="n">denominator</span>  <span class="c1"># 5.0, no problem</span>
+
+<span class="c1"># But what if the user enters 0?</span>
+<span class="n">denominator</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">numerator</span> <span class="o">/</span> <span class="n">denominator</span>  <span class="c1"># BOOM!</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 6, in &lt;module&gt;
+    result = numerator / denominator
+             ~~~~~~~~~~^~~~~~~~~~~~~
+ZeroDivisionError: division by zero
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice that Python gives you a <strong>traceback</strong> -- a trail of breadcrumbs that shows you exactly where the error occurred. Learning to read tracebacks is like learning to read a map. The last line tells you <em>what</em> went wrong (<code>ZeroDivisionError: division by zero</code>), and the lines above tell you <em>where</em> it happened.</p>
+<h3 id="logic-errors">Logic Errors</h3>
+<p><strong>Logic errors</strong> are the sneakiest of the three. Your code runs without crashing, Python doesn't complain at all, but the <em>answer is wrong</em>. The program does exactly what you told it to do -- it's just that what you <em>told it</em> isn't what you <em>meant</em>.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Calculate the average of three test scores</span>
+<span class="n">score1</span> <span class="o">=</span> <span class="mi">85</span>
+<span class="n">score2</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">score3</span> <span class="o">=</span> <span class="mi">78</span>
+
+<span class="c1"># Oops! Dividing by 2 instead of 3</span>
+<span class="n">average</span> <span class="o">=</span> <span class="p">(</span><span class="n">score1</span> <span class="o">+</span> <span class="n">score2</span> <span class="o">+</span> <span class="n">score3</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your average is: </span><span class="si">{</span><span class="n">average</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Your average is: 126.5
+</code></pre></div></td></tr></tbody></table></div>
+<p>Python doesn't crash. There's no error message. But an average test score of 126.5? That's clearly wrong. The bug is dividing by 2 instead of 3, but Python has no way to know that -- it just does the math you asked for.</p>
+<p>Logic errors are the hardest to find because you don't get a helpful error message. You have to test your program carefully, check your results against what you <em>expect</em>, and trace through your code step by step to find where your logic went astray.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Here's how I remember the three error types: <strong>Syntax errors</strong> = you spoke bad grammar and Python couldn't understand you. <strong>Runtime errors</strong> = Python understood you but ran into a problem while doing what you asked. <strong>Logic errors</strong> = Python did exactly what you asked, but what you asked was wrong. The first two give you error messages. The third one? You're on your own, detective!</p>
+</div>
+<details>
+<summary>Diagram: Three Types of Errors Comparison</summary>
+<h4 id="diagram-three-types-of-errors">Diagram: Three Types of Errors</h4>
+<p>Type: infographic
+<strong>sim-id:</strong> error-types-comparison<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> compare, contrast</p>
+<p><strong>Learning Objective:</strong> Students will be able to compare and contrast syntax errors, runtime errors, and logic errors by identifying when each occurs, how Python reports them, and strategies for fixing them.</p>
+<p><strong>Purpose:</strong> A visual three-column comparison chart that students can hover over to see examples and explanations for each error type.</p>
+<p><strong>Layout:</strong>
+- Three vertical columns, evenly spaced
+- Column headers: "Syntax Error", "Runtime Error", "Logic Error"
+- Each column contains four rows: When It Happens, Python's Response, Example, How to Fix
+- Color-coded: Syntax = red, Runtime = orange, Logic = yellow</p>
+<p><strong>Column content:</strong></p>
+<p><strong>Syntax Error (Red):</strong>
+- When: Before the program runs
+- Python's Response: Points to the line with the problem, won't run at all
+- Example: <code>if x &gt; 5</code> (missing colon)
+- How to Fix: Read the error message, check the indicated line</p>
+<p><strong>Runtime Error (Orange):</strong>
+- When: While the program is running
+- Python's Response: Crashes with a traceback and exception name
+- Example: <code>10 / 0</code> (ZeroDivisionError)
+- How to Fix: Read the traceback, use try-except to handle it</p>
+<p><strong>Logic Error (Yellow):</strong>
+- When: Program runs successfully but gives wrong output
+- Python's Response: Nothing -- no error message at all
+- Example: Using <code>/ 2</code> instead of <code>/ 3</code> for an average
+- How to Fix: Test with known inputs, trace through code manually</p>
+<p><strong>Interactive elements:</strong>
+- Hover over any cell to see a larger tooltip with additional details and a second example
+- Click a column header to highlight that entire column
+- A "Quiz Me" button at the bottom shows a random code snippet and asks which error type it represents</p>
+<p><strong>Visual style:</strong> Clean grid with rounded borders, subtle gradients, clear typography
+<strong>Responsive:</strong> Columns stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Side-by-side comparison at the Understand level helps students distinguish between the three error types by directly contrasting their properties. The hover-to-reveal interaction supports deeper exploration without cluttering the initial view.</p>
+</details>
+<h2 id="common-exception-types">Common Exception Types</h2>
+<p>When a runtime error occurs, Python raises a specific type of exception that tells you exactly what kind of problem happened. Learning the common <strong>exception types</strong> is like learning to recognize different dashboard warning lights -- each one means something specific.</p>
+<p>Here are the most common exceptions you'll encounter:</p>
+<table>
+<thead>
+<tr>
+<th>Exception</th>
+<th>What It Means</th>
+<th>Common Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TypeError</code></td>
+<td>Wrong data type for an operation</td>
+<td>Adding a string to a number</td>
+</tr>
+<tr>
+<td><code>ValueError</code></td>
+<td>Right type but wrong value</td>
+<td>Converting <code>"hello"</code> to an integer</td>
+</tr>
+<tr>
+<td><code>IndexError</code></td>
+<td>List index out of range</td>
+<td>Accessing element 10 in a 5-element list</td>
+</tr>
+<tr>
+<td><code>KeyError</code></td>
+<td>Dictionary key doesn't exist</td>
+<td>Looking up a key that was never added</td>
+</tr>
+<tr>
+<td><code>ZeroDivisionError</code></td>
+<td>Division by zero</td>
+<td>Dividing by a variable that happens to be 0</td>
+</tr>
+<tr>
+<td><code>NameError</code></td>
+<td>Variable name not found</td>
+<td>Using a variable before defining it</td>
+</tr>
+<tr>
+<td><code>FileNotFoundError</code></td>
+<td>File doesn't exist</td>
+<td>Trying to open a file with a wrong path</td>
+</tr>
+<tr>
+<td><code>AttributeError</code></td>
+<td>Object doesn't have that attribute</td>
+<td>Calling <code>.append()</code> on a string</td>
+</tr>
+</tbody>
+</table>
+<p>Let's look at the four most important ones in detail.</p>
+<h3 id="typeerror">TypeError</h3>
+<p>A <strong>TypeError</strong> happens when you try to perform an operation on the wrong data type. It's like trying to use a key to unlock a combination lock -- the tool doesn't match the task.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Can't add a string and an integer</span>
+<span class="n">age</span> <span class="o">=</span> <span class="s2">"25"</span>
+<span class="n">new_age</span> <span class="o">=</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 2, in &lt;module&gt;
+    new_age = age + 1
+              ~~~~^~~
+TypeError: can only concatenate str (not "int") to str
+</code></pre></div></td></tr></tbody></table></div>
+<p>Python is telling you: "You tried to add an integer to a string, and I don't know what you mean by that." The fix? Convert the string to an integer first: <code>new_age = int(age) + 1</code>.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Can't multiply a string by a string</span>
+<span class="n">result</span> <span class="o">=</span> <span class="s2">"hello"</span> <span class="o">*</span> <span class="s2">"world"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 1, in &lt;module&gt;
+    result = "hello" * "world"
+             ~~~~~~~~^~~~~~~~~
+TypeError: can't multiply sequence by non-int of type 'str'
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="valueerror">ValueError</h3>
+<p>A <strong>ValueError</strong> happens when a function receives a value of the right <em>type</em> but the wrong <em>content</em>. The shape is correct, but the contents don't make sense.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># "hello" is a string, but it can't be converted to an integer</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 1, in &lt;module&gt;
+    number = int("hello")
+             ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'hello'
+</code></pre></div></td></tr></tbody></table></div>
+<p>This happens a lot when you're getting input from users. A user might type "abc" when you're expecting a number. Later in this chapter, you'll learn exactly how to handle that gracefully.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># The string "3.14" can't be directly converted to int</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">"3.14"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 1, in &lt;module&gt;
+    number = int("3.14")
+             ^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '3.14'
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="indexerror">IndexError</h3>
+<p>An <strong>IndexError</strong> happens when you try to access a list element using an index that doesn't exist. Remember, a list with 5 elements has indices 0 through 4. If you try to access index 5 (or higher), Python raises an IndexError.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 2, in &lt;module&gt;
+    print(fruits[5])
+          ~~~~~~^^^
+IndexError: list index out of range
+</code></pre></div></td></tr></tbody></table></div>
+<p>This is one of the most common errors in programming. It often shows up in loops where the loop counter goes one step too far. The classic mistake is called an <strong>off-by-one error</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">]</span>
+
+<span class="c1"># Bug: range(3) gives 0, 1, 2 -- but range(4) would give 0, 1, 2, 3</span>
+<span class="c1"># Index 3 doesn't exist in a 3-element list!</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>red
+green
+blue
+Traceback (most recent call last):
+  File "example.py", line 4, in &lt;module&gt;
+    print(colors[i])
+          ~~~~~~^^^
+IndexError: list index out of range
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="keyerror">KeyError</h3>
+<p>A <strong>KeyError</strong> happens when you try to look up a key in a dictionary that doesn't exist. It's like looking in the phone book for someone who isn't listed.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">[</span><span class="s2">"email"</span><span class="p">])</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 2, in &lt;module&gt;
+    print(student["email"])
+          ~~~~~~~^^^^^^^^^
+KeyError: 'email'
+</code></pre></div></td></tr></tbody></table></div>
+<p>The dictionary has "name" and "grade" but no "email". To avoid this, you can use the <code>.get()</code> method, which returns <code>None</code> (or a default value you specify) instead of crashing:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+
+<span class="c1"># Using .get() to safely access a key</span>
+<span class="n">email</span> <span class="o">=</span> <span class="n">student</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"email"</span><span class="p">,</span> <span class="s2">"No email on file"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">email</span><span class="p">)</span>  <span class="c1"># "No email on file"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<details>
+<summary>Diagram: Python Exception Hierarchy</summary>
+<h4 id="diagram-python-exception-hierarchy">Diagram: Python Exception Hierarchy</h4>
+<p>Type: infographic
+<strong>sim-id:</strong> exception-hierarchy<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Remember (L1)
+<strong>Bloom Verb:</strong> identify, list</p>
+<p><strong>Learning Objective:</strong> Students will be able to identify the hierarchy of Python's built-in exceptions and understand that all exceptions inherit from the BaseException class.</p>
+<p><strong>Purpose:</strong> An interactive tree diagram showing Python's exception class hierarchy, letting students explore how specific exceptions relate to more general exception categories.</p>
+<p><strong>Layout:</strong>
+- Tree structure flowing top to bottom
+- Root node: <code>BaseException</code>
+- Second level: <code>Exception</code>, <code>KeyboardInterrupt</code>, <code>SystemExit</code>
+- Third level (under <code>Exception</code>): <code>ArithmeticError</code>, <code>LookupError</code>, <code>TypeError</code>, <code>ValueError</code>, <code>OSError</code>
+- Fourth level: <code>ZeroDivisionError</code> (under <code>ArithmeticError</code>), <code>IndexError</code> and <code>KeyError</code> (under <code>LookupError</code>), <code>FileNotFoundError</code> (under <code>OSError</code>)</p>
+<p><strong>Tree nodes:</strong></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code>BaseException
+├── Exception
+│   ├── ArithmeticError
+│   │   ├── ZeroDivisionError
+│   │   └── OverflowError
+│   ├── LookupError
+│   │   ├── IndexError
+│   │   └── KeyError
+│   ├── TypeError
+│   ├── ValueError
+│   ├── OSError
+│   │   └── FileNotFoundError
+│   ├── NameError
+│   └── AttributeError
+├── KeyboardInterrupt
+└── SystemExit
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Interactive elements:</strong>
+- Hover over any node to see a brief description and an example that triggers that exception
+- Click a node to highlight it and all its parent nodes up to <code>BaseException</code>, showing the inheritance chain
+- A "Why does this matter?" tooltip explains that catching a parent exception also catches all its children</p>
+<p><strong>Color scheme:</strong>
+- <code>BaseException</code>: gray
+- <code>Exception</code>: blue
+- <code>ArithmeticError</code> branch: red
+- <code>LookupError</code> branch: orange
+- <code>TypeError</code>, <code>ValueError</code>: purple
+- <code>OSError</code> branch: green</p>
+<p><strong>Visual style:</strong> Rounded rectangle nodes with connecting lines, subtle animations on hover
+<strong>Responsive:</strong> Tree adjusts layout for narrow screens; nodes may reflow vertically</p>
+<p><strong>Instructional Rationale:</strong> A tree visualization makes the inheritance relationship between exceptions concrete and visible. Understanding that <code>IndexError</code> is a type of <code>LookupError</code> which is a type of <code>Exception</code> helps students write more targeted except blocks and understand why catching <code>Exception</code> catches almost everything.</p>
+</details>
+<h2 id="handling-exceptions-with-try-except">Handling Exceptions with Try-Except</h2>
+<p>So far, when an error happens, your program crashes. That's fine when you're learning, but in real software, you don't want your app to crash every time something unexpected happens. Imagine if your music player crashed every time it couldn't find a song file!</p>
+<p>The <strong>try-except block</strong> is Python's way of saying: "Try to run this code. If something goes wrong, don't crash -- run this <em>other</em> code instead." It's like having a backup plan.</p>
+<p>Here's the basic structure:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="c1"># Code that might cause an error</span>
+    <span class="n">risky_code_here</span><span class="p">()</span>
+<span class="k">except</span> <span class="n">SomeException</span><span class="p">:</span>
+    <span class="c1"># Code that runs if the error happens</span>
+    <span class="n">handle_the_problem</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Let's see it in action with a real example -- getting a number from the user:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a number: "</span><span class="p">)</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You entered: </span><span class="si">{</span><span class="n">number</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"That's not a valid number! Please try again."</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>If the user types <code>42</code>, the program works normally. But if the user types <code>"pizza"</code>, instead of crashing with a ValueError, the program prints a friendly message: "That's not a valid number! Please try again."</p>
+<p>Here's another example -- safe division:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">safe_divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Oops! You can't divide by zero."</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">safe_divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>   <span class="c1"># 3.333...</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">safe_divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>   <span class="c1"># Prints message, returns None</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The <code>try</code> block contains the code that <em>might</em> fail. The <code>except</code> block catches the specific exception and handles it. Your program keeps running instead of crashing.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-tip.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-tip.png" width="80"></a>
+Always catch <em>specific</em> exceptions, not just any exception. Writing <code>except:</code> with no exception type is like telling a doctor "something hurts" without saying where. Specific except blocks help you handle each problem in the right way. For example, <code>except ValueError</code> handles bad input differently from <code>except FileNotFoundError</code> which handles a missing file.</p>
+</div>
+<h3 id="multiple-except-blocks">Multiple Except Blocks</h3>
+<p>What if your code could raise <em>different</em> types of exceptions? You can use <strong>multiple except blocks</strong> to handle each one differently. It's like having multiple backup plans -- one for each type of problem.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">process_student_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">student</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">student</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span>
+        <span class="n">grade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">student</span><span class="p">[</span><span class="s2">"grade"</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> is in grade </span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: No student at position </span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: Missing field </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2"> in student record."</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error: Grade must be a number."</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">students</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="s2">"10"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Bob"</span><span class="p">},</span>  <span class="c1"># missing "grade"</span>
+<span class="p">]</span>
+
+<span class="n">process_student_data</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Works: Alice is in grade 10</span>
+<span class="n">process_student_data</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># KeyError: Missing field 'grade'</span>
+<span class="n">process_student_data</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># IndexError: No student at position 5</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice the <code>as e</code> in <code>except KeyError as e</code>. This captures the exception object in the variable <code>e</code> so you can include details about what went wrong in your error message. Very handy!</p>
+<p>You can also catch multiple exception types in a single except block using a tuple:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="c1"># some code</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a number: "</span><span class="p">))</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">/</span> <span class="n">value</span>
+<span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">ZeroDivisionError</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter a valid non-zero number."</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<details>
+<summary>MicroSim: Try-Except Block Builder</summary>
+<h4 id="diagram-try-except-block-builder">Diagram: Try-Except Block Builder</h4>
+<p>Type: microsim
+<strong>sim-id:</strong> try-except-builder<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> construct, implement</p>
+<p><strong>Learning Objective:</strong> Students will be able to construct try-except blocks by dragging code statements into the correct positions within a try-except structure.</p>
+<p><strong>Purpose:</strong> A drag-and-drop interactive where students build try-except blocks by placing code statements into the correct sections (try block, except block, or outside the block).</p>
+<p><strong>Layout:</strong>
+- Left side: A "Code Bank" panel containing draggable code statement cards
+- Right side: A try-except template with labeled drop zones: "try:", "except [Type]:", and "after try-except"
+- Bottom: A "Run" button that simulates execution and shows output
+- Top-right: Score display</p>
+<p><strong>Scenarios (3-5 rounds):</strong></p>
+<p>Round 1 - Safe Input:
+- Code bank: <code>user_input = input("Enter age: ")</code>, <code>age = int(user_input)</code>, <code>print("Invalid input")</code>, <code>print(f"Age: {age}")</code>
+- Expected: <code>user_input</code> and <code>int()</code> in try, <code>print("Invalid")</code> in except ValueError, <code>print(f"Age")</code> in try after conversion</p>
+<p>Round 2 - Safe List Access:
+- Code bank: <code>items = [1, 2, 3]</code>, <code>print(items[index])</code>, <code>print("Index out of range")</code>, <code>index = int(input("Index: "))</code>
+- Expected: list access in try, error message in except IndexError</p>
+<p>Round 3 - Safe File Read:
+- Code bank: <code>file = open("data.txt")</code>, <code>content = file.read()</code>, <code>print("File not found")</code>, <code>print(content)</code>
+- Expected: open and read in try, error message in except FileNotFoundError</p>
+<p><strong>Interactive elements:</strong>
+- Drag code cards from the bank into drop zones
+- Drop zones highlight when a card is dragged over them
+- "Run" button simulates execution with sample inputs (both valid and invalid)
+- Shows simulated output for both success and error cases
+- "Check" button validates the arrangement and provides feedback
+- "Next Round" advances to the next scenario</p>
+<p><strong>Visual style:</strong> Card-based UI with color-coded sections (try=blue tint, except=red tint)
+<strong>Responsive:</strong> Stacks vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Construction tasks at the Apply level require students to actively decide which code goes where in a try-except structure. The drag-and-drop interface makes the spatial structure of exception handling visible. Running the simulation with both valid and invalid inputs shows students how try-except alters program flow.</p>
+</details>
+<h3 id="the-finally-block">The Finally Block</h3>
+<p>Sometimes you have code that needs to run <em>no matter what</em> -- whether the try block succeeds or an exception is raised. That's what the <strong>finally block</strong> is for.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">read_file_safely</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="n">file</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Sorry, '</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">' doesn't exist."</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">file</span><span class="p">:</span>
+            <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"File closed."</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Done!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The <code>finally</code> block runs whether the file was opened successfully or not. This is especially important for <strong>cleanup tasks</strong> like closing files, shutting down network connections, or releasing resources. You don't want to leave files open just because an error happened somewhere.</p>
+<p>Here's the execution flow:</p>
+<ol>
+<li>Python runs the <code>try</code> block</li>
+<li>If an exception occurs, Python jumps to the matching <code>except</code> block</li>
+<li>Whether or not an exception occurred, Python <em>always</em> runs the <code>finally</code> block</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Example showing finally always runs</span>
+<span class="k">def</span> <span class="nf">demonstrate_finally</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Step 1: Trying something risky..."</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>  <span class="c1"># This will crash</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Step 2: This never runs"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Step 3: Caught the error!"</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Step 4: Finally block ALWAYS runs!"</span><span class="p">)</span>
+
+<span class="n">demonstrate_finally</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Step 1: Trying something risky...
+Step 3: Caught the error!
+Step 4: Finally block ALWAYS runs!
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice that "Step 2" never printed because the exception happened before it. But "Step 4" printed because <code>finally</code> always runs.</p>
+<p>You can also combine <code>try</code>, <code>except</code>, <code>else</code>, and <code>finally</code> together:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a number: "</span><span class="p">))</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"That's not a number!"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># This only runs if NO exception occurred</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Great! You entered </span><span class="si">{</span><span class="n">number</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="c1"># This ALWAYS runs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Thanks for playing!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<details>
+<summary>Diagram: Try-Except-Finally Flow Chart</summary>
+<h4 id="diagram-try-except-finally-flow-chart">Diagram: Try-Except-Finally Flow Chart</h4>
+<p>Type: infographic
+<strong>sim-id:</strong> try-except-flow<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> trace, explain</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace the execution flow through try-except-else-finally blocks, predicting which blocks execute under different conditions.</p>
+<p><strong>Purpose:</strong> An animated flowchart that shows how Python decides which blocks to execute in a try-except-else-finally structure, with the ability to simulate both success and failure paths.</p>
+<p><strong>Layout:</strong>
+- Flowchart from top to bottom
+- Nodes: "Start" -&gt; "try block" -&gt; Diamond decision "Exception?" -&gt; Yes branch to "except block" / No branch to "else block" -&gt; Both converge at "finally block" -&gt; "End"
+- Each node is a rounded rectangle; the decision is a diamond</p>
+<p><strong>Flowchart paths:</strong></p>
+<p>Path A (No exception):
+Start -&gt; try block (completes) -&gt; Exception? NO -&gt; else block -&gt; finally block -&gt; End</p>
+<p>Path B (Exception caught):
+Start -&gt; try block (exception!) -&gt; Exception? YES -&gt; Matching except? YES -&gt; except block -&gt; finally block -&gt; End</p>
+<p>Path C (Exception not caught):
+Start -&gt; try block (exception!) -&gt; Exception? YES -&gt; Matching except? NO -&gt; finally block -&gt; Error propagates up</p>
+<p><strong>Interactive elements:</strong>
+- Two buttons: "Simulate Success" and "Simulate Error"
+- Clicking either button animates a colored dot traveling through the flowchart along the appropriate path
+- Each node highlights as the dot reaches it, with a brief pause and a text bubble showing what happens at that step
+- "Step Through" mode lets students advance one node at a time
+- A code panel on the side shows corresponding Python code with the current line highlighted</p>
+<p><strong>Color scheme:</strong>
+- try block: blue
+- except block: red
+- else block: green
+- finally block: purple
+- Connecting arrows: gray
+- Animated dot: gold</p>
+<p><strong>Visual style:</strong> Clean flowchart with rounded nodes, animated connecting arrows
+<strong>Responsive:</strong> Flowchart scales to fit window; nodes reposition proportionally</p>
+<p><strong>Instructional Rationale:</strong> Flowcharts make abstract control flow visible and concrete. Animating the execution path helps students build a mental model of how Python navigates through try-except-else-finally structures. The ability to compare success and failure paths side-by-side reinforces the understanding that <code>finally</code> always executes.</p>
+</details>
+<h2 id="raising-exceptions">Raising Exceptions</h2>
+<p>So far, you've been <em>catching</em> exceptions that Python raises. But you can also <em>raise</em> your own exceptions on purpose. Why would you do that? Because sometimes <em>you</em> know something is wrong even though Python doesn't.</p>
+<p><strong>Raising exceptions</strong> lets you enforce rules in your code. It's like a bouncer at a club -- even if someone has a valid ID (correct data type), the bouncer can still turn them away if they're not on the guest list (invalid value for your specific purpose).</p>
+<p>You raise an exception using the <code>raise</code> keyword:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">set_age</span><span class="p">(</span><span class="n">age</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Age cannot be negative!"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">150</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Age seems unrealistic!"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">age</span>
+
+<span class="c1"># This works fine</span>
+<span class="n">my_age</span> <span class="o">=</span> <span class="n">set_age</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>  <span class="c1"># 16</span>
+
+<span class="c1"># This raises an exception</span>
+<span class="n">my_age</span> <span class="o">=</span> <span class="n">set_age</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 8, in &lt;module&gt;
+    my_age = set_age(-5)
+  File "example.py", line 3, in set_age
+    raise ValueError("Age cannot be negative!")
+ValueError: Age cannot be negative!
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's a more practical example -- a function that validates a student's grade:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">record_grade</span><span class="p">(</span><span class="n">student_name</span><span class="p">,</span> <span class="n">grade</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">grade</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grade must be a number, got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">grade</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">grade</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">grade</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grade must be between 0 and 100, got </span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Recorded grade </span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2"> for </span><span class="si">{</span><span class="n">student_name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># These work</span>
+<span class="n">record_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">95</span><span class="p">)</span>    <span class="c1"># Recorded grade 95 for Alice</span>
+<span class="n">record_grade</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mf">87.5</span><span class="p">)</span>    <span class="c1"># Recorded grade 87.5 for Bob</span>
+
+<span class="c1"># These raise exceptions</span>
+<span class="n">record_grade</span><span class="p">(</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="s2">"A+"</span><span class="p">)</span>   <span class="c1"># TypeError</span>
+<span class="n">record_grade</span><span class="p">(</span><span class="s2">"Diana"</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>      <span class="c1"># ValueError</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Monty says: Watch out!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-warning.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-warning.png" width="80"></a>
+A common mistake is catching an exception and then silently ignoring it. <strong>Don't do this:</strong> <code>except: pass</code>. It's like putting tape over the engine warning light in your car instead of fixing the engine. At minimum, log the error or print a message so you know something went wrong. Silent failures are much harder to debug than loud ones!</p>
+</div>
+<h2 id="custom-exceptions">Custom Exceptions</h2>
+<p>Python's built-in exceptions cover most common cases, but sometimes you need an exception that's specific to your program. <strong>Custom exceptions</strong> let you create your own exception types that describe problems unique to your application.</p>
+<p>Creating a custom exception is surprisingly simple. You just create a new class that inherits from <code>Exception</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">InvalidGradeError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Raised when a grade is outside the valid range."""</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">StudentNotFoundError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Raised when a student doesn't exist in the system."""</span>
+    <span class="k">pass</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Now you can raise and catch your custom exceptions just like built-in ones:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">InvalidGradeError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Raised when a grade is outside the valid range."""</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">StudentNotFoundError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Raised when a student doesn't exist in the system."""</span>
+    <span class="k">pass</span>
+
+<span class="c1"># A simple gradebook</span>
+<span class="n">gradebook</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"Alice"</span><span class="p">:</span> <span class="mi">92</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">:</span> <span class="mi">85</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">update_grade</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">grade</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">gradebook</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">StudentNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No student named '</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">' in the gradebook"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">grade</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">grade</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">InvalidGradeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grade </span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2"> is not between 0 and 100"</span><span class="p">)</span>
+    <span class="n">gradebook</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">grade</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Updated </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">'s grade to </span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Using it with try-except</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">update_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">95</span><span class="p">)</span>     <span class="c1"># Works fine</span>
+    <span class="n">update_grade</span><span class="p">(</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="mi">88</span><span class="p">)</span>   <span class="c1"># StudentNotFoundError!</span>
+<span class="k">except</span> <span class="n">StudentNotFoundError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Student error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">InvalidGradeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grade error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Updated Alice's grade to 95
+Student error: No student named 'Charlie' in the gradebook
+</code></pre></div></td></tr></tbody></table></div>
+<p>Custom exceptions make your code more <em>readable</em> and more <em>precise</em>. Instead of raising a generic <code>ValueError</code> for every kind of problem, you can create specific exception types that tell other developers (and your future self) exactly what went wrong.</p>
+<p>Here's a good naming convention: always end your custom exception names with <code>Error</code> (e.g., <code>InvalidGradeError</code>, <code>InsufficientFundsError</code>, <code>PasswordTooWeakError</code>). This makes it clear that the class is an exception.</p>
+<p>You can also add custom attributes to your exceptions:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">InsufficientFundsError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">balance</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">balance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">amount</span> <span class="o">=</span> <span class="n">amount</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">deficit</span> <span class="o">=</span> <span class="n">amount</span> <span class="o">-</span> <span class="n">balance</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">"Cannot withdraw $</span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s2">. "</span>
+            <span class="sa">f</span><span class="s2">"Balance: $</span><span class="si">{</span><span class="n">balance</span><span class="si">}</span><span class="s2">. "</span>
+            <span class="sa">f</span><span class="s2">"Short by: $</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">deficit</span><span class="si">}</span><span class="s2">"</span>
+        <span class="p">)</span>
+
+<span class="c1"># Using the custom exception</span>
+<span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="n">balance</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">amount</span> <span class="o">&gt;</span> <span class="n">balance</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">InsufficientFundsError</span><span class="p">(</span><span class="n">balance</span><span class="p">,</span> <span class="n">amount</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">balance</span> <span class="o">-</span> <span class="n">amount</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">new_balance</span> <span class="o">=</span> <span class="n">withdraw</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">75</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">InsufficientFundsError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You need $</span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">deficit</span><span class="si">}</span><span class="s2"> more"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Cannot withdraw $75. Balance: $50. Short by: $25
+You need $25 more
+</code></pre></div></td></tr></tbody></table></div>
+<details>
+<summary>MicroSim: Exception Handling Simulator</summary>
+<h4 id="diagram-exception-handling-simulator">Diagram: Exception Handling Simulator</h4>
+<p>Type: microsim
+<strong>sim-id:</strong> exception-handling-sim<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> predict, trace</p>
+<p><strong>Learning Objective:</strong> Students will be able to predict the output of Python code containing try-except-else-finally blocks with various exception scenarios by tracing through the code execution flow.</p>
+<p><strong>Purpose:</strong> An interactive code execution simulator where students trace through exception handling code step-by-step, predicting what each line will do and whether exceptions will be raised.</p>
+<p><strong>Layout:</strong>
+- Left panel: Python code with line numbers, current line highlighted
+- Right panel: Output console showing printed output
+- Bottom panel: "What happens next?" question with multiple choice options
+- Top bar: Scenario selector dropdown and progress indicator</p>
+<p><strong>Scenarios (5+):</strong></p>
+<p>Scenario 1 - Basic try-except:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>try:
+    x = int("hello")
+    print("Success")
+except ValueError:
+    print("Bad value")
+finally:
+    print("Done")
+</code></pre></div></td></tr></tbody></table></div>
+Expected output: "Bad value" then "Done"<p></p>
+<p>Scenario 2 - No exception:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>try:
+    x = int("42")
+    print(f"Got {x}")
+except ValueError:
+    print("Bad value")
+else:
+    print("No errors!")
+finally:
+    print("Done")
+</code></pre></div></td></tr></tbody></table></div>
+Expected output: "Got 42" then "No errors!" then "Done"<p></p>
+<p>Scenario 3 - Multiple except blocks:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>data = {"name": "Alice"}
+try:
+    age = data["age"]
+    result = 100 / age
+except KeyError:
+    print("Key missing")
+except ZeroDivisionError:
+    print("Can't divide by zero")
+</code></pre></div></td></tr></tbody></table></div>
+Expected output: "Key missing"<p></p>
+<p>Scenario 4 - Raising exceptions:
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>def check_age(age):
+    if age &lt; 0:
+        raise ValueError("Negative age")
+    return age
+
+try:
+    check_age(-5)
+except ValueError as e:
+    print(f"Error: {e}")
+</code></pre></div></td></tr></tbody></table></div>
+Expected output: "Error: Negative age"<p></p>
+<p><strong>Interactive elements:</strong>
+- "Step" button advances execution one line at a time
+- Current line highlighted in yellow; executed lines in green; skipped lines in gray
+- Before each step, a "What happens next?" popup asks the student to predict
+- Options: "This line executes normally", "This line raises an exception", "This line is skipped"
+- Immediate feedback on predictions
+- Output console updates in real-time as lines execute
+- "Reset" button restarts the current scenario</p>
+<p><strong>Visual style:</strong> IDE-like appearance with dark code panel and light output panel
+<strong>Responsive:</strong> Panels stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Step-by-step execution tracing at the Analyze level requires students to predict program behavior rather than just observe it. The prediction-before-reveal pattern activates metacognition and helps students build accurate mental models of exception handling flow. Multiple scenarios cover the major patterns (exception raised, no exception, multiple except blocks, raise keyword).</p>
+</details>
+<h2 id="assertions">Assertions</h2>
+<p>The last tool in your error-handling toolkit is the <strong>assertion</strong>. An assertion is a sanity check -- a statement that <em>should</em> be true at a specific point in your code. If the assertion is true, nothing happens and your program continues. If it's false, Python raises an <code>AssertionError</code>.</p>
+<p>Think of assertions as little notes you leave for yourself: "At this point, I'm <em>certain</em> this should be true. If it's not, something has gone terribly wrong."</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"Cannot average an empty list!"</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+
+<span class="c1"># This works</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">calculate_average</span><span class="p">([</span><span class="mi">85</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">78</span><span class="p">]))</span>  <span class="c1"># 84.33...</span>
+
+<span class="c1"># This triggers the assertion</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">calculate_average</span><span class="p">([]))</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
+  File "example.py", line 6, in &lt;module&gt;
+    print(calculate_average([]))
+  File "example.py", line 2, in calculate_average
+    assert len(scores) &gt; 0, "Cannot average an empty list!"
+AssertionError: Cannot average an empty list!
+</code></pre></div></td></tr></tbody></table></div>
+<p>The syntax for <code>assert</code> is:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">assert</span> <span class="n">condition</span><span class="p">,</span> <span class="s2">"Optional error message"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's when to use assertions vs. exceptions:</p>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Use Assert</th>
+<th>Use Try-Except</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Checking your own code's logic</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Handling user input</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Catching unexpected states during development</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Handling network or file errors</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Validating function arguments in your own code</td>
+<td>Yes</td>
+<td>Sometimes</td>
+</tr>
+</tbody>
+</table>
+<p>Assertions are primarily a <strong>debugging tool</strong>. They help you catch bugs during development by verifying assumptions. They're <em>not</em> meant to handle user input or expected runtime problems -- that's what try-except is for.</p>
+<p>Here's a practical example:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">apply_discount</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">discount_percent</span><span class="p">):</span>
+    <span class="c1"># These should ALWAYS be true if our code is correct</span>
+    <span class="k">assert</span> <span class="n">price</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"Price can't be negative: </span><span class="si">{</span><span class="n">price</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">discount_percent</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"Discount must be 0-100: </span><span class="si">{</span><span class="n">discount_percent</span><span class="si">}</span><span class="s2">"</span>
+
+    <span class="n">discounted_price</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">discount_percent</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
+
+    <span class="c1"># The result should never be negative</span>
+    <span class="k">assert</span> <span class="n">discounted_price</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"Bug: discounted price is negative!"</span>
+
+    <span class="k">return</span> <span class="n">discounted_price</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">apply_discount</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>  <span class="c1"># 80.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">apply_discount</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>   <span class="c1"># 45.0</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-celebrates.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-celebrates.png" width="80"></a>
+Congrats, coder! You now know how to handle every kind of error Python can throw at you. Syntax errors? Read the message and fix the typo. Runtime errors? Catch them with try-except. Logic errors? Test carefully and trace your code. You've leveled up your debugging skills big time. Go forth and write fearless code!</p>
+</div>
+<h2 id="real-world-example-building-a-robust-input-system">Real-World Example: Building a Robust Input System</h2>
+<p>Let's put everything together by building a function that safely gets a number from the user. This is something you'll use in nearly every interactive program:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">InputRangeError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Raised when input is outside the acceptable range."""</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">max_val</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">min_val</span> <span class="o">=</span> <span class="n">min_val</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_val</span> <span class="o">=</span> <span class="n">max_val</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2"> is not between </span><span class="si">{</span><span class="n">min_val</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">max_val</span><span class="si">}</span><span class="s2">"</span>
+        <span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_number</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">min_val</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_val</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_attempts</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Safely get a number from the user with validation."""</span>
+    <span class="n">attempts</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="n">attempts</span> <span class="o">&lt;</span> <span class="n">max_attempts</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+            <span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
+
+            <span class="c1"># Check range if specified</span>
+            <span class="k">if</span> <span class="n">min_val</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">max_val</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="n">min_val</span> <span class="ow">or</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="n">max_val</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="n">InputRangeError</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">max_val</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">number</span>
+
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"'</span><span class="si">{</span><span class="n">user_input</span><span class="si">}</span><span class="s2">' is not a valid number. Try again."</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">InputRangeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Out of range: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">. Try again."</span><span class="p">)</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">attempts</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Too many failed attempts (</span><span class="si">{</span><span class="n">max_attempts</span><span class="si">}</span><span class="s2">)."</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+<span class="c1"># Using the function</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">"Enter your test score (0-100): "</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">score</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Score recorded: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"No score recorded."</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This example uses:</p>
+<ul>
+<li>A <strong>custom exception</strong> (<code>InputRangeError</code>) for out-of-range values</li>
+<li>A <strong>try-except block</strong> to catch invalid input</li>
+<li><strong>Multiple except blocks</strong> for different error types</li>
+<li>A <strong>finally block</strong> to count attempts no matter what happens</li>
+<li>The <strong>raise</strong> keyword to enforce business rules</li>
+</ul>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li><strong>Errors and exceptions</strong> are Python's way of telling you something went wrong -- they're helpful messages, not punishments.</li>
+<li><strong>Syntax errors</strong> happen before your program runs (bad grammar), <strong>runtime errors</strong> happen during execution (unexpected situations), and <strong>logic errors</strong> produce wrong results without any error message.</li>
+<li>Common <strong>exception types</strong> include <strong>TypeError</strong> (wrong data type), <strong>ValueError</strong> (wrong value), <strong>IndexError</strong> (list index out of range), and <strong>KeyError</strong> (dictionary key not found).</li>
+<li>The <strong>try-except block</strong> catches exceptions and lets your program handle them gracefully instead of crashing.</li>
+<li>Use <strong>multiple except blocks</strong> to handle different exception types differently.</li>
+<li>The <strong>finally block</strong> always runs, making it perfect for cleanup tasks like closing files.</li>
+<li><strong>Raising exceptions</strong> with <code>raise</code> lets you enforce rules and signal problems in your own code.</li>
+<li><strong>Custom exceptions</strong> are classes that inherit from <code>Exception</code> and describe problems specific to your program.</li>
+<li><strong>Assertions</strong> are debugging sanity checks that verify your assumptions about your code's state.</li>
+<li>Even the best programmers make errors -- the skill is knowing how to read the error messages and handle them.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What's the difference between a syntax error and a runtime error?</summary>
+<p>A <strong>syntax error</strong> happens <em>before</em> your program runs. Python can't even start executing the code because the grammar is wrong (like a missing colon or unmatched parenthesis). A <strong>runtime error</strong> happens <em>while</em> the program is running. The code is grammatically correct, but something goes wrong during execution (like dividing by zero or accessing an index that doesn't exist). Syntax errors are caught immediately; runtime errors only show up when the problematic line actually executes.</p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: What does the <code>finally</code> block do, and when does it run?</summary>
+<p>The <code>finally</code> block contains code that runs <strong>no matter what</strong> -- whether the <code>try</code> block succeeds, whether an exception is raised and caught, or even whether an exception is raised and <em>not</em> caught. It's used for cleanup tasks like closing files, releasing resources, or printing a final message. In a <code>try-except-finally</code> structure, <code>finally</code> always runs last.</p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: Write a custom exception called <code>NegativeNumberError</code> and a function that raises it.</summary>
+<p>Here's one way to do it:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">NegativeNumberError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Raised when a negative number is provided."""</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">square_root</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">NegativeNumberError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">"Cannot take square root of </span><span class="si">{</span><span class="n">number</span><span class="si">}</span><span class="s2">"</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">number</span> <span class="o">**</span> <span class="mf">0.5</span>
+
+<span class="c1"># Test it:</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">square_root</span><span class="p">(</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">NegativeNumberError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="c1"># Output: Error: Cannot take square root of -9</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The custom exception class inherits from <code>Exception</code> and ends with <code>Error</code> by convention. The function checks for invalid input and raises the custom exception with a descriptive message.</p>
+</details>
 
 
 
@@ -1454,12 +3316,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       
