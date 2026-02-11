@@ -245,3 +245,19 @@ Authors use standard admonition syntax with these custom types:
 
 **Important:** Monty should appear no more than 5-6 times per chapter.
 Don't place mascot admonitions back-to-back.
+
+## Cover Image
+
+Create a wide landscape textbook cover for “Computer Science (with Python)”.
+High resolution, 1.91:1 aspect ratio for use on open graph social media preview.
+
+Layout: left 15% features the mascot Monty the Python; center has the title text “Computer Science (with Python)” in clean, modern lettering; background is a subtle montage/collage of course concepts. 
+
+Color theme: bright green and gold accents (Monty’s colors), with clean, readable contrast. Mascot: use the provided Monty image as a reference; he is a friendly bright green python wearing a small gold coding hoodie and gold headphones, warm and welcoming expression. 
+
+Background collage elements (soft, semi‑transparent, layered): - code snippets and braces, Python iconography - algorithms (flowchart arrows, binary search tree outlines, sorting bars) - data structures (lists, dictionaries, sets, nodes) - recursion (self‑similar spiral or nested call stack blocks) - testing/debugging (magnifying glass, checkmarks, bug icon) - computational thinking (lightbulb, gears) - file I/O (document/page icon, file paths) Keep the collage subtle so the title remains the focal point. 
+
+Style: clean, modern educational cover; gentle gradients; light background; professional yet friendly. No extra text besides the title.
+
+
+
