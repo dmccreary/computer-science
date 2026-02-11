@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="description" content="Lambda functions, map/filter/reduce, function composition, recursive thinking, and call stack tracing in Python.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>7. Higher-Order Functions - Computer Science</title>
+        <title>Higher-Order Functions and Recursion - Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,9 +62,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="7. Higher-Order Functions - Computer Science">
+        <meta property="og:title" content="Higher-Order Functions and Recursion - Computer Science">
       
-        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta property="og:description" content="Lambda functions, map/filter/reduce, function composition, recursive thinking, and call stack tracing in Python.">
       
         <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/07-higher-order-functions-and-recursion/index.png">
       
@@ -78,9 +78,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="7. Higher-Order Functions - Computer Science">
+        <meta name="twitter:title" content="Higher-Order Functions and Recursion - Computer Science">
       
-        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="twitter:description" content="Lambda functions, map/filter/reduce, function composition, recursive thinking, and call stack tracing in Python.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/07-higher-order-functions-and-recursion/index.png">
       
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7. Higher-Order Functions
+              Higher-Order Functions and Recursion
             
           </span>
         </div>
@@ -160,13 +160,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -198,14 +196,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -250,7 +247,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -270,10 +267,8 @@
       <a href="../../index.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -289,13 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about.md" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -314,10 +307,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -342,46 +333,85 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -394,14 +424,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -433,10 +462,8 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Intro to Computer Science
-    
   </span>
   
 
@@ -456,10 +483,8 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Python Fundamentals
-    
   </span>
   
 
@@ -479,10 +504,8 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Boolean Logic
-    
   </span>
   
 
@@ -502,10 +525,8 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -525,10 +546,8 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. Working with Strings
-    
   </span>
   
 
@@ -548,10 +567,8 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -580,10 +597,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -593,10 +608,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -644,6 +657,330 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#writing-professional-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Professional Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Professional Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helper-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helper Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-main-function-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Main Function Pattern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lambda-functions-functions-in-a-single-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lambda Functions: Functions in a Single Line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher-Order Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Higher-Order Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-higher-order-functions-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Higher-Order Functions Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-map-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Map Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-filter-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Filter Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-reduce-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Reduce Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Reduce Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-map-filter-reduce-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Map Filter Reduce Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-composition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Composition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion-functions-that-call-themselves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion: Functions That Call Themselves
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursion: Functions That Call Themselves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Base Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursive-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classic-example-factorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classic Example: Factorial
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classic Example: Factorial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-factorial-recursion-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Factorial Recursion Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-recursive-call-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Recursive Call Stack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Recursive Call Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-recursive-call-stack-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Recursive Call Stack Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-overflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Overflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion-vs-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion vs. Iteration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursive-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursive Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern-1-linear-recursion-factorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 1: Linear Recursion (Factorial)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-2-tree-recursion-fibonacci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 2: Tree Recursion (Fibonacci)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-3-divide-and-conquer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 3: Divide and Conquer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-4-accumulator-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 4: Accumulator Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pattern 4: Accumulator Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-fibonacci-tree-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Fibonacci Tree Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-it-all-higher-order-functions-meet-recursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining It All: Higher-Order Functions Meet Recursion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combining It All: Higher-Order Functions Meet Recursion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-recursion-vs-iteration-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Recursion vs Iteration Side-by-Side
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -663,10 +1000,8 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -686,10 +1021,8 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. Advanced List Operations
-    
   </span>
   
 
@@ -709,10 +1042,8 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. Tuples and Sets
-    
   </span>
   
 
@@ -732,10 +1063,8 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -755,10 +1084,8 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Classes and Objects
-    
   </span>
   
 
@@ -778,10 +1105,8 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Inheritance and Polymorphism
-    
   </span>
   
 
@@ -801,10 +1126,8 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -824,10 +1147,8 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. File Input and Output
-    
   </span>
   
 
@@ -847,10 +1168,8 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -870,10 +1189,8 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     17. Testing and Debugging
-    
   </span>
   
 
@@ -893,10 +1210,8 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     18. Searching and Sorting
-    
   </span>
   
 
@@ -916,10 +1231,8 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -939,10 +1252,8 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     20. Advanced Python
-    
   </span>
   
 
@@ -971,8 +1282,25 @@
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -986,14 +1314,11 @@
         
   
   
-  
     <a href="../../sims/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1058,7 +1383,6 @@
     
     
     
-    
       
         
         
@@ -1069,14 +1393,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1107,7 +1428,6 @@
     
     
     
-    
       
         
         
@@ -1118,14 +1438,11 @@
         
   
   
-  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1150,10 +1467,8 @@
       <a href="../../glossary.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1172,10 +1487,8 @@
       <a href="../../faq.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1194,10 +1507,8 @@
       <a href="../../references.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -1216,10 +1527,8 @@
       <a href="../../license.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1238,10 +1547,8 @@
       <a href="../../contact.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1303,6 +1610,330 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#writing-professional-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Professional Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Professional Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helper-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helper Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-main-function-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Main Function Pattern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lambda-functions-functions-in-a-single-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lambda Functions: Functions in a Single Line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher-Order Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Higher-Order Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-higher-order-functions-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Higher-Order Functions Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-map-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Map Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-filter-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Filter Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-reduce-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Reduce Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Reduce Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-map-filter-reduce-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Map Filter Reduce Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-composition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Composition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion-functions-that-call-themselves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion: Functions That Call Themselves
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursion: Functions That Call Themselves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Base Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursive-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classic-example-factorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classic Example: Factorial
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classic Example: Factorial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-factorial-recursion-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Factorial Recursion Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-recursive-call-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Recursive Call Stack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Recursive Call Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-recursive-call-stack-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Recursive Call Stack Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-overflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Overflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion-vs-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion vs. Iteration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursive-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursive Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern-1-linear-recursion-factorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 1: Linear Recursion (Factorial)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-2-tree-recursion-fibonacci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 2: Tree Recursion (Fibonacci)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-3-divide-and-conquer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 3: Divide and Conquer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-4-accumulator-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 4: Accumulator Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pattern 4: Accumulator Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-fibonacci-tree-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Fibonacci Tree Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-it-all-higher-order-functions-meet-recursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining It All: Higher-Order Functions Meet Recursion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combining It All: Higher-Order Functions Meet Recursion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-recursion-vs-iteration-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Recursion vs Iteration Side-by-Side
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1316,7 +1947,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/07-higher-order-functions-and-recursion/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1358,7 +1988,1129 @@
 <li><a href="../06-functions-and-modular-design/">Chapter 6: Functions and Modular Design</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-welcome.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-welcome.png" width="80"></a>
+Welcome back, coders! In Chapter 6 you learned to build your own functions -- the basic building blocks of modular code. Now we're going to level up. In this chapter, you'll discover that functions in Python are incredibly flexible: you can pass them around like any other value, combine them like building blocks, and even have them call <em>themselves</em>. That last part -- recursion -- might bend your brain a little, but trust me, it's one of the most elegant ideas in all of computer science. Let's do this!</p>
+</div>
+<h2 id="writing-professional-functions">Writing Professional Functions</h2>
+<p>Before we dive into the fancy stuff, let's make sure our functions are clean, well-organized, and professional. Two important practices -- <strong>function documentation</strong> and the use of <strong>helper functions</strong> -- will make your code easier to read, debug, and share.</p>
+<h3 id="function-documentation">Function Documentation</h3>
+<p><strong>Function documentation</strong> (also called a <strong>docstring</strong>) is a description you place right inside your function to explain what it does. In Python, you write it as a triple-quoted string immediately after the <code>def</code> line:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate the area of a rectangle.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        length: The length of the rectangle (must be positive).</span>
+<span class="sd">        width: The width of the rectangle (must be positive).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The area as a float.</span>
+<span class="sd">    """</span>
+    <span class="k">return</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Why bother? Imagine you wrote this function six months ago. Without a docstring, you'd have to re-read all the code to remember what it does. With a docstring, the explanation is <em>right there</em>. Even better, Python's built-in <code>help()</code> function can display your docstring:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">help</span><span class="p">(</span><span class="n">calculate_area</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Good docstrings answer three questions:</p>
+<ul>
+<li><strong>What</strong> does this function do?</li>
+<li><strong>What</strong> arguments does it take?</li>
+<li><strong>What</strong> does it return?</li>
+</ul>
+<p>Think of a docstring like a label on a box. You <em>could</em> open the box to figure out what's inside, but a label is way faster.</p>
+<h3 id="helper-functions">Helper Functions</h3>
+<p>A <strong>helper function</strong> is a small, focused function that does one specific job to support a larger function. Instead of writing one giant function that does everything, you break the work into smaller pieces.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_even</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return True if n is even."""</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">count_evens</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Count how many even numbers are in the list."""</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">is_even</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here, <code>is_even()</code> is a helper function. It handles one tiny task -- checking if a number is even -- so that <code>count_evens()</code> stays clean and readable. Helper functions follow the principle of <em>decomposition</em> from Chapter 1: break big problems into smaller pieces.</p>
+<p>Benefits of helper functions:</p>
+<ul>
+<li><strong>Readability</strong> -- Your main logic reads almost like English</li>
+<li><strong>Reusability</strong> -- You can use <code>is_even()</code> anywhere else in your program</li>
+<li><strong>Testability</strong> -- You can test each small function independently</li>
+</ul>
+<h3 id="the-main-function-pattern">The Main Function Pattern</h3>
+<p>In many Python programs, you'll see a common structure called the <strong>main function pattern</strong>. Instead of scattering code throughout your file, you wrap the primary logic inside a <code>main()</code> function and then call it at the bottom:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Helper: return a greeting string."""</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">! Welcome to Python."</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">"""Main function: runs the program."""</span>
+    <span class="n">user_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What's your name? "</span><span class="p">)</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">greet</span><span class="p">(</span><span class="n">user_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+
+<span class="c1"># This line runs main() only when the file is executed directly</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The mysterious <code>if __name__ == "__main__":</code> line tells Python: "Only run <code>main()</code> if this file is being executed directly, not when it's imported by another file." This pattern keeps your code organized and reusable. You'll see it in almost every professional Python project.</p>
+<p>Here's why the main function pattern matters:</p>
+<table>
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organization</td>
+<td>All top-level logic is in one place</td>
+</tr>
+<tr>
+<td>Reusability</td>
+<td>Other files can import your helpers without running <code>main()</code></td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>You can test functions individually without triggering the full program</td>
+</tr>
+<tr>
+<td>Readability</td>
+<td>Anyone reading your code knows where to start</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lambda-functions-functions-in-a-single-line">Lambda Functions: Functions in a Single Line</h2>
+<p>Sometimes you need a quick, throwaway function that's so short it doesn't deserve a full name. Enter the <strong>lambda function</strong> -- a way to define a tiny, anonymous function in a single line.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Regular function</span>
+<span class="k">def</span> <span class="nf">double</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+
+<span class="c1"># Equivalent lambda function</span>
+<span class="n">double</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">double</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># Output: 10</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The syntax is: <code>lambda arguments: expression</code>. The lambda takes the arguments, evaluates the expression, and returns the result. No <code>def</code>, no <code>return</code>, no name required.</p>
+<p>Here are a few more examples:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Add two numbers</span>
+<span class="n">add</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>  <span class="c1"># Output: 10</span>
+
+<span class="c1"># Check if a number is positive</span>
+<span class="n">is_positive</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_positive</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># Output: False</span>
+
+<span class="c1"># Get the last character of a string</span>
+<span class="n">last_char</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">last_char</span><span class="p">(</span><span class="s2">"Python"</span><span class="p">))</span>  <span class="c1"># Output: n</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Lambda functions shine when you need a quick function to pass as an argument to another function -- which brings us to one of the most powerful ideas in this chapter.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Think of a lambda function like a sticky note. A regular function is a full letter you write, sign, and file away. A lambda is a quick note you scribble and hand to someone. Both communicate a message, but you'd use the sticky note when you need something fast and disposable.</p>
+</div>
+<h2 id="higher-order-functions">Higher-Order Functions</h2>
+<p>Here's where things get really interesting. In Python, functions are <strong>first-class objects</strong>. That means you can store them in variables, put them in lists, and -- most importantly -- pass them as arguments to other functions or return them as results.</p>
+<p>A <strong>higher-order function</strong> is any function that either:</p>
+<ol>
+<li>Takes another function as an argument, OR</li>
+<li>Returns a function as its result</li>
+</ol>
+<p>You've already seen hints of this. When you pass <code>lambda x: x * 2</code> to another function, that other function is a higher-order function. Let's see a concrete example:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">apply_operation</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Apply a function to a value and return the result."""</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">apply_operation</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 25</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here, <code>apply_operation</code> is a higher-order function because it takes <code>func</code> as a parameter. We passed in a lambda that squares a number, and it applied that operation to 5. Neat!</p>
+<p>Why is this useful? It lets you write <em>general-purpose</em> functions that can do different things depending on what function you pass in. Same tool, different attachments -- like a power drill with interchangeable bits.</p>
+<p>Python comes with three built-in higher-order functions that you'll use all the time: <code>map()</code>, <code>filter()</code>, and <code>reduce()</code>.</p>
+<h4 id="diagram-higher-order-functions-flow">Diagram: Higher-Order Functions Flow</h4>
+<iframe src="../../sims/higher-order-functions-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Higher-Order Functions Flow Diagram</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> higher-order-functions-flow<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> explain, classify</p>
+<p><strong>Learning Objective:</strong> Students will be able to explain what makes a function "higher-order" and classify examples as higher-order or regular functions.</p>
+<p><strong>Layout:</strong>
+- Top section: Title "Higher-Order Functions"
+- Center: A visual pipeline showing a function (represented as a machine/box) receiving two inputs -- a regular value (shown as a number ball) and a function (shown as a gear/tool icon)
+- Three lanes below showing map, filter, and reduce as specific examples of higher-order functions
+- Each lane shows: input list -&gt; function being applied -&gt; output</p>
+<p><strong>Interactive elements:</strong>
+- Hover over each lane (map, filter, reduce) to see a brief description and example
+- Click on a lane to see an animated demonstration of how data flows through that higher-order function
+- Toggle between "Visual Mode" (animated icons) and "Code Mode" (Python syntax)</p>
+<p><strong>Visual elements:</strong>
+- Regular values shown as colored number balls
+- Functions shown as gears or tool icons
+- Arrows showing data flow direction
+- Map lane: shows each input ball being transformed into a different colored ball
+- Filter lane: shows some balls passing through a gate while others are blocked
+- Reduce lane: shows multiple balls being combined into a single result ball</p>
+<p><strong>Color scheme:</strong>
+- Map: blue tones
+- Filter: green tones
+- Reduce: orange tones
+- Input values: light gray
+- Output values: bright colors matching the operation</p>
+<p><strong>Responsive:</strong> Canvas resizes with window; lanes stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> A visual pipeline metaphor makes the abstract concept of "passing a function to a function" concrete. Showing map, filter, and reduce as parallel examples helps students see the common pattern (input + function = output) while distinguishing each operation's unique behavior.</p>
+</details>
+<h3 id="the-map-function">The Map Function</h3>
+<p>The <strong>map function</strong> applies a given function to every item in a list (or other iterable) and returns the results. Think of it like a factory assembly line: every item on the conveyor belt gets the same transformation applied.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">doubled</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">doubled</span><span class="p">)</span>  <span class="c1"># Output: [2, 4, 6, 8, 10]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's what happened step by step:</p>
+<ol>
+<li><code>map()</code> took the lambda function and the list <code>numbers</code></li>
+<li>It applied <code>lambda x: x * 2</code> to each element: 1 becomes 2, 2 becomes 4, 3 becomes 6...</li>
+<li><code>list()</code> converted the result into a list</li>
+</ol>
+<p>You can use <code>map()</code> with any function, not just lambdas:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">to_uppercase</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Convert a string to uppercase."""</span>
+    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"alice"</span><span class="p">,</span> <span class="s2">"bob"</span><span class="p">,</span> <span class="s2">"charlie"</span><span class="p">]</span>
+<span class="n">loud_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">to_uppercase</span><span class="p">,</span> <span class="n">names</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">loud_names</span><span class="p">)</span>  <span class="c1"># Output: ['ALICE', 'BOB', 'CHARLIE']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-filter-function">The Filter Function</h3>
+<p>The <strong>filter function</strong> tests every item in a list with a function that returns <code>True</code> or <code>False</code>, and keeps only the items that pass the test. It's like a bouncer at a club -- only the items that meet the criteria get in.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">evens</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">evens</span><span class="p">)</span>  <span class="c1"># Output: [2, 4, 6, 8, 10]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The lambda <code>lambda x: x % 2 == 0</code> returns <code>True</code> for even numbers and <code>False</code> for odd ones. <code>filter()</code> keeps only the <code>True</code> items.</p>
+<p>Here's another example -- filtering strings by length:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"hi"</span><span class="p">,</span> <span class="s2">"hello"</span><span class="p">,</span> <span class="s2">"hey"</span><span class="p">,</span> <span class="s2">"howdy"</span><span class="p">,</span> <span class="s2">"yo"</span><span class="p">]</span>
+<span class="n">long_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">,</span> <span class="n">words</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">long_words</span><span class="p">)</span>  <span class="c1"># Output: ['hello', 'hey', 'howdy']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-reduce-function">The Reduce Function</h3>
+<p>The <strong>reduce function</strong> takes a list of items and combines them down to a single value by repeatedly applying a function. Think of it like folding a long piece of paper in half, again and again, until you end up with one thick square.</p>
+<p>Unlike <code>map()</code> and <code>filter()</code>, <code>reduce()</code> isn't built-in -- you need to import it:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
+
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="n">numbers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>  <span class="c1"># Output: 15</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's how reduce processes this step by step:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>a</th>
+<th>b</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10</td>
+<td>5</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>It starts with the first two elements (1 and 2), adds them to get 3. Then it takes that 3 and adds the next element (3) to get 6. And so on, until every element has been folded in.</p>
+<p>Here's a comparison of all three functions:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>What It Does</th>
+<th>Input</th>
+<th>Output</th>
+<th>Analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>map()</code></td>
+<td>Transforms each item</td>
+<td>List + function</td>
+<td>New list (same length)</td>
+<td>Assembly line</td>
+</tr>
+<tr>
+<td><code>filter()</code></td>
+<td>Keeps items that pass a test</td>
+<td>List + function</td>
+<td>New list (same or shorter)</td>
+<td>Bouncer at a club</td>
+</tr>
+<tr>
+<td><code>reduce()</code></td>
+<td>Combines all items into one</td>
+<td>List + function</td>
+<td>Single value</td>
+<td>Folding paper</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-tip.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-tip.png" width="80"></a>
+A common mistake is forgetting to wrap <code>map()</code> and <code>filter()</code> with <code>list()</code>. In Python 3, these functions return <em>iterator objects</em>, not lists. If you just write <code>map(func, data)</code> without <code>list()</code>, you'll get something like <code>&lt;map object at 0x...&gt;</code> instead of the actual values. Always wrap with <code>list()</code> when you want to see the results!</p>
+</div>
+<h4 id="diagram-map-filter-reduce-pipeline">Diagram: Map Filter Reduce Pipeline</h4>
+<iframe src="../../sims/map-filter-reduce-pipeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Map Filter Reduce Pipeline MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> map-filter-reduce-pipeline<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> apply, demonstrate</p>
+<p><strong>Learning Objective:</strong> Students will be able to chain map, filter, and reduce operations on a list and predict the output at each stage.</p>
+<p><strong>Layout:</strong>
+- Top: An input conveyor belt with numbered balls (the input list)
+- Three processing stations arranged left to right: MAP, FILTER, REDUCE
+- Between each station, a conveyor belt shows intermediate results
+- Bottom: Final output display</p>
+<p><strong>Interactive controls:</strong>
+- Input field to enter a comma-separated list of numbers (default: 1,2,3,4,5,6,7,8,9,10)
+- Dropdown to select map operation: "double", "square", "negate", "add 10"
+- Dropdown to select filter condition: "even", "odd", "greater than 5", "positive"
+- Dropdown to select reduce operation: "sum", "product", "max", "min"
+- "Run Pipeline" button: Animates the data flowing through all three stages
+- "Step" button: Advance one item at a time through the pipeline
+- "Reset" button: Clear and start over</p>
+<p><strong>Visual elements:</strong>
+- Numbered balls on conveyor belts
+- MAP station: balls change color/number as they're transformed
+- FILTER station: a gate that opens for passing items and shows rejected items falling off
+- REDUCE station: balls merge together into one final ball
+- Each station shows the Python code equivalent below it
+- Running total/status shown at each stage</p>
+<p><strong>Animation:</strong>
+- Smooth ball movement along conveyor belts
+- Transformation animation at MAP (ball morphs)
+- Accept/reject animation at FILTER (gate opens or ball drops)
+- Merge animation at REDUCE (two balls combine into one)</p>
+<p><strong>Color scheme:</strong> Industrial/factory theme with steel grays, colored balls, green for accepted, red for rejected</p>
+<p><strong>Responsive:</strong> Canvas scales with window; stations may stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> The factory/pipeline metaphor makes the abstract chaining of higher-order functions tangible. Step-by-step animation lets students predict what happens next before seeing the result, which supports active learning at the Apply level. Customizable inputs encourage experimentation.</p>
+</details>
+<h2 id="function-composition">Function Composition</h2>
+<p><strong>Function composition</strong> means combining two or more functions so that the output of one becomes the input of the next. It's like an assembly line where the product passes through multiple stations, each one adding or changing something.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_tax</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Add 8% sales tax."""</span>
+    <span class="k">return</span> <span class="n">price</span> <span class="o">*</span> <span class="mf">1.08</span>
+
+<span class="k">def</span> <span class="nf">apply_discount</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Apply a 20% discount."""</span>
+    <span class="k">return</span> <span class="n">price</span> <span class="o">*</span> <span class="mf">0.80</span>
+
+<span class="k">def</span> <span class="nf">format_price</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Format as a dollar string."""</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"$</span><span class="si">{</span><span class="n">price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span>
+
+<span class="c1"># Compose the functions: discount first, then tax, then format</span>
+<span class="n">original_price</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">final</span> <span class="o">=</span> <span class="n">format_price</span><span class="p">(</span><span class="n">add_tax</span><span class="p">(</span><span class="n">apply_discount</span><span class="p">(</span><span class="n">original_price</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">final</span><span class="p">)</span>  <span class="c1"># Output: $86.40</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice how we read the composition from the <em>inside out</em>: first <code>apply_discount(100)</code> returns 80, then <code>add_tax(80)</code> returns 86.4, then <code>format_price(86.4)</code> returns "$86.40". Each function takes the previous function's result as its input.</p>
+<p>You can also write a general-purpose compose function:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">compose</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return a new function that applies g first, then f."""</span>
+    <span class="k">return</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="c1"># Create a composed function</span>
+<span class="n">discount_then_tax</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">add_tax</span><span class="p">,</span> <span class="n">apply_discount</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">discount_then_tax</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>  <span class="c1"># Output: 86.4</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Function composition is everywhere in programming. When you chain operations together -- like transforming data, then filtering it, then formatting it -- you're composing functions. It's a key pattern in writing clean, modular code.</p>
+<h2 id="recursion-functions-that-call-themselves">Recursion: Functions That Call Themselves</h2>
+<p>Now for the mind-bending part. What if a function could call <em>itself</em>? That's <strong>recursion</strong>, and it's one of the most powerful (and initially confusing) ideas in computer science.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-encourages.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-encourages.png" width="80"></a>
+Recursion can feel weird at first -- and that's totally normal! Even experienced programmers had to wrap their heads around it. Think of Russian nesting dolls (matryoshkas): you open one doll and find a smaller doll inside, open that one and find an even smaller doll, and so on until you reach the tiniest doll that can't be opened. That's recursion! Each doll "contains" a smaller version of itself, and the tiniest doll is where the process stops.</p>
+</div>
+<p>Here's the simplest possible recursive function:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">countdown</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Count down from n to 1, then print 'Go!'"""</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Go!"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">countdown</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">countdown</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>3
+2
+1
+Go!
+</code></pre></div></td></tr></tbody></table></div>
+<p>The function <code>countdown()</code> calls <em>itself</em> with a smaller number each time. When <code>n</code> reaches 0, it stops. This brings us to the two essential ingredients of every recursive function.</p>
+<h3 id="base-case">Base Case</h3>
+<p>The <strong>base case</strong> is the condition that stops the recursion. Without it, the function would call itself forever (spoiler: that's bad). The base case is the "tiniest nesting doll" -- the simplest version of the problem that you can solve directly without any more recursive calls.</p>
+<p>In our countdown example, the base case is <code>if n == 0: print("Go!")</code>. When we reach zero, we don't call <code>countdown()</code> again. We just print and stop.</p>
+<h3 id="recursive-case">Recursive Case</h3>
+<p>The <strong>recursive case</strong> is the part where the function calls itself with a <em>smaller</em> or <em>simpler</em> version of the problem. Each recursive call should move you closer to the base case.</p>
+<p>In our countdown, the recursive case is <code>countdown(n - 1)</code>. Each call reduces <code>n</code> by 1, so we're guaranteed to eventually reach 0 (the base case).</p>
+<p>Every recursive function must have:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>What It Does</th>
+<th>What Happens Without It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Base case</strong></td>
+<td>Stops the recursion</td>
+<td>Infinite recursion (crash!)</td>
+</tr>
+<tr>
+<td><strong>Recursive case</strong></td>
+<td>Makes the problem smaller and calls itself</td>
+<td>Function never does useful work</td>
+</tr>
+<tr>
+<td><strong>Progress toward base case</strong></td>
+<td>Ensures we eventually stop</td>
+<td>Infinite recursion (crash!)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="classic-example-factorial">Classic Example: Factorial</h3>
+<p>The <strong>factorial</strong> of a number (n) (written (n!)) is the product of all positive integers from 1 to (n):</p>
+<p>[
+n! = n \times (n-1) \times (n-2) \times \cdots \times 2 \times 1
+]</p>
+<p>For example, (5! = 5 \times 4 \times 3 \times 2 \times 1 = 120).</p>
+<p>Notice something interesting: (5! = 5 \times 4!). And (4! = 4 \times 3!). Each factorial is defined in terms of a <em>smaller</em> factorial. That's a perfect fit for recursion!</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate n! recursively.</span>
+
+<span class="sd">    Base case: 0! = 1</span>
+<span class="sd">    Recursive case: n! = n * (n-1)!</span>
+<span class="sd">    """</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>          <span class="c1"># Base case</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Recursive case</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># Output: 120</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Let's trace through <code>factorial(5)</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>factorial(5) = 5 * factorial(4)
+             = 5 * (4 * factorial(3))
+             = 5 * (4 * (3 * factorial(2)))
+             = 5 * (4 * (3 * (2 * factorial(1))))
+             = 5 * (4 * (3 * (2 * (1 * factorial(0)))))
+             = 5 * (4 * (3 * (2 * (1 * 1))))
+             = 5 * (4 * (3 * (2 * 1)))
+             = 5 * (4 * (3 * 2))
+             = 5 * (4 * 6)
+             = 5 * 24
+             = 120
+</code></pre></div></td></tr></tbody></table></div>
+<p>The function "unwinds" outward until it hits the base case, then the results cascade back, multiplying at each level.</p>
+<h4 id="diagram-factorial-recursion-tree">Diagram: Factorial Recursion Tree</h4>
+<iframe src="../../sims/factorial-recursion-tree/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Factorial Recursion Tree MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> factorial-recursion-tree<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> trace, explain</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace through recursive factorial calls, identify the base case and recursive case, and explain how the return values cascade back up.</p>
+<p><strong>Layout:</strong>
+- Top: Input slider for n (range 1 to 8, default 5)
+- Center: A vertical tree showing each recursive call as a node
+- Each node shows: the function call (e.g., "factorial(5)"), the computation (e.g., "5 * factorial(4)"), and the return value once computed
+- Arrows connecting parent calls to child calls going down
+- Return value arrows going back up
+- Bottom: Final result display</p>
+<p><strong>Interactive controls:</strong>
+- Slider to set n (1-8)
+- "Step Forward" button: Reveals one level of recursion at a time (going down)
+- "Step Return" button: After reaching the base case, shows return values cascading up one at a time
+- "Auto Play" button: Animates the full trace automatically
+- "Reset" button: Clear and start over
+- Speed slider for auto play</p>
+<p><strong>Visual elements:</strong>
+- Each recursive call shown as a rounded rectangle node
+- Nodes appear one at a time as you step forward (building the call chain downward)
+- Base case node highlighted in green with a star icon
+- Recursive case nodes in blue
+- When stepping return: each node fills with its computed return value in gold
+- Arrows animate to show data flow direction (down for calls, up for returns)
+- Current active node is highlighted with a pulsing border</p>
+<p><strong>Animation sequence:</strong>
+1. Start with factorial(n) node at top
+2. Each step adds a new child node below: factorial(n-1)
+3. When base case is reached, node turns green
+4. Return phase: each node computes its value and passes it up
+5. Final result shown at the top in large text</p>
+<p><strong>Color scheme:</strong> Blue nodes for recursive calls, green for base case, gold for computed values</p>
+<p><strong>Responsive:</strong> Tree repositions based on canvas width; nodes scale for smaller screens</p>
+<p><strong>Instructional Rationale:</strong> Step-by-step trace visualization makes the "unwinding" and "rewinding" nature of recursion concrete. Students can pause at each step to predict what happens next, reinforcing understanding of base and recursive cases. The visual tree structure mirrors how recursion is often explained on paper, creating a bridge between the code and the mental model.</p>
+</details>
+<h2 id="the-recursive-call-stack">The Recursive Call Stack</h2>
+<p>When a function calls itself, Python doesn't throw away the current call. Instead, it <em>pauses</em> the current call and stacks a new one on top. This data structure is called the <strong>recursive call stack</strong> (or just "the call stack").</p>
+<p>Imagine a stack of cafeteria trays. Each time you make a recursive call, a new tray goes on top. When a call finishes (returns), its tray gets removed. The previous call resumes where it left off.</p>
+<p>Here's what the call stack looks like for <code>factorial(4)</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>Step 1: [factorial(4)] -- calls factorial(3)
+Step 2: [factorial(4), factorial(3)] -- calls factorial(2)
+Step 3: [factorial(4), factorial(3), factorial(2)] -- calls factorial(1)
+Step 4: [factorial(4), factorial(3), factorial(2), factorial(1)] -- calls factorial(0)
+Step 5: [factorial(4), factorial(3), factorial(2), factorial(1), factorial(0)]
+        -- base case reached! Returns 1
+Step 6: [factorial(4), factorial(3), factorial(2), factorial(1)]
+        -- returns 1 * 1 = 1
+Step 7: [factorial(4), factorial(3), factorial(2)]
+        -- returns 2 * 1 = 2
+Step 8: [factorial(4), factorial(3)]
+        -- returns 3 * 2 = 6
+Step 9: [factorial(4)]
+        -- returns 4 * 6 = 24
+</code></pre></div></td></tr></tbody></table></div>
+<p>Each frame on the call stack holds its own local variables. The <code>n</code> in <code>factorial(4)</code> is 4, the <code>n</code> in <code>factorial(3)</code> is 3, and so on. They don't interfere with each other.</p>
+<h4 id="diagram-recursive-call-stack-visualizer">Diagram: Recursive Call Stack Visualizer</h4>
+<iframe src="../../sims/recursive-call-stack/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Recursive Call Stack Visualizer MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> recursive-call-stack<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> trace, differentiate</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace the call stack during recursive execution, identify when frames are pushed and popped, and determine the value of local variables at any point during execution.</p>
+<p><strong>Layout:</strong>
+- Left panel (60%): Code display showing the recursive function with line-by-line highlighting
+- Right panel (40%): Visual call stack showing frames stacking up and down
+- Bottom: Controls and status bar</p>
+<p><strong>Code display (left panel):</strong>
+- Shows the factorial function code with line numbers
+- Current executing line is highlighted in yellow
+- A dropdown to switch between "Factorial", "Fibonacci", and "Countdown" examples</p>
+<p><strong>Call stack display (right panel):</strong>
+- Stack frames shown as rectangles stacking upward (like cafeteria trays)
+- Each frame displays:
+  - Function name and argument (e.g., "factorial(3)")
+  - Local variable values (e.g., "n = 3")
+  - Return value (shown when the frame completes, in gold)
+- New frames animate sliding in from the right onto the top of the stack
+- Completed frames animate sliding out to the left
+- Base case frame is highlighted in green
+- Current active frame has a pulsing yellow border</p>
+<p><strong>Interactive controls:</strong>
+- Function selector dropdown: "Factorial", "Fibonacci", "Countdown"
+- Input field for the argument (e.g., n = 5)
+- "Step Into" button: Execute the next line, pushing a new frame if it's a recursive call
+- "Step Return" button: Complete the current frame and pop it off the stack
+- "Auto Play" button: Animate the full execution at adjustable speed
+- "Reset" button: Return to starting state
+- Speed slider for auto play
+- Stack depth counter: "Stack depth: 3 / max 1000"</p>
+<p><strong>Visual elements:</strong>
+- Stack frames are 3D-looking rectangles with slight shadows
+- Pushing a frame: frame slides in from the right and settles on top
+- Popping a frame: frame lifts off, shows return value floating up to the frame below
+- Return value animation: gold number floats from child frame to parent frame
+- Line highlight in code panel syncs with stack operations
+- Stack depth indicator with color gradient (green = safe, yellow = getting deep, red = nearing overflow)</p>
+<p><strong>Color scheme:</strong>
+- Active frame: yellow border
+- Waiting frames: blue
+- Base case frame: green
+- Return values: gold
+- Code highlight: yellow background</p>
+<p><strong>Responsive:</strong> Panels adjust width on resize; code panel may move above stack panel on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> The call stack is the single most important mental model for understanding recursion. By syncing code execution with stack visualization, students can see the direct relationship between "this line of code executes" and "this frame is pushed/popped." The step-by-step controls let students pause and predict, which is critical for building accurate mental models at the Analyze level. Supporting multiple function examples (factorial, Fibonacci, countdown) helps students generalize the pattern.</p>
+</details>
+<h3 id="stack-overflow">Stack Overflow</h3>
+<p>What happens if you forget the base case? The function keeps calling itself forever, and the call stack grows taller and taller until Python runs out of memory. This crash is called a <strong>stack overflow</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">oops</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""This function has no base case -- don't run this!"""</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">oops</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># oops(5) would crash with:</span>
+<span class="c1"># RecursionError: maximum recursion depth exceeded</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Python has a default recursion limit of about 1,000 calls deep. If your function tries to go deeper than that, Python stops it and raises a <code>RecursionError</code>. This is a safety net to prevent your computer from freezing.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Monty says: Watch out!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-warning.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-warning.png" width="80"></a>
+The two most common causes of stack overflow are: (1) forgetting the base case entirely, and (2) having a base case that's never actually reached (for example, checking <code>if n == 0</code> but never decreasing <code>n</code>). Always ask yourself: "Does every recursive call move me closer to the base case?" If the answer is no, you've got an infinite recursion waiting to happen!</p>
+</div>
+<p>Common causes of stack overflow:</p>
+<ul>
+<li><strong>Missing base case</strong> -- The function never stops</li>
+<li><strong>Base case never reached</strong> -- The arguments don't progress toward the base case</li>
+<li><strong>Problem too large</strong> -- Even correct recursion on very deep problems can hit the limit</li>
+</ul>
+<h2 id="recursion-vs-iteration">Recursion vs. Iteration</h2>
+<p>You might be thinking: "Can't I just use a loop instead?" Great question! <strong>Recursion vs. iteration</strong> is an important comparison. Many problems can be solved <em>either</em> way.</p>
+<p>Here's factorial done both ways:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Recursive version</span>
+<span class="k">def</span> <span class="nf">factorial_recursive</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial_recursive</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Iterative version (using a loop)</span>
+<span class="k">def</span> <span class="nf">factorial_iterative</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">result</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Both give the same answer. So when should you use which?</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Recursion</th>
+<th>Iteration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Readability</strong></td>
+<td>Can be more elegant and closer to the math definition</td>
+<td>Can be more straightforward for simple counting</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Uses more memory (call stack)</td>
+<td>Uses constant memory</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Can be slower due to function call overhead</td>
+<td>Generally faster</td>
+</tr>
+<tr>
+<td><strong>Best for</strong></td>
+<td>Tree structures, divide-and-conquer, problems with natural recursive definitions</td>
+<td>Simple counting, accumulating results, large datasets</td>
+</tr>
+<tr>
+<td><strong>Risk</strong></td>
+<td>Stack overflow if too deep</td>
+<td>Infinite loop if condition is wrong</td>
+</tr>
+</tbody>
+</table>
+<p>In practice, many programmers use recursion when the problem <em>naturally</em> breaks into smaller subproblems (like tree traversal or parsing nested data), and iteration when they're just counting or accumulating values.</p>
+<h2 id="recursive-patterns">Recursive Patterns</h2>
+<p>Now that you understand the mechanics, let's look at some common <strong>recursive patterns</strong> that appear over and over in computer science.</p>
+<h3 id="pattern-1-linear-recursion-factorial">Pattern 1: Linear Recursion (Factorial)</h3>
+<p>Each call makes exactly one recursive call. The call chain forms a straight line. Factorial is the classic example.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">sum_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Sum a list recursively."""</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>    <span class="c1"># Base case: empty list</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">sum_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>  <span class="c1"># First element + sum of rest</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sum_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>  <span class="c1"># Output: 10</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="pattern-2-tree-recursion-fibonacci">Pattern 2: Tree Recursion (Fibonacci)</h3>
+<p>Each call makes <em>two or more</em> recursive calls. The calls branch out like a tree. The Fibonacci sequence is the classic example.</p>
+<p>The Fibonacci sequence starts with 0, 1, and each subsequent number is the sum of the two before it:</p>
+<p>[
+F(n) = F(n-1) + F(n-2)
+]</p>
+<p>So the sequence goes: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return the nth Fibonacci number.</span>
+
+<span class="sd">    Base cases: F(0) = 0, F(1) = 1</span>
+<span class="sd">    Recursive case: F(n) = F(n-1) + F(n-2)</span>
+<span class="sd">    """</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">fibonacci</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>  <span class="c1"># Output: 13</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Be careful with tree recursion -- it can be <em>very</em> slow for large inputs because it recalculates the same values many times. <code>fibonacci(30)</code> makes over a million function calls! (You'll learn how to fix this with a technique called <em>memoization</em> in later chapters.)</p>
+<h3 id="pattern-3-divide-and-conquer">Pattern 3: Divide and Conquer</h3>
+<p>The problem is split into <em>smaller subproblems</em>, each solved recursively, and then the results are combined. You'll see this in sorting algorithms like merge sort (Chapter 18).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">sorted_list</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Search for target in a sorted list using recursion."""</span>
+    <span class="k">if</span> <span class="n">low</span> <span class="o">&gt;</span> <span class="n">high</span><span class="p">:</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>  <span class="c1"># Base case: not found</span>
+    <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">sorted_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">mid</span>  <span class="c1"># Base case: found it!</span>
+    <span class="k">elif</span> <span class="n">sorted_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">binary_search</span><span class="p">(</span><span class="n">sorted_list</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">binary_search</span><span class="p">(</span><span class="n">sorted_list</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="pattern-4-accumulator-pattern">Pattern 4: Accumulator Pattern</h3>
+<p>Pass an extra parameter that accumulates the result as you go. This can convert some recursive solutions into <strong>tail-recursive</strong> form:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">factorial_acc</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">accumulator</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Factorial with an accumulator parameter."""</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">accumulator</span>
+    <span class="k">return</span> <span class="n">factorial_acc</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">accumulator</span> <span class="o">*</span> <span class="n">n</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial_acc</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># Output: 120</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's a summary of recursive patterns:</p>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Calls per Step</th>
+<th>Shape</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear</td>
+<td>1</td>
+<td>Straight line</td>
+<td>Factorial, sum of list</td>
+</tr>
+<tr>
+<td>Tree</td>
+<td>2+</td>
+<td>Branching tree</td>
+<td>Fibonacci</td>
+</tr>
+<tr>
+<td>Divide and conquer</td>
+<td>2+ (on subsets)</td>
+<td>Balanced tree</td>
+<td>Binary search, merge sort</td>
+</tr>
+<tr>
+<td>Accumulator</td>
+<td>1 (with extra param)</td>
+<td>Straight line</td>
+<td>Tail-recursive factorial</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-fibonacci-tree-visualization">Diagram: Fibonacci Tree Visualization</h4>
+<iframe src="../../sims/fibonacci-tree/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Fibonacci Tree Visualization MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> fibonacci-tree<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> compare, analyze</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace Fibonacci recursion, identify redundant calculations in tree recursion, and compare the number of function calls for different input values.</p>
+<p><strong>Layout:</strong>
+- Top: Input slider for n (range 1 to 10, default 6)
+- Center: Tree visualization showing all recursive calls
+- Each tree node shows: function call (e.g., "fib(5)") and return value once computed
+- Left and right branches for the two recursive calls
+- Bottom: Statistics panel showing total calls, unique calls, and redundant calls</p>
+<p><strong>Interactive controls:</strong>
+- Slider to set n (1-10)
+- "Step" button: Reveals one function call at a time in depth-first order
+- "Auto Play" button: Animates the full tree building at adjustable speed
+- "Show Redundancy" toggle: Highlights duplicate calls in red (e.g., fib(2) appears multiple times)
+- "Reset" button</p>
+<p><strong>Visual elements:</strong>
+- Tree nodes as circles with function call text inside
+- Base case nodes (fib(0), fib(1)) shown in green
+- Redundant nodes highlighted in red when "Show Redundancy" is on
+- Edges connect parent to children
+- When a node's value is computed, it displays in gold text
+- Nodes appear with a gentle pop-in animation</p>
+<p><strong>Statistics panel:</strong>
+- Total function calls: [number]
+- Unique subproblems: [number]
+- Redundant calls: [number] ([percentage]%)
+- Bar chart comparing call counts for fib(1) through fib(n)</p>
+<p><strong>Color scheme:</strong>
+- Regular nodes: blue
+- Base case nodes: green
+- Redundant nodes: red
+- Return values: gold text
+- Edges: gray</p>
+<p><strong>Responsive:</strong> Tree auto-layouts to fit canvas width; may scroll horizontally for large n</p>
+<p><strong>Instructional Rationale:</strong> Tree recursion is the most visually dramatic demonstration of why naive recursion can be inefficient. By highlighting redundant calls, students immediately see that fib(2) is calculated many times -- motivating the eventual need for memoization. The statistics panel quantifies the waste, helping students develop intuition for algorithmic complexity. Step-by-step building of the tree supports the Analyze level by requiring students to predict branching behavior.</p>
+</details>
+<h2 id="combining-it-all-higher-order-functions-meet-recursion">Combining It All: Higher-Order Functions Meet Recursion</h2>
+<p>Let's see how higher-order functions and recursion can work together. Here's a function that recursively applies a list of transformations to a value:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">apply_all</span><span class="p">(</span><span class="n">functions</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Recursively apply a list of functions to a value.</span>
+
+<span class="sd">    Base case: no functions left, return the value.</span>
+<span class="sd">    Recursive case: apply the first function, then recurse on the rest.</span>
+<span class="sd">    """</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">functions</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">value</span>
+    <span class="n">first_result</span> <span class="o">=</span> <span class="n">functions</span><span class="p">[</span><span class="mi">0</span><span class="p">](</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">apply_all</span><span class="p">(</span><span class="n">functions</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">first_result</span><span class="p">)</span>
+
+<span class="c1"># Define some transformations</span>
+<span class="n">transformations</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span>      <span class="c1"># Double it</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">10</span><span class="p">,</span>     <span class="c1"># Add 10</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>       <span class="c1"># Square it</span>
+<span class="p">]</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">apply_all</span><span class="p">(</span><span class="n">transformations</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># 3 -&gt; 6 -&gt; 16 -&gt; 256</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This combines higher-order functions (passing functions in a list) with recursion (processing the list one function at a time). It's a beautiful example of how these two ideas complement each other.</p>
+<h4 id="diagram-recursion-vs-iteration-side-by-side">Diagram: Recursion vs Iteration Side-by-Side</h4>
+<iframe src="../../sims/recursion-vs-iteration/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Recursion vs Iteration Side-by-Side Comparison</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> recursion-vs-iteration<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Evaluate (L5)
+<strong>Bloom Verb:</strong> compare, evaluate</p>
+<p><strong>Learning Objective:</strong> Students will be able to compare recursive and iterative implementations of the same algorithm side by side, tracking execution steps, memory usage, and output for each approach.</p>
+<p><strong>Layout:</strong>
+- Split screen: left half "Recursive", right half "Iterative"
+- Each side shows: code with line highlighting, variable state display, and step counter
+- Bottom: shared controls and comparison metrics</p>
+<p><strong>Algorithm selector:</strong> Dropdown to choose between:
+- Factorial
+- Sum of list
+- Countdown
+- Fibonacci (recursive only shows tree; iterative shows loop)</p>
+<p><strong>Left panel (Recursive):</strong>
+- Code display with line-by-line highlighting
+- Call stack visualization (mini version): frames stacking up
+- Current variable values for the active frame
+- Step counter</p>
+<p><strong>Right panel (Iterative):</strong>
+- Code display with line-by-line highlighting
+- Single set of variable values (no stack)
+- Loop counter display
+- Step counter</p>
+<p><strong>Bottom comparison metrics:</strong>
+- Steps taken: Recursive [N] vs Iterative [M]
+- Memory used: Recursive [call stack depth] vs Iterative [constant]
+- Output: [same value for both]</p>
+<p><strong>Interactive controls:</strong>
+- Algorithm dropdown selector
+- Input field for argument
+- "Step Both" button: Advance both sides one step simultaneously
+- "Run Both" button: Run to completion and show final metrics
+- "Reset" button</p>
+<p><strong>Color scheme:</strong>
+- Recursive panel: blue tones
+- Iterative panel: green tones
+- Active code line: yellow highlight
+- Metrics: neutral with colored bars for comparison</p>
+<p><strong>Responsive:</strong> Panels side-by-side on wide screens, stacked on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Direct side-by-side comparison is the most effective way to help students evaluate when to use recursion vs iteration. Seeing the same problem solved both ways -- with step counts and memory usage displayed -- gives students concrete evidence to reason about tradeoffs. This supports the Evaluate level by asking students to judge which approach is more appropriate for different scenarios.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-celebrates.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-celebrates.png" width="80"></a>
+You just conquered one of the toughest topics in all of computer science -- recursion! From lambda functions to map/filter/reduce, from function composition to recursive call stacks, you now have an incredibly powerful toolkit. These ideas will show up again and again as we tackle lists, sorting, and more advanced algorithms. Give yourself a pat on the back, coder!</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li><strong>Function documentation</strong> (docstrings) makes your code professional and self-explanatory. Always describe what a function does, its arguments, and its return value.</li>
+<li><strong>Helper functions</strong> break complex tasks into small, testable, reusable pieces.</li>
+<li>The <strong>main function pattern</strong> (<code>if __name__ == "__main__": main()</code>) organizes your program and makes it importable.</li>
+<li><strong>Lambda functions</strong> let you define small, anonymous functions in a single line using <code>lambda args: expression</code>.</li>
+<li><strong>Higher-order functions</strong> take functions as arguments or return functions as results.</li>
+<li><strong><code>map()</code></strong> transforms every element in a list. <strong><code>filter()</code></strong> keeps elements that pass a test. <strong><code>reduce()</code></strong> combines all elements into a single value.</li>
+<li><strong>Function composition</strong> chains functions so the output of one becomes the input of the next.</li>
+<li><strong>Recursion</strong> is when a function calls itself. Every recursive function needs a <strong>base case</strong> (when to stop) and a <strong>recursive case</strong> (how to break the problem down).</li>
+<li>The <strong>recursive call stack</strong> tracks all active function calls. Each call gets its own frame with its own local variables.</li>
+<li><strong>Stack overflow</strong> happens when recursion goes too deep -- usually from a missing or unreachable base case.</li>
+<li><strong>Recursion vs. iteration</strong>: recursion is elegant for naturally recursive problems; iteration is often faster and uses less memory.</li>
+<li>Common <strong>recursive patterns</strong> include linear recursion, tree recursion, divide and conquer, and the accumulator pattern.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What's wrong with this recursive function?</summary>
+<p></p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">count_up</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">count_up</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+This function has <strong>no base case</strong>, so it will never stop calling itself. Each call increases <code>n</code> by 1, so there's no condition to halt the recursion. It will cause a <strong>stack overflow</strong> (Python's <code>RecursionError</code>). To fix it, add a base case, such as <code>if n &gt; 10: return</code>.<p></p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: What does this code output?</summary>
+<p></p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">result</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">,</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">numbers</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+First, <code>map(lambda x: x * 2, numbers)</code> doubles each number: <code>[2, 4, 6, 8, 10, 12]</code>. Then, <code>filter(lambda x: x &gt; 3, ...)</code> keeps only values greater than 3: <strong><code>[4, 6, 8, 10, 12]</code></strong>. This is an example of composing <code>map</code> and <code>filter</code> together.<p></p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: Trace factorial(4) and list the call stack at its deepest point.</summary>
+<p>At its deepest point, the call stack contains (from bottom to top): <code>factorial(4)</code>, <code>factorial(3)</code>, <code>factorial(2)</code>, <code>factorial(1)</code>, <code>factorial(0)</code>. That's <strong>5 frames</strong>. The base case <code>factorial(0)</code> returns 1, then each frame above computes its result: <code>1*1 = 1</code>, <code>2*1 = 2</code>, <code>3*2 = 6</code>, <code>4*6 = 24</code>. The final answer is <strong>24</strong>.</p>
+</details>
 
 
 
@@ -1453,12 +3205,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

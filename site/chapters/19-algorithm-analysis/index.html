@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="description" content="Advanced complexity analysis, algorithmic strategies, programming patterns, memoization, and empirical analysis in Python.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>19. Algorithm Analysis - Computer Science</title>
+        <title>Algorithm Analysis and Problem Solving - Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,9 +62,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="19. Algorithm Analysis - Computer Science">
+        <meta property="og:title" content="Algorithm Analysis and Problem Solving - Computer Science">
       
-        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta property="og:description" content="Advanced complexity analysis, algorithmic strategies, programming patterns, memoization, and empirical analysis in Python.">
       
         <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/19-algorithm-analysis/index.png">
       
@@ -78,9 +78,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="19. Algorithm Analysis - Computer Science">
+        <meta name="twitter:title" content="Algorithm Analysis and Problem Solving - Computer Science">
       
-        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="twitter:description" content="Advanced complexity analysis, algorithmic strategies, programming patterns, memoization, and empirical analysis in Python.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/19-algorithm-analysis/index.png">
       
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              19. Algorithm Analysis
+              Algorithm Analysis and Problem Solving
             
           </span>
         </div>
@@ -160,13 +160,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -198,14 +196,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -250,7 +247,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -270,10 +267,8 @@
       <a href="../../index.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -289,13 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about.md" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -314,10 +307,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -342,46 +333,85 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -394,14 +424,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -433,10 +462,8 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Intro to Computer Science
-    
   </span>
   
 
@@ -456,10 +483,8 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Python Fundamentals
-    
   </span>
   
 
@@ -479,10 +504,8 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Boolean Logic
-    
   </span>
   
 
@@ -502,10 +525,8 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -525,10 +546,8 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. Working with Strings
-    
   </span>
   
 
@@ -548,10 +567,8 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -571,10 +588,8 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -594,10 +609,8 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -617,10 +630,8 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. Advanced List Operations
-    
   </span>
   
 
@@ -640,10 +651,8 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. Tuples and Sets
-    
   </span>
   
 
@@ -663,10 +672,8 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -686,10 +693,8 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Classes and Objects
-    
   </span>
   
 
@@ -709,10 +714,8 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Inheritance and Polymorphism
-    
   </span>
   
 
@@ -732,10 +735,8 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -755,10 +756,8 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. File Input and Output
-    
   </span>
   
 
@@ -778,10 +777,8 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -801,10 +798,8 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     17. Testing and Debugging
-    
   </span>
   
 
@@ -824,10 +819,8 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     18. Searching and Sorting
-    
   </span>
   
 
@@ -856,10 +849,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -869,10 +860,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -920,6 +909,294 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beyond-linear-logarithmic-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beyond Linear: Logarithmic Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linearithmic-time-the-sweet-spot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linearithmic Time: The Sweet Spot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linearithmic Time: The Sweet Spot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-average-and-worst-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best, Average, and Worst Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#counting-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Counting Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empirical-analysis-measuring-real-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empirical Analysis: Measuring Real Performance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithmic-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithmic Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithmic Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brute-force-try-everything" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brute Force: Try Everything
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divide-and-conquer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Divide and Conquer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#greedy-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greedy Algorithms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Greedy Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm-tradeoffs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm Tradeoffs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithm Tradeoffs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-vs-readability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency vs. Readability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-pointer-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Two Pointer Technique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-sliding-window-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sliding Window Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Sliding Window Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-frequency-counter-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Frequency Counter Pattern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion-in-problem-solving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion in Problem Solving
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursion in Problem Solving">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm Visualization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithm Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoization-remember-and-reuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memoization: Remember and Reuse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -939,10 +1216,8 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     20. Advanced Python
-    
   </span>
   
 
@@ -971,8 +1246,25 @@
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -986,14 +1278,11 @@
         
   
   
-  
     <a href="../../sims/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1058,7 +1347,6 @@
     
     
     
-    
       
         
         
@@ -1069,14 +1357,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1107,7 +1392,6 @@
     
     
     
-    
       
         
         
@@ -1118,14 +1402,11 @@
         
   
   
-  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1150,10 +1431,8 @@
       <a href="../../glossary.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1172,10 +1451,8 @@
       <a href="../../faq.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1194,10 +1471,8 @@
       <a href="../../references.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -1216,10 +1491,8 @@
       <a href="../../license.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1238,10 +1511,8 @@
       <a href="../../contact.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1303,6 +1574,294 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beyond-linear-logarithmic-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beyond Linear: Logarithmic Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linearithmic-time-the-sweet-spot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linearithmic Time: The Sweet Spot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linearithmic Time: The Sweet Spot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-average-and-worst-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best, Average, and Worst Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#counting-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Counting Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empirical-analysis-measuring-real-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empirical Analysis: Measuring Real Performance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithmic-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithmic Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithmic Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brute-force-try-everything" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brute Force: Try Everything
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divide-and-conquer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Divide and Conquer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#greedy-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greedy Algorithms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Greedy Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm-tradeoffs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm Tradeoffs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithm Tradeoffs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-vs-readability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency vs. Readability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-pointer-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Two Pointer Technique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-sliding-window-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sliding Window Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Sliding Window Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-frequency-counter-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Frequency Counter Pattern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion-in-problem-solving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion in Problem Solving
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursion in Problem Solving">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm Visualization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithm Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoization-remember-and-reuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memoization: Remember and Reuse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1316,7 +1875,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/19-algorithm-analysis/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1361,7 +1919,965 @@
 <li><a href="../18-searching-and-sorting/">Chapter 18: Searching and Sorting</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-welcome.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-welcome.png" width="80"></a>
+Welcome back, coders! In Chapter 18 you learned the basics of Big-O notation and saw how different sorting algorithms compare. Now we're going to level up. You'll learn <em>why</em> some algorithms seem almost magical in their speed, discover powerful problem-solving strategies, and pick up programming patterns that real software engineers use every day. Ready to think like an algorithm designer? Let's do this!</p>
+</div>
+<h2 id="beyond-linear-logarithmic-time">Beyond Linear: Logarithmic Time</h2>
+<p>In Chapter 18 you met ( O(1) ), ( O(n) ), and ( O(n^2) ). But there's a complexity class that sits between constant and linear time, and it's one of the most exciting ones in all of computer science.</p>
+<p><strong>Logarithmic Time ( O(\log n) )</strong> describes algorithms where each step cuts the remaining work <em>in half</em>. Binary search is the classic example. If you have a sorted list of 1,000 items, binary search needs at most about 10 comparisons. Double the list to 2,000 items? You only need about 11 comparisons. That's the power of logarithms.</p>
+<p>Here's the intuition: a logarithm answers the question "how many times can I divide this number by 2 before I reach 1?" For ( n = 1{,}024 ), the answer is 10, because ( 2^{10} = 1{,}024 ). So ( \log_2(1{,}024) = 10 ).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">sorted_list</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""O(log n) — cuts the search space in half each step."""</span>
+    <span class="n">low</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">high</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_list</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">low</span> <span class="o">&lt;=</span> <span class="n">high</span><span class="p">:</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="n">sorted_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">mid</span>
+        <span class="k">elif</span> <span class="n">sorted_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">high</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>  <span class="c1"># not found</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Why does this matter? Imagine searching through a phone book with one million names. A linear search might need up to 1,000,000 comparisons. Binary search? About 20. That's not a small improvement — that's the difference between waiting a minute and getting your answer in a blink.</p>
+<h2 id="linearithmic-time-the-sweet-spot">Linearithmic Time: The Sweet Spot</h2>
+<p>Now let's meet <strong>Linearithmic Time</strong>, also written ( O(n \log n) ). This is the time complexity of efficient sorting algorithms like merge sort, quicksort (on average), and Python's built-in <code>sorted()</code> function (which uses Timsort).</p>
+<p>Think of it as "do something logarithmic for each of the ( n ) items." Merge sort, for example, divides the list in half repeatedly (( \log n ) levels of splitting), and at each level it does ( O(n) ) work to merge everything back together.</p>
+<p>Here's the key fact: <strong>you cannot sort a list of arbitrary items faster than ( O(n \log n) ) using comparisons.</strong> This is a mathematical proof, not just a practical limit. So when you see an ( O(n \log n) ) sorting algorithm, you're looking at the best possible general-purpose sort.</p>
+<details>
+<summary>Complexity Class Comparison Chart</summary>
+<h4 id="diagram">Diagram:</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Complexity Class</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Example</th>
+<th style="text-align: right;">Operations for ( n = 1{,}000 )</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">( O(1) )</td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">Dictionary lookup</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">( O(\log n) )</td>
+<td style="text-align: left;">Logarithmic</td>
+<td style="text-align: left;">Binary search</td>
+<td style="text-align: right;">~10</td>
+</tr>
+<tr>
+<td style="text-align: left;">( O(n) )</td>
+<td style="text-align: left;">Linear</td>
+<td style="text-align: left;">Linear search</td>
+<td style="text-align: right;">1,000</td>
+</tr>
+<tr>
+<td style="text-align: left;">( O(n \log n) )</td>
+<td style="text-align: left;">Linearithmic</td>
+<td style="text-align: left;">Merge sort</td>
+<td style="text-align: right;">~10,000</td>
+</tr>
+<tr>
+<td style="text-align: left;">( O(n^2) )</td>
+<td style="text-align: left;">Quadratic</td>
+<td style="text-align: left;">Selection sort</td>
+<td style="text-align: right;">1,000,000</td>
+</tr>
+<tr>
+<td style="text-align: left;">( O(2^n) )</td>
+<td style="text-align: left;">Exponential</td>
+<td style="text-align: left;">All subsets</td>
+<td style="text-align: right;">( \approx 10^{301} )</td>
+</tr>
+</tbody>
+</table>
+<p>Notice how the jump from ( O(n \log n) ) to ( O(n^2) ) is a factor of 100 at ( n = 1{,}000 ). At ( n = 1{,}000{,}000 ), that factor becomes 50,000. The difference between "good enough" and "unacceptable" is often one complexity class.</p>
+</details>
+<h2 id="best-average-and-worst-case">Best, Average, and Worst Case</h2>
+<p>So far we've mostly talked about worst-case complexity. But algorithms don't always behave the same way on every input. <strong>Best Average Worst Case</strong> analysis looks at all three scenarios.</p>
+<p>Consider linear search in a list of ( n ) items:</p>
+<ul>
+<li><strong>Best case:</strong> The target is the very first element. ( O(1) ).</li>
+<li><strong>Worst case:</strong> The target is the last element (or not present). ( O(n) ).</li>
+<li><strong>Average case:</strong> On average, you'll check about half the list. ( O(n) ) — same order as worst case, but with a smaller constant.</li>
+</ul>
+<p>Why does this matter? Quicksort is a great example. Its <em>average</em> case is ( O(n \log n) ), which is excellent. But its <em>worst</em> case is ( O(n^2) ), which happens when the pivot choices are terrible (like always picking the smallest or largest element). That's why Python's built-in sort uses Timsort instead of plain quicksort — Timsort guarantees ( O(n \log n) ) in the worst case.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+When someone asks "what's the time complexity?" they usually mean the <strong>worst case</strong> unless they say otherwise. The worst case is the safest guarantee — it tells you the maximum time your program will ever need.</p>
+</div>
+<h2 id="counting-operations">Counting Operations</h2>
+<p>Before you can classify an algorithm's complexity, you need to know how to <strong>count operations</strong>. This means stepping through your code and tallying how many times each line runs as a function of the input size ( n ).</p>
+<p>Let's count the operations in a simple function:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">sum_of_squares</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>              <span class="c1"># 1 assignment</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>     <span class="c1"># loop runs n times</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span>     <span class="c1"># 1 multiplication + 1 addition per iteration</span>
+    <span class="k">return</span> <span class="n">total</span>           <span class="c1"># 1 return</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The assignment and return each happen once: that's 2 operations. Inside the loop, we do 2 operations per iteration, and the loop runs ( n ) times. Total: ( 2n + 2 ) operations. In Big-O, we drop the constants and lower-order terms: ( O(n) ).</p>
+<p>Now let's count a nested loop:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">all_pairs</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>         <span class="c1"># n iterations</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>     <span class="c1"># n iterations each</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>                  <span class="c1"># 1 operation</span>
+    <span class="k">return</span> <span class="n">count</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The inner operation runs ( n \times n = n^2 ) times, so this is ( O(n^2) ).</p>
+<details>
+<summary>Operation Counting Walkthrough</summary>
+<h4 id="diagram_1">Diagram:</h4>
+<p>Here's a step-by-step trace for <code>sum_of_squares(4)</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">i</th>
+<th style="text-align: left;">Operation</th>
+<th style="text-align: right;">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><code>total = 0</code></td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><code>total += 0 * 0</code></td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><code>total += 1 * 1</code></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><code>total += 2 * 2</code></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><code>total += 3 * 3</code></td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><code>return 14</code></td>
+<td style="text-align: right;">14</td>
+</tr>
+</tbody>
+</table>
+<p>Total loop body executions: 4 (which is ( n )).
+Total operations: ( 2 \times 4 + 2 = 10 ). Simplified: ( O(n) ).</p>
+</details>
+<h2 id="empirical-analysis-measuring-real-performance">Empirical Analysis: Measuring Real Performance</h2>
+<p>Theory is great, but sometimes you just want to see the numbers. <strong>Empirical Analysis</strong> means running your code, measuring the actual time it takes, and looking for patterns. Python's <code>time</code> module makes this easy.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">time_algorithm</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Measure the execution time of a function."""</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">,</span> <span class="n">result</span>
+
+<span class="c1"># Compare linear search vs binary search</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">linear_search</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="n">sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10_000</span><span class="p">,</span> <span class="mi">50_000</span><span class="p">,</span> <span class="mi">100_000</span><span class="p">,</span> <span class="mi">500_000</span><span class="p">,</span> <span class="mi">1_000_000</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="s1">'Size'</span><span class="si">:</span><span class="s2">&gt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">'Linear (s)'</span><span class="si">:</span><span class="s2">&gt;12</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">'Binary (s)'</span><span class="si">:</span><span class="s2">&gt;12</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span> <span class="o">*</span> <span class="mi">36</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">sizes</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>  <span class="c1"># worst case: last element</span>
+
+    <span class="n">t_linear</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">time_algorithm</span><span class="p">(</span><span class="n">linear_search</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+    <span class="n">t_binary</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">time_algorithm</span><span class="p">(</span><span class="n">binary_search</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">&gt;10,</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">t_linear</span><span class="si">:</span><span class="s2">&gt;12.6f</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">t_binary</span><span class="si">:</span><span class="s2">&gt;12.6f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>When you run this, you'll see linear search times growing proportionally with ( n ), while binary search times barely change. That's the difference between ( O(n) ) and ( O(\log n) ) made visible.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-tip.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-tip.png" width="80"></a>
+When doing empirical analysis, run each test several times and take the average. Other programs running on your computer can cause timing noise. Also, use large enough inputs — with ( n = 10 ), everything looks fast!</p>
+</div>
+<h2 id="algorithmic-strategies">Algorithmic Strategies</h2>
+<p>Now that you can analyze algorithms, let's talk about how to <em>design</em> them. There are several classic strategies that programmers reach for when facing a new problem.</p>
+<h3 id="brute-force-try-everything">Brute Force: Try Everything</h3>
+<p>The <strong>Brute Force Approach</strong> is the simplest strategy: try every possible solution and pick the best one. It's not clever, but it's reliable. You're guaranteed to find the answer because you've checked everything.</p>
+<p>For example, to find two numbers in a list that add up to a target:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">two_sum_brute</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Brute force: check every pair. O(n^2)."""</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">None</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This works, but with nested loops it's ( O(n^2) ). For large lists, that's painfully slow. Brute force is a great starting point — get something working, then optimize.</p>
+<h3 id="divide-and-conquer">Divide and Conquer</h3>
+<p><strong>Divide and Conquer</strong> is a strategy where you break a problem into smaller subproblems, solve each one, and combine the results. Merge sort is the textbook example:</p>
+<ol>
+<li><strong>Divide:</strong> Split the list in half.</li>
+<li><strong>Conquer:</strong> Sort each half (recursively).</li>
+<li><strong>Combine:</strong> Merge the two sorted halves.</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">merge_sort</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Divide and conquer sorting. O(n log n)."""</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">lst</span>
+
+    <span class="n">mid</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="n">merge_sort</span><span class="p">(</span><span class="n">lst</span><span class="p">[:</span><span class="n">mid</span><span class="p">])</span>
+    <span class="n">right</span> <span class="o">=</span> <span class="n">merge_sort</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="n">mid</span><span class="p">:])</span>
+
+    <span class="k">return</span> <span class="n">merge</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="ow">and</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">right</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">result</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">:])</span>
+    <span class="n">result</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">right</span><span class="p">[</span><span class="n">j</span><span class="p">:])</span>
+    <span class="k">return</span> <span class="n">result</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Divide and conquer works brilliantly when you can split a problem into independent subproblems of roughly equal size. Other examples include binary search and the fast Fourier transform.</p>
+<h3 id="greedy-algorithms">Greedy Algorithms</h3>
+<p>A <strong>Greedy Algorithm</strong> makes the best local choice at each step, hoping that these local choices lead to a globally optimal solution. Greedy algorithms don't look ahead or reconsider past decisions — they just grab the best option right now.</p>
+<p>Classic example: the coin change problem. You need to make change for 67 cents using the fewest coins possible (quarters, dimes, nickels, pennies).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greedy_coin_change</span><span class="p">(</span><span class="n">amount</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Greedy approach to coin change. Works for US coins."""</span>
+    <span class="n">coins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">coin</span> <span class="ow">in</span> <span class="n">coins</span><span class="p">:</span>
+        <span class="k">while</span> <span class="n">amount</span> <span class="o">&gt;=</span> <span class="n">coin</span><span class="p">:</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">coin</span><span class="p">)</span>
+            <span class="n">amount</span> <span class="o">-=</span> <span class="n">coin</span>
+
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">greedy_coin_change</span><span class="p">(</span><span class="mi">67</span><span class="p">))</span>
+<span class="c1"># Output: [25, 25, 10, 5, 1, 1]  -&gt; 6 coins</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The greedy approach works perfectly for US coins. But beware: greedy algorithms don't always give the optimal solution. If our coin denominations were [25, 15, 1], trying to make 30 cents greedily gives [25, 1, 1, 1, 1, 1] (6 coins), but the optimal answer is [15, 15] (2 coins). Greedy algorithms need to be proven correct for each specific problem.</p>
+<details>
+<summary>Strategy Comparison Diagram</summary>
+<h4 id="diagram_2">Diagram:</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Strategy</th>
+<th style="text-align: left;">Approach</th>
+<th style="text-align: left;">When to Use</th>
+<th style="text-align: left;">Guarantee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Brute Force</strong></td>
+<td style="text-align: left;">Try all possibilities</td>
+<td style="text-align: left;">When the input is small, or as a first draft</td>
+<td style="text-align: left;">Always finds the answer</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Divide and Conquer</strong></td>
+<td style="text-align: left;">Split, solve, combine</td>
+<td style="text-align: left;">When the problem splits into independent subproblems</td>
+<td style="text-align: left;">Correct if subproblems are independent</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Greedy</strong></td>
+<td style="text-align: left;">Best local choice at each step</td>
+<td style="text-align: left;">When local optima lead to global optimum</td>
+<td style="text-align: left;">Must be proven for each problem</td>
+</tr>
+</tbody>
+</table>
+<p>Brute force is your safety net. Divide and conquer is your power tool. Greedy is your shortcut — but only when the road is straight.</p>
+</details>
+<h2 id="algorithm-tradeoffs">Algorithm Tradeoffs</h2>
+<p>Every algorithm involves <strong>Algorithm Tradeoffs</strong>. The most common tradeoff is time vs. space: you can often make an algorithm faster by using more memory, or save memory by accepting a slower runtime.</p>
+<p>For example, consider checking if a list has duplicate values:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Time-optimized: O(n) time, O(n) space</span>
+<span class="k">def</span> <span class="nf">has_duplicates_fast</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">False</span>
+
+<span class="c1"># Space-optimized: O(n^2) time, O(1) space</span>
+<span class="k">def</span> <span class="nf">has_duplicates_slow</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">lst</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The first version uses a set (extra memory) to achieve ( O(n) ) time. The second version uses no extra memory but takes ( O(n^2) ) time. Which is better? It depends on your situation. If memory is tight (like on an embedded device), the slow version might be the right choice.</p>
+<h3 id="efficiency-vs-readability">Efficiency vs. Readability</h3>
+<p><strong>Efficiency vs Readability</strong> is another important tradeoff. Code that's hyper-optimized can be hard to understand and maintain. Code that's beautifully readable might be too slow for large inputs.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Readable but slower: O(n)</span>
+<span class="k">def</span> <span class="nf">is_palindrome_readable</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">s</span> <span class="o">==</span> <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Efficient and still pretty readable: O(n) — same big-O,</span>
+<span class="c1"># but uses half the memory (no reversed copy)</span>
+<span class="k">def</span> <span class="nf">is_palindrome_efficient</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">!=</span> <span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Both are ( O(n) ), but the first creates a reversed copy of the string (extra memory), while the second uses two pointers and constant extra space. In most cases, the readable version is perfectly fine. Save the clever optimizations for when profiling tells you there's a real bottleneck.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Monty says: Watch out!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-warning.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-warning.png" width="80"></a>
+Don't optimize code that doesn't need optimizing! Write clear, correct code first. Only optimize if your program is actually too slow — and use empirical analysis to find the real bottleneck. Premature optimization is the root of all evil (well, at least in programming).</p>
+</div>
+<h2 id="programming-patterns">Programming Patterns</h2>
+<p>Let's learn three powerful patterns that show up in coding interviews, competitions, and real-world programming. These patterns turn ( O(n^2) ) brute force solutions into elegant ( O(n) ) solutions.</p>
+<h3 id="the-two-pointer-technique">The Two Pointer Technique</h3>
+<p>The <strong>Two Pointer Technique</strong> uses two index variables that move through a data structure (usually a sorted list) from different positions. This avoids the nested loops that make brute force slow.</p>
+<p><strong>Problem:</strong> Given a <em>sorted</em> list of numbers, find two numbers that add up to a target sum.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">two_sum_sorted</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Two pointer approach. O(n) for sorted input."""</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
+        <span class="n">current_sum</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">right</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">current_sum</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">current_sum</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>     <span class="c1"># need a bigger sum</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>    <span class="c1"># need a smaller sum</span>
+
+    <span class="k">return</span> <span class="kc">None</span>
+
+<span class="c1"># Example</span>
+<span class="n">sorted_nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">two_sum_sorted</span><span class="p">(</span><span class="n">sorted_nums</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+<span class="c1"># Output: (1, 4) — because 3 + 9 = 12</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The brute force approach checks every pair: ( O(n^2) ). The two pointer approach walks inward from both ends, making at most ( n ) steps: ( O(n) ). That's a massive improvement!</p>
+<h3 id="the-sliding-window-pattern">The Sliding Window Pattern</h3>
+<p>The <strong>Sliding Window Pattern</strong> is used when you need to examine a contiguous subarray or substring. Instead of recalculating everything from scratch each time you shift the window, you <em>slide</em> it by removing the outgoing element and adding the incoming one.</p>
+<p><strong>Problem:</strong> Find the maximum sum of any subarray of length ( k ).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">max_subarray_sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Sliding window approach. O(n) instead of O(n*k)."""</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="c1"># Calculate the sum of the first window</span>
+    <span class="n">window_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">[:</span><span class="n">k</span><span class="p">])</span>
+    <span class="n">max_sum</span> <span class="o">=</span> <span class="n">window_sum</span>
+
+    <span class="c1"># Slide the window: remove the leftmost, add the new rightmost</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
+        <span class="n">window_sum</span> <span class="o">+=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="n">k</span><span class="p">]</span>
+        <span class="n">max_sum</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_sum</span><span class="p">,</span> <span class="n">window_sum</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">max_sum</span>
+
+<span class="c1"># Example: find max sum of 3 consecutive elements</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">max_subarray_sum</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="c1"># Output: 9 (from subarray [5, 1, 3])</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Without the sliding window, you'd recalculate the sum of each subarray from scratch: ( O(n \times k) ). With the sliding window, each element is added once and removed once: ( O(n) ).</p>
+<details>
+<summary>Sliding Window Visualization</summary>
+<h4 id="diagram_3">Diagram:</h4>
+<p>Here's how the window slides through <code>[2, 1, 5, 1, 3, 2]</code> with ( k = 3 ):</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Step 1:  [2  1  5] 1  3  2    sum = 8
+Step 2:   2 [1  5  1] 3  2    sum = 8-2+1 = 7
+Step 3:   2  1 [5  1  3] 2    sum = 7-1+3 = 9  &lt;- maximum!
+Step 4:   2  1  5 [1  3  2]   sum = 9-5+2 = 6
+</code></pre></div></td></tr></tbody></table></div>
+<p>At each step, we subtract the element leaving the window (left side) and add the element entering (right side). One subtraction and one addition per step — that's ( O(1) ) per slide!</p>
+</details>
+<h3 id="the-frequency-counter-pattern">The Frequency Counter Pattern</h3>
+<p>The <strong>Frequency Counter Pattern</strong> uses a dictionary (or <code>Counter</code> from the <code>collections</code> module) to count occurrences of elements. This avoids nested loops when you need to compare frequencies between two collections.</p>
+<p><strong>Problem:</strong> Determine if two strings are anagrams (contain exactly the same characters).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_anagram</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Frequency counter approach. O(n) instead of O(n^2)."""</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="n">freq</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">s1</span><span class="p">:</span>
+        <span class="n">freq</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">s2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">freq</span> <span class="ow">or</span> <span class="n">freq</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="n">freq</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="kc">True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">is_anagram</span><span class="p">(</span><span class="s2">"listen"</span><span class="p">,</span> <span class="s2">"silent"</span><span class="p">))</span>  <span class="c1"># True</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_anagram</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">,</span> <span class="s2">"world"</span><span class="p">))</span>    <span class="c1"># False</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>A brute force approach might sort both strings and compare them (( O(n \log n) )), or check each character against all characters in the other string (( O(n^2) )). The frequency counter does it in a single pass through each string: ( O(n) ).</p>
+<p>Python also has a built-in shortcut:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+
+<span class="k">def</span> <span class="nf">is_anagram_short</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">Counter</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">==</span> <span class="n">Counter</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h2 id="recursion-in-problem-solving">Recursion in Problem Solving</h2>
+<p><strong>Recursion in Algorithms</strong> is a technique where a function calls itself to solve smaller instances of the same problem. You saw recursion in Chapter 7, but here we'll see how it powers some of the most important algorithms.</p>
+<p>Every recursive function needs two things:</p>
+<ol>
+<li><strong>Base case:</strong> A condition that stops the recursion.</li>
+<li><strong>Recursive case:</strong> The function calling itself with a "smaller" input.</li>
+</ol>
+<p>Here's a recursive approach to computing the power of a number efficiently:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">power</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">exponent</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Fast exponentiation. O(log n) instead of O(n)."""</span>
+    <span class="k">if</span> <span class="n">exponent</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">exponent</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">half</span> <span class="o">=</span> <span class="n">power</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">exponent</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">half</span> <span class="o">*</span> <span class="n">half</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">base</span> <span class="o">*</span> <span class="n">power</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">exponent</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>  <span class="c1"># 1024</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This is divide and conquer in action! Instead of multiplying <code>base</code> by itself ( n ) times (( O(n) )), we halve the exponent at each step, giving us ( O(\log n) ). For ( 2^{1000} ), that's about 10 multiplications instead of 1,000.</p>
+<details>
+<summary>Recursion Tree for power(2, 8)</summary>
+<h4 id="diagram_4">Diagram:</h4>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>power(2, 8)
+  └── half = power(2, 4)
+        └── half = power(2, 2)
+              └── half = power(2, 1)
+                    └── 2 * power(2, 0) = 2 * 1 = 2
+                  return 2
+              return 2 * 2 = 4
+        return 4 * 4 = 16
+  return 16 * 16 = 256
+</code></pre></div></td></tr></tbody></table></div>
+<p>Only 4 recursive calls instead of 8 multiplications. For <code>power(2, 1024)</code>, we'd need only about 10 calls!</p>
+</details>
+<h2 id="algorithm-visualization">Algorithm Visualization</h2>
+<p><strong>Algorithm Visualization</strong> means creating visual representations of how algorithms work step by step. Visualizations help you understand what an algorithm does at each point in its execution. They're one of the best tools for building intuition about why certain algorithms are fast or slow.</p>
+<p>You can visualize algorithms in many ways:</p>
+<ul>
+<li><strong>Trace tables</strong> — manually track variables at each step (like the operation counting table earlier)</li>
+<li><strong>Bar charts</strong> — show array elements as bars that swap during sorting</li>
+<li><strong>Tree diagrams</strong> — show recursive call structures</li>
+<li><strong>Animated simulations</strong> — interactive programs that let you step through an algorithm</li>
+</ul>
+<details>
+<summary>Algorithm Visualization: Sorting Comparison MicroSim</summary>
+<h4 id="diagram_5">Diagram:</h4>
+<p>Imagine a MicroSim where you can watch three sorting algorithms race side by side. Each algorithm gets the same shuffled array. You can see:</p>
+<ul>
+<li><strong>Selection sort</strong> slowly scanning for the minimum, making ( O(n^2) ) comparisons</li>
+<li><strong>Insertion sort</strong> building the sorted portion from left to right</li>
+<li><strong>Merge sort</strong> splitting, sorting, and merging — finishing much faster</li>
+</ul>
+<p>Visualizations like this make the difference between ( O(n^2) ) and ( O(n \log n) ) <em>viscerally obvious</em>. You can see merge sort pulling ahead as the array gets larger.</p>
+<p>When you design your own algorithms, try drawing diagrams or building trace tables. If you can't trace your algorithm by hand, you don't fully understand it yet.</p>
+</details>
+<h2 id="memoization-remember-and-reuse">Memoization: Remember and Reuse</h2>
+<p>Now for one of the most satisfying optimization techniques in all of programming. <strong>Memoization</strong> is a technique where you store the results of expensive function calls and return the cached result when the same inputs occur again.</p>
+<p>The classic example is the Fibonacci sequence. Here's the naive recursive version:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Naive recursive Fibonacci. O(2^n) — very slow!"""</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This looks elegant, but it's <em>horrifically</em> slow. To compute <code>fib(5)</code>, it computes <code>fib(4)</code> and <code>fib(3)</code>. But to compute <code>fib(4)</code>, it also computes <code>fib(3)</code> — the same work, done twice! The number of function calls grows exponentially: ( O(2^n) ). Try <code>fib(40)</code> and you'll be waiting a very long time.</p>
+<p>Now watch what happens with memoization:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">fib_memo</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">memo</span><span class="o">=</span><span class="p">{}):</span>
+<span class="w">    </span><span class="sd">"""Memoized Fibonacci. O(n) — dramatically faster!"""</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">memo</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span>
+    <span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">fib_memo</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">memo</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib_memo</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="n">memo</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>With memoization, each Fibonacci number is computed <em>exactly once</em> and then stored in the dictionary. Instead of ( O(2^n) ), we get ( O(n) ). That's the difference between "my computer can't do this" and "done in a millisecond."</p>
+<p>Let's prove it with empirical analysis:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># Naive version (don't try values much above 35!)</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">fib</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+<span class="n">naive_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span>
+
+<span class="c1"># Memoized version</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">fib_memo</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+<span class="n">memo_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"fib(35) = </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Naive:    </span><span class="si">{</span><span class="n">naive_time</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Memoized: </span><span class="si">{</span><span class="n">memo_time</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Speedup:  </span><span class="si">{</span><span class="n">naive_time</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">memo_time</span><span class="si">:</span><span class="s2">,.0f</span><span class="si">}</span><span class="s2">x faster"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Typical output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>fib(35) = 9227465
+Naive:    3.2145 seconds
+Memoized: 0.00001200 seconds
+Speedup:  267,875x faster
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-celebrates.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-celebrates.png" width="80"></a>
+Over 200,000 times faster from adding a dictionary cache! Memoization is one of those techniques that feels like cheating — but it's completely legit. Any time you see a recursive function recomputing the same values over and over, memoization is your best friend.</p>
+</div>
+<p>Python also provides a built-in decorator for memoization:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">lru_cache</span>
+
+<span class="nd">@lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">fib_cached</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">fib_cached</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib_cached</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">fib_cached</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+<span class="c1"># Output: 354224848179261915075 — computed instantly!</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The <code>@lru_cache</code> decorator handles all the caching for you. The name stands for "Least Recently Used cache." With <code>maxsize=None</code>, it caches every result without evicting any.</p>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's see how these concepts connect by solving a problem using multiple approaches.</p>
+<p><strong>Problem:</strong> Given a list of integers, find the length of the longest subarray where all elements sum to at most a target value.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Brute force: O(n^3) — check every subarray, sum each one</span>
+<span class="k">def</span> <span class="nf">longest_subarray_brute</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="n">max_length</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="o">&lt;=</span> <span class="n">target</span><span class="p">:</span>
+                <span class="n">max_length</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_length</span><span class="p">,</span> <span class="n">j</span> <span class="o">-</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">max_length</span>
+
+<span class="c1"># Sliding window: O(n) — elegant and fast</span>
+<span class="k">def</span> <span class="nf">longest_subarray_window</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="n">max_length</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">window_sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">right</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+        <span class="n">window_sum</span> <span class="o">+=</span> <span class="n">nums</span><span class="p">[</span><span class="n">right</span><span class="p">]</span>
+
+        <span class="k">while</span> <span class="n">window_sum</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">window_sum</span> <span class="o">-=</span> <span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">]</span>
+            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="n">max_length</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_length</span><span class="p">,</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">max_length</span>
+
+<span class="c1"># Test both</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">target</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">longest_subarray_brute</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>   <span class="c1"># 5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">longest_subarray_window</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>   <span class="c1"># 5</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The brute force version is ( O(n^3) ) — three layers of work (two loops plus the <code>sum()</code> call). The sliding window version is ( O(n) ) — a 1,000,000,000x improvement at ( n = 1{,}000 ). Same answer, wildly different performance.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-encourages.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-encourages.png" width="80"></a>
+If this chapter felt intense, take a breath. You just learned tools that many college students struggle with. The key is practice: pick a problem, try brute force first, then see if you can apply a pattern (two pointer, sliding window, frequency counter) or a strategy (divide and conquer, greedy, memoization) to make it faster. Every expert started exactly where you are now.</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ol>
+<li>
+<p><strong>Logarithmic time ( O(\log n) )</strong> cuts the problem in half at each step — this is why binary search is so fast.</p>
+</li>
+<li>
+<p><strong>Linearithmic time ( O(n \log n) )</strong> is the best possible for general comparison-based sorting algorithms like merge sort.</p>
+</li>
+<li>
+<p>Always consider <strong>best, average, and worst case</strong> — an algorithm's performance can vary dramatically depending on the input.</p>
+</li>
+<li>
+<p><strong>Empirical analysis</strong> with Python's <code>time</code> module lets you measure real performance and verify your Big-O predictions.</p>
+</li>
+<li>
+<p><strong>Counting operations</strong> is the foundation of complexity analysis — trace through your code and count how work scales with input size.</p>
+</li>
+<li>
+<p><strong>Brute force</strong> is a valid first approach: get it working correctly, then optimize.</p>
+</li>
+<li>
+<p><strong>Divide and conquer</strong> splits problems into smaller independent subproblems — it's the strategy behind merge sort and fast exponentiation.</p>
+</li>
+<li>
+<p><strong>Greedy algorithms</strong> make locally optimal choices, but they don't always produce globally optimal results.</p>
+</li>
+<li>
+<p><strong>Algorithm tradeoffs</strong> (time vs. space) and <strong>efficiency vs. readability</strong> are real-world engineering decisions — context matters.</p>
+</li>
+<li>
+<p>The <strong>two pointer</strong>, <strong>sliding window</strong>, and <strong>frequency counter</strong> patterns transform ( O(n^2) ) brute force solutions into ( O(n) ) solutions.</p>
+</li>
+<li>
+<p><strong>Recursion</strong> is a powerful tool when combined with strategies like divide and conquer.</p>
+</li>
+<li>
+<p><strong>Memoization</strong> caches the results of function calls, turning exponential algorithms into linear ones (like Fibonacci going from ( O(2^n) ) to ( O(n) )).</p>
+</li>
+<li>
+<p><strong>Algorithm visualization</strong> through trace tables, diagrams, and simulations builds deep understanding of how algorithms behave.</p>
+</li>
+</ol>
+<hr>
+<details class="question">
+<summary>Brute Force vs. Two Pointer: What's the Tradeoff?</summary>
+<p>You have a sorted list of 10,000 integers and need to find a pair that sums to a target value. Compare the brute force approach (( O(n^2) )) with the two pointer approach (( O(n) )).</p>
+<p><strong>(a)</strong> How many pair comparisons does the brute force approach make at most?</p>
+<p><strong>(b)</strong> How many steps does the two pointer approach take at most?</p>
+<p><strong>(c)</strong> If each comparison takes 1 microsecond, how long does each approach take?</p>
+<p><strong>Answer:</strong></p>
+<p><strong>(a)</strong> Brute force checks ( \frac{n(n-1)}{2} = \frac{10{,}000 \times 9{,}999}{2} = 49{,}995{,}000 ) pairs.</p>
+<p><strong>(b)</strong> Two pointer takes at most ( n = 10{,}000 ) steps.</p>
+<p><strong>(c)</strong> Brute force: ( 49{,}995{,}000 \times 1\mu s \approx 50 ) seconds. Two pointer: ( 10{,}000 \times 1\mu s = 0.01 ) seconds. The two pointer approach is about <strong>5,000 times faster</strong> — and both give the same correct answer.</p>
+</details>
+<details class="question">
+<summary>Memoization Magic: Why Does It Help?</summary>
+<p>Consider the naive recursive Fibonacci function.</p>
+<p><strong>(a)</strong> Draw (or describe) the recursive call tree for <code>fib(6)</code>. How many total function calls are made?</p>
+<p><strong>(b)</strong> With memoization, how many unique computations are needed for <code>fib(6)</code>?</p>
+<p><strong>(c)</strong> Explain in your own words why memoization changes the complexity from ( O(2^n) ) to ( O(n) ).</p>
+<p><strong>Answer:</strong></p>
+<p><strong>(a)</strong> The call tree for <code>fib(6)</code> makes <strong>25 total calls</strong>. <code>fib(3)</code> alone is computed 4 separate times! The tree branches exponentially because each call spawns two more.</p>
+<p><strong>(b)</strong> With memoization, we compute <code>fib(0)</code>, <code>fib(1)</code>, <code>fib(2)</code>, <code>fib(3)</code>, <code>fib(4)</code>, <code>fib(5)</code>, and <code>fib(6)</code> — exactly <strong>7 unique computations</strong> (that's ( n + 1 )).</p>
+<p><strong>(c)</strong> Without memoization, the function recomputes the same subproblems over and over, leading to an exponential explosion of duplicate work. Memoization stores each result the first time it's computed, so every subsequent call with the same argument returns instantly from the cache. Since there are only ( n + 1 ) unique inputs, the total work is ( O(n) ).</p>
+</details>
+<details class="question">
+<summary>Greedy vs. Optimal: When Does Greedy Fail?</summary>
+<p>Suppose you have coin denominations of [25, 15, 1] and need to make change for 30 cents.</p>
+<p><strong>(a)</strong> What solution does the greedy algorithm produce? How many coins?</p>
+<p><strong>(b)</strong> What is the optimal (fewest coins) solution?</p>
+<p><strong>(c)</strong> Why does the greedy approach work for standard US coins [25, 10, 5, 1] but fail for [25, 15, 1]?</p>
+<p><strong>Answer:</strong></p>
+<p><strong>(a)</strong> Greedy picks the largest coin first: 25, then five 1s = [25, 1, 1, 1, 1, 1]. That's <strong>6 coins</strong>.</p>
+<p><strong>(b)</strong> The optimal solution is [15, 15] — just <strong>2 coins</strong>.</p>
+<p><strong>(c)</strong> The greedy algorithm works for US coins because of a special mathematical property: each coin denomination is at least twice the next smaller one, so you never need to "un-pick" a large coin. With [25, 15, 1], picking 25 first blocks you from using two 15s. The greedy approach fails when a locally optimal choice prevents the globally optimal solution. For arbitrary coin sets, you need dynamic programming (a topic for a future course!) to guarantee the best answer.</p>
+</details>
 
 
 
@@ -1456,12 +2972,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

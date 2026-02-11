@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="description" content="Creating, indexing, slicing, and modifying Python lists with essential methods, comprehensions, and traversal patterns.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>8. Lists - Computer Science</title>
+        <title>Lists - Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,9 +62,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="8. Lists - Computer Science">
+        <meta property="og:title" content="Lists - Computer Science">
       
-        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta property="og:description" content="Creating, indexing, slicing, and modifying Python lists with essential methods, comprehensions, and traversal patterns.">
       
         <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/08-lists/index.png">
       
@@ -78,9 +78,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="8. Lists - Computer Science">
+        <meta name="twitter:title" content="Lists - Computer Science">
       
-        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="twitter:description" content="Creating, indexing, slicing, and modifying Python lists with essential methods, comprehensions, and traversal patterns.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/08-lists/index.png">
       
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              8. Lists
+              Lists
             
           </span>
         </div>
@@ -160,13 +160,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -198,14 +196,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -250,7 +247,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -270,10 +267,8 @@
       <a href="../../index.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -289,13 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about.md" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -314,10 +307,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -342,46 +333,85 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -394,14 +424,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -433,10 +462,8 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Intro to Computer Science
-    
   </span>
   
 
@@ -456,10 +483,8 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Python Fundamentals
-    
   </span>
   
 
@@ -479,10 +504,8 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Boolean Logic
-    
   </span>
   
 
@@ -502,10 +525,8 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -525,10 +546,8 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. Working with Strings
-    
   </span>
   
 
@@ -548,10 +567,8 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -571,10 +588,8 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -603,10 +618,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -616,10 +629,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -667,6 +678,297 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Lists?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Lists
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-list-creation-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: List Creation Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-list-items-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing List Items: Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slicing-getting-multiple-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicing: Getting Multiple Items
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Slicing: Getting Multiple Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-list-indexing-and-slicing-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: List Indexing and Slicing Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-mutability-lists-can-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Mutability: Lists Can Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-methods-your-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Methods: Your Toolkit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List Methods: Your Toolkit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-append-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Append Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-insert-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Insert Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-remove-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Remove Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pop-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Pop Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-sort-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sort Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-reverse-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Reverse Method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Reverse Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-list-methods-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: List Methods Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-comprehensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Comprehensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-lists-and-lists-of-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Lists and Lists of Lists
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Lists and Lists of Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-nested-list-grid-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Nested List Grid Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-traversal-walking-through-a-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Traversal: Walking Through a List
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List Traversal: Walking Through a List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-loop-with-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Loop with Lists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-enumerate-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Enumerate Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Enumerate Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-list-traversal-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: List Traversal Animator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-unpacking" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Unpacking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-zip-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Zip Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Zip Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-zip-function-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Zip Function Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-patterns-and-recipes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Patterns and Recipes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -686,10 +988,8 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. Advanced List Operations
-    
   </span>
   
 
@@ -709,10 +1009,8 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. Tuples and Sets
-    
   </span>
   
 
@@ -732,10 +1030,8 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -755,10 +1051,8 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Classes and Objects
-    
   </span>
   
 
@@ -778,10 +1072,8 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Inheritance and Polymorphism
-    
   </span>
   
 
@@ -801,10 +1093,8 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -824,10 +1114,8 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. File Input and Output
-    
   </span>
   
 
@@ -847,10 +1135,8 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -870,10 +1156,8 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     17. Testing and Debugging
-    
   </span>
   
 
@@ -893,10 +1177,8 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     18. Searching and Sorting
-    
   </span>
   
 
@@ -916,10 +1198,8 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -939,10 +1219,8 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     20. Advanced Python
-    
   </span>
   
 
@@ -971,8 +1249,25 @@
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -986,14 +1281,11 @@
         
   
   
-  
     <a href="../../sims/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1058,7 +1350,6 @@
     
     
     
-    
       
         
         
@@ -1069,14 +1360,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1107,7 +1395,6 @@
     
     
     
-    
       
         
         
@@ -1118,14 +1405,11 @@
         
   
   
-  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1150,10 +1434,8 @@
       <a href="../../glossary.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1172,10 +1454,8 @@
       <a href="../../faq.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1194,10 +1474,8 @@
       <a href="../../references.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -1216,10 +1494,8 @@
       <a href="../../license.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1238,10 +1514,8 @@
       <a href="../../contact.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1303,6 +1577,297 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Lists?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Lists
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-list-creation-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: List Creation Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-list-items-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing List Items: Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slicing-getting-multiple-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicing: Getting Multiple Items
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Slicing: Getting Multiple Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-list-indexing-and-slicing-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: List Indexing and Slicing Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-mutability-lists-can-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Mutability: Lists Can Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-methods-your-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Methods: Your Toolkit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List Methods: Your Toolkit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-append-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Append Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-insert-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Insert Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-remove-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Remove Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pop-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Pop Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-sort-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sort Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-reverse-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Reverse Method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Reverse Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-list-methods-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: List Methods Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-comprehensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Comprehensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-lists-and-lists-of-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Lists and Lists of Lists
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Lists and Lists of Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-nested-list-grid-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Nested List Grid Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-traversal-walking-through-a-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Traversal: Walking Through a List
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List Traversal: Walking Through a List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-loop-with-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Loop with Lists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-enumerate-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Enumerate Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Enumerate Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-list-traversal-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: List Traversal Animator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-unpacking" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Unpacking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-zip-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Zip Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Zip Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-zip-function-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Zip Function Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-patterns-and-recipes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Patterns and Recipes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1316,7 +1881,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/08-lists/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1362,7 +1926,1034 @@
 <li><a href="../05-working-with-strings/">Chapter 5: Working with Strings</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-welcome.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-welcome.png" width="80"></a>
+Welcome back, coders! So far you've worked with single values — a number here, a string there. But what if you need to keep track of <em>dozens</em> of values? A playlist of songs, a roster of students, a shopping list? That's where Python lists come in, and they're about to become your new best friend. Let's dive in!</p>
+</div>
+<h2 id="what-are-lists">What Are Lists?</h2>
+<p>Imagine you're packing for a trip, and you write down everything you need: "phone, charger, snacks, headphones, sunscreen." That written packing list is a collection of items grouped together under one name — your packing list. Python <strong>lists</strong> work the same way.</p>
+<p>A <strong>list</strong> is an ordered collection of items stored in a single variable. Instead of creating five separate variables for five items, you put them all in one list. Lists are like the Swiss Army knife of Python — they're flexible, powerful, and you'll use them <em>constantly</em>.</p>
+<p>Here's a taste of what a list looks like in Python:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">packing_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"phone"</span><span class="p">,</span> <span class="s2">"charger"</span><span class="p">,</span> <span class="s2">"snacks"</span><span class="p">,</span> <span class="s2">"headphones"</span><span class="p">,</span> <span class="s2">"sunscreen"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">packing_list</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>['phone', 'charger', 'snacks', 'headphones', 'sunscreen']
+</code></pre></div></td></tr></tbody></table></div>
+<p>That's it! Square brackets, items separated by commas, and you've got yourself a list.</p>
+<h2 id="creating-lists">Creating Lists</h2>
+<p><strong>List creation</strong> in Python is straightforward. You use square brackets <code>[]</code> and separate each item with a comma. Here are several ways to create lists:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># A list of strings</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">]</span>
+
+<span class="c1"># A list of numbers</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">95</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
+
+<span class="c1"># A list of mixed types (yes, Python allows this!)</span>
+<span class="n">mixed</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">]</span>
+
+<span class="c1"># An empty list (ready to be filled later)</span>
+<span class="n">empty</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Using the list() constructor</span>
+<span class="n">letters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)</span>  <span class="c1"># Creates ['h', 'e', 'l', 'l', 'o']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>A few things to notice:</p>
+<ul>
+<li>Lists can hold <strong>any type</strong> of data — strings, integers, floats, booleans, and even other lists</li>
+<li>You can mix different types in the same list (though it's usually cleaner to keep them consistent)</li>
+<li>An empty list <code>[]</code> is totally valid — think of it as an empty shopping bag waiting to be filled</li>
+</ul>
+<p>You can also find out how many items are in a list using the built-in <code>len()</code> function:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">))</span>  <span class="c1"># Output: 3</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h4 id="diagram-list-creation-visualizer">Diagram: List Creation Visualizer</h4>
+<iframe src="../../sims/list-creation-visualizer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>List Creation Visualizer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> list-creation-visualizer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> interpret, illustrate</p>
+<p><strong>Learning Objective:</strong> Students will be able to create Python lists and visualize how items are stored in indexed positions.</p>
+<p><strong>Purpose:</strong> An interactive visualization showing how Python stores list elements in sequential memory positions. Students type items into a text field and see them appear as labeled boxes in a visual list representation.</p>
+<p><strong>Canvas layout:</strong>
+- Top section: Title "List Creation Visualizer"
+- Text input field where students can type comma-separated values
+- A "Create List" button that renders the list
+- Visual representation: horizontal row of colored boxes, each containing an item
+- Above each box: the index number (0, 1, 2, ...)
+- Below the boxes: the Python code representation (e.g., <code>["apple", "banana", "cherry"]</code>)
+- Preset buttons: "Fruits", "Numbers", "Mixed Types", "Empty" to load example lists</p>
+<p><strong>Interactive elements:</strong>
+- Type comma-separated values and press "Create List" to see the visual
+- Click preset buttons to load example data
+- Hover over any box to highlight the index and the value
+- A "Add Item" button to append one more item to the existing list, animating it sliding into position</p>
+<p><strong>Visual style:</strong> Clean colored boxes with rounded corners, index labels in a contrasting color above
+<strong>Color scheme:</strong> Alternating soft blue and green boxes; index labels in dark gray
+<strong>Responsive:</strong> Boxes resize based on number of items and window width</p>
+<p><strong>Instructional Rationale:</strong> Visualization of sequential indexed storage helps students build a mental model of how list data is organized internally. The ability to create custom lists encourages experimentation, while preset examples scaffold the experience.</p>
+</details>
+<h2 id="accessing-list-items-indexing">Accessing List Items: Indexing</h2>
+<p>Okay, so you've created a list. How do you get a <em>specific</em> item out of it? That's where <strong>list indexing</strong> comes in.</p>
+<p>Every item in a list has a position number called an <strong>index</strong>. And here's the part that trips up almost everyone at first: Python starts counting at <strong>0</strong>, not 1. The first item is at index 0, the second at index 1, and so on.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">,</span> <span class="s2">"date"</span><span class="p">,</span> <span class="s2">"elderberry"</span><span class="p">]</span>
+<span class="c1">#          index 0   index 1   index 2   index 3   index 4</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># apple</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>   <span class="c1"># cherry</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>   <span class="c1"># elderberry</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Why does Python start at 0? It's a computer science tradition that goes back to how memory addresses work. Don't fight it — embrace it. Soon it'll feel completely natural.</p>
+<p>Python also supports <strong>negative indexing</strong>, which counts from the <em>end</em> of the list. The last item is index -1, the second-to-last is -2, and so on:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>   <span class="c1"># elderberry (last item)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>   <span class="c1"># date (second to last)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>   <span class="c1"># cherry</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's a handy reference table:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Positive Index</th>
+<th>Negative Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"apple"</td>
+<td>0</td>
+<td>-5</td>
+</tr>
+<tr>
+<td>"banana"</td>
+<td>1</td>
+<td>-4</td>
+</tr>
+<tr>
+<td>"cherry"</td>
+<td>2</td>
+<td>-3</td>
+</tr>
+<tr>
+<td>"date"</td>
+<td>3</td>
+<td>-2</td>
+</tr>
+<tr>
+<td>"elderberry"</td>
+<td>4</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Think of negative indices as a shortcut. Instead of calculating <code>len(my_list) - 1</code> to find the last item, just use <code>my_list[-1]</code>. It's Python's way of being thoughtful — because who wants to do extra math when you don't have to?</p>
+</div>
+<p>If you try to access an index that doesn't exist, Python raises an <code>IndexError</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">10</span><span class="p">])</span>  <span class="c1"># IndexError: list index out of range</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>So always make sure your index is within the valid range.</p>
+<h2 id="slicing-getting-multiple-items">Slicing: Getting Multiple Items</h2>
+<p>What if you want more than one item? <strong>List slicing</strong> lets you grab a <em>portion</em> of a list using the syntax <code>list[start:stop]</code>. This returns a new list containing items from index <code>start</code> up to (but <em>not including</em>) index <code>stop</code>.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">,</span> <span class="s2">"date"</span><span class="p">,</span> <span class="s2">"elderberry"</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>   <span class="c1"># ['banana', 'cherry', 'date']</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>   <span class="c1"># ['apple', 'banana', 'cherry']</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>    <span class="c1"># ['cherry', 'date', 'elderberry']  (from index 2 to the end)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>    <span class="c1"># ['apple', 'banana', 'cherry']  (from the start to index 3)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[:])</span>     <span class="c1"># A copy of the entire list</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>You can also add a <strong>step</strong> value with <code>list[start:stop:step]</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>   <span class="c1"># [0, 2, 4, 6, 8]  (every other item)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[::</span><span class="mi">3</span><span class="p">])</span>      <span class="c1"># [0, 3, 6, 9]  (every third item)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>     <span class="c1"># [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  (reversed!)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's a quick reference for slicing syntax:</p>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>list[a:b]</code></td>
+<td>Items from index <code>a</code> to <code>b-1</code></td>
+</tr>
+<tr>
+<td><code>list[a:]</code></td>
+<td>Items from index <code>a</code> to the end</td>
+</tr>
+<tr>
+<td><code>list[:b]</code></td>
+<td>Items from the start to <code>b-1</code></td>
+</tr>
+<tr>
+<td><code>list[:]</code></td>
+<td>A copy of the entire list</td>
+</tr>
+<tr>
+<td><code>list[a:b:c]</code></td>
+<td>Every <code>c</code>th item from <code>a</code> to <code>b-1</code></td>
+</tr>
+<tr>
+<td><code>list[::-1]</code></td>
+<td>The list in reverse</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-list-indexing-and-slicing-explorer">Diagram: List Indexing and Slicing Explorer</h4>
+<iframe src="../../sims/list-index-slice-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>List Indexing and Slicing Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> list-index-slice-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> demonstrate, use</p>
+<p><strong>Learning Objective:</strong> Students will be able to use positive and negative indices to access specific list items and apply slice notation to extract sublists.</p>
+<p><strong>Purpose:</strong> An interactive tool where students type index or slice expressions and immediately see which items are selected from a visual list.</p>
+<p><strong>Canvas layout:</strong>
+- Top section: Title "List Indexing &amp; Slicing Explorer"
+- A visual horizontal row of 8 colored boxes representing a list: <code>["ant", "bee", "cat", "dog", "elk", "fox", "goat", "hawk"]</code>
+- Above each box: positive index (0-7)
+- Below each box: negative index (-8 to -1)
+- An input field labeled "Enter expression:" where students type things like <code>[2]</code>, <code>[1:5]</code>, <code>[-3:]</code>, <code>[::2]</code>
+- A result display showing the Python output
+- The selected boxes highlight (glow/enlarge) in the visual</p>
+<p><strong>Interactive elements:</strong>
+- Type any valid index or slice expression and press Enter
+- Selected items glow bright yellow in the visual row
+- Preset example buttons: <code>[0]</code>, <code>[-1]</code>, <code>[2:5]</code>, <code>[:3]</code>, <code>[::2]</code>, <code>[::-1]</code>
+- An "Explain" toggle that shows a step-by-step breakdown of how the slice was computed</p>
+<p><strong>Visual style:</strong> Horizontal boxes with item labels inside, index labels above and below in smaller text
+<strong>Color scheme:</strong> Default box color is soft blue; selected items highlight in bright gold; error states show red border
+<strong>Responsive:</strong> Box sizes adjust for window width</p>
+<p><strong>Instructional Rationale:</strong> Direct manipulation lets students test their understanding of index/slice syntax with immediate visual feedback. The "Explain" mode scaffolds learning by showing the computational steps behind each expression. Negative indices and step values are notoriously confusing, and this hands-on approach builds fluency faster than reading alone.</p>
+</details>
+<h2 id="list-mutability-lists-can-change">List Mutability: Lists Can Change</h2>
+<p>Here's something that makes lists special compared to strings: <strong>list mutability</strong>. A <strong>mutable</strong> object is one you can change after creating it. Lists are mutable, which means you can add items, remove items, or swap out individual elements whenever you want.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">]</span>
+<span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"yellow"</span>       <span class="c1"># Replace "green" with "yellow"</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>              <span class="c1"># ['red', 'yellow', 'blue']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Compare this to strings, which are <em>immutable</em> (you can't change them in place):</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">"hello"</span>
+<span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"H"</span>    <span class="c1"># TypeError! Strings can't be modified</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This mutability is one of the reasons lists are so popular. Think of a list like a whiteboard — you can erase and rewrite as much as you want. A string is more like a printed poster — once it's made, you need a whole new poster to change it.</p>
+<p>You can also replace a <em>range</em> of items using slicing:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># [1, 20, 30, 40, 5]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h2 id="list-methods-your-toolkit">List Methods: Your Toolkit</h2>
+<p>Now let's get to the really good stuff. Python lists come with a bunch of built-in <strong>list methods</strong> — special functions attached to lists that let you add, remove, sort, and manipulate items. Think of them as tools in a toolbox, each designed for a specific job.</p>
+<p>Here's a reference table of the most important list methods:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>What It Does</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>append(x)</code></td>
+<td>Adds <code>x</code> to the end</td>
+<td><code>[1, 2].append(3)</code></td>
+<td><code>[1, 2, 3]</code></td>
+</tr>
+<tr>
+<td><code>insert(i, x)</code></td>
+<td>Inserts <code>x</code> at index <code>i</code></td>
+<td><code>[1, 3].insert(1, 2)</code></td>
+<td><code>[1, 2, 3]</code></td>
+</tr>
+<tr>
+<td><code>remove(x)</code></td>
+<td>Removes the first occurrence of <code>x</code></td>
+<td><code>[1, 2, 3, 2].remove(2)</code></td>
+<td><code>[1, 3, 2]</code></td>
+</tr>
+<tr>
+<td><code>pop(i)</code></td>
+<td>Removes and returns item at index <code>i</code></td>
+<td><code>[1, 2, 3].pop(1)</code></td>
+<td>Returns <code>2</code>; list becomes <code>[1, 3]</code></td>
+</tr>
+<tr>
+<td><code>sort()</code></td>
+<td>Sorts the list in ascending order</td>
+<td><code>[3, 1, 2].sort()</code></td>
+<td><code>[1, 2, 3]</code></td>
+</tr>
+<tr>
+<td><code>reverse()</code></td>
+<td>Reverses the list in place</td>
+<td><code>[1, 2, 3].reverse()</code></td>
+<td><code>[3, 2, 1]</code></td>
+</tr>
+<tr>
+<td><code>index(x)</code></td>
+<td>Returns the index of first occurrence of <code>x</code></td>
+<td><code>[10, 20, 30].index(20)</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>count(x)</code></td>
+<td>Counts how many times <code>x</code> appears</td>
+<td><code>[1, 2, 2, 3].count(2)</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>clear()</code></td>
+<td>Removes all items</td>
+<td><code>[1, 2, 3].clear()</code></td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>copy()</code></td>
+<td>Returns a shallow copy</td>
+<td><code>[1, 2, 3].copy()</code></td>
+<td><code>[1, 2, 3]</code> (new list)</td>
+</tr>
+<tr>
+<td><code>extend(L)</code></td>
+<td>Adds all items from list <code>L</code></td>
+<td><code>[1, 2].extend([3, 4])</code></td>
+<td><code>[1, 2, 3, 4]</code></td>
+</tr>
+</tbody>
+</table>
+<p>Let's look at the most important ones in detail.</p>
+<h3 id="the-append-method">The Append Method</h3>
+<p>The <strong>append method</strong> adds a single item to the <em>end</em> of a list. It's like getting in the back of a line — new items always go last.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">playlist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Song A"</span><span class="p">,</span> <span class="s2">"Song B"</span><span class="p">]</span>
+<span class="n">playlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Song C"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">playlist</span><span class="p">)</span>  <span class="c1"># ['Song A', 'Song B', 'Song C']</span>
+
+<span class="n">playlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Song D"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">playlist</span><span class="p">)</span>  <span class="c1"># ['Song A', 'Song B', 'Song C', 'Song D']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><code>append()</code> is probably the list method you'll use most often. Building a list piece by piece? Start empty and keep appending:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="n">squares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>  <span class="c1"># [1, 4, 9, 16, 25]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-insert-method">The Insert Method</h3>
+<p>The <strong>insert method</strong> lets you add an item at a <em>specific position</em>. It takes two arguments: the index where you want the item to go, and the item itself.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">guests</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"Charlie"</span><span class="p">,</span> <span class="s2">"Diana"</span><span class="p">]</span>
+<span class="n">guests</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">)</span>      <span class="c1"># Insert "Bob" at index 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">guests</span><span class="p">)</span>  <span class="c1"># ['Alice', 'Bob', 'Charlie', 'Diana']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Everything after the insertion point shifts one position to the right to make room. Think of it like cutting in line at a movie theater — everyone behind you has to take a step back.</p>
+<h3 id="the-remove-method">The Remove Method</h3>
+<p>The <strong>remove method</strong> removes the <em>first occurrence</em> of a specified value from the list:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"yellow"</span><span class="p">]</span>
+<span class="n">colors</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>  <span class="c1"># ['red', 'green', 'blue', 'yellow']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice that only the <em>first</em> "blue" was removed. The second "blue" is still there. If the value isn't found, Python raises a <code>ValueError</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">colors</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"purple"</span><span class="p">)</span>  <span class="c1"># ValueError: list.remove(x): x not in list</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Monty says: Watch out!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-warning.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-warning.png" width="80"></a>
+Be careful with <code>remove()</code> — it only removes the <strong>first</strong> match, not all of them! If you need to remove <em>every</em> occurrence of a value, you'll need a loop or a list comprehension. Also, calling <code>remove()</code> on a value that isn't in the list will crash your program. Always check first with <code>if value in my_list:</code> before removing.</p>
+</div>
+<h3 id="the-pop-method">The Pop Method</h3>
+<p>The <strong>pop method</strong> removes an item at a given index <em>and returns it</em>. This is handy when you want to use the removed value:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"homework"</span><span class="p">,</span> <span class="s2">"dishes"</span><span class="p">,</span> <span class="s2">"laundry"</span><span class="p">,</span> <span class="s2">"coding"</span><span class="p">]</span>
+<span class="n">done</span> <span class="o">=</span> <span class="n">tasks</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>        <span class="c1"># Remove and return the first item</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">done</span><span class="p">)</span>                <span class="c1"># homework</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span>               <span class="c1"># ['dishes', 'laundry', 'coding']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>If you call <code>pop()</code> with no argument, it removes and returns the <em>last</em> item:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">last_task</span> <span class="o">=</span> <span class="n">tasks</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">last_task</span><span class="p">)</span>           <span class="c1"># coding</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span>               <span class="c1"># ['dishes', 'laundry']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Think of <code>pop()</code> like a stack of cafeteria trays — you always take the top one off (the last item added).</p>
+<h3 id="the-sort-method">The Sort Method</h3>
+<p>The <strong>sort method</strong> arranges items in ascending order (smallest to largest, A to Z):</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">85</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">88</span><span class="p">]</span>
+<span class="n">scores</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>  <span class="c1"># [78, 85, 88, 92, 95]</span>
+
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">]</span>
+<span class="n">names</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>  <span class="c1"># ['Alice', 'Bob', 'Charlie']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>To sort in descending order, pass <code>reverse=True</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">scores</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>  <span class="c1"># [95, 92, 88, 85, 78]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Important: <code>sort()</code> modifies the list <em>in place</em> and returns <code>None</code>. If you want a sorted copy without changing the original, use the built-in <code>sorted()</code> function instead:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">original</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">new_list</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">original</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">original</span><span class="p">)</span>    <span class="c1"># [3, 1, 4, 1, 5]  (unchanged!)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span>    <span class="c1"># [1, 1, 3, 4, 5]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-reverse-method">The Reverse Method</h3>
+<p>The <strong>reverse method</strong> flips the list around so the last item becomes the first and vice versa:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">countdown</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">countdown</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">countdown</span><span class="p">)</span>  <span class="c1"># [5, 4, 3, 2, 1]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Like <code>sort()</code>, <code>reverse()</code> modifies the list in place and returns <code>None</code>.</p>
+<h4 id="diagram-list-methods-playground">Diagram: List Methods Playground</h4>
+<iframe src="../../sims/list-methods-playground/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>List Methods Playground</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> list-methods-playground<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> apply, demonstrate, experiment</p>
+<p><strong>Learning Objective:</strong> Students will be able to apply common list methods (append, insert, remove, pop, sort, reverse) and predict the resulting list state.</p>
+<p><strong>Purpose:</strong> An interactive sandbox where students can apply list methods to a visual list and see the result animated step by step.</p>
+<p><strong>Canvas layout:</strong>
+- Top section: Title "List Methods Playground"
+- A visual horizontal row of colored boxes representing the current list state
+- Index labels above each box
+- Method buttons arranged below the list: "append", "insert", "remove", "pop", "sort", "reverse"
+- An input field for the value argument (used by append, insert, remove)
+- An input field for the index argument (used by insert, pop)
+- A "History" panel on the right showing previous operations and their results
+- A "Reset" button to restore the list to its initial state</p>
+<p><strong>Default list:</strong> <code>[64, 25, 12, 78, 36]</code></p>
+<p><strong>Interactive elements:</strong>
+- Click a method button to apply it to the current list
+- append: prompts for value, new box slides in from the right with animation
+- insert: prompts for index and value, box squeezes in at the position and others shift right
+- remove: prompts for value, the matching box flashes red and disappears, others shift left
+- pop: prompts for index (optional), the box flies upward and a "returned value" label appears
+- sort: boxes shuffle/slide to their sorted positions with smooth animation
+- reverse: boxes flip positions with a mirrored animation
+- History panel logs each operation as Python code (e.g., <code>list.append(42)</code>)</p>
+<p><strong>Visual style:</strong> Rounded rectangle boxes with numbers inside, smooth CSS-style transitions for additions/removals
+<strong>Color scheme:</strong> Boxes in various pastel colors, active operation highlighted in gold
+<strong>Responsive:</strong> Adjusts box sizes and layout for different screen widths</p>
+<p><strong>Instructional Rationale:</strong> A sandbox environment supports the Apply level by letting students freely experiment with each method and observe the state change. Animated transitions make the "shift" behavior of insert/remove visible, which is a common source of confusion. The history panel provides a record for self-review.</p>
+</details>
+<h2 id="list-comprehensions">List Comprehensions</h2>
+<p>Ready for one of Python's coolest features? <strong>List comprehension</strong> is a concise way to create a new list by transforming or filtering items from an existing sequence. It packs a <code>for</code> loop (and optionally an <code>if</code> condition) into a single line.</p>
+<p>Let's start with a regular loop and then see the comprehension version:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Regular loop approach</span>
+<span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="n">squares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>  <span class="c1"># [1, 4, 9, 16, 25]</span>
+
+<span class="c1"># List comprehension (same result, one line!)</span>
+<span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>  <span class="c1"># [1, 4, 9, 16, 25]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The general syntax is:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">new_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">expression</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">iterable</span><span class="p">]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Read it like a sentence: "Give me <code>expression</code> for each <code>item</code> in <code>iterable</code>."</p>
+<p>You can also add a filter with an <code>if</code> clause:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Only even numbers</span>
+<span class="n">evens</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">evens</span><span class="p">)</span>  <span class="c1"># [2, 4, 6, 8, 10]</span>
+
+<span class="c1"># Uppercase only the long words</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"hi"</span><span class="p">,</span> <span class="s2">"hello"</span><span class="p">,</span> <span class="s2">"hey"</span><span class="p">,</span> <span class="s2">"greetings"</span><span class="p">]</span>
+<span class="n">long_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">long_words</span><span class="p">)</span>  <span class="c1"># ['HELLO', 'GREETINGS']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here are some more handy examples:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>List Comprehension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Squares of 1-10</td>
+<td><code>[x**2 for x in range(1, 11)]</code></td>
+</tr>
+<tr>
+<td>Even numbers from a list</td>
+<td><code>[x for x in nums if x % 2 == 0]</code></td>
+</tr>
+<tr>
+<td>First letters of words</td>
+<td><code>[w[0] for w in words]</code></td>
+</tr>
+<tr>
+<td>Convert strings to ints</td>
+<td><code>[int(s) for s in string_list]</code></td>
+</tr>
+<tr>
+<td>Lengths of words</td>
+<td><code>[len(w) for w in words]</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+List comprehensions are powerful, but don't try to cram too much logic into one line. If your comprehension is getting long and hard to read, it's totally fine to use a regular <code>for</code> loop instead. Code clarity beats cleverness every time. Your future self (reading the code six months from now) will thank you!</p>
+</div>
+<h2 id="nested-lists-and-lists-of-lists">Nested Lists and Lists of Lists</h2>
+<p>A list can contain <em>anything</em> — including other lists! When you put a list inside a list, you get a <strong>nested list</strong>. A collection of lists stored inside an outer list is sometimes called a <strong>list of lists</strong>.</p>
+<p>This is super useful for representing grids, tables, and matrix-like data:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># A 3x3 tic-tac-toe board</span>
+<span class="n">board</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">"X"</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"O"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"O"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="c1"># Access a specific cell: row first, then column</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>   <span class="c1"># X  (row 0, column 2)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>   <span class="c1"># X  (row 1, column 1)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># O  (row 2, column 0)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The first index picks the row (the inner list), and the second index picks the item within that row. Think of it like a spreadsheet: <code>board[row][column]</code>.</p>
+<p>Here's another example — a gradebook:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Each inner list: [student_name, exam1, exam2, exam3]</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">95</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">87</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">80</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="c1"># Get Bob's second exam score</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grades</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># 90</span>
+
+<span class="c1"># Get all of Alice's scores</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grades</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">:])</span>  <span class="c1"># [92, 88, 95]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>You can visualize nested lists like a table:</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>[0] Name</th>
+<th>[1] Exam 1</th>
+<th>[2] Exam 2</th>
+<th>[3] Exam 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grades[0]</code></td>
+<td>"Alice"</td>
+<td>92</td>
+<td>88</td>
+<td>95</td>
+</tr>
+<tr>
+<td><code>grades[1]</code></td>
+<td>"Bob"</td>
+<td>85</td>
+<td>90</td>
+<td>87</td>
+</tr>
+<tr>
+<td><code>grades[2]</code></td>
+<td>"Charlie"</td>
+<td>78</td>
+<td>82</td>
+<td>80</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-nested-list-grid-visualizer">Diagram: Nested List Grid Visualizer</h4>
+<iframe src="../../sims/nested-list-grid/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Nested List Grid Visualizer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> nested-list-grid<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> interpret, explain</p>
+<p><strong>Learning Objective:</strong> Students will be able to access elements in nested lists using double-index notation and interpret a list of lists as a 2D grid.</p>
+<p><strong>Purpose:</strong> An interactive grid that visualizes a nested list (list of lists) and lets students click on cells to see the double-index expression needed to access each element.</p>
+<p><strong>Canvas layout:</strong>
+- Top section: Title "Nested List Grid Visualizer"
+- A visual grid of cells representing a 4x4 nested list
+- Row indices (0-3) labeled on the left
+- Column indices (0-3) labeled on top
+- An expression display below the grid showing <code>grid[row][col] = value</code>
+- A Python code panel showing the full nested list definition
+- Preset grids: "Tic-Tac-Toe", "Number Grid", "Gradebook"</p>
+<p><strong>Default grid:</strong>
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">grid</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+<span class="p">]</span>
+</code></pre></div></td></tr></tbody></table></div><p></p>
+<p><strong>Interactive elements:</strong>
+- Click any cell to highlight it and display <code>grid[row][col] = value</code> below
+- Clicking a row label highlights the entire row and shows <code>grid[row]</code>
+- A "Quiz Mode" button: displays a target expression like <code>grid[2][1]</code> and asks the student to click the correct cell
+- Preset buttons swap in different grid examples</p>
+<p><strong>Visual style:</strong> Clean grid with labeled axes, selected cells glow gold, row highlight in soft blue
+<strong>Color scheme:</strong> Grid cells in alternating light gray and white, indices in dark blue
+<strong>Responsive:</strong> Grid cell sizes adjust to window width</p>
+<p><strong>Instructional Rationale:</strong> Clicking individual cells and seeing the double-index expression reinforces the row-then-column access pattern. Quiz Mode provides retrieval practice. Multiple preset grids show that nested lists can represent diverse data types (numbers, strings, mixed).</p>
+</details>
+<h2 id="list-traversal-walking-through-a-list">List Traversal: Walking Through a List</h2>
+<p>One of the most common things you'll do with lists is go through each item one at a time. This is called <strong>list traversal</strong> — visiting every element in order. Python's <code>for</code> loop makes this incredibly easy.</p>
+<h3 id="for-loop-with-lists">For Loop with Lists</h3>
+<p>The most basic way to traverse a list is with a <strong>for loop</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">,</span> <span class="s2">"date"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I like </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>I like apple!
+I like banana!
+I like cherry!
+I like date!
+</code></pre></div></td></tr></tbody></table></div>
+<p>On each pass through the loop, the variable <code>fruit</code> takes on the value of the next item in the list. Python handles all the indexing behind the scenes.</p>
+<p>You can also loop with indices if you need the position:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Item </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fruits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Item 0: apple
+Item 1: banana
+Item 2: cherry
+Item 3: date
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-enumerate-function">The Enumerate Function</h3>
+<p>That <code>range(len(...))</code> pattern works, but Python has a much cleaner solution: the <strong>enumerate function</strong>. It gives you both the index <em>and</em> the value at the same time:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">,</span> <span class="s2">"date"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fruits</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>0: apple
+1: banana
+2: cherry
+3: date
+</code></pre></div></td></tr></tbody></table></div>
+<p>You can even start the count at a different number:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">rank</span><span class="p">,</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fruits</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"#</span><span class="si">{</span><span class="n">rank</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>#1: apple
+#2: banana
+#3: cherry
+#4: date
+</code></pre></div></td></tr></tbody></table></div>
+<p><code>enumerate()</code> is a favorite among Python programmers. Whenever you need both the position and the value during a loop, reach for <code>enumerate()</code> instead of <code>range(len(...))</code>.</p>
+<h4 id="diagram-list-traversal-animator">Diagram: List Traversal Animator</h4>
+<iframe src="../../sims/list-traversal-animator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>List Traversal Animator</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> list-traversal-animator<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> trace, explain</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace the execution of a for loop over a list and predict the output for each iteration.</p>
+<p><strong>Purpose:</strong> An animated step-through tool that visually shows a pointer moving through a list as a for loop executes, displaying the current variable values and output at each step.</p>
+<p><strong>Canvas layout:</strong>
+- Top section: Title "List Traversal Animator"
+- Left panel: Python code with the for loop, with the current line highlighted
+- Center panel: A visual row of list items with a pointer arrow indicating the current element
+- Right panel: Output console showing printed lines accumulating
+- Bottom section: Variable watch panel showing the current value of the loop variable and index</p>
+<p><strong>Code examples (selectable via tabs):</strong>
+1. Basic for loop: <code>for fruit in fruits: print(fruit)</code>
+2. With enumerate: <code>for i, fruit in enumerate(fruits): print(f"{i}: {fruit}")</code>
+3. With condition: <code>for fruit in fruits: if len(fruit) &gt; 5: print(fruit)</code></p>
+<p><strong>Interactive controls:</strong>
+- "Step" button: Advance one iteration
+- "Auto Play" button: Animate all iterations with a 1-second delay
+- "Reset" button: Return to the start
+- Speed slider: Adjust animation speed
+- Tab selector to switch between code examples</p>
+<p><strong>Visual elements:</strong>
+- Arrow pointer slides from one box to the next during each iteration
+- Current box glows yellow
+- Code panel highlights the active line
+- Output console scrolls as lines are added
+- Variable watch updates in real-time</p>
+<p><strong>Visual style:</strong> Split-panel layout with code on left, visual in center, output on right
+<strong>Color scheme:</strong> Code panel in dark theme, visual list in light pastels, output in monospace green-on-black
+<strong>Responsive:</strong> Panels stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Step-by-step animation makes the abstract "iteration" concept concrete by showing exactly which element is being accessed on each pass. The variable watch panel reveals what's happening behind the scenes. Multiple code examples let students compare different traversal patterns side by side.</p>
+</details>
+<h2 id="list-unpacking">List Unpacking</h2>
+<p>Sometimes you know exactly how many items are in a list, and you want to assign each one to its own variable in a single line. That's called <strong>list unpacking</strong> (also known as destructuring):</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">coordinates</span> <span class="o">=</span> <span class="p">[</span><span class="mf">42.36</span><span class="p">,</span> <span class="o">-</span><span class="mf">71.06</span><span class="p">]</span>
+<span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span> <span class="o">=</span> <span class="n">coordinates</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span>    <span class="c1"># 42.36</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">longitude</span><span class="p">)</span>   <span class="c1"># -71.06</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The number of variables on the left must match the number of items in the list, or you'll get an error:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>       <span class="c1"># ValueError: not enough values to unpack</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>       <span class="c1"># ValueError: too many values to unpack</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Unpacking is great for swapping values without a temporary variable:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span>        <span class="c1"># Swap!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>         <span class="c1"># 20 10</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>You can also use the <code>*</code> operator to capture "the rest" of the items:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">first</span><span class="p">,</span> <span class="o">*</span><span class="n">rest</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>    <span class="c1"># 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rest</span><span class="p">)</span>     <span class="c1"># [2, 3, 4, 5]</span>
+
+<span class="n">first</span><span class="p">,</span> <span class="o">*</span><span class="n">middle</span><span class="p">,</span> <span class="n">last</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>    <span class="c1"># 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">middle</span><span class="p">)</span>   <span class="c1"># [2, 3, 4]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">last</span><span class="p">)</span>     <span class="c1"># 5</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-tip.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-tip.png" width="80"></a>
+List unpacking is especially handy when a function returns multiple values as a list or tuple. Instead of accessing each value by index, you can unpack them into clear, descriptive variable names. Readable code is happy code!</p>
+</div>
+<h2 id="the-zip-function">The Zip Function</h2>
+<p>The <strong>zip function</strong> combines two (or more) lists element by element, pairing up items at the same index. It's like a zipper on a jacket — it links two sides together, tooth by tooth.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"Charlie"</span><span class="p">]</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">92</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">78</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">scores</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Alice: 92
+Bob: 85
+Charlie: 78
+</code></pre></div></td></tr></tbody></table></div>
+<p><code>zip()</code> creates pairs (technically tuples) from corresponding items:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">paired</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">scores</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">paired</span><span class="p">)</span>  <span class="c1"># [('Alice', 92), ('Bob', 85), ('Charlie', 78)]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>You can zip more than two lists:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"Charlie"</span><span class="p">]</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">92</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">78</span><span class="p">]</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C+"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="n">grade</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">scores</span><span class="p">,</span> <span class="n">grades</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> scored </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Alice scored 92 (A)
+Bob scored 85 (B)
+Charlie scored 78 (C+)
+</code></pre></div></td></tr></tbody></table></div>
+<p>If the lists have different lengths, <code>zip()</code> stops at the shortest one:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">short</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">long</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">short</span><span class="p">,</span> <span class="n">long</span><span class="p">)))</span>  <span class="c1"># [(1, 10), (2, 20)]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h4 id="diagram-zip-function-visualizer">Diagram: Zip Function Visualizer</h4>
+<iframe src="../../sims/zip-function-visualizer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Zip Function Visualizer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> zip-function-visualizer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> illustrate, explain</p>
+<p><strong>Learning Objective:</strong> Students will be able to use the zip function to combine multiple lists element by element and predict the output of zip operations.</p>
+<p><strong>Purpose:</strong> An animated visualization that shows how zip() pairs up elements from two or three lists, with a zipper metaphor.</p>
+<p><strong>Canvas layout:</strong>
+- Top section: Title "Zip Function Visualizer"
+- Two (or three) vertical columns representing input lists, with items as labeled boxes
+- A central "zipper" animation zone
+- Below the zipper: the output — a row of paired tuples
+- Editable input fields to customize list contents
+- Toggle: "2 Lists" / "3 Lists"</p>
+<p><strong>Interactive elements:</strong>
+- "Zip!" button: Animates the pairing process — items from each list slide toward the center and merge into tuple boxes
+- Editable text fields for each list's contents (comma-separated)
+- A "Different Lengths" toggle to demonstrate truncation behavior
+- Step mode: Pair one element at a time with the "Step" button</p>
+<p><strong>Animation sequence:</strong>
+1. Items from corresponding positions glow and slide toward center simultaneously
+2. They merge into a tuple box at the center
+3. The tuple slides down into the output row
+4. Repeat for each pair
+5. If lists have different lengths, remaining items in the longer list are grayed out with a "skipped" label</p>
+<p><strong>Visual style:</strong> Zipper teeth metaphor with interlocking shapes, smooth slide animations
+<strong>Color scheme:</strong> List 1 in blue, List 2 in green, List 3 in orange; paired tuples in purple
+<strong>Responsive:</strong> Columns stack and resize for different window widths</p>
+<p><strong>Instructional Rationale:</strong> The zipper metaphor makes the pairing behavior intuitive and memorable. Animating the merge step-by-step reveals the element-by-element correspondence that defines zip(). Showing the truncation behavior for unequal lengths prevents a common source of bugs. Editable inputs let students test their own data.</p>
+</details>
+<h2 id="common-patterns-and-recipes">Common Patterns and Recipes</h2>
+<p>Before we wrap up, here are some everyday patterns you'll use with lists all the time. Think of these as recipes you can pull out whenever you need them.</p>
+<p><strong>Finding the sum and average:</strong></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">85</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">88</span><span class="p">]</span>
+<span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+<span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average: </span><span class="si">{</span><span class="n">average</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  <span class="c1"># Average: 87.6</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Finding the minimum and maximum:</strong></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">scores</span><span class="p">))</span>   <span class="c1"># 78</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">))</span>   <span class="c1"># 95</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Checking membership:</strong></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"banana"</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">)</span>      <span class="c1"># True</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"grape"</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">)</span>       <span class="c1"># False</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"grape"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">)</span>   <span class="c1"># True</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Concatenating lists:</strong></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">combined</span> <span class="o">=</span> <span class="n">list1</span> <span class="o">+</span> <span class="n">list2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">combined</span><span class="p">)</span>  <span class="c1"># [1, 2, 3, 4, 5, 6]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Repeating lists:</strong></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">zeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zeros</span><span class="p">)</span>  <span class="c1"># [0, 0, 0, 0, 0]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Converting between strings and lists:</strong></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># String to list of words</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s2">"Python lists are awesome"</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>  <span class="c1"># ['Python', 'lists', 'are', 'awesome']</span>
+
+<span class="c1"># List of words back to string</span>
+<span class="n">joined</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">joined</span><span class="p">)</span>  <span class="c1"># Python lists are awesome</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-celebrates.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-celebrates.png" width="80"></a>
+You just leveled up big time! Lists are the backbone of Python programming, and you now know how to create them, index them, slice them, modify them, sort them, loop through them, and even nest them. In the next chapter, we'll explore advanced list operations that build on everything you learned here. Keep it up, coder!</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>A <strong>list</strong> is an ordered, mutable collection of items enclosed in square brackets <code>[]</code>.</li>
+<li><strong>Indexing</strong> starts at 0. Use negative indices to count from the end (<code>-1</code> is the last item).</li>
+<li><strong>Slicing</strong> with <code>list[start:stop:step]</code> extracts a sublist without modifying the original.</li>
+<li>Lists are <strong>mutable</strong> — you can change, add, and remove items after creation.</li>
+<li>Key <strong>list methods</strong>: <code>append()</code> adds to the end, <code>insert()</code> adds at a position, <code>remove()</code> deletes by value, <code>pop()</code> deletes by index and returns the item, <code>sort()</code> orders items, <code>reverse()</code> flips the order.</li>
+<li><strong>List comprehensions</strong> create lists concisely: <code>[expression for item in iterable if condition]</code>.</li>
+<li><strong>Nested lists</strong> (lists of lists) represent 2D data like grids and tables. Access elements with double indexing: <code>grid[row][col]</code>.</li>
+<li>Traverse lists with <strong>for loops</strong>. Use <strong><code>enumerate()</code></strong> when you need both the index and value.</li>
+<li><strong>List unpacking</strong> assigns list items to individual variables in one line.</li>
+<li>The <strong><code>zip()</code> function</strong> combines multiple lists element by element into pairs.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What does <code>fruits[1:4]</code> return if <code>fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']</code>?</summary>
+<p>It returns <code>['banana', 'cherry', 'date']</code>. Remember, slicing goes from the start index up to (but <strong>not including</strong>) the stop index. So index 1 through index 3 are included.</p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: What's the difference between <code>list.sort()</code> and <code>sorted(list)</code>?</summary>
+<p><code>list.sort()</code> modifies the original list <strong>in place</strong> and returns <code>None</code>. <code>sorted(list)</code> creates and returns a <strong>new</strong> sorted list, leaving the original unchanged. Use <code>sort()</code> when you don't need the original order anymore; use <code>sorted()</code> when you want to keep the original list intact.</p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: What does this list comprehension produce: <code>[x * 2 for x in range(5) if x % 2 == 0]</code>?</summary>
+<p>It produces <code>[0, 4, 8]</code>. Here's the breakdown: <code>range(5)</code> gives <code>[0, 1, 2, 3, 4]</code>. The <code>if x % 2 == 0</code> filter keeps only the even numbers: <code>[0, 2, 4]</code>. Then <code>x * 2</code> doubles each one: <code>[0, 4, 8]</code>.</p>
+</details>
 
 
 
@@ -1457,12 +3048,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

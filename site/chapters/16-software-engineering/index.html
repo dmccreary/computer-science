@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="description" content="Software development lifecycle, modules, packages, Git, PEP 8, refactoring, DRY/KISS principles, and documentation in Python.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>16. Software Engineering - Computer Science</title>
+        <title>Software Engineering Practices - Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,9 +62,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="16. Software Engineering - Computer Science">
+        <meta property="og:title" content="Software Engineering Practices - Computer Science">
       
-        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta property="og:description" content="Software development lifecycle, modules, packages, Git, PEP 8, refactoring, DRY/KISS principles, and documentation in Python.">
       
         <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/16-software-engineering/index.png">
       
@@ -78,9 +78,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="16. Software Engineering - Computer Science">
+        <meta name="twitter:title" content="Software Engineering Practices - Computer Science">
       
-        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="twitter:description" content="Software development lifecycle, modules, packages, Git, PEP 8, refactoring, DRY/KISS principles, and documentation in Python.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/16-software-engineering/index.png">
       
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              16. Software Engineering
+              Software Engineering Practices
             
           </span>
         </div>
@@ -160,13 +160,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -198,14 +196,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -250,7 +247,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -270,10 +267,8 @@
       <a href="../../index.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -289,13 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about.md" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -314,10 +307,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -342,46 +333,85 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -394,14 +424,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -433,10 +462,8 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Intro to Computer Science
-    
   </span>
   
 
@@ -456,10 +483,8 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Python Fundamentals
-    
   </span>
   
 
@@ -479,10 +504,8 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Boolean Logic
-    
   </span>
   
 
@@ -502,10 +525,8 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -525,10 +546,8 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. Working with Strings
-    
   </span>
   
 
@@ -548,10 +567,8 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -571,10 +588,8 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -594,10 +609,8 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -617,10 +630,8 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. Advanced List Operations
-    
   </span>
   
 
@@ -640,10 +651,8 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. Tuples and Sets
-    
   </span>
   
 
@@ -663,10 +672,8 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -686,10 +693,8 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Classes and Objects
-    
   </span>
   
 
@@ -709,10 +714,8 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Inheritance and Polymorphism
-    
   </span>
   
 
@@ -732,10 +735,8 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -755,10 +756,8 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. File Input and Output
-    
   </span>
   
 
@@ -787,10 +786,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -800,10 +797,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -851,6 +846,423 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-software-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Software Development?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program-planning-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Program Planning and Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Program Planning and Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#program-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Program Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-software-development-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Software Development Lifecycle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizing-your-code-like-a-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing Your Code Like a Pro
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizing Your Code Like a Pro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Organization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modular-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-modules-and-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Modules and Packages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Modules and Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Packages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-module-and-package-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Module and Package Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pip-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Pip Package Manager
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Environments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-control-with-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version Control with Git
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Version Control with Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-version-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Version Control?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-git-workflow-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Git Workflow Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-clean-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Clean Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Clean Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Style
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pep-8-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      PEP 8 Guidelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linting-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linting Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-principles-dry-and-kiss" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Principles: DRY and KISS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Principles: DRY and KISS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-dry-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The DRY Principle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-kiss-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The KISS Principle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The KISS Principle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dry-vs-wet-code-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: DRY vs. WET Code Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refactoring-your-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refactoring Your Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments-and-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comments and Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comments and Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Comments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-comment-quality-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Comment Quality Checker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-if-__name__-__main__-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The if __name__ == "__main__" Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The if __name__ == " __main__" pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-equals-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name Equals Main
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name Equals Main">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-name-equals-main-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Name Equals Main Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-professional-project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Professional Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -870,10 +1282,8 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     17. Testing and Debugging
-    
   </span>
   
 
@@ -893,10 +1303,8 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     18. Searching and Sorting
-    
   </span>
   
 
@@ -916,10 +1324,8 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -939,10 +1345,8 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     20. Advanced Python
-    
   </span>
   
 
@@ -971,8 +1375,25 @@
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -986,14 +1407,11 @@
         
   
   
-  
     <a href="../../sims/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1058,7 +1476,6 @@
     
     
     
-    
       
         
         
@@ -1069,14 +1486,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1107,7 +1521,6 @@
     
     
     
-    
       
         
         
@@ -1118,14 +1531,11 @@
         
   
   
-  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1150,10 +1560,8 @@
       <a href="../../glossary.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1172,10 +1580,8 @@
       <a href="../../faq.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1194,10 +1600,8 @@
       <a href="../../references.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -1216,10 +1620,8 @@
       <a href="../../license.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1238,10 +1640,8 @@
       <a href="../../contact.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1303,6 +1703,423 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-software-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Software Development?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program-planning-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Program Planning and Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Program Planning and Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#program-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Program Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-software-development-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Software Development Lifecycle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizing-your-code-like-a-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing Your Code Like a Pro
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizing Your Code Like a Pro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Organization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modular-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-modules-and-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Modules and Packages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Modules and Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Packages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-module-and-package-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Module and Package Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pip-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Pip Package Manager
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Environments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-control-with-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version Control with Git
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Version Control with Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-version-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Version Control?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-git-workflow-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Git Workflow Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-clean-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Clean Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Clean Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Style
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pep-8-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      PEP 8 Guidelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linting-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linting Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-principles-dry-and-kiss" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Principles: DRY and KISS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Principles: DRY and KISS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-dry-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The DRY Principle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-kiss-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The KISS Principle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The KISS Principle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dry-vs-wet-code-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: DRY vs. WET Code Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refactoring-your-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refactoring Your Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments-and-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comments and Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comments and Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Comments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-comment-quality-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Comment Quality Checker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-if-__name__-__main__-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The if __name__ == "__main__" Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The if __name__ == " __main__" pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-equals-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name Equals Main
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name Equals Main">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-name-equals-main-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Name Equals Main Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-professional-project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Professional Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1316,7 +2133,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/16-software-engineering/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1361,10 +2177,1197 @@
 <li><a href="../01-intro-to-computer-science/">Chapter 1: Introduction to Computer Science</a></li>
 <li><a href="../02-python-fundamentals/">Chapter 2: Python Fundamentals</a></li>
 <li><a href="../06-functions-and-modular-design/">Chapter 6: Functions and Modular Design</a></li>
-<li><a href="../07-higher-order-functions-and-recursion/">Chapter 7: Higher-Order Functions and Recursion</a></li>
+<li><a href="../14-errors-and-exceptions/">Chapter 14: Errors and Exceptions</a></li>
+<li><a href="../15-file-input-and-output/">Chapter 15: File Input and Output</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-welcome.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-welcome.png" width="80"></a>
+Welcome back, coders! Up until now, you've been learning <em>how</em> to program. In this chapter, you'll learn how to program <em>like a professional</em>. We're talking about the habits, tools, and practices that real software engineers use every single day. These skills will take your code from "it works on my machine" to "it works everywhere, and anyone can read it." Let's level up!</p>
+</div>
+<h2 id="what-is-software-development">What Is Software Development?</h2>
+<p>Writing a program isn't just about typing code until it works. <strong>Software development</strong> is the entire process of creating software — from figuring out what problem you're solving, to planning your approach, writing the code, testing it, and maintaining it over time.</p>
+<p>Think of it like building a house. You wouldn't start hammering nails without a blueprint, right? You'd figure out what kind of house you need, draw up plans, gather materials, build it step by step, and then inspect the result. Software development works the same way.</p>
+<p>Professional developers follow a structured process called the <strong>software development lifecycle</strong> (SDLC). Here are the key stages:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What Happens</th>
+<th>House Analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Planning</strong></td>
+<td>Define what the software should do</td>
+<td>Decide you need a 3-bedroom house</td>
+</tr>
+<tr>
+<td><strong>Analysis</strong></td>
+<td>Gather detailed requirements</td>
+<td>Figure out room sizes, budget, materials</td>
+</tr>
+<tr>
+<td><strong>Design</strong></td>
+<td>Plan the architecture and structure</td>
+<td>Draw blueprints and floor plans</td>
+</tr>
+<tr>
+<td><strong>Implementation</strong></td>
+<td>Write the actual code</td>
+<td>Build the house</td>
+</tr>
+<tr>
+<td><strong>Testing</strong></td>
+<td>Check that everything works</td>
+<td>Home inspection</td>
+</tr>
+<tr>
+<td><strong>Maintenance</strong></td>
+<td>Fix bugs and add features over time</td>
+<td>Repairs, renovations</td>
+</tr>
+</tbody>
+</table>
+<p>You don't need to memorize every formal methodology (there are many!), but understanding that coding is just one part of a bigger process will make you a much stronger developer.</p>
+<h2 id="program-planning-and-requirements">Program Planning and Requirements</h2>
+<h3 id="program-planning">Program Planning</h3>
+<p>Before you write a single line of code, you should have a plan. <strong>Program planning</strong> means deciding what your program needs to do, how you'll structure it, and what tools or techniques you'll use.</p>
+<p>Here's a simple planning checklist you can use for any project:</p>
+<ol>
+<li><strong>What problem am I solving?</strong> (Write it in one sentence.)</li>
+<li><strong>What inputs will my program need?</strong></li>
+<li><strong>What outputs should it produce?</strong></li>
+<li><strong>What are the main steps?</strong> (Think algorithms and decomposition.)</li>
+<li><strong>What data structures will I use?</strong> (Lists? Dictionaries? Classes?)</li>
+<li><strong>How will I organize my code?</strong> (Functions? Modules? Multiple files?)</li>
+</ol>
+<p>Even for small assignments, taking five minutes to plan can save you hours of confused debugging later.</p>
+<h3 id="requirements-analysis">Requirements Analysis</h3>
+<p><strong>Requirements analysis</strong> is the process of figuring out <em>exactly</em> what the software needs to do — before you start building it. In a professional setting, this often means talking to the people who will actually use the software (called <strong>stakeholders</strong>) and writing down what they need.</p>
+<p>For a school project, requirements analysis might look like this:</p>
+<blockquote>
+<p><strong>Project:</strong> Grade calculator</p>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Accept a list of assignment scores from the user</li>
+<li>Calculate the average score</li>
+<li>Assign a letter grade (A, B, C, D, F) based on the average</li>
+<li>Display the result in a friendly format</li>
+<li>Handle invalid inputs without crashing</li>
+</ul>
+</blockquote>
+<p>Notice how each requirement is specific and testable. "Make a cool grade thing" is <em>not</em> a good requirement. "Calculate the average of a list of scores and assign a letter grade" — that's a requirement you can actually build and verify.</p>
+<details>
+<summary>MicroSim: Software Development Lifecycle</summary>
+<h4 id="diagram-software-development-lifecycle">Diagram: Software Development Lifecycle</h4>
+<p>Type: infographic
+<strong>sim-id:</strong> sdlc-stages<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> describe, sequence</p>
+<p><strong>Learning Objective:</strong> Students will be able to identify and describe the six stages of the software development lifecycle and explain how they relate to each other.</p>
+<p><strong>Purpose:</strong> An interactive circular diagram showing the six SDLC stages arranged in a cycle. Students can click each stage to reveal its description, key activities, and a real-world analogy.</p>
+<p><strong>Layout:</strong>
+- Six nodes arranged in a circle: Planning, Analysis, Design, Implementation, Testing, Maintenance
+- Arrows connecting each node to the next in clockwise order
+- A center area that displays details when a node is clicked</p>
+<p><strong>Interactive elements:</strong>
+- Click any stage node to highlight it and display its description in the center
+- Hover to see a brief tooltip with the stage name and one-sentence summary
+- An "Auto Tour" button cycles through all stages with a 2-second delay</p>
+<p><strong>Color scheme:</strong> Each stage gets a distinct color — blue, purple, green, orange, red, teal
+<strong>Responsive:</strong> Circle resizes proportionally with window</p>
+<p><strong>Instructional Rationale:</strong> The circular layout reinforces that software development is an ongoing cycle, not a one-time linear process. Click-to-reveal supports the Understand level by letting students explore each stage at their own pace.</p>
+</details>
+<h2 id="organizing-your-code-like-a-pro">Organizing Your Code Like a Pro</h2>
+<p>As your programs get bigger, keeping everything in one giant file becomes a nightmare. Imagine writing a 1,000-line program where all the functions, variables, and logic are jumbled together. Finding anything would be like searching for a specific grain of sand on a beach.</p>
+<h3 id="code-organization">Code Organization</h3>
+<p><strong>Code organization</strong> is the practice of structuring your code so it's easy to read, navigate, and maintain. Good organization means:</p>
+<ul>
+<li><strong>Related code lives together</strong> — All the functions for handling user input go in one place; all the functions for calculations go in another.</li>
+<li><strong>Each piece has one job</strong> — A function should do one thing and do it well.</li>
+<li><strong>Names are descriptive</strong> — Variable names like <code>student_grade</code> beat <code>x</code> every time.</li>
+</ul>
+<p>Here's an example of poorly organized code versus well-organized code:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># BAD: Everything mashed together, unclear names</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+        <span class="n">t</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">t</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">85</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">88</span><span class="p">]</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span> <span class="n">g</span> <span class="o">=</span> <span class="s2">"A"</span>
+<span class="k">elif</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span> <span class="n">g</span> <span class="o">=</span> <span class="s2">"B"</span>
+<span class="k">elif</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span> <span class="n">g</span> <span class="o">=</span> <span class="s2">"C"</span>
+<span class="k">elif</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span> <span class="n">g</span> <span class="o">=</span> <span class="s2">"D"</span>
+<span class="k">else</span><span class="p">:</span> <span class="n">g</span> <span class="o">=</span> <span class="s2">"F"</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># GOOD: Clear names, separated concerns, readable</span>
+<span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return the average of a list of numeric scores."""</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">assign_letter_grade</span><span class="p">(</span><span class="n">average</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return a letter grade based on the numeric average."""</span>
+    <span class="k">if</span> <span class="n">average</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"A"</span>
+    <span class="k">elif</span> <span class="n">average</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"B"</span>
+    <span class="k">elif</span> <span class="n">average</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"C"</span>
+    <span class="k">elif</span> <span class="n">average</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"D"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"F"</span>
+
+<span class="c1"># Main program</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">85</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">88</span><span class="p">]</span>
+<span class="n">average</span> <span class="o">=</span> <span class="n">calculate_average</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+<span class="n">grade</span> <span class="o">=</span> <span class="n">assign_letter_grade</span><span class="p">(</span><span class="n">average</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average: </span><span class="si">{</span><span class="n">average</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> — Grade: </span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Both programs produce the same result, but the second one is dramatically easier to read, understand, and modify.</p>
+<h3 id="modular-design">Modular Design</h3>
+<p><strong>Modular design</strong> means breaking your program into separate, self-contained pieces (called <strong>modules</strong>) that each handle one part of the problem. It's like building with LEGO bricks — each brick is a complete, independent unit, and you can snap them together in different combinations.</p>
+<p>Modular design has huge benefits:</p>
+<ul>
+<li><strong>Easier to understand</strong> — You can focus on one module at a time instead of the whole program.</li>
+<li><strong>Easier to test</strong> — You can test each module independently.</li>
+<li><strong>Easier to reuse</strong> — A well-designed module can be used in multiple projects.</li>
+<li><strong>Easier to maintain</strong> — Fixing a bug in one module doesn't break the others.</li>
+</ul>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Think of modular design like organizing a kitchen. You've got a drawer for utensils, a cabinet for plates, a pantry for food. Everything has its place. When you need a fork, you go straight to the utensil drawer — you don't rummage through a giant pile of <em>everything</em>. Your code should work the same way!</p>
+</div>
+<h2 id="python-modules-and-packages">Python Modules and Packages</h2>
+<h3 id="import-statements">Import Statements</h3>
+<p>You've actually been using modules since early in this course. Every time you write <code>import random</code> or <code>from math import sqrt</code>, you're pulling in code from an external module. An <strong>import statement</strong> tells Python, "Hey, I need to use some code from another file. Please load it up for me."</p>
+<p>There are several ways to import:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Import the entire module</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>         <span class="c1"># 3.141592653589793</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">))</span>   <span class="c1"># 4.0</span>
+
+<span class="c1"># Import specific items from a module</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sqrt</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>              <span class="c1"># 3.141592653589793</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">))</span>        <span class="c1"># 4.0</span>
+
+<span class="c1"># Import with a shorter alias</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="python-modules">Python Modules</h3>
+<p>A <strong>Python module</strong> is simply a <code>.py</code> file that contains Python code — functions, classes, variables, or anything else. When you write a Python file, you've already created a module! You can import it from other files and reuse its code.</p>
+<p>Let's create a simple module. Save this as <code>geometry.py</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># geometry.py — A module for geometry calculations</span>
+
+<span class="k">def</span> <span class="nf">area_of_circle</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate the area of a circle."""</span>
+    <span class="kn">import</span> <span class="nn">math</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="k">def</span> <span class="nf">area_of_rectangle</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate the area of a rectangle."""</span>
+    <span class="k">return</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span>
+
+<span class="k">def</span> <span class="nf">perimeter_of_rectangle</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate the perimeter of a rectangle."""</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">width</span> <span class="o">+</span> <span class="n">height</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Now, in another file, you can import and use it:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># main.py — Uses the geometry module</span>
+<span class="kn">import</span> <span class="nn">geometry</span>
+
+<span class="n">circle_area</span> <span class="o">=</span> <span class="n">geometry</span><span class="o">.</span><span class="n">area_of_circle</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Circle area: </span><span class="si">{</span><span class="n">circle_area</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">rect_area</span> <span class="o">=</span> <span class="n">geometry</span><span class="o">.</span><span class="n">area_of_rectangle</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Rectangle area: </span><span class="si">{</span><span class="n">rect_area</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Just like that, you've separated your concerns. The geometry calculations live in one file, and the main program logic lives in another.</p>
+<h3 id="python-packages">Python Packages</h3>
+<p>A <strong>Python package</strong> is a collection of related modules organized in a folder. The folder must contain a special file called <code>__init__.py</code> (which can be empty) to tell Python "this folder is a package."</p>
+<p>Here's what a package structure looks like:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>my_project/
+├── main.py
+└── shapes/
+    ├── __init__.py
+    ├── circles.py
+    ├── rectangles.py
+    └── triangles.py
+</code></pre></div></td></tr></tbody></table></div>
+<p>You can then import from the package like this:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">shapes.circles</span> <span class="kn">import</span> <span class="n">area_of_circle</span>
+<span class="kn">from</span> <span class="nn">shapes.rectangles</span> <span class="kn">import</span> <span class="n">area_of_rectangle</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Packages help you organize larger projects into logical groups. As your programs grow, you'll appreciate having this structure.</p>
+<details>
+<summary>MicroSim: Module and Package Structure Explorer</summary>
+<h4 id="diagram-module-and-package-structure">Diagram: Module and Package Structure</h4>
+<p>Type: diagram
+<strong>sim-id:</strong> module-package-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> explain, organize</p>
+<p><strong>Learning Objective:</strong> Students will be able to distinguish between Python modules and packages, and explain how import statements connect them.</p>
+<p><strong>Purpose:</strong> An interactive file-tree diagram showing the relationship between modules, packages, and import statements. Students click on import statements to see which files are loaded and how Python resolves them.</p>
+<p><strong>Layout:</strong>
+- Left panel: A file tree showing a project with a main.py file and a shapes/ package containing multiple modules
+- Right panel: Code editor showing the import statements and their resolved targets
+- Animated arrows show the connection between an import statement and the file it loads</p>
+<p><strong>Interactive elements:</strong>
+- Click any import statement to highlight the target file in the tree
+- Click any file in the tree to see its contents in the code panel
+- Toggle between "flat module" and "package" views to compare the two structures</p>
+<p><strong>Instructional Rationale:</strong> Visual file-tree navigation makes the abstract concept of imports concrete by showing students exactly which files Python loads when they write an import statement.</p>
+</details>
+<h3 id="the-pip-package-manager">The Pip Package Manager</h3>
+<p>Python comes with a lot of built-in modules (called the <strong>standard library</strong>), but thousands more are available from the Python community. The <strong>pip package manager</strong> is the tool you use to install these third-party packages.</p>
+<p>Think of pip as an app store for Python. Need to make charts? Install <code>matplotlib</code>. Need to build a website? Install <code>flask</code>. Need to work with data? Install <code>pandas</code>.</p>
+<p>Here are the most common pip commands:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Install a package</span>
+pip<span class="w"> </span>install<span class="w"> </span>requests
+
+<span class="c1"># Install a specific version</span>
+pip<span class="w"> </span>install<span class="w"> </span><span class="nv">requests</span><span class="o">==</span><span class="m">2</span>.31.0
+
+<span class="c1"># Upgrade a package to the latest version</span>
+pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>requests
+
+<span class="c1"># See what's installed</span>
+pip<span class="w"> </span>list
+
+<span class="c1"># Uninstall a package</span>
+pip<span class="w"> </span>uninstall<span class="w"> </span>requests
+
+<span class="c1"># Save all installed packages to a file</span>
+pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+
+<span class="c1"># Install all packages from a requirements file</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div></td></tr></tbody></table></div>
+<p>That last pair of commands (<code>freeze</code> and <code>-r</code>) is especially useful. A <code>requirements.txt</code> file lists every package your project needs. When someone else wants to run your code, they just run <code>pip install -r requirements.txt</code> and everything gets installed automatically. No guessing required.</p>
+<h3 id="virtual-environments">Virtual Environments</h3>
+<p>Here's a problem: what if Project A needs version 1.0 of a library, but Project B needs version 2.0? If you install everything globally, one project will break.</p>
+<p>The solution is <strong>virtual environments</strong>. A virtual environment is an isolated Python setup for a specific project. Each virtual environment has its own copy of Python and its own installed packages, completely separate from everything else on your computer.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Create a virtual environment called "venv"</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+
+<span class="c1"># Activate it (macOS/Linux)</span>
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+
+<span class="c1"># Activate it (Windows)</span>
+venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+
+<span class="c1"># Now pip installs go into THIS environment only</span>
+pip<span class="w"> </span>install<span class="w"> </span>requests
+
+<span class="c1"># When you're done, deactivate</span>
+deactivate
+</code></pre></div></td></tr></tbody></table></div>
+<p>When a virtual environment is active, you'll usually see its name in parentheses at the beginning of your terminal prompt: <code>(venv) $</code>. That's your reminder that you're working in an isolated environment.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-tip.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-tip.png" width="80"></a>
+Always create a virtual environment for each project. It keeps your projects from stepping on each other's toes. Think of it like having a separate backpack for each class — your math notes don't get mixed up with your history papers!</p>
+</div>
+<h2 id="version-control-with-git">Version Control with Git</h2>
+<h3 id="why-version-control">Why Version Control?</h3>
+<p>Have you ever worked on an essay and saved files like <code>essay_v1.docx</code>, <code>essay_v2.docx</code>, <code>essay_FINAL.docx</code>, <code>essay_FINAL_REALLY_FINAL.docx</code>? Yeah, that gets messy fast.</p>
+<p><strong>Version control</strong> is a system that tracks every change you make to your code over time. Instead of saving multiple copies, you save <strong>snapshots</strong> (called <strong>commits</strong>) that record exactly what changed, when, and why. If something breaks, you can go back to any previous snapshot.</p>
+<p>Version control also makes teamwork possible. Multiple people can work on the same codebase without overwriting each other's work. It's an absolutely essential tool in professional software development.</p>
+<h3 id="git-basics">Git Basics</h3>
+<p><strong>Git</strong> is the most popular version control system in the world. It was created in 2005 by Linus Torvalds (the same person who created Linux) because he needed a fast, reliable way to track changes to the Linux kernel — a massive codebase with thousands of contributors.</p>
+<p>Let's walk through the essential Git commands. You'll run these in your terminal (also called the command line).</p>
+<p><strong>Setting up a new Git repository:</strong></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Navigate to your project folder</span>
+<span class="nb">cd</span><span class="w"> </span>my_project
+
+<span class="c1"># Initialize a new Git repository</span>
+git<span class="w"> </span>init
+</code></pre></div></td></tr></tbody></table></div>
+<p>That <code>git init</code> command creates a hidden <code>.git</code> folder that stores all the version history. Your project folder is now a <strong>repository</strong> (or "repo" for short).</p>
+<p><strong>The Git workflow:</strong></p>
+<p>Git has a three-stage workflow:</p>
+<ol>
+<li><strong>Working directory</strong> — Where you edit files normally</li>
+<li><strong>Staging area</strong> — Where you prepare changes for a commit</li>
+<li><strong>Repository</strong> — Where committed snapshots are stored permanently</li>
+</ol>
+<p>Here's how you move changes through these stages:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Check the status of your files</span>
+git<span class="w"> </span>status
+
+<span class="c1"># Add a specific file to the staging area</span>
+git<span class="w"> </span>add<span class="w"> </span>geometry.py
+
+<span class="c1"># Add all changed files to the staging area</span>
+git<span class="w"> </span>add<span class="w"> </span>.
+
+<span class="c1"># Commit the staged changes with a message</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Add geometry module with circle and rectangle functions"</span>
+
+<span class="c1"># View the history of commits</span>
+git<span class="w"> </span>log
+</code></pre></div></td></tr></tbody></table></div>
+<p>Let's break down what each command does:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What It Does</th>
+<th>Analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git init</code></td>
+<td>Creates a new repository</td>
+<td>Opening a new photo album</td>
+</tr>
+<tr>
+<td><code>git status</code></td>
+<td>Shows which files have changed</td>
+<td>Checking which photos are on the table</td>
+</tr>
+<tr>
+<td><code>git add</code></td>
+<td>Stages files for the next commit</td>
+<td>Picking which photos to put in the album</td>
+</tr>
+<tr>
+<td><code>git commit -m "..."</code></td>
+<td>Saves a snapshot with a message</td>
+<td>Gluing the photos in and writing a caption</td>
+</tr>
+<tr>
+<td><code>git log</code></td>
+<td>Shows the history of all commits</td>
+<td>Flipping through the album pages</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Writing good commit messages:</strong></p>
+<p>Your commit messages should explain <em>what</em> changed and <em>why</em>. Compare:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># BAD commit messages</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"stuff"</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"fixed it"</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"changes"</span>
+
+<span class="c1"># GOOD commit messages</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Add input validation to grade calculator"</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Fix crash when user enters empty string"</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Refactor area functions into geometry module"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Good commit messages are a gift to your future self. When you look back at your project six months from now, you'll be glad you wrote "Fix crash when user enters empty string" instead of "stuff."</p>
+<details>
+<summary>MicroSim: Git Workflow Visualizer</summary>
+<h4 id="diagram-git-workflow-visualizer">Diagram: Git Workflow Visualizer</h4>
+<p>Type: microsim
+<strong>sim-id:</strong> git-workflow-visualizer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> describe, trace</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace the movement of files through Git's three-stage workflow (working directory, staging area, repository) and explain the purpose of each Git command.</p>
+<p><strong>Purpose:</strong> An interactive animation showing how files move through Git's three stages as students type simulated Git commands.</p>
+<p><strong>Layout:</strong>
+- Three horizontal zones representing: Working Directory, Staging Area, Repository
+- File icons that move between zones when commands are executed
+- A simulated terminal at the bottom where students click pre-built Git commands</p>
+<p><strong>Interactive elements:</strong>
+- Click buttons for: <code>git add</code>, <code>git commit</code>, <code>git status</code>, <code>git log</code>
+- File icons animate from one zone to the next when the corresponding command runs
+- <code>git status</code> highlights which files are in which zone
+- <code>git log</code> shows a scrollable list of previous commits</p>
+<p><strong>Color scheme:</strong> Working directory (blue), Staging area (yellow), Repository (green)</p>
+<p><strong>Instructional Rationale:</strong> The three-zone layout directly maps to Git's conceptual model. Animating file movement makes the abstract staging process visible and concrete, helping students build an accurate mental model before using Git on the command line.</p>
+</details>
+<h2 id="writing-clean-code">Writing Clean Code</h2>
+<h3 id="code-style">Code Style</h3>
+<p>Have you ever tried to read someone else's handwriting and given up because it was too messy? Code can be the same way. <strong>Code style</strong> refers to the conventions you follow when formatting your code — things like indentation, spacing, naming, and line length.</p>
+<p>Consistent code style matters because code is read far more often than it's written. If everyone on a team uses different styles, the codebase becomes a patchwork that's hard to read. That's why most programming languages have style guides.</p>
+<h3 id="pep-8-guidelines">PEP 8 Guidelines</h3>
+<p>Python's official style guide is called <strong>PEP 8</strong> (Python Enhancement Proposal 8). It was written by Guido van Rossum himself, and it's the standard that almost all Python developers follow.</p>
+<p>Here are the most important PEP 8 rules:</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use 4 spaces for indentation (not tabs)</td>
+<td><code>if x &gt; 0:</code></td>
+</tr>
+<tr>
+<td>Limit lines to 79 characters</td>
+<td>Keep it readable without scrolling</td>
+</tr>
+<tr>
+<td>Use <code>snake_case</code> for function and variable names</td>
+<td><code>calculate_average</code>, <code>student_name</code></td>
+</tr>
+<tr>
+<td>Use <code>PascalCase</code> for class names</td>
+<td><code>GradeCalculator</code>, <code>Student</code></td>
+</tr>
+<tr>
+<td>Use <code>ALL_CAPS</code> for constants</td>
+<td><code>MAX_SCORE = 100</code>, <code>PI = 3.14159</code></td>
+</tr>
+<tr>
+<td>Put spaces around operators</td>
+<td><code>x = 5 + 3</code> not <code>x=5+3</code></td>
+</tr>
+<tr>
+<td>Put two blank lines before function/class definitions</td>
+<td>Gives visual breathing room</td>
+</tr>
+<tr>
+<td>Use docstrings for functions and classes</td>
+<td><code>"""Calculate the average score."""</code></td>
+</tr>
+</tbody>
+</table>
+<p>Here's a quick before-and-after showing PEP 8 in action:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># BEFORE: Violates PEP 8</span>
+<span class="k">def</span> <span class="nf">CalcGrade</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">t</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span><span class="n">t</span><span class="o">+=</span><span class="n">i</span>
+    <span class="n">avg</span><span class="o">=</span><span class="n">t</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">avg</span><span class="o">&gt;=</span><span class="mi">90</span><span class="p">:</span><span class="k">return</span> <span class="s2">"A"</span>
+    <span class="k">elif</span> <span class="n">avg</span><span class="o">&gt;=</span><span class="mi">80</span><span class="p">:</span><span class="k">return</span> <span class="s2">"B"</span>
+    <span class="k">elif</span> <span class="n">avg</span><span class="o">&gt;=</span><span class="mi">70</span><span class="p">:</span><span class="k">return</span> <span class="s2">"C"</span>
+    <span class="k">elif</span> <span class="n">avg</span><span class="o">&gt;=</span><span class="mi">60</span><span class="p">:</span><span class="k">return</span> <span class="s2">"D"</span>
+    <span class="k">else</span><span class="p">:</span><span class="k">return</span> <span class="s2">"F"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># AFTER: Follows PEP 8</span>
+<span class="k">def</span> <span class="nf">calculate_grade</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate a letter grade from a list of scores."""</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">scores</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">score</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">average</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"A"</span>
+    <span class="k">elif</span> <span class="n">average</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"B"</span>
+    <span class="k">elif</span> <span class="n">average</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"C"</span>
+    <span class="k">elif</span> <span class="n">average</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"D"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"F"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The second version is longer but <em>dramatically</em> easier to read. In professional development, readability always wins.</p>
+<h3 id="linting-tools">Linting Tools</h3>
+<p>Checking your code style by hand is tedious. That's where <strong>linting tools</strong> come in. A <strong>linter</strong> is a program that automatically analyzes your code and flags style violations, potential errors, and other issues.</p>
+<p>Popular Python linters include:</p>
+<ul>
+<li><strong>flake8</strong> — Checks PEP 8 compliance and catches common errors</li>
+<li><strong>pylint</strong> — A more thorough (and sometimes opinionated) linter</li>
+<li><strong>black</strong> — An auto-formatter that <em>fixes</em> your style automatically</li>
+<li><strong>ruff</strong> — A blazing-fast modern linter written in Rust</li>
+</ul>
+<p>Here's how to use flake8:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Install flake8</span>
+pip<span class="w"> </span>install<span class="w"> </span>flake8
+
+<span class="c1"># Run it on your file</span>
+flake8<span class="w"> </span>my_program.py
+
+<span class="c1"># Sample output:</span>
+<span class="c1"># my_program.py:3:1: E302 expected 2 blank lines, found 1</span>
+<span class="c1"># my_program.py:7:12: E225 missing whitespace around operator</span>
+<span class="c1"># my_program.py:15:80: E501 line too long (95 &gt; 79 characters)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Each message tells you the file, line number, column, error code, and a description. Most code editors (like VS Code) can run a linter automatically as you type, highlighting problems with a colored squiggly line — just like spell check for your code.</p>
+<h2 id="design-principles-dry-and-kiss">Design Principles: DRY and KISS</h2>
+<p>Two of the most important principles in software engineering fit neatly into acronyms that are easy to remember.</p>
+<h3 id="the-dry-principle">The DRY Principle</h3>
+<p><strong>DRY</strong> stands for <strong>Don't Repeat Yourself</strong>. The <strong>DRY principle</strong> says that every piece of knowledge in your code should exist in exactly one place. If you find yourself copying and pasting the same block of code, that's a sign you should extract it into a function.</p>
+<p>Here's an example:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># VIOLATES DRY — the same calculation appears three times</span>
+<span class="n">math_total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">math_scores</span><span class="p">:</span>
+    <span class="n">math_total</span> <span class="o">+=</span> <span class="n">score</span>
+<span class="n">math_average</span> <span class="o">=</span> <span class="n">math_total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">math_scores</span><span class="p">)</span>
+
+<span class="n">science_total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">science_scores</span><span class="p">:</span>
+    <span class="n">science_total</span> <span class="o">+=</span> <span class="n">score</span>
+<span class="n">science_average</span> <span class="o">=</span> <span class="n">science_total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">science_scores</span><span class="p">)</span>
+
+<span class="n">english_total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">english_scores</span><span class="p">:</span>
+    <span class="n">english_total</span> <span class="o">+=</span> <span class="n">score</span>
+<span class="n">english_average</span> <span class="o">=</span> <span class="n">english_total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">english_scores</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># FOLLOWS DRY — write the logic once, use it three times</span>
+<span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return the average of a list of scores."""</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+
+<span class="n">math_average</span> <span class="o">=</span> <span class="n">calculate_average</span><span class="p">(</span><span class="n">math_scores</span><span class="p">)</span>
+<span class="n">science_average</span> <span class="o">=</span> <span class="n">calculate_average</span><span class="p">(</span><span class="n">science_scores</span><span class="p">)</span>
+<span class="n">english_average</span> <span class="o">=</span> <span class="n">calculate_average</span><span class="p">(</span><span class="n">english_scores</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The DRY version is shorter, easier to read, and — here's the big one — if you ever need to change how averages are calculated, you only change it <em>in one place</em>. With the non-DRY version, you'd have to find and update three separate blocks, and you'd probably miss one.</p>
+<h3 id="the-kiss-principle">The KISS Principle</h3>
+<p><strong>KISS</strong> stands for <strong>Keep It Simple, Silly</strong> (or sometimes "Keep It Simple, Stupid," but we'll keep it friendly). The <strong>KISS principle</strong> says you should always choose the simplest solution that works.</p>
+<p>New programmers sometimes overcomplicate things because they want to seem "advanced." But experienced developers know that simple code is <em>better</em> code. Simple code has fewer bugs, is easier to understand, and is easier to change.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># OVERCOMPLICATED — trying too hard</span>
+<span class="k">def</span> <span class="nf">is_even</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Check if a number is even."""</span>
+    <span class="n">binary_representation</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+    <span class="n">last_bit</span> <span class="o">=</span> <span class="n">binary_representation</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">last_bit</span> <span class="o">==</span> <span class="s1">'0'</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># KISS — simple and clear</span>
+<span class="k">def</span> <span class="nf">is_even</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Check if a number is even."""</span>
+    <span class="k">return</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Both functions work, but the KISS version is one line instead of six. It's immediately obvious what it does. When you're tempted to write something clever, ask yourself: "Is there a simpler way?"</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Monty says: Watch out!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-warning.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-warning.png" width="80"></a>
+Beware of "clever" code! If you have to read a line three times to understand it, it's too clever. Future-you (and your teammates) will thank you for keeping things simple. Remember: code is read ten times more than it's written.</p>
+</div>
+<details>
+<summary>MicroSim: DRY vs. WET Code Comparison</summary>
+<h4 id="diagram-dry-vs-wet-code-comparison">Diagram: DRY vs. WET Code Comparison</h4>
+<p>Type: microsim
+<strong>sim-id:</strong> dry-vs-wet-code<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> compare, distinguish</p>
+<p><strong>Learning Objective:</strong> Students will be able to identify code that violates the DRY principle and explain how to refactor it using functions.</p>
+<p><strong>Purpose:</strong> A side-by-side code comparison tool that shows "WET" (Write Everything Twice) code on one side and the refactored DRY version on the other. Identical repeated blocks are highlighted to make the duplication visually obvious.</p>
+<p><strong>Layout:</strong>
+- Left panel labeled "WET Code (repetitive)" showing code with duplicated blocks
+- Right panel labeled "DRY Code (refactored)" showing the same logic extracted into a reusable function
+- Duplicated blocks on the left are highlighted in red
+- The single function definition on the right is highlighted in green
+- A metrics bar at the bottom showing lines of code and number of duplicate blocks for each version</p>
+<p><strong>Interactive elements:</strong>
+- Click "Next Example" to cycle through 3 different WET-to-DRY transformations
+- Hover over duplicated blocks to see them pulse simultaneously, showing they are copies of each other
+- A "Lines of Code" counter animates to show the reduction</p>
+<p><strong>Instructional Rationale:</strong> Visual highlighting of duplicated blocks makes the DRY violation immediately obvious. The side-by-side layout lets students directly compare approaches. Multiple examples reinforce that DRY applies across many situations.</p>
+</details>
+<h2 id="refactoring-your-code">Refactoring Your Code</h2>
+<p><strong>Refactoring</strong> is the process of improving your code's structure <em>without changing what it does</em>. It's like remodeling a house — you might move walls and redesign the kitchen, but it's still the same house at the same address.</p>
+<p>Why refactor? Because your first working version is rarely your best version. Code evolves. What seemed fine when you wrote 50 lines might become confusing at 500 lines. Refactoring keeps your codebase healthy as it grows.</p>
+<p>Here are common refactoring techniques:</p>
+<p><strong>1. Extract a function</strong> — Pull repeated or complex code into its own function.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># BEFORE: Logic mixed into main code</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter name: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Error: Name cannot be empty."</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter name: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter age: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Error: Age cannot be empty."</span><span class="p">)</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter age: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># AFTER: Extracted into a reusable function</span>
+<span class="k">def</span> <span class="nf">get_required_input</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Keep asking until the user provides a non-empty value."""</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error: This field cannot be empty."</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">value</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="n">get_required_input</span><span class="p">(</span><span class="s2">"Enter name: "</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="n">get_required_input</span><span class="p">(</span><span class="s2">"Enter age: "</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>2. Rename for clarity</strong> — Replace vague names with descriptive ones.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># BEFORE</span>
+<span class="k">def</span> <span class="nf">proc</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+    <span class="k">return</span> <span class="n">r</span>
+
+<span class="c1"># AFTER</span>
+<span class="k">def</span> <span class="nf">filter_high_scores</span><span class="p">(</span><span class="n">scores_dict</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return only scores above 50."""</span>
+    <span class="n">high_scores</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">student</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">scores_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
+            <span class="n">high_scores</span><span class="p">[</span><span class="n">student</span><span class="p">]</span> <span class="o">=</span> <span class="n">score</span>
+    <span class="k">return</span> <span class="n">high_scores</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>3. Simplify conditionals</strong> — Flatten nested if/else blocks.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># BEFORE: Deeply nested</span>
+<span class="k">def</span> <span class="nf">get_ticket_price</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">is_student</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">5.00</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mf">7.00</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">is_student</span><span class="p">:</span>
+                <span class="k">return</span> <span class="mf">8.00</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="mf">12.00</span>
+
+<span class="c1"># AFTER: Flat and clear using early returns</span>
+<span class="k">def</span> <span class="nf">get_ticket_price</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">is_student</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Return the ticket price based on age and student status."""</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">5.00</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">7.00</span>
+    <span class="k">if</span> <span class="n">is_student</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">8.00</span>
+    <span class="k">return</span> <span class="mf">12.00</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The refactored version reads like a checklist — easy to follow, easy to modify.</p>
+<h2 id="comments-and-documentation">Comments and Documentation</h2>
+<h3 id="code-comments">Code Comments</h3>
+<p><strong>Code comments</strong> are notes you write in your code to explain <em>why</em> something is done a certain way. In Python, comments start with a <code>#</code> symbol.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Calculate the average (excluding the lowest score)</span>
+<span class="n">scores</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">adjusted_scores</span> <span class="o">=</span> <span class="n">scores</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>  <span class="c1"># Drop the first (lowest) score</span>
+<span class="n">average</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">adjusted_scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">adjusted_scores</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Rules for good comments:</strong></p>
+<ul>
+<li><strong>Comment the "why," not the "what."</strong> Your code already shows <em>what</em> it does. Comments should explain <em>why</em> you made a particular choice.</li>
+<li><strong>Don't state the obvious.</strong> <code>x = 5  # Set x to 5</code> — that comment adds nothing.</li>
+<li><strong>Keep comments up to date.</strong> A comment that contradicts the code is worse than no comment at all.</li>
+<li><strong>Use comments to explain tricky logic.</strong> If a section of code requires a moment of thought to understand, add a comment.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># BAD comments (state the obvious)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1"># Increment x by 1</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Create an empty list</span>
+
+<span class="c1"># GOOD comments (explain the why)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1"># Account for zero-based indexing in the display</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Will be populated from the CSV file in the next section</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="documentation">Documentation</h3>
+<p><strong>Documentation</strong> goes beyond individual comments. It's the big-picture explanation of what your code does, how to use it, and how it's organized. In Python, the main tool for documentation is the <strong>docstring</strong> — a string at the beginning of a module, class, or function that describes its purpose.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">celsius_to_fahrenheit</span><span class="p">(</span><span class="n">celsius</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Convert a temperature from Celsius to Fahrenheit.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        celsius: A numeric temperature in degrees Celsius.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The equivalent temperature in degrees Fahrenheit.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        &gt;&gt;&gt; celsius_to_fahrenheit(100)</span>
+<span class="sd">        212.0</span>
+<span class="sd">        &gt;&gt;&gt; celsius_to_fahrenheit(0)</span>
+<span class="sd">        32.0</span>
+<span class="sd">    """</span>
+    <span class="k">return</span> <span class="n">celsius</span> <span class="o">*</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Docstrings are special because Python can actually read them at runtime. If someone types <code>help(celsius_to_fahrenheit)</code> in the interpreter, Python displays your docstring. It's like a built-in manual for every function you write.</p>
+<p>For larger projects, documentation might also include:</p>
+<ul>
+<li>A <strong>README file</strong> explaining what the project does and how to install it</li>
+<li>A <strong>requirements.txt</strong> listing all dependencies</li>
+<li><strong>Inline comments</strong> for tricky sections</li>
+<li><strong>Docstrings</strong> for every public function and class</li>
+</ul>
+<details>
+<summary>MicroSim: Comment Quality Checker</summary>
+<h4 id="diagram-comment-quality-checker">Diagram: Comment Quality Checker</h4>
+<p>Type: microsim
+<strong>sim-id:</strong> comment-quality-checker<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Evaluate (L5)
+<strong>Bloom Verb:</strong> assess, judge</p>
+<p><strong>Learning Objective:</strong> Students will be able to evaluate the quality of code comments and distinguish between helpful comments (explaining "why") and unhelpful comments (stating "what").</p>
+<p><strong>Purpose:</strong> An interactive quiz where students are shown code snippets with comments and must rate each comment as "Helpful," "Unhelpful," or "Missing."</p>
+<p><strong>Layout:</strong>
+- Top area: A code snippet with a highlighted comment
+- Middle area: Three clickable buttons — "Helpful (explains why)", "Unhelpful (states the obvious)", "Missing (needs a comment)"
+- Bottom area: Score tracker and feedback message</p>
+<p><strong>Interactive elements:</strong>
+- Click a rating button to submit your answer
+- Immediate feedback explains why the comment is good, bad, or missing
+- Score tracker shows correct answers out of total questions
+- 8 questions covering common comment patterns</p>
+<p><strong>Instructional Rationale:</strong> Evaluating existing comments is a higher-order skill that prepares students to write better comments themselves. Immediate feedback reinforces the "comment the why, not the what" principle.</p>
+</details>
+<h2 id="the-if-__name__-__main__-pattern">The <code>if __name__ == "__main__"</code> Pattern</h2>
+<p>This is one of those Python patterns that looks confusing the first time you see it, but once you understand it, you'll use it all the time.</p>
+<h3 id="name-equals-main">Name Equals Main</h3>
+<p>When Python runs a file, it sets a special variable called <code>__name__</code>. If the file is being <strong>run directly</strong> (like <code>python my_file.py</code>), then <code>__name__</code> is set to <code>"__main__"</code>. But if the file is being <strong>imported</strong> by another file, <code>__name__</code> is set to the module's name instead.</p>
+<p>The <strong><code>if __name__ == "__main__"</code></strong> pattern (often called <strong>name equals main</strong>) lets you write code that <em>only runs when the file is executed directly</em> — not when it's imported.</p>
+<p>Here's why that matters. Let's say you have a module called <code>geometry.py</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># geometry.py</span>
+
+<span class="k">def</span> <span class="nf">area_of_circle</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate the area of a circle."""</span>
+    <span class="kn">import</span> <span class="nn">math</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="c1"># Test code</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Testing area_of_circle..."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Area with radius 5: </span><span class="si">{</span><span class="n">area_of_circle</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>If you run <code>python geometry.py</code>, you'll see the test output — great! But if another file does <code>import geometry</code>, those print statements will run too, cluttering the output. Not great.</p>
+<p>Here's the fix:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># geometry.py</span>
+
+<span class="k">def</span> <span class="nf">area_of_circle</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Calculate the area of a circle."""</span>
+    <span class="kn">import</span> <span class="nn">math</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="c1"># This code ONLY runs when you execute geometry.py directly</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Testing area_of_circle..."</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Area with radius 5: </span><span class="si">{</span><span class="n">area_of_circle</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Now the test code only runs when you execute <code>python geometry.py</code> directly. When another file does <code>import geometry</code>, the test code is skipped.</p>
+<p>Think of it like a sign on a door: "Test area — employees only." The code inside the <code>if __name__ == "__main__"</code> block is only for direct execution, not for imports.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-encourages.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-encourages.png" width="80"></a>
+The <code>if __name__ == "__main__"</code> pattern might look weird at first, but every Python developer uses it. Once you get the hang of it, you'll put it at the bottom of every module you write. It's a mark of a thoughtful programmer!</p>
+</div>
+<details>
+<summary>MicroSim: Name Equals Main Simulator</summary>
+<h4 id="diagram-name-equals-main-simulator">Diagram: Name Equals Main Simulator</h4>
+<p>Type: microsim
+<strong>sim-id:</strong> name-equals-main<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> demonstrate, predict</p>
+<p><strong>Learning Objective:</strong> Students will be able to predict which code blocks execute when a Python file is run directly versus when it is imported as a module.</p>
+<p><strong>Purpose:</strong> An interactive simulation where students see two Python files and can toggle between "Run Directly" and "Import" modes to observe which lines of code execute in each scenario.</p>
+<p><strong>Layout:</strong>
+- Left panel: The module file (e.g., <code>geometry.py</code>) with line numbers and a <code>if __name__ == "__main__"</code> block
+- Right panel: An importing file (e.g., <code>main.py</code>) that does <code>import geometry</code>
+- Bottom panel: Console output showing which lines ran
+- Toggle switch: "Run geometry.py directly" vs. "Import from main.py"</p>
+<p><strong>Interactive elements:</strong>
+- Toggle between direct execution and import mode
+- Lines that execute are highlighted in green; lines that are skipped are grayed out
+- Console output updates in real-time
+- A "Step Through" button advances one line at a time with explanation</p>
+<p><strong>Color scheme:</strong> Executed lines in green, skipped lines in gray, <code>__name__</code> variable value shown in gold</p>
+<p><strong>Instructional Rationale:</strong> Directly comparing the two execution modes side-by-side makes the purpose of the <code>if __name__ == "__main__"</code> guard immediately clear. Stepping through one line at a time helps students build a correct mental model of Python's import and execution behavior.</p>
+</details>
+<h2 id="putting-it-all-together-a-professional-project-structure">Putting It All Together: A Professional Project Structure</h2>
+<p>Let's see what a well-organized Python project looks like when you combine everything from this chapter:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>grade_calculator/
+├── README.md                 # Project documentation
+├── requirements.txt          # Package dependencies
+├── .gitignore                # Files Git should ignore
+├── venv/                     # Virtual environment (not committed to Git)
+├── calculator/
+│   ├── __init__.py           # Makes this a package
+│   ├── grades.py             # Grade calculation module
+│   └── validation.py         # Input validation module
+├── tests/
+│   ├── __init__.py
+│   └── test_grades.py        # Tests for the grades module
+└── main.py                   # Entry point for the program
+</code></pre></div></td></tr></tbody></table></div>
+<p>This project uses:</p>
+<ul>
+<li><strong>Modular design</strong> — Code is split into separate modules for grades and validation</li>
+<li><strong>Packages</strong> — The <code>calculator/</code> folder is a Python package</li>
+<li><strong>Virtual environments</strong> — Dependencies are isolated in <code>venv/</code></li>
+<li><strong>Pip</strong> — Dependencies are tracked in <code>requirements.txt</code></li>
+<li><strong>Git</strong> — Version control with <code>.gitignore</code> to exclude <code>venv/</code></li>
+<li><strong>Documentation</strong> — A <code>README.md</code> explains the project</li>
+<li><strong>Good style</strong> — All files follow PEP 8 conventions</li>
+</ul>
+<p>That structure might seem like overkill for a school project, but building these habits now means you'll be ready for the real-world projects ahead.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-celebrates.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-celebrates.png" width="80"></a>
+Look at you — you've just learned the tools and practices that professional software engineers use every day! Version control, modular design, clean code style, documentation... you're not just writing code anymore, you're <em>engineering</em> software. That's a huge step forward, coder!</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li><strong>Software development</strong> is a structured process (planning, analysis, design, implementation, testing, maintenance) — not just coding.</li>
+<li><strong>Program planning</strong> and <strong>requirements analysis</strong> help you figure out <em>what</em> to build before you start building.</li>
+<li><strong>Modular design</strong> means breaking your program into independent, reusable pieces.</li>
+<li><strong>Code organization</strong> keeps related code together and uses descriptive names.</li>
+<li><strong>Import statements</strong> let you use code from <strong>Python modules</strong> (<code>.py</code> files) and <strong>Python packages</strong> (folders with <code>__init__.py</code>).</li>
+<li>The <strong>pip package manager</strong> installs third-party packages, and <strong>virtual environments</strong> isolate project dependencies.</li>
+<li><strong>Version control</strong> tracks changes over time. <strong>Git</strong> uses <code>init</code>, <code>add</code>, <code>commit</code>, <code>status</code>, and <code>log</code> to manage your code history.</li>
+<li><strong>Code style</strong> matters. <strong>PEP 8</strong> is Python's official style guide, and <strong>linting tools</strong> like flake8 check your code automatically.</li>
+<li><strong>Refactoring</strong> improves code structure without changing behavior.</li>
+<li>The <strong>DRY principle</strong> (Don't Repeat Yourself) says to avoid duplicated code. The <strong>KISS principle</strong> (Keep It Simple, Silly) says to choose the simplest solution.</li>
+<li><strong>Code comments</strong> explain <em>why</em> (not <em>what</em>). <strong>Documentation</strong> (including docstrings) provides big-picture explanations.</li>
+<li>The <strong><code>if __name__ == "__main__"</code></strong> pattern lets your modules work both as standalone scripts and as importable libraries.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What does the DRY principle stand for, and how would you fix a program that has the same ten lines of code copied in three different places?</summary>
+<p><strong>DRY</strong> stands for <strong>Don't Repeat Yourself</strong>. To fix the program, you would extract those ten repeated lines into a single function, then call that function from all three places. This way, the logic lives in one place, and if you ever need to change it, you only update it once.</p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: You have a file called <code>helpers.py</code> with useful functions. When you run <code>python helpers.py</code>, it prints test output. When another file does <code>import helpers</code>, it also prints that test output. How do you fix this?</summary>
+<p>Wrap the test code inside an <code>if __name__ == "__main__":</code> block. Code inside this block only runs when <code>helpers.py</code> is executed directly (<code>python helpers.py</code>). When another file imports it, the block is skipped.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># helpers.py</span>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="c1"># Only runs when executed directly</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">greet</span><span class="p">(</span><span class="s2">"Test"</span><span class="p">))</span>
+</code></pre></div></td></tr></tbody></table></div>
+</details>
+<details class="question">
+<summary>Check Your Understanding: What is the difference between <code>git add</code> and <code>git commit</code>?</summary>
+<p><code>git add</code> moves your changes to the <strong>staging area</strong> — it's like picking which photos to put in a photo album. <code>git commit</code> takes everything in the staging area and saves it as a permanent <strong>snapshot</strong> (a commit) in the repository — it's like gluing the photos in and writing a caption. You can <code>git add</code> multiple times before running a single <code>git commit</code>.</p>
+</details>
 
 
 
@@ -1459,12 +3462,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

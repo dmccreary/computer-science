@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="description" content="Conditional statements, loops, break and continue, and common iteration patterns in Python.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>4. Control Flow - Computer Science</title>
+        <title>Control Flow - Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,9 +62,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="4. Control Flow - Computer Science">
+        <meta property="og:title" content="Control Flow - Computer Science">
       
-        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta property="og:description" content="Conditional statements, loops, break and continue, and common iteration patterns in Python.">
       
         <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/04-control-flow/index.png">
       
@@ -78,9 +78,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="4. Control Flow - Computer Science">
+        <meta name="twitter:title" content="Control Flow - Computer Science">
       
-        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="twitter:description" content="Conditional statements, loops, break and continue, and common iteration patterns in Python.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/04-control-flow/index.png">
       
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. Control Flow
+              Control Flow
             
           </span>
         </div>
@@ -160,13 +160,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -198,14 +196,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -250,7 +247,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -270,10 +267,8 @@
       <a href="../../index.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -289,13 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about.md" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -314,10 +307,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -342,46 +333,85 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -394,14 +424,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -433,10 +462,8 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Intro to Computer Science
-    
   </span>
   
 
@@ -456,10 +483,8 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Python Fundamentals
-    
   </span>
   
 
@@ -479,10 +504,8 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Boolean Logic
-    
   </span>
   
 
@@ -511,10 +534,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -524,10 +545,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -575,6 +594,345 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-control-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Control Flow?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is Control Flow?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sequential-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequential Execution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sequential Execution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-control-flow-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Control Flow Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-statements-making-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements: Making Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Statements: Making Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-if-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The If Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-if-else-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The If-Else Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-elif-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Elif Statement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Elif Statement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-if-elif-else-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: If-Elif-Else Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ternary-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ternary Expression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#match-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Match Statement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loops-doing-things-over-and-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loops: Doing Things Over and Over
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Loops: Doing Things Over and Over">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      The For Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-range-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Range Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Range Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-range-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Range Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      The While Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infinite-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infinite Loops
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#break-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continue Statement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continue Statement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-break-vs-continue-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Break vs Continue Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-nested-loop-grid-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Nested Loop Grid Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-else-clause" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Else Clause
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-loop-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Loop Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Loop Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-accumulator-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Accumulator Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-counter-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Counter Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-sentinel-value-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sentinel Value Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-flag-variable-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Flag Variable Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Flag Variable Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-loop-patterns-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Loop Patterns Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -594,10 +952,8 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. Working with Strings
-    
   </span>
   
 
@@ -617,10 +973,8 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -640,10 +994,8 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -663,10 +1015,8 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -686,10 +1036,8 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. Advanced List Operations
-    
   </span>
   
 
@@ -709,10 +1057,8 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. Tuples and Sets
-    
   </span>
   
 
@@ -732,10 +1078,8 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -755,10 +1099,8 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Classes and Objects
-    
   </span>
   
 
@@ -778,10 +1120,8 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Inheritance and Polymorphism
-    
   </span>
   
 
@@ -801,10 +1141,8 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -824,10 +1162,8 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. File Input and Output
-    
   </span>
   
 
@@ -847,10 +1183,8 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -870,10 +1204,8 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     17. Testing and Debugging
-    
   </span>
   
 
@@ -893,10 +1225,8 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     18. Searching and Sorting
-    
   </span>
   
 
@@ -916,10 +1246,8 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -939,10 +1267,8 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     20. Advanced Python
-    
   </span>
   
 
@@ -971,8 +1297,25 @@
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -986,14 +1329,11 @@
         
   
   
-  
     <a href="../../sims/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1058,7 +1398,6 @@
     
     
     
-    
       
         
         
@@ -1069,14 +1408,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1107,7 +1443,6 @@
     
     
     
-    
       
         
         
@@ -1118,14 +1453,11 @@
         
   
   
-  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1150,10 +1482,8 @@
       <a href="../../glossary.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1172,10 +1502,8 @@
       <a href="../../faq.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1194,10 +1522,8 @@
       <a href="../../references.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -1216,10 +1542,8 @@
       <a href="../../license.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1238,10 +1562,8 @@
       <a href="../../contact.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1303,6 +1625,345 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-control-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Control Flow?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is Control Flow?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sequential-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequential Execution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sequential Execution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-control-flow-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Control Flow Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-statements-making-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements: Making Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Statements: Making Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-if-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The If Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-if-else-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The If-Else Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-elif-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Elif Statement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Elif Statement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-if-elif-else-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: If-Elif-Else Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ternary-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ternary Expression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#match-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Match Statement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loops-doing-things-over-and-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loops: Doing Things Over and Over
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Loops: Doing Things Over and Over">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      The For Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-range-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Range Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Range Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-range-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Range Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      The While Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infinite-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infinite Loops
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#break-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continue Statement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continue Statement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-break-vs-continue-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Break vs Continue Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-nested-loop-grid-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Nested Loop Grid Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-else-clause" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Else Clause
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-loop-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Loop Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Loop Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-accumulator-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Accumulator Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-counter-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Counter Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-sentinel-value-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sentinel Value Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-flag-variable-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Flag Variable Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Flag Variable Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-loop-patterns-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Loop Patterns Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1316,7 +1977,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/04-control-flow/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1366,7 +2026,891 @@
 <li><a href="../03-boolean-logic/">Chapter 3: Boolean Logic and Comparisons</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-welcome.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-welcome.png" width="80"></a>
+Welcome back, coders! So far you've learned how to store data in variables, do math, and compare values with Boolean expressions. But all of our programs have been <em>straight-line</em> — they just run one instruction after another from top to bottom. That's about to change. In this chapter, you'll learn how to make your programs <em>think</em>, <em>choose</em>, and <em>repeat</em>. Get ready — this is where programming gets really fun!</p>
+</div>
+<h2 id="what-is-control-flow">What Is Control Flow?</h2>
+<p><strong>Control flow</strong> is the order in which a computer executes statements in a program. Think about it like a GPS giving you driving directions. Sometimes you drive straight ahead. Sometimes you turn left or right. Sometimes you loop around a roundabout. Control flow is the GPS of your program — it decides which instructions to run and in what order.</p>
+<p>There are three fundamental patterns of control flow:</p>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>What It Does</th>
+<th>Real-Life Analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sequential</strong></td>
+<td>Run statements one after another, top to bottom</td>
+<td>Reading a book page by page</td>
+</tr>
+<tr>
+<td><strong>Selection</strong></td>
+<td>Choose which statements to run based on a condition</td>
+<td>A "Choose Your Own Adventure" book</td>
+</tr>
+<tr>
+<td><strong>Iteration</strong></td>
+<td>Repeat statements multiple times</td>
+<td>Listening to your favorite song on repeat</td>
+</tr>
+</tbody>
+</table>
+<p>Every program you'll ever write — from a simple calculator to a massive video game — uses some combination of these three patterns. Let's explore each one.</p>
+<h3 id="sequential-execution">Sequential Execution</h3>
+<p><strong>Sequential execution</strong> is the simplest form of control flow. The computer runs your statements in order, one after another, from the first line to the last. This is Python's default behavior.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">"Alex"</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, "</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You are "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" years old"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Python runs line 1, then line 2, then line 3, then line 4. No surprises, no detours. It's like following a recipe step by step — first crack the eggs, then add the flour, then mix. You wouldn't frost a cake before baking it (well, you could try, but it wouldn't go well).</p>
+<p>Sequential execution is fine for simple tasks, but real programs need to make decisions and repeat actions. That's where conditionals and loops come in.</p>
+<h4 id="diagram-control-flow-patterns">Diagram: Control Flow Patterns</h4>
+<iframe src="../../sims/control-flow-patterns/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Control Flow Patterns Flowchart</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> control-flow-patterns<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> compare, classify</p>
+<p><strong>Learning Objective:</strong> Students will be able to identify and distinguish the three fundamental control flow patterns (sequential, selection, iteration) and trace the path of execution through each.</p>
+<p><strong>Purpose:</strong> An interactive flowchart showing the three patterns of control flow side by side. Students can click on each pattern to see an animated trace of how execution flows through it.</p>
+<p><strong>Layout:</strong>
+- Three columns, each showing one control flow pattern
+- Left column: Sequential (straight arrow down through 3 boxes)
+- Middle column: Selection (diamond decision node branching left/right to different boxes, then merging)
+- Right column: Iteration (box with arrow looping back to a diamond decision node)
+- Each pattern has a label and a brief description below</p>
+<p><strong>Interactive elements:</strong>
+- Click any pattern to animate a glowing dot tracing the execution path
+- Hover over nodes (rectangles for statements, diamonds for decisions) to see descriptions
+- A "Show All" button animates all three simultaneously for comparison
+- Toggle to show/hide Python code snippets that correspond to each pattern</p>
+<p><strong>Visual style:</strong> Clean flowchart with rounded rectangles for statements, diamond shapes for conditions, directional arrows
+<strong>Color scheme:</strong> Sequential (blue), Selection (green), Iteration (orange), animated dot in bright yellow
+<strong>Responsive:</strong> Three columns stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Side-by-side comparison supports the Understand/compare objective. Animated execution traces make the abstract concept of "flow" concrete and visible. Toggle between flowchart and code helps students connect visual models to Python syntax.</p>
+</details>
+<h2 id="conditional-statements-making-decisions">Conditional Statements: Making Decisions</h2>
+<p>Imagine you're at a vending machine. You put in your money, and then you have to make a <em>choice</em>: which snack do you want? Press A1 for chips, B2 for a candy bar, C3 for a granola bar. Your selection determines what comes out. That's exactly what <strong>conditional statements</strong> do in Python — they let your program choose different paths based on a condition.</p>
+<p>Conditional statements check whether something is <code>True</code> or <code>False</code> (remember Boolean values from Chapter 3?) and then decide which code to run.</p>
+<h3 id="the-if-statement">The If Statement</h3>
+<p>The <strong>if statement</strong> is the simplest conditional. It checks a condition, and if that condition is <code>True</code>, it runs a block of code. If the condition is <code>False</code>, it skips that block entirely.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">temperature</span> <span class="o">=</span> <span class="mi">95</span>
+
+<span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">90</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"It's really hot outside!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Don't forget your water bottle!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's what happens:</p>
+<ol>
+<li>Python evaluates <code>temperature &gt; 90</code> — that's <code>95 &gt; 90</code>, which is <code>True</code></li>
+<li>Since the condition is <code>True</code>, Python runs the indented code block</li>
+<li>Both <code>print</code> statements execute</li>
+</ol>
+<p>If <code>temperature</code> were <code>75</code>, the condition would be <code>False</code>, and Python would skip right past those two lines. Nothing would print.</p>
+<p>Notice the structure:</p>
+<ul>
+<li>The <code>if</code> keyword, followed by a condition, followed by a colon <code>:</code></li>
+<li>The code that runs when the condition is <code>True</code> is <strong>indented</strong> (usually 4 spaces)</li>
+<li>Everything at the same indentation level belongs to the if block</li>
+</ul>
+<h3 id="the-if-else-statement">The If-Else Statement</h3>
+<p>What if you want your program to do one thing when a condition is <code>True</code> and a <em>different</em> thing when it's <code>False</code>? That's where the <strong>if-else statement</strong> comes in.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">16</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You can get your driver's license!"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Not old enough to drive yet."</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"But you'll get there soon!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The <code>else</code> clause acts as a safety net — it catches everything that doesn't match the <code>if</code> condition. It's like a fork in the road: you <em>must</em> go one way or the other. There's no standing in the middle.</p>
+<h3 id="the-elif-statement">The Elif Statement</h3>
+<p>But what if you have more than two options? You don't just want "hot" or "not hot" — you want "hot," "warm," "cool," and "cold." That's what the <strong>elif statement</strong> (short for "else if") handles.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">score</span> <span class="o">=</span> <span class="mi">85</span>
+
+<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="s2">"A"</span>
+<span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="s2">"B"</span>
+<span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="s2">"C"</span>
+<span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="s2">"D"</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="s2">"F"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your grade is: "</span> <span class="o">+</span> <span class="n">grade</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Python checks each condition from top to bottom. The <em>first</em> one that's <code>True</code> wins, and the rest are skipped. With a score of 85:</p>
+<ol>
+<li>Is <code>85 &gt;= 90</code>? No. Move on.</li>
+<li>Is <code>85 &gt;= 80</code>? Yes! Set <code>grade = "B"</code> and skip everything else.</li>
+</ol>
+<p>This is important: <strong>order matters</strong> with elif chains. Python takes the first match and ignores the rest. Put your most restrictive conditions first.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Think of an if-elif-else chain like a bouncer at a club checking IDs. The bouncer checks one condition at a time: "Are you on the VIP list? No? Are you 21 or older? No? Are you with someone who is? No? Sorry, you're not getting in." The first condition that matches determines what happens.</p>
+</div>
+<h4 id="diagram-if-elif-else-flowchart">Diagram: If-Elif-Else Flowchart</h4>
+<iframe src="../../sims/if-elif-else-flowchart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>If-Elif-Else Flowchart MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> if-elif-else-flowchart<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> trace, predict</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace the execution path through an if-elif-else chain by entering a test value and observing which branch is taken.</p>
+<p><strong>Purpose:</strong> An interactive flowchart of the grading example above. Students enter a numeric score, and the flowchart animates the path through the decision nodes, highlighting which branch is taken and what grade is assigned.</p>
+<p><strong>Layout:</strong>
+- Top: Input field for score (0-100) with a "Trace" button
+- Below: Vertical flowchart with diamond decision nodes for each condition
+- First diamond: "score &gt;= 90?" with Yes branch going to "A" box, No branch going down
+- Second diamond: "score &gt;= 80?" with Yes to "B", No down
+- Third diamond: "score &gt;= 70?" with Yes to "C", No down
+- Fourth diamond: "score &gt;= 60?" with Yes to "D", No to "F"
+- All grade boxes connect to a final "Print grade" box at the bottom</p>
+<p><strong>Interactive elements:</strong>
+- Type a score and click "Trace" to animate a dot flowing through the flowchart
+- Each diamond glows green (True) or red (False) as the dot passes through
+- The winning grade box pulses and displays the result
+- A "Step" button lets students advance one decision at a time
+- The corresponding Python code is shown on the right, with the current line highlighted</p>
+<p><strong>Visual style:</strong> Standard flowchart shapes — diamonds for decisions, rectangles for actions
+<strong>Color scheme:</strong> True paths in green, False paths in red, active node in yellow
+<strong>Responsive:</strong> Flowchart scales to fit; code panel collapses below on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Tracing with a concrete input value supports the Apply level. Students predict which branch will be taken and then verify by watching the animation. Pairing the flowchart with highlighted source code builds the connection between visual logic and Python syntax.</p>
+</details>
+<h3 id="nested-conditionals">Nested Conditionals</h3>
+<p>Sometimes one decision depends on another. You might first check if it's a weekday, and <em>then</em> check if you have homework. Placing an if statement inside another if statement is called using <strong>nested conditionals</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">is_weekend</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">has_homework</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">if</span> <span class="n">is_weekend</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"It's the weekend!"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">has_homework</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"But you should probably do your homework first..."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Enjoy your free time!"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"It's a school day."</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">has_homework</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Time to hit the books!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Nesting works, but be careful — too many levels of nesting make your code hard to read. As a rule of thumb, if you're more than 3 levels deep, there's probably a cleaner way to write it (often using <code>and</code>/<code>or</code> to combine conditions).</p>
+<h3 id="ternary-expression">Ternary Expression</h3>
+<p>Sometimes you just need a quick one-liner to pick between two values. Python's <strong>ternary expression</strong> (also called a conditional expression) lets you do an if-else in a single line:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">status</span> <span class="o">=</span> <span class="s2">"can drive"</span> <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">16</span> <span class="k">else</span> <span class="s2">"too young"</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">status</span><span class="p">)</span>  <span class="c1"># Output: too young</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The pattern is: <code>value_if_true if condition else value_if_false</code></p>
+<p>It reads almost like English: "status is 'can drive' <em>if</em> age is at least 16, <em>else</em> 'too young'." Use ternary expressions for simple choices. For anything complicated, stick with regular if-else blocks — readability always wins.</p>
+<h3 id="match-statement">Match Statement</h3>
+<p>Python 3.10 introduced the <strong>match statement</strong>, which is great for checking a single value against multiple specific options. It's similar to a "switch" statement in other languages.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">day</span> <span class="o">=</span> <span class="s2">"Monday"</span>
+
+<span class="k">match</span> <span class="n">day</span><span class="p">:</span>
+    <span class="k">case</span> <span class="s2">"Monday"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Start of the school week!"</span><span class="p">)</span>
+    <span class="k">case</span> <span class="s2">"Friday"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Almost the weekend!"</span><span class="p">)</span>
+    <span class="k">case</span> <span class="s2">"Saturday"</span> <span class="o">|</span> <span class="s2">"Sunday"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Weekend vibes!"</span><span class="p">)</span>
+    <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Just another school day."</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The <code>_</code> at the end is a <strong>wildcard</strong> — it matches anything that didn't match the earlier cases, like the <code>else</code> in an if-elif chain. The <code>|</code> symbol means "or," so <code>"Saturday" | "Sunday"</code> matches either one.</p>
+<p>Match statements are cleanest when you're comparing one value against a list of known options — like menu choices, days of the week, or game commands.</p>
+<h2 id="loops-doing-things-over-and-over">Loops: Doing Things Over and Over</h2>
+<p>Imagine you had to write a program that prints "Hello!" one hundred times. Without loops, you'd need 100 <code>print</code> statements. That's not programming — that's punishment. <strong>Loops</strong> let you repeat a block of code multiple times without copying and pasting it.</p>
+<p>There are two main types of loops in Python:</p>
+<ul>
+<li><strong>For loops</strong> — when you know how many times to repeat (or you're iterating over a collection)</li>
+<li><strong>While loops</strong> — when you want to keep going until a condition changes</li>
+</ul>
+<h3 id="the-for-loop">The For Loop</h3>
+<p>A <strong>for loop</strong> repeats a block of code once for each item in a sequence (like a list, a string, or a range of numbers).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"I like "</span> <span class="o">+</span> <span class="n">fruit</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>I like apple
+I like banana
+I like cherry
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's how it works:</p>
+<ol>
+<li>Python picks the first item from the list (<code>"apple"</code>) and stores it in the variable <code>fruit</code></li>
+<li>It runs the indented code block (the <strong>loop body</strong>)</li>
+<li>It goes back to the top, picks the next item (<code>"banana"</code>), and runs the loop body again</li>
+<li>This continues until every item has been processed</li>
+</ol>
+<p>The variable <code>fruit</code> in this example is called the <strong>loop variable</strong> — it takes on a different value each time through the loop. The indented code below the <code>for</code> line is the <strong>loop body</strong> — the code that gets repeated.</p>
+<h3 id="the-range-function">The Range Function</h3>
+<p>What if you want to repeat something a specific number of times? The <strong>range function</strong> generates a sequence of numbers that you can loop over.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Count: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Count: 0
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice that <code>range(5)</code> gives you numbers 0 through 4 — that's 5 numbers total, but it starts at 0, not 1. This is one of Python's quirks that trips up beginners. (Why start at 0? It's a long tradition in computer science that has to do with memory addresses. You'll get used to it!)</p>
+<p>The <code>range</code> function has three forms:</p>
+<table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Meaning</th>
+<th>Example</th>
+<th>Numbers Generated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>range(stop)</code></td>
+<td>0 to stop-1</td>
+<td><code>range(5)</code></td>
+<td>0, 1, 2, 3, 4</td>
+</tr>
+<tr>
+<td><code>range(start, stop)</code></td>
+<td>start to stop-1</td>
+<td><code>range(2, 7)</code></td>
+<td>2, 3, 4, 5, 6</td>
+</tr>
+<tr>
+<td><code>range(start, stop, step)</code></td>
+<td>start to stop-1, skipping by step</td>
+<td><code>range(0, 10, 2)</code></td>
+<td>0, 2, 4, 6, 8</td>
+</tr>
+</tbody>
+</table>
+<p>You can even count backward:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="c1"># Output: 5, 4, 3, 2, 1 (like a rocket countdown!)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-tip.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-tip.png" width="80"></a>
+A common mistake is writing <code>range(1, 5)</code> and expecting to get 1, 2, 3, 4, 5. But remember: the stop value is <em>exclusive</em> — it's not included. If you want 1 through 5, use <code>range(1, 6)</code>. The rule is: range goes <em>up to but not including</em> the stop value.</p>
+</div>
+<h4 id="diagram-range-function-explorer">Diagram: Range Function Explorer</h4>
+<iframe src="../../sims/range-function-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Range Function Explorer MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> range-function-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> experiment, predict</p>
+<p><strong>Learning Objective:</strong> Students will be able to predict the output of the range() function with various start, stop, and step arguments by adjusting sliders and observing the generated sequence.</p>
+<p><strong>Purpose:</strong> An interactive tool where students adjust the start, stop, and step parameters of range() and immediately see the resulting sequence of numbers displayed visually.</p>
+<p><strong>Layout:</strong>
+- Top: Three labeled sliders — Start (range -10 to 20, default 0), Stop (range -10 to 20, default 5), Step (range -5 to 5, default 1, excluding 0)
+- Middle: A number line from -10 to 20 with dots/circles at each integer
+- Below the number line: The generated numbers highlighted with colored dots and labeled
+- Bottom: The Python code shown dynamically, e.g., <code>range(0, 5, 1)</code> and the resulting list <code>[0, 1, 2, 3, 4]</code></p>
+<p><strong>Interactive elements:</strong>
+- Drag any slider to change the parameter in real time
+- The number line updates instantly, highlighting the generated values
+- The Python code and list output update automatically
+- A "Challenge" button gives the student a target sequence (e.g., "Generate: 2, 5, 8, 11") and they adjust sliders to match
+- Show a warning message if step is 0 (infinite loop) or if the range produces no values</p>
+<p><strong>Visual style:</strong> Clean number line with colored highlight dots, sliders below each label
+<strong>Color scheme:</strong> Active numbers in green, inactive in light gray, slider handles in blue
+<strong>Responsive:</strong> Canvas width adjusts; sliders stack if too narrow</p>
+<p><strong>Instructional Rationale:</strong> Direct manipulation of parameters supports the Apply level. Immediate visual feedback on a number line builds intuition for how start, stop, and step interact. The challenge mode adds goal-directed practice.</p>
+</details>
+<h3 id="the-while-loop">The While Loop</h3>
+<p>A <strong>while loop</strong> keeps running as long as a condition is <code>True</code>. Unlike a for loop, you don't necessarily know in advance how many times it will repeat.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">password</span> <span class="o">=</span> <span class="s2">""</span>
+
+<span class="k">while</span> <span class="n">password</span> <span class="o">!=</span> <span class="s2">"python123"</span><span class="p">:</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the password: "</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Access granted!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This loop keeps asking for a password until the user types the correct one. It could run once (if they get it right the first time) or a hundred times (if they keep guessing wrong).</p>
+<p>The while loop structure:</p>
+<ol>
+<li>Check the condition — is it <code>True</code>?</li>
+<li>If <code>True</code>, run the loop body</li>
+<li>Go back to step 1</li>
+<li>If <code>False</code>, skip the loop body and continue with the rest of the program</li>
+</ol>
+<h3 id="infinite-loops">Infinite Loops</h3>
+<p>Here's something to watch out for: if the condition in a while loop <em>never</em> becomes <code>False</code>, the loop runs forever. This is called an <strong>infinite loop</strong>, and it's one of the most common bugs in programming.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># WARNING: This loop never ends!</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Since <code>x</code> starts at 1 and keeps increasing, <code>x &gt; 0</code> is <em>always</em> <code>True</code>. Your program will print numbers forever (or until you force it to stop with Ctrl+C).</p>
+<p>Sometimes infinite loops are <em>intentional</em> — for example, a game's main loop that keeps running until the player quits. But accidental infinite loops are a headache. Always make sure your while loop condition will eventually become <code>False</code>.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Monty says: Watch out!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-warning.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-warning.png" width="80"></a>
+If your program seems "frozen" or stuck, you might have an infinite loop! Press <strong>Ctrl+C</strong> (or <strong>Cmd+C</strong> on Mac) to stop the program. Then check your while loop: is the condition <em>ever</em> becoming False? Make sure something inside the loop is changing a variable that affects the condition.</p>
+</div>
+<h3 id="break-statement">Break Statement</h3>
+<p>The <strong>break statement</strong> is like an emergency exit. When Python hits <code>break</code> inside a loop, it immediately jumps out of the loop — no questions asked.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Found it!"</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Checking "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Checking 1
+Checking 2
+Checking 3
+Checking 4
+Checking 5
+Checking 6
+Found it!
+</code></pre></div></td></tr></tbody></table></div>
+<p>Without <code>break</code>, this loop would check all 99 numbers. With <code>break</code>, it stops as soon as it finds 7. Efficient!</p>
+<h3 id="continue-statement">Continue Statement</h3>
+<p>The <strong>continue statement</strong> is the opposite of <code>break</code>. Instead of exiting the loop, it skips the <em>rest of the current iteration</em> and jumps to the next one.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>1
+2
+4
+5
+</code></pre></div></td></tr></tbody></table></div>
+<p>When <code>i</code> is 3, <code>continue</code> tells Python "skip the print and go to the next number." It's useful for filtering — running the loop body only for items that meet certain criteria.</p>
+<p>Here's a comparison to keep them straight:</p>
+<table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>What It Does</th>
+<th>Analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>break</code></td>
+<td>Exit the loop entirely</td>
+<td>Walking out of the movie theater</td>
+</tr>
+<tr>
+<td><code>continue</code></td>
+<td>Skip to the next iteration</td>
+<td>Fast-forwarding past a boring scene</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-break-vs-continue-visualizer">Diagram: Break vs Continue Visualizer</h4>
+<iframe src="../../sims/break-vs-continue/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Break vs Continue Visualizer MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> break-vs-continue<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> compare, trace</p>
+<p><strong>Learning Objective:</strong> Students will be able to distinguish between break and continue by tracing the execution of loops that use each statement and predicting the output.</p>
+<p><strong>Purpose:</strong> A side-by-side animation showing two identical loops — one using break and one using continue — so students can visually compare how each statement affects the loop's execution.</p>
+<p><strong>Layout:</strong>
+- Split screen: left side "Loop with break", right side "Loop with continue"
+- Each side shows a for loop iterating through numbers 1-5 with a condition check at number 3
+- Animated execution dot traces through each loop
+- An output console at the bottom of each side shows what gets printed</p>
+<p><strong>Interactive elements:</strong>
+- "Step" button advances both loops one step simultaneously
+- "Auto Play" button animates with adjustable speed
+- "Reset" button restarts both loops
+- Students can change the "trigger number" (the number that activates break/continue) via a dropdown</p>
+<p><strong>Visual elements:</strong>
+- Loop iterations shown as boxes in a row (1, 2, 3, 4, 5)
+- Current iteration highlighted in yellow
+- Break side: when trigger is reached, remaining boxes turn gray (skipped)
+- Continue side: only the trigger box turns gray, rest continue normally
+- Output consoles show printed values accumulating</p>
+<p><strong>Color scheme:</strong> Active iteration in yellow, completed in green, skipped/break in red, continue-skipped in orange
+<strong>Responsive:</strong> Side-by-side on wide screens, stacked vertically on narrow</p>
+<p><strong>Instructional Rationale:</strong> Side-by-side comparison with identical input makes the behavioral difference immediately obvious. Step-by-step execution supports careful tracing. Changing the trigger number lets students verify their understanding with different scenarios.</p>
+</details>
+<h3 id="nested-loops">Nested Loops</h3>
+<p>A <strong>nested loop</strong> is a loop inside another loop. The inner loop runs completely for <em>each iteration</em> of the outer loop. This is like a clock: the minute hand goes around 60 times for every single revolution of the hour hand.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">row</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">)"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>  <span class="c1"># New line after each row</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>(1,1) (1,2) (1,3)
+(2,1) (2,2) (2,3)
+(3,1) (3,2) (3,3)
+</code></pre></div></td></tr></tbody></table></div>
+<p>The outer loop runs 3 times (rows 1, 2, 3). For <em>each</em> row, the inner loop runs 3 times (columns 1, 2, 3). That's 3 x 3 = 9 total iterations. Nested loops are commonly used for working with grids, tables, and two-dimensional data.</p>
+<p>Here's a classic example — printing a multiplication table:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="si">:</span><span class="s2">4</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>   1   2   3   4   5
+   2   4   6   8  10
+   3   6   9  12  15
+   4   8  12  16  20
+   5  10  15  20  25
+</code></pre></div></td></tr></tbody></table></div>
+<h4 id="diagram-nested-loop-grid-visualizer">Diagram: Nested Loop Grid Visualizer</h4>
+<iframe src="../../sims/nested-loop-grid/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Nested Loop Grid Visualizer MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> nested-loop-grid<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> trace, predict</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace the execution order of nested loops by watching a cell-by-cell animation across a grid and predicting which cell is filled next.</p>
+<p><strong>Purpose:</strong> An animated grid that fills in cell by cell to show the execution order of a nested for loop. Students see the outer loop variable (row) and inner loop variable (column) update in real time.</p>
+<p><strong>Layout:</strong>
+- Top: Current values display — "row = ?, col = ?, iteration = ?"
+- Center: An N x N grid (default 4x4) with row and column labels
+- Right side: The Python code with the current line highlighted
+- Bottom: Controls</p>
+<p><strong>Interactive elements:</strong>
+- Grid size slider (2x2 to 6x6)
+- "Step" button to advance one cell at a time
+- "Auto Play" button with speed control
+- "Reset" button
+- Click any cell to see its (row, col) coordinates and iteration number</p>
+<p><strong>Visual elements:</strong>
+- Cells fill in order: left to right across each row, then down to the next row
+- Current cell glows brightly
+- Already-filled cells show their iteration number
+- Row label highlights on the left when that row is active
+- Column label highlights on top when that column is active
+- Python code on the right highlights the inner or outer loop line as appropriate</p>
+<p><strong>Color scheme:</strong> Current cell in bright yellow, filled cells in gradient from light to dark blue (showing order), unfilled in white
+<strong>Responsive:</strong> Grid scales proportionally; code panel collapses below on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Step-by-step cell filling makes the nested execution order concrete. Seeing the loop variables update alongside the grid builds understanding of which variable changes "fast" (inner) and which changes "slow" (outer). Adjustable grid size lets students verify their mental model at different scales.</p>
+</details>
+<h3 id="loop-else-clause">Loop Else Clause</h3>
+<p>Here's a Python feature that surprises even experienced programmers: you can put an <code>else</code> block on a loop. The <strong>loop else clause</strong> runs when the loop finishes <em>normally</em> (without hitting a <code>break</code>).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Found an odd number: </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="k">break</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"All numbers are even!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Output: <code>All numbers are even!</code></p>
+<p>Since no odd number was found, the loop never hit <code>break</code>, so the <code>else</code> block ran. If the list contained a 5, the <code>break</code> would trigger and the <code>else</code> would be skipped.</p>
+<p>A helpful way to read this: "for each item... do this... <em>else</em> (if we got through everything without breaking)... do that." Some people find it easier to think of it as "for...no-break."</p>
+<h2 id="common-loop-patterns">Common Loop Patterns</h2>
+<p>Now that you know the mechanics of loops, let's look at some <strong>loop patterns</strong> — tried-and-true templates that show up over and over in real programs. Learning these patterns is like learning chess openings: once you recognize them, you can solve problems much faster.</p>
+<h3 id="the-accumulator-pattern">The Accumulator Pattern</h3>
+<p>The <strong>accumulator pattern</strong> is used when you want to build up a result (a total, a string, a list) as you loop through data. You start with an initial value, and each time through the loop, you add to it.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Sum all numbers from 1 to 100</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># accumulator variable, initialized to 0</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">num</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The sum is:"</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>  <span class="c1"># Output: The sum is: 5050</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The formula is:</p>
+<ol>
+<li><strong>Initialize</strong> the accumulator before the loop (<code>total = 0</code>)</li>
+<li><strong>Update</strong> the accumulator inside the loop (<code>total = total + num</code>)</li>
+<li><strong>Use</strong> the accumulator after the loop (<code>print(total)</code>)</li>
+</ol>
+<p>The accumulator doesn't have to be a number. You can accumulate a string:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Build a string of initials</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"Charlie"</span><span class="p">]</span>
+<span class="n">initials</span> <span class="o">=</span> <span class="s2">""</span>
+
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
+    <span class="n">initials</span> <span class="o">=</span> <span class="n">initials</span> <span class="o">+</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">initials</span><span class="p">)</span>  <span class="c1"># Output: ABC</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-counter-pattern">The Counter Pattern</h3>
+<p>The <strong>counter pattern</strong> is a special case of the accumulator where you're counting how many items meet a certain condition.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Count how many scores are above 80</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">72</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">85</span><span class="p">]</span>
+<span class="n">high_scores</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># counter variable</span>
+
+<span class="k">for</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">scores</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="n">high_scores</span> <span class="o">=</span> <span class="n">high_scores</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of high scores:"</span><span class="p">,</span> <span class="n">high_scores</span><span class="p">)</span>  <span class="c1"># Output: 3</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The key difference from a plain accumulator: you add 1 only when a condition is met. This is incredibly useful — counting vowels in a string, counting even numbers in a list, counting how many students passed a test.</p>
+<h3 id="the-sentinel-value-pattern">The Sentinel Value Pattern</h3>
+<p>The <strong>sentinel value pattern</strong> uses a special value (the "sentinel") to signal that the loop should stop. Instead of knowing the number of iterations in advance, you keep looping until you see the magic stop value.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Keep reading scores until the user enters -1</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a score (-1 to stop): "</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="n">score</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>  <span class="c1"># -1 is the sentinel value</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">score</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a score (-1 to stop): "</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">count</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average score: </span><span class="si">{</span><span class="n">average</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"No scores entered."</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The sentinel value (-1 in this case) is chosen because it's not a valid score. Sentinels must be values that would never appear as legitimate data.</p>
+<p>Common sentinel values include:</p>
+<ul>
+<li><code>-1</code> for positive-only data</li>
+<li><code>""</code> (empty string) for text input</li>
+<li><code>"quit"</code> or <code>"exit"</code> as a command</li>
+<li><code>0</code> when zero isn't valid data</li>
+</ul>
+<h3 id="the-flag-variable-pattern">The Flag Variable Pattern</h3>
+<p>The <strong>flag variable pattern</strong> uses a Boolean variable (the "flag") to track whether a certain condition has been encountered. Think of it like raising a flag on a mailbox — once it's up, you know something happened.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Check if a list contains any negative numbers</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">has_negative</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># flag variable</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">has_negative</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">break</span>  <span class="c1"># no need to keep looking</span>
+
+<span class="k">if</span> <span class="n">has_negative</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"The list contains negative numbers."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"All numbers are positive."</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The flag starts as <code>False</code> and gets flipped to <code>True</code> when the condition is found. After the loop, you check the flag to decide what to do. This pattern is great when you're searching for something — you don't care <em>how many</em> items match, just whether <em>at least one</em> does.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Here's a quick cheat sheet for loop patterns: <strong>Accumulator</strong> = "build up a total." <strong>Counter</strong> = "count how many." <strong>Sentinel</strong> = "stop when you see the signal." <strong>Flag</strong> = "did this thing ever happen?" Once you recognize which pattern a problem calls for, writing the code becomes much easier!</p>
+</div>
+<h4 id="diagram-loop-patterns-comparison">Diagram: Loop Patterns Comparison</h4>
+<iframe src="../../sims/loop-patterns-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Loop Patterns Comparison MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> loop-patterns-comparison<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> classify, differentiate</p>
+<p><strong>Learning Objective:</strong> Students will be able to identify which loop pattern (accumulator, counter, sentinel, flag) is being used in a given code example and explain why that pattern was chosen.</p>
+<p><strong>Purpose:</strong> An interactive quiz/explorer that presents code snippets and asks students to identify the loop pattern being used, with visual feedback and explanations.</p>
+<p><strong>Layout:</strong>
+- Top: Four pattern cards arranged horizontally, each with a name, icon, and one-sentence description
+  - Accumulator (sum icon): "Build up a result"
+  - Counter (tally icon): "Count matches"
+  - Sentinel (stop sign icon): "Stop on signal"
+  - Flag (flag icon): "Track if something happened"
+- Middle: A code snippet display area showing a Python loop example
+- Bottom: "Which pattern is this?" prompt with four clickable buttons matching the pattern cards</p>
+<p><strong>Interactive elements:</strong>
+- "Next Example" button cycles through 8-10 different code snippets
+- Click a pattern button to guess — correct answers highlight green with explanation, incorrect flash red with a hint
+- Score tracker in the corner (e.g., "5/8 correct")
+- "Show Answer" button reveals the correct pattern with explanation
+- Each pattern card is clickable to show a reference example of that pattern</p>
+<p><strong>Visual elements:</strong>
+- Code snippets displayed with syntax highlighting
+- Correct guess: confetti animation and green glow
+- Incorrect guess: gentle red flash and hint text
+- Pattern cards pulse when they're the correct answer after reveal</p>
+<p><strong>Color scheme:</strong> Accumulator (blue), Counter (green), Sentinel (orange), Flag (purple)
+<strong>Responsive:</strong> Pattern cards stack in 2x2 grid on narrow screens; code area adjusts width</p>
+<p><strong>Instructional Rationale:</strong> Classification tasks support the Analyze level by requiring students to look at code structure and match it to an abstract pattern. Multiple examples build pattern recognition fluency. Immediate feedback with explanations corrects misconceptions on the spot.</p>
+</details>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's see how these concepts combine in a more realistic example. Here's a number-guessing game that uses a while loop, conditionals, a counter, and a flag:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">secret</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">guesses</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># counter pattern</span>
+<span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># flag variable pattern</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"I'm thinking of a number between 1 and 100!"</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Your guess: "</span><span class="p">))</span>
+    <span class="n">guesses</span> <span class="o">=</span> <span class="n">guesses</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">if</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">secret</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Too low! Try again."</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">secret</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Too high! Try again."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You got it in </span><span class="si">{</span><span class="n">guesses</span><span class="si">}</span><span class="s2"> guesses!"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This little program uses almost everything we covered: control flow, conditionals (if-elif-else), a while loop, a counter pattern, and a flag variable pattern. That's the beauty of these building blocks — individually they're simple, but together they can create something genuinely interactive and fun.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-celebrates.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-celebrates.png" width="80"></a>
+Awesome work making it through this monster chapter! You now know how to make programs that <em>think</em> (conditionals), <em>repeat</em> (loops), and <em>decide when to stop</em> (break, continue, sentinels, flags). These tools are the backbone of every program you'll ever write. From here on out, your code is going to get a <em>lot</em> more interesting!</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li><strong>Control flow</strong> determines the order in which statements execute. The three patterns are sequential, selection (conditionals), and iteration (loops).</li>
+<li><strong>If, elif, and else</strong> let your program choose different paths. Python checks conditions top-to-bottom and takes the first match.</li>
+<li><strong>Ternary expressions</strong> provide a compact one-line if-else for simple choices.</li>
+<li><strong>Match statements</strong> (Python 3.10+) cleanly handle checking one value against multiple options.</li>
+<li><strong>Nested conditionals</strong> place if statements inside other if statements — use sparingly for readability.</li>
+<li><strong>For loops</strong> iterate over sequences (lists, strings, ranges). <strong>While loops</strong> repeat as long as a condition is True.</li>
+<li>The <strong>range function</strong> generates sequences of numbers. Remember: the stop value is <em>exclusive</em>.</li>
+<li><strong>Loop variables</strong> take a new value each iteration; the <strong>loop body</strong> is the indented code that repeats.</li>
+<li><strong>Break</strong> exits a loop immediately. <strong>Continue</strong> skips to the next iteration.</li>
+<li><strong>Infinite loops</strong> occur when a while condition never becomes False — always ensure your loop can terminate.</li>
+<li><strong>Nested loops</strong> run the inner loop completely for each iteration of the outer loop.</li>
+<li>The <strong>loop else clause</strong> runs only if the loop finishes without hitting break.</li>
+<li><strong>Accumulator pattern</strong>: initialize, update inside loop, use after loop — for building totals or results.</li>
+<li><strong>Counter pattern</strong>: accumulate +1 each time a condition is met.</li>
+<li><strong>Sentinel value pattern</strong>: loop until a special "stop" value is entered.</li>
+<li><strong>Flag variable pattern</strong>: use a Boolean to track whether something was found.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What does this code print?</summary>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Answer:</strong>
+</p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>0-0 0-1
+1-0 1-1
+2-0 2-1
+</code></pre></div></td></tr></tbody></table></div>
+The outer loop runs 3 times (i = 0, 1, 2). For each value of i, the inner loop runs 2 times (j = 0, 1). That's 3 x 2 = 6 total iterations, printed in a 3-row, 2-column grid.<p></p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: Which loop pattern would you use to find out whether a list contains any prime numbers?</summary>
+<p>The <strong>flag variable pattern</strong>! You'd set a Boolean variable like <code>has_prime = False</code> before the loop, check each number, and set it to <code>True</code> if you find a prime. After the loop, check the flag. You could also use <code>break</code> to stop early once you find one.</p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: What's the difference between <code>break</code> and <code>continue</code>?</summary>
+<p><strong>Break</strong> exits the loop completely — no more iterations happen. <strong>Continue</strong> skips the rest of the <em>current</em> iteration and jumps to the next one. Think of break as walking out of a movie theater, and continue as fast-forwarding past a boring scene.</p>
+</details>
 
 
 
@@ -1461,12 +3005,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

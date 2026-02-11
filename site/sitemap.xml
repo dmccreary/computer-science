@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://dmccreary.github.io/computer-science/about/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/course-description/</loc>
          <lastmod>2026-02-11</lastmod>
     </url>
@@ -118,6 +122,74 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/prompts/generate-course-description/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/arithmetic-operators/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/ascii-character-map/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/binary-number-explorer/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/boolean-order-of-ops/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/code-readability/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/comparison-operator-explorer/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/compiled-vs-interpreted/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/computational-thinking-pillars/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/demorgans-laws/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/expressions-vs-statements/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/inside-a-computer/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/logical-operator-venn/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/python-data-types/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/repl-vs-scripts/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/string-operations/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/truth-table-builder/</loc>
+         <lastmod>2026-02-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/truthiness-tester/</loc>
          <lastmod>2026-02-11</lastmod>
     </url>
 </urlset>

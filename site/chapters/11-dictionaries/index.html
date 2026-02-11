@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="description" content="Python dictionaries with key-value pairs, essential methods, comprehensions, and practical patterns for counting, grouping, and caching.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>11. Dictionaries - Computer Science</title>
+        <title>Dictionaries - Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,9 +62,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="11. Dictionaries - Computer Science">
+        <meta property="og:title" content="Dictionaries - Computer Science">
       
-        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta property="og:description" content="Python dictionaries with key-value pairs, essential methods, comprehensions, and practical patterns for counting, grouping, and caching.">
       
         <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/11-dictionaries/index.png">
       
@@ -78,9 +78,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="11. Dictionaries - Computer Science">
+        <meta name="twitter:title" content="Dictionaries - Computer Science">
       
-        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+        <meta name="twitter:description" content="Python dictionaries with key-value pairs, essential methods, comprehensions, and practical patterns for counting, grouping, and caching.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/11-dictionaries/index.png">
       
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              11. Dictionaries
+              Dictionaries
             
           </span>
         </div>
@@ -160,13 +160,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -198,14 +196,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -250,7 +247,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -270,10 +267,8 @@
       <a href="../../index.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -289,13 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about.md" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -314,10 +307,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -342,46 +333,85 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -394,14 +424,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -433,10 +462,8 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Intro to Computer Science
-    
   </span>
   
 
@@ -456,10 +483,8 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Python Fundamentals
-    
   </span>
   
 
@@ -479,10 +504,8 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Boolean Logic
-    
   </span>
   
 
@@ -502,10 +525,8 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Control Flow
-    
   </span>
   
 
@@ -525,10 +546,8 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. Working with Strings
-    
   </span>
   
 
@@ -548,10 +567,8 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Functions and Modular Design
-    
   </span>
   
 
@@ -571,10 +588,8 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Higher-Order Functions
-    
   </span>
   
 
@@ -594,10 +609,8 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Lists
-    
   </span>
   
 
@@ -617,10 +630,8 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. Advanced List Operations
-    
   </span>
   
 
@@ -640,10 +651,8 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. Tuples and Sets
-    
   </span>
   
 
@@ -672,10 +681,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -685,10 +692,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     11. Dictionaries
-    
   </span>
   
 
@@ -736,6 +741,318 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Dictionaries?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Dictionaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dictionary-structure-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Dictionary Structure Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-value-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key-Value Pairs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-dictionary-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing Dictionary Values
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionary Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-get-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Get Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-keys-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Keys Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-values-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Values Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-items-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Items Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-update-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Update Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pop-method-for-dicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Pop Method for Dicts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-methods-reference-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Methods Reference Table
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Iteration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionary Iteration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dictionary-iteration-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Dictionary Iteration Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-comprehension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Comprehension
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Dictionaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-nested-dictionary-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Nested Dictionary Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Merging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-patterns-with-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Patterns with Dictionaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Patterns with Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#counting-with-dicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting with Dicts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping-with-dicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grouping with Dicts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grouping with Dicts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-counting-and-grouping-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Counting and Grouping Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-as-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary as Cache
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hashable-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hashable Keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dict-vs-list-lookup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dict vs List Lookup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dict vs List Lookup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dict-vs-list-lookup-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Dict vs List Lookup Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dictionary-use-cases-infographic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Dictionary Use Cases Infographic
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -755,10 +1072,8 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Classes and Objects
-    
   </span>
   
 
@@ -778,10 +1093,8 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Inheritance and Polymorphism
-    
   </span>
   
 
@@ -801,10 +1114,8 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Errors and Exceptions
-    
   </span>
   
 
@@ -824,10 +1135,8 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. File Input and Output
-    
   </span>
   
 
@@ -847,10 +1156,8 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     16. Software Engineering
-    
   </span>
   
 
@@ -870,10 +1177,8 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     17. Testing and Debugging
-    
   </span>
   
 
@@ -893,10 +1198,8 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     18. Searching and Sorting
-    
   </span>
   
 
@@ -916,10 +1219,8 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     19. Algorithm Analysis
-    
   </span>
   
 
@@ -939,10 +1240,8 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     20. Advanced Python
-    
   </span>
   
 
@@ -971,8 +1270,25 @@
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -986,14 +1302,11 @@
         
   
   
-  
     <a href="../../sims/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1058,7 +1371,6 @@
     
     
     
-    
       
         
         
@@ -1069,14 +1381,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1107,7 +1416,6 @@
     
     
     
-    
       
         
         
@@ -1118,14 +1426,11 @@
         
   
   
-  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1150,10 +1455,8 @@
       <a href="../../glossary.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1172,10 +1475,8 @@
       <a href="../../faq.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1194,10 +1495,8 @@
       <a href="../../references.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -1216,10 +1515,8 @@
       <a href="../../license.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1238,10 +1535,8 @@
       <a href="../../contact.md" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1303,6 +1598,318 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Dictionaries?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Dictionaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dictionary-structure-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Dictionary Structure Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-value-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key-Value Pairs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-dictionary-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing Dictionary Values
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionary Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-get-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Get Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-keys-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Keys Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-values-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Values Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-items-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Items Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-update-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Update Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pop-method-for-dicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Pop Method for Dicts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-methods-reference-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Methods Reference Table
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Iteration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionary Iteration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dictionary-iteration-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Dictionary Iteration Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-comprehension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Comprehension
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Dictionaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-nested-dictionary-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Nested Dictionary Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Merging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-patterns-with-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Patterns with Dictionaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Patterns with Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#counting-with-dicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting with Dicts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping-with-dicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grouping with Dicts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grouping with Dicts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-counting-and-grouping-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Counting and Grouping Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-as-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary as Cache
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hashable-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hashable Keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dict-vs-list-lookup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dict vs List Lookup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dict vs List Lookup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dict-vs-list-lookup-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Dict vs List Lookup Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dictionary-use-cases-infographic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Dictionary Use Cases Infographic
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1316,7 +1923,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/11-dictionaries/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1365,7 +1971,1078 @@
 <li><a href="../10-tuples-and-sets/">Chapter 10: Tuples and Sets</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Monty says: Let's code this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-welcome.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-welcome.png" width="80"></a>
+Welcome back, coders! You've already mastered lists, tuples, and sets. Now it's time to unlock one of Python's most powerful data structures: the dictionary. Think of it like a real dictionary — you look up a word and get its definition. Python dictionaries work the same way, except you can look up <em>anything</em> and get <em>anything</em> back. Let's dive in!</p>
+</div>
+<h2 id="what-are-dictionaries">What Are Dictionaries?</h2>
+<p>Have you ever used a real dictionary? You look up a word (like "python") and find its definition ("a large heavy-bodied nonvenomous snake"). You don't start at page 1 and read every entry until you find the word. You jump straight to the right spot. That's incredibly fast.</p>
+<p><strong>Dictionaries</strong> in Python work the same way. Instead of storing items in a numbered sequence like a list, a dictionary stores <strong>key-value pairs</strong> — a <em>key</em> that you look up, paired with a <em>value</em> that you get back. The key is like the word you're looking up, and the value is like the definition you find.</p>
+<p>Here's why dictionaries matter: they let you store relationships between pieces of data. A student's name maps to their grade. A product code maps to its price. A username maps to their profile. Anywhere you have a "this goes with that" relationship, dictionaries are your best friend.</p>
+<h2 id="creating-dictionaries">Creating Dictionaries</h2>
+<p><strong>Dictionary creation</strong> in Python uses curly braces <code>{}</code> with keys and values separated by colons. Let's see a few ways to build one.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Method 1: Curly braces with key: value pairs</span>
+<span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.8</span><span class="p">}</span>
+
+<span class="c1"># Method 2: The dict() constructor</span>
+<span class="n">student</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="n">grade</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">gpa</span><span class="o">=</span><span class="mf">3.8</span><span class="p">)</span>
+
+<span class="c1"># Method 3: From a list of tuples</span>
+<span class="n">pairs</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"Alice"</span><span class="p">),</span> <span class="p">(</span><span class="s2">"grade"</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s2">"gpa"</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">)]</span>
+<span class="n">student</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+
+<span class="c1"># Method 4: An empty dictionary</span>
+<span class="n">empty</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">also_empty</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>All three methods above create the same dictionary. Method 1 is the most common — you'll see it everywhere.</p>
+<p>Notice that keys and values can be different types. In our <code>student</code> dictionary, the keys are all strings, but the values include a string (<code>"Alice"</code>), an integer (<code>10</code>), and a float (<code>3.8</code>). Python is flexible like that.</p>
+<h4 id="diagram-dictionary-structure-visualizer">Diagram: Dictionary Structure Visualizer</h4>
+<iframe src="../../sims/dictionary-structure/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Dictionary Structure Visualizer MicroSim</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> dictionary-structure<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> describe, illustrate</p>
+<p><strong>Learning Objective:</strong> Students will be able to visualize how a Python dictionary stores key-value pairs and understand the mapping relationship between keys and values.</p>
+<p><strong>Purpose:</strong> An interactive visualization showing the internal structure of a dictionary as a set of key-value pairs, with arrows mapping each key to its corresponding value.</p>
+<p><strong>Layout:</strong></p>
+<ul>
+<li>Left column: Keys displayed as labeled boxes (e.g., "name", "grade", "gpa")</li>
+<li>Right column: Values displayed as labeled boxes (e.g., "Alice", 10, 3.8)</li>
+<li>Arrows connecting each key to its value</li>
+<li>Bottom: A text input for adding new key-value pairs and a button to add them</li>
+</ul>
+<p><strong>Interactive elements:</strong></p>
+<ul>
+<li>Hover over a key to highlight the arrow and its corresponding value</li>
+<li>Click "Add Pair" to add a new key-value pair to the visualization</li>
+<li>Click "Remove" on any pair to delete it</li>
+<li>A "Show Code" toggle that displays the Python code that would create the shown dictionary</li>
+</ul>
+<p><strong>Color scheme:</strong> Keys in blue boxes, values in green boxes, arrows in gray
+<strong>Responsive:</strong> Layout adjusts to window width; boxes resize proportionally</p>
+<p><strong>Instructional Rationale:</strong> Visualizing the mapping relationship between keys and values makes the abstract concept of key-value storage concrete. Interactive add/remove operations let students see how dictionaries grow and change.</p>
+</details>
+<h2 id="key-value-pairs">Key-Value Pairs</h2>
+<p>Let's zoom in on <strong>key-value pairs</strong>, because they're the heart of every dictionary. A key-value pair is a single entry in the dictionary: the key is the label, and the value is the data associated with that label.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Alice"</span><span class="p">:</span> <span class="s2">"555-1234"</span><span class="p">,</span>
+    <span class="s2">"Bob"</span><span class="p">:</span> <span class="s2">"555-5678"</span><span class="p">,</span>
+    <span class="s2">"Charlie"</span><span class="p">:</span> <span class="s2">"555-9012"</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>In this phone book dictionary:</p>
+<ul>
+<li><code>"Alice"</code> is a <strong>key</strong>, and <code>"555-1234"</code> is its <strong>value</strong></li>
+<li><code>"Bob"</code> is a <strong>key</strong>, and <code>"555-5678"</code> is its <strong>value</strong></li>
+<li><code>"Charlie"</code> is a <strong>key</strong>, and <code>"555-9012"</code> is its <strong>value</strong></li>
+</ul>
+<p>A few important rules about keys:</p>
+<ul>
+<li><strong>Keys must be unique.</strong> You can't have two entries for "Alice." If you assign a new value to an existing key, it overwrites the old one.</li>
+<li><strong>Keys must be immutable.</strong> You can use strings, numbers, or tuples as keys — but not lists or other dictionaries. (We'll explain why in the Hashable Keys section.)</li>
+<li><strong>Values can be anything.</strong> Strings, numbers, lists, other dictionaries — even functions!</li>
+</ul>
+<h2 id="accessing-dictionary-values">Accessing Dictionary Values</h2>
+<p><strong>Dictionary access</strong> is how you retrieve a value using its key. The most straightforward way is with square brackets.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.8</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">[</span><span class="s2">"name"</span><span class="p">])</span>    <span class="c1"># Output: Alice</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">[</span><span class="s2">"grade"</span><span class="p">])</span>   <span class="c1"># Output: 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">[</span><span class="s2">"gpa"</span><span class="p">])</span>     <span class="c1"># Output: 3.8</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>You can also modify values or add new key-value pairs using the same bracket notation:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Change an existing value</span>
+<span class="n">student</span><span class="p">[</span><span class="s2">"gpa"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.9</span>
+
+<span class="c1"># Add a new key-value pair</span>
+<span class="n">student</span><span class="p">[</span><span class="s2">"school"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Westside High"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
+<span class="c1"># {'name': 'Alice', 'grade': 10, 'gpa': 3.9, 'school': 'Westside High'}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Monty says: Watch out!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-warning.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-warning.png" width="80"></a>
+Be careful! If you try to access a key that doesn't exist using square brackets, Python will raise a <code>KeyError</code>. For example, <code>student["age"]</code> would crash your program if <code>"age"</code> isn't a key in the dictionary. Use the <code>get</code> method (covered next) for safer lookups!</p>
+</div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># This will crash with a KeyError!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">[</span><span class="s2">"age"</span><span class="p">])</span>  <span class="c1"># KeyError: 'age'</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h2 id="dictionary-methods">Dictionary Methods</h2>
+<p>Python <strong>dictionary methods</strong> give you a toolkit for working with dictionaries without writing everything from scratch. Let's explore the most important ones.</p>
+<h3 id="the-get-method">The Get Method</h3>
+<p>The <strong>get method</strong> is a safer way to access dictionary values. Instead of crashing with a <code>KeyError</code> when a key doesn't exist, <code>get()</code> returns <code>None</code> (or a <strong>default value</strong> you specify).</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+
+<span class="c1"># Safe lookup — returns None if key not found</span>
+<span class="n">age</span> <span class="o">=</span> <span class="n">student</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"age"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>  <span class="c1"># Output: None</span>
+
+<span class="c1"># Safe lookup with a default value</span>
+<span class="n">age</span> <span class="o">=</span> <span class="n">student</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"age"</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>  <span class="c1"># Output: 16</span>
+
+<span class="c1"># Key exists — works normally</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">student</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"name"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>  <span class="c1"># Output: Alice</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><strong>Default values</strong> are incredibly useful. They let you provide a fallback when a key might not exist, without any extra if/else logic. You'll see this pattern constantly in real-world Python code.</p>
+<h3 id="the-keys-method">The Keys Method</h3>
+<p>The <strong>keys method</strong> returns all the keys in a dictionary. It gives you a special view object that you can loop through or convert to a list.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.8</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="c1"># Output: dict_keys(['name', 'grade', 'gpa'])</span>
+
+<span class="c1"># Convert to a list</span>
+<span class="n">key_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">student</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">key_list</span><span class="p">)</span>  <span class="c1"># Output: ['name', 'grade', 'gpa']</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-values-method">The Values Method</h3>
+<p>The <strong>values method</strong> does the same thing, but for values instead of keys.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="c1"># Output: dict_values(['Alice', 10, 3.8])</span>
+
+<span class="c1"># Convert to a list</span>
+<span class="n">value_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">student</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">value_list</span><span class="p">)</span>  <span class="c1"># Output: ['Alice', 10, 3.8]</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-items-method">The Items Method</h3>
+<p>The <strong>items method</strong> returns <em>both</em> keys and values as a collection of tuples. This is especially powerful when looping.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+<span class="c1"># Output: dict_items([('name', 'Alice'), ('grade', 10), ('gpa', 3.8)])</span>
+
+<span class="c1"># Loop through key-value pairs</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">student</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="c1"># Output:</span>
+<span class="c1"># name: Alice</span>
+<span class="c1"># grade: 10</span>
+<span class="c1"># gpa: 3.8</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="the-update-method">The Update Method</h3>
+<p>The <strong>update method</strong> merges another dictionary into the current one. If both dictionaries share a key, the value from the new dictionary wins.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="n">new_info</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.8</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">11</span><span class="p">}</span>
+
+<span class="n">student</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">new_info</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
+<span class="c1"># Output: {'name': 'Alice', 'grade': 11, 'gpa': 3.8}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Notice that <code>"grade"</code> was updated from <code>10</code> to <code>11</code> because <code>new_info</code> had a different value for that key.</p>
+<h3 id="the-pop-method-for-dicts">The Pop Method for Dicts</h3>
+<p>The <strong>pop method for dicts</strong> removes a key-value pair and returns the value. It's like reaching into the dictionary and pulling out an entry.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.8</span><span class="p">}</span>
+
+<span class="n">removed_value</span> <span class="o">=</span> <span class="n">student</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">"gpa"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">removed_value</span><span class="p">)</span>  <span class="c1"># Output: 3.8</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>        <span class="c1"># Output: {'name': 'Alice', 'grade': 10}</span>
+
+<span class="c1"># With a default to avoid KeyError</span>
+<span class="n">missing</span> <span class="o">=</span> <span class="n">student</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">"age"</span><span class="p">,</span> <span class="s2">"Not found"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">missing</span><span class="p">)</span>  <span class="c1"># Output: Not found</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="dictionary-methods-reference-table">Dictionary Methods Reference Table</h3>
+<p>Here's a comprehensive reference for the most common dictionary methods:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Example</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>d.get(key, default)</code></td>
+<td>Safe value lookup</td>
+<td><code>d.get("age", 0)</code></td>
+<td>Value or default</td>
+</tr>
+<tr>
+<td><code>d.keys()</code></td>
+<td>All keys</td>
+<td><code>d.keys()</code></td>
+<td><code>dict_keys</code> view</td>
+</tr>
+<tr>
+<td><code>d.values()</code></td>
+<td>All values</td>
+<td><code>d.values()</code></td>
+<td><code>dict_values</code> view</td>
+</tr>
+<tr>
+<td><code>d.items()</code></td>
+<td>All key-value pairs</td>
+<td><code>d.items()</code></td>
+<td><code>dict_items</code> view</td>
+</tr>
+<tr>
+<td><code>d.update(other)</code></td>
+<td>Merge another dict</td>
+<td><code>d.update({"a": 1})</code></td>
+<td><code>None</code> (modifies <code>d</code>)</td>
+</tr>
+<tr>
+<td><code>d.pop(key, default)</code></td>
+<td>Remove and return</td>
+<td><code>d.pop("name")</code></td>
+<td>Removed value</td>
+</tr>
+<tr>
+<td><code>d.clear()</code></td>
+<td>Remove all items</td>
+<td><code>d.clear()</code></td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>d.copy()</code></td>
+<td>Shallow copy</td>
+<td><code>d.copy()</code></td>
+<td>New dict</td>
+</tr>
+<tr>
+<td><code>d.setdefault(key, val)</code></td>
+<td>Get or set default</td>
+<td><code>d.setdefault("x", 0)</code></td>
+<td>Existing or new value</td>
+</tr>
+<tr>
+<td><code>key in d</code></td>
+<td>Check membership</td>
+<td><code>"name" in d</code></td>
+<td><code>True</code> / <code>False</code></td>
+</tr>
+<tr>
+<td><code>len(d)</code></td>
+<td>Number of pairs</td>
+<td><code>len(d)</code></td>
+<td>Integer</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: Let's debug this together!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Here's a trick that'll save you tons of time: use <code>in</code> to check if a key exists before accessing it. <code>if "name" in student:</code> is clean, readable, and avoids <code>KeyError</code> crashes. But honestly? The <code>get()</code> method is even cleaner for most situations.</p>
+</div>
+<h2 id="dictionary-iteration">Dictionary Iteration</h2>
+<p><strong>Dictionary iteration</strong> means looping through a dictionary's contents. There are several ways to do it, depending on whether you need the keys, the values, or both.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">scores</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"Alice"</span><span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">:</span> <span class="mi">87</span><span class="p">,</span> <span class="s2">"Charlie"</span><span class="p">:</span> <span class="mi">92</span><span class="p">}</span>
+
+<span class="c1"># Loop through keys (the default)</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">scores</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="c1"># Alice, Bob, Charlie</span>
+
+<span class="c1"># Loop through values</span>
+<span class="k">for</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">scores</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+<span class="c1"># 95, 87, 92</span>
+
+<span class="c1"># Loop through key-value pairs (most common)</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">scores</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> scored </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="c1"># Alice scored 95</span>
+<span class="c1"># Bob scored 87</span>
+<span class="c1"># Charlie scored 92</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The <code>items()</code> approach is the most versatile because you get both the key and the value in each iteration. You'll use it all the time.</p>
+<h4 id="diagram-dictionary-iteration-flowchart">Diagram: Dictionary Iteration Flowchart</h4>
+<iframe src="../../sims/dictionary-iteration/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Dictionary Iteration Flowchart MicroSim</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> dictionary-iteration<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> trace, explain</p>
+<p><strong>Learning Objective:</strong> Students will be able to trace through different dictionary iteration patterns (keys, values, items) and predict the output at each step.</p>
+<p><strong>Purpose:</strong> An animated flowchart that visually steps through a for loop iterating over a dictionary, showing which key-value pair is being visited at each step and what the loop variable holds.</p>
+<p><strong>Layout:</strong></p>
+<ul>
+<li>Top: A dictionary visualized as a table with keys and values</li>
+<li>Middle: A for-loop code block with the current iteration highlighted</li>
+<li>Bottom: The output console showing what has been printed so far</li>
+</ul>
+<p><strong>Interactive elements:</strong></p>
+<ul>
+<li>Dropdown to select iteration type: "keys", "values", "items"</li>
+<li>"Step" button to advance one iteration at a time</li>
+<li>"Auto Play" button with speed control</li>
+<li>"Reset" button to restart</li>
+<li>The current key-value pair highlights in the dictionary table as the loop visits it</li>
+</ul>
+<p><strong>Color scheme:</strong> Current item highlighted in yellow, visited items in light gray, unvisited in white
+<strong>Responsive:</strong> Canvas adjusts to window width</p>
+<p><strong>Instructional Rationale:</strong> Stepping through iteration one element at a time with visual highlighting helps students build a mental model of how Python traverses dictionary contents. Comparing the three iteration modes side by side reveals when to use each one.</p>
+</details>
+<h2 id="dictionary-comprehension">Dictionary Comprehension</h2>
+<p>Just like list comprehensions, <strong>dictionary comprehensions</strong> let you build a dictionary in a single, elegant line. The syntax looks similar, but you provide both a key expression and a value expression.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Basic syntax: {key_expr: value_expr for item in iterable}</span>
+
+<span class="c1"># Create a dict of numbers and their squares</span>
+<span class="n">squares</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>
+<span class="c1"># Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}</span>
+
+<span class="c1"># With a condition: only even numbers</span>
+<span class="n">even_squares</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">even_squares</span><span class="p">)</span>
+<span class="c1"># Output: {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}</span>
+
+<span class="c1"># Transform an existing dictionary: convert scores to letter grades</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"Alice"</span><span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">:</span> <span class="mi">87</span><span class="p">,</span> <span class="s2">"Charlie"</span><span class="p">:</span> <span class="mi">72</span><span class="p">}</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span><span class="n">name</span><span class="p">:</span> <span class="p">(</span><span class="s2">"A"</span> <span class="k">if</span> <span class="n">s</span> <span class="o">&gt;=</span> <span class="mi">90</span> <span class="k">else</span> <span class="s2">"B"</span> <span class="k">if</span> <span class="n">s</span> <span class="o">&gt;=</span> <span class="mi">80</span> <span class="k">else</span> <span class="s2">"C"</span><span class="p">)</span>
+          <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">scores</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span>
+<span class="c1"># Output: {'Alice': 'A', 'Bob': 'B', 'Charlie': 'C'}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Dictionary comprehensions are perfect for transforming data. Need to flip a dictionary's keys and values? One line:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">original</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">flipped</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">original</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">flipped</span><span class="p">)</span>
+<span class="c1"># Output: {1: 'a', 2: 'b', 3: 'c'}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h2 id="nested-dictionaries">Nested Dictionaries</h2>
+<p><strong>Nested dictionaries</strong> are dictionaries that contain other dictionaries as values. They're great for representing structured, multi-level data — like a class roster where each student has multiple attributes.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">classroom</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Alice"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.8</span><span class="p">,</span> <span class="s2">"clubs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Chess"</span><span class="p">,</span> <span class="s2">"Coding"</span><span class="p">]},</span>
+    <span class="s2">"Bob"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s2">"clubs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Soccer"</span><span class="p">]},</span>
+    <span class="s2">"Charlie"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"grade"</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.9</span><span class="p">,</span> <span class="s2">"clubs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Coding"</span><span class="p">,</span> <span class="s2">"Math"</span><span class="p">]}</span>
+<span class="p">}</span>
+
+<span class="c1"># Access nested values by chaining brackets</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classroom</span><span class="p">[</span><span class="s2">"Alice"</span><span class="p">][</span><span class="s2">"gpa"</span><span class="p">])</span>         <span class="c1"># Output: 3.8</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classroom</span><span class="p">[</span><span class="s2">"Charlie"</span><span class="p">][</span><span class="s2">"clubs"</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Output: Coding</span>
+
+<span class="c1"># Add a new student</span>
+<span class="n">classroom</span><span class="p">[</span><span class="s2">"Diana"</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"grade"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"gpa"</span><span class="p">:</span> <span class="mf">3.7</span><span class="p">,</span> <span class="s2">"clubs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Art"</span><span class="p">]}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Think of nested dictionaries like folders inside folders on your computer. The outer dictionary is the main folder, and each value is a subfolder containing more detailed information.</p>
+<h4 id="diagram-nested-dictionary-explorer">Diagram: Nested Dictionary Explorer</h4>
+<iframe src="../../sims/nested-dictionary/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Nested Dictionary Explorer MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> nested-dictionary<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> navigate, construct</p>
+<p><strong>Learning Objective:</strong> Students will be able to navigate through nested dictionaries by clicking through levels of keys and constructing the bracket-chain notation needed to access deeply nested values.</p>
+<p><strong>Purpose:</strong> An interactive tree visualization of a nested dictionary where students can expand and collapse levels, and the tool generates the Python access expression for any selected value.</p>
+<p><strong>Layout:</strong></p>
+<ul>
+<li>Left panel: A tree view of the nested dictionary, with expandable/collapsible nodes</li>
+<li>Right panel: The Python code showing the full access expression for the currently selected node</li>
+<li>Bottom: An input field where students can type an access expression and see the resulting value</li>
+</ul>
+<p><strong>Interactive elements:</strong></p>
+<ul>
+<li>Click a key node to expand/collapse its children</li>
+<li>Click a leaf value to highlight it and display the full access path (e.g., <code>classroom["Alice"]["gpa"]</code>)</li>
+<li>Type an access expression in the input field and press Enter to see if it returns the correct value</li>
+<li>"Add Entry" button to add a new key-value pair at any level</li>
+</ul>
+<p><strong>Visual style:</strong> Tree layout with indented levels, color-coded by depth
+<strong>Responsive:</strong> Panels stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Interactive tree navigation lets students build intuition for how nested access works. Seeing the access expression update as they click through levels connects the visual structure to the Python syntax.</p>
+</details>
+<h2 id="dictionary-merging">Dictionary Merging</h2>
+<p><strong>Dictionary merging</strong> combines two or more dictionaries into one. Python 3.9 introduced the <code>|</code> operator for this, making it clean and readable.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">defaults</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"color"</span><span class="p">:</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"size"</span><span class="p">:</span> <span class="s2">"medium"</span><span class="p">,</span> <span class="s2">"font"</span><span class="p">:</span> <span class="s2">"Arial"</span><span class="p">}</span>
+<span class="n">user_prefs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"color"</span><span class="p">:</span> <span class="s2">"red"</span><span class="p">,</span> <span class="s2">"size"</span><span class="p">:</span> <span class="s2">"large"</span><span class="p">}</span>
+
+<span class="c1"># Method 1: The | operator (Python 3.9+)</span>
+<span class="n">merged</span> <span class="o">=</span> <span class="n">defaults</span> <span class="o">|</span> <span class="n">user_prefs</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">merged</span><span class="p">)</span>
+<span class="c1"># Output: {'color': 'red', 'size': 'large', 'font': 'Arial'}</span>
+
+<span class="c1"># Method 2: The ** unpacking operator (Python 3.5+)</span>
+<span class="n">merged</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">defaults</span><span class="p">,</span> <span class="o">**</span><span class="n">user_prefs</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">merged</span><span class="p">)</span>
+<span class="c1"># Output: {'color': 'red', 'size': 'large', 'font': 'Arial'}</span>
+
+<span class="c1"># Method 3: The update method (modifies in place)</span>
+<span class="n">combined</span> <span class="o">=</span> <span class="n">defaults</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">combined</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">user_prefs</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">combined</span><span class="p">)</span>
+<span class="c1"># Output: {'color': 'red', 'size': 'large', 'font': 'Arial'}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>In all three cases, when both dictionaries have the same key, the <em>right-hand</em> dictionary's value wins. In the example above, <code>user_prefs</code> overrides <code>defaults</code> for <code>"color"</code> and <code>"size"</code>, while <code>"font"</code> carries over from <code>defaults</code> since the user didn't set one.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Monty says: Here's a handy trick!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-tip.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-tip.png" width="80"></a>
+The <code>|</code> merge operator is my favorite way to combine dictionaries. It's clean, it's readable, and it doesn't modify either original dictionary. If you're using Python 3.9 or later (which you probably are), give it a try!</p>
+</div>
+<h2 id="practical-patterns-with-dictionaries">Practical Patterns with Dictionaries</h2>
+<p>Now that you know the fundamentals, let's look at some real-world patterns where dictionaries really shine. These patterns come up constantly in programming — from homework assignments to professional software.</p>
+<h3 id="counting-with-dicts">Counting with Dicts</h3>
+<p><strong>Counting with dicts</strong> is one of the most common dictionary patterns. The idea is simple: use keys to represent the items you're counting, and values to track how many times each item appears.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Count letter frequencies in a word</span>
+<span class="n">word</span> <span class="o">=</span> <span class="s2">"mississippi"</span>
+<span class="n">letter_counts</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+    <span class="n">letter_counts</span><span class="p">[</span><span class="n">letter</span><span class="p">]</span> <span class="o">=</span> <span class="n">letter_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">letter_counts</span><span class="p">)</span>
+<span class="c1"># Output: {'m': 1, 'i': 4, 's': 4, 'p': 2}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Let's trace through how this works:</p>
+<ol>
+<li>We start with an empty dictionary</li>
+<li>For each letter, <code>get(letter, 0)</code> returns the current count (or <code>0</code> if it's the first time)</li>
+<li>We add <code>1</code> and store the new count back</li>
+</ol>
+<p>This pattern is so useful that Python has a built-in shortcut for it in the <code>collections</code> module called <code>Counter</code>, but understanding the manual approach teaches you a lot about how dictionaries work.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Bonus: Count word frequencies in a sentence</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s2">"the cat sat on the mat the cat"</span>
+<span class="n">word_counts</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
+    <span class="n">word_counts</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="n">word_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">word_counts</span><span class="p">)</span>
+<span class="c1"># Output: {'the': 3, 'cat': 2, 'sat': 1, 'on': 1, 'mat': 1}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="grouping-with-dicts">Grouping with Dicts</h3>
+<p><strong>Grouping with dicts</strong> organizes items into categories. Each key is a category, and each value is a list of items that belong to that category.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Group students by grade level</span>
+<span class="n">students</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"Diana"</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Eve"</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Frank"</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="n">by_grade</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">grade</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">grade</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">by_grade</span><span class="p">:</span>
+        <span class="n">by_grade</span><span class="p">[</span><span class="n">grade</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">by_grade</span><span class="p">[</span><span class="n">grade</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">by_grade</span><span class="p">)</span>
+<span class="c1"># Output: {10: ['Alice', 'Charlie', 'Eve'], 11: ['Bob', 'Diana'], 12: ['Frank']}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Here's a cleaner version using <code>setdefault()</code>:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">by_grade</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">grade</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+    <span class="n">by_grade</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">grade</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">by_grade</span><span class="p">)</span>
+<span class="c1"># Same output: {10: ['Alice', 'Charlie', 'Eve'], 11: ['Bob', 'Diana'], 12: ['Frank']}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The <code>setdefault()</code> method checks if the key exists. If it does, it returns the existing value. If not, it sets the default value (an empty list here) and returns it. Either way, you can immediately call <code>.append()</code> on the result.</p>
+<h4 id="diagram-counting-and-grouping-patterns">Diagram: Counting and Grouping Patterns</h4>
+<iframe src="../../sims/dict-patterns/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Counting and Grouping Patterns MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> dict-patterns<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> implement, demonstrate</p>
+<p><strong>Learning Objective:</strong> Students will be able to implement counting and grouping patterns by watching how a dictionary builds up step by step as data is processed.</p>
+<p><strong>Purpose:</strong> A step-by-step animated visualization that shows how a dictionary grows as items are counted or grouped, with the dictionary state updating after each iteration.</p>
+<p><strong>Layout:</strong></p>
+<ul>
+<li>Top: A selector to toggle between "Counting Mode" and "Grouping Mode"</li>
+<li>Left panel: The input data (a word for counting, or a list of student-grade tuples for grouping)</li>
+<li>Center: The current item being processed, highlighted</li>
+<li>Right panel: The dictionary, updated in real-time after each step</li>
+</ul>
+<p><strong>Interactive elements:</strong></p>
+<ul>
+<li>"Step" button to process one item at a time</li>
+<li>"Auto Play" button with speed slider</li>
+<li>"Reset" button</li>
+<li>Toggle between counting and grouping modes</li>
+<li>Custom input field to type your own word or data set</li>
+</ul>
+<p><strong>Visual style:</strong> Dictionary displayed as a growing table with animated row additions and value updates
+<strong>Responsive:</strong> Panels stack vertically on narrow screens</p>
+<p><strong>Instructional Rationale:</strong> Watching the dictionary build up one entry at a time demystifies the counting and grouping patterns. Students can predict what the next step will produce before clicking "Step," turning observation into active practice.</p>
+</details>
+<h3 id="dictionary-as-cache">Dictionary as Cache</h3>
+<p>A <strong>dictionary as cache</strong> (also called <strong>memoization</strong>) stores the results of expensive calculations so you don't have to repeat them. It's like keeping a cheat sheet of answers you've already figured out.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Without caching: slow recursive Fibonacci</span>
+<span class="k">def</span> <span class="nf">fib_slow</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">fib_slow</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib_slow</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># With caching: fast Fibonacci</span>
+<span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">def</span> <span class="nf">fib_fast</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">cache</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">cache</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">n</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">fib_fast</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib_fast</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">cache</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">fib_fast</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>  <span class="c1"># Instant! Output: 12586269025</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>Without caching, computing <code>fib_slow(50)</code> would take an absurdly long time because it recalculates the same values millions of times. With a dictionary cache, each value is calculated only once and then remembered. The 50th Fibonacci number comes back instantly.</p>
+<p>This pattern works because dictionary lookups are incredibly fast — almost instant, no matter how many items are in the dictionary. Speaking of which...</p>
+<h2 id="hashable-keys">Hashable Keys</h2>
+<p>Why can strings and numbers be dictionary keys, but lists can't? The answer involves something called a <strong>hash</strong>.</p>
+<p><strong>Hashable keys</strong> are keys that Python can convert into a fixed-size integer called a hash code. Python uses this hash code to figure out <em>where</em> to store the key-value pair internally, making lookups blazingly fast. It's like assigning each book in a library a specific shelf number — instead of searching every shelf, you go directly to the right one.</p>
+<p>For this to work, keys must be <strong>immutable</strong> (unchangeable). If a key could change after being stored, its hash code would change, and Python wouldn't be able to find it anymore. It'd be like moving a library book to a different shelf without updating the catalog.</p>
+<p>Here's what's hashable and what's not:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Hashable?</th>
+<th>Can Be a Key?</th>
+<th>Why?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>str</code></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Strings are immutable</td>
+</tr>
+<tr>
+<td><code>int</code></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Integers are immutable</td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Floats are immutable</td>
+</tr>
+<tr>
+<td><code>tuple</code></td>
+<td>Yes*</td>
+<td>Yes*</td>
+<td>*Only if it contains only hashable items</td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Booleans are immutable</td>
+</tr>
+<tr>
+<td><code>list</code></td>
+<td>No</td>
+<td>No</td>
+<td>Lists are mutable (can change)</td>
+</tr>
+<tr>
+<td><code>dict</code></td>
+<td>No</td>
+<td>No</td>
+<td>Dicts are mutable</td>
+</tr>
+<tr>
+<td><code>set</code></td>
+<td>No</td>
+<td>No</td>
+<td>Sets are mutable</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># These work</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">d</span><span class="p">[</span><span class="s2">"hello"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>        <span class="c1"># String key</span>
+<span class="n">d</span><span class="p">[</span><span class="mi">42</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>             <span class="c1"># Integer key</span>
+<span class="n">d</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">3</span>         <span class="c1"># Tuple key</span>
+
+<span class="c1"># These DON'T work</span>
+<span class="n">d</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">4</span>         <span class="c1"># TypeError: unhashable type: 'list'</span>
+<span class="n">d</span><span class="p">[{</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">}]</span> <span class="o">=</span> <span class="mi">5</span>       <span class="c1"># TypeError: unhashable type: 'dict'</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-thinking.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-thinking.png" width="80"></a>
+Here's an easy rule of thumb: if you can't change it, you can hash it. Strings, numbers, and tuples are locked in place once created, so they make great dictionary keys. Lists, dictionaries, and sets can be modified, so Python won't let you use them as keys.</p>
+</div>
+<h2 id="dict-vs-list-lookup">Dict vs List Lookup</h2>
+<p>Now for one of the most powerful reasons to use dictionaries: <strong>dict vs list lookup</strong> performance. Dictionaries are <em>dramatically</em> faster than lists when you need to check if something exists.</p>
+<p>With a list, Python has to check each item one by one from the beginning. If the list has a million items, that could mean up to a million comparisons. This is called <strong>linear search</strong> — the time grows proportionally with the size of the list.</p>
+<p>With a dictionary, Python uses the hash code to jump directly to the right spot. It doesn't matter if the dictionary has 10 items or 10 million — the lookup takes roughly the same amount of time. This is called <strong>constant time</strong> or <strong>O(1)</strong> lookup.</p>
+<p>Here's a comparison:</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>List</th>
+<th>Dictionary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Check if item exists</td>
+<td><strong>O(n)</strong> — slow for large data</td>
+<td><strong>O(1)</strong> — fast regardless of size</td>
+</tr>
+<tr>
+<td>Look up by index/key</td>
+<td><strong>O(1)</strong> by index</td>
+<td><strong>O(1)</strong> by key</td>
+</tr>
+<tr>
+<td>Insert at end</td>
+<td><strong>O(1)</strong></td>
+<td><strong>O(1)</strong></td>
+</tr>
+<tr>
+<td>Search for a value</td>
+<td>Scan every element</td>
+<td>Instant by key</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Ordered sequences</td>
+<td>Key-value lookups</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># List lookup: gets slower as the list grows</span>
+<span class="n">big_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">))</span>
+<span class="mi">999_999</span> <span class="ow">in</span> <span class="n">big_list</span>   <span class="c1"># Checks up to 1 million items!</span>
+
+<span class="c1"># Dict lookup: always fast</span>
+<span class="n">big_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="kc">True</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">)}</span>
+<span class="mi">999_999</span> <span class="ow">in</span> <span class="n">big_dict</span>   <span class="c1"># Jumps straight to it!</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h4 id="diagram-dict-vs-list-lookup-performance">Diagram: Dict vs List Lookup Performance</h4>
+<iframe src="../../sims/dict-vs-list/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Dict vs List Lookup Performance MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> dict-vs-list<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> compare, differentiate</p>
+<p><strong>Learning Objective:</strong> Students will be able to compare the lookup performance of lists vs dictionaries and explain why dictionaries are faster for membership testing.</p>
+<p><strong>Purpose:</strong> An animated race visualization that searches for a value in both a list and a dictionary simultaneously, showing the dramatic speed difference as data sizes grow.</p>
+<p><strong>Layout:</strong></p>
+<ul>
+<li>Top: Slider to set the collection size (100, 1000, 10000, 100000)</li>
+<li>Center: Two lanes labeled "List Search" and "Dict Search"</li>
+<li>The list lane shows an animated cursor scanning through elements one by one</li>
+<li>The dict lane shows the hash calculation and direct jump</li>
+<li>Bottom: Timer showing elapsed comparison steps for each</li>
+</ul>
+<p><strong>Interactive elements:</strong></p>
+<ul>
+<li>Size slider to change the number of items (demonstrates how list search time grows while dict stays constant)</li>
+<li>"Race!" button to start the comparison</li>
+<li>"Search for:" input to choose which value to search for</li>
+<li>Results display showing the number of steps each method took</li>
+</ul>
+<p><strong>Visual style:</strong> Racing lanes with animated search cursors, bar chart of steps taken
+<strong>Responsive:</strong> Canvas width adjusts to window</p>
+<p><strong>Instructional Rationale:</strong> A race visualization makes the abstract concept of time complexity visceral and memorable. Adjusting the data size lets students see firsthand that dictionary lookup time stays flat while list lookup time grows, building intuition for Big-O analysis.</p>
+</details>
+<p>In real programs, this performance difference matters a lot. If you're checking whether a username exists in a system with millions of users, a dictionary (or set) gives you an instant answer. A list would make your users wait.</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Real-world example: checking if a username is taken</span>
+<span class="c1"># BAD approach with a list</span>
+<span class="n">taken_usernames_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"alice"</span><span class="p">,</span> <span class="s2">"bob"</span><span class="p">,</span> <span class="s2">"charlie"</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>  <span class="c1"># millions of names</span>
+
+<span class="k">if</span> <span class="s2">"newuser"</span> <span class="ow">in</span> <span class="n">taken_usernames_list</span><span class="p">:</span>  <span class="c1"># Potentially slow!</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Username taken"</span><span class="p">)</span>
+
+<span class="c1"># GOOD approach with a dictionary (or set)</span>
+<span class="n">taken_usernames_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"alice"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">"bob"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">"charlie"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+
+<span class="k">if</span> <span class="s2">"newuser"</span> <span class="ow">in</span> <span class="n">taken_usernames_dict</span><span class="p">:</span>  <span class="c1"># Always fast!</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Username taken"</span><span class="p">)</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h4 id="diagram-dictionary-use-cases-infographic">Diagram: Dictionary Use Cases Infographic</h4>
+<iframe src="../../sims/dict-use-cases/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Dictionary Use Cases Infographic</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> dict-use-cases<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> classify, summarize</p>
+<p><strong>Learning Objective:</strong> Students will be able to identify common real-world scenarios where dictionaries are the appropriate data structure and explain why.</p>
+<p><strong>Purpose:</strong> An interactive infographic showing 6 real-world dictionary use cases (phone book, word counter, grade book, shopping cart, game inventory, translation dictionary) with hover-to-reveal Python code examples.</p>
+<p><strong>Layout:</strong></p>
+<ul>
+<li>6 cards arranged in a 3x2 grid, each showing an icon and title for a use case</li>
+<li>Hovering over a card expands it to show a brief description and a Python code snippet</li>
+</ul>
+<p><strong>Interactive elements:</strong></p>
+<ul>
+<li>Hover/click to expand each card</li>
+<li>A "Which data structure?" quiz mode where students see a scenario and choose between list, dictionary, tuple, or set</li>
+</ul>
+<p><strong>Visual style:</strong> Card-based layout with icons, clean typography
+<strong>Responsive:</strong> Cards reflow to 2x3 or 1x6 on narrower screens</p>
+<p><strong>Instructional Rationale:</strong> Connecting dictionary concepts to familiar real-world scenarios (phone books, grade books, shopping carts) helps students transfer abstract knowledge to practical application. Quiz mode provides immediate self-assessment.</p>
+</details>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's combine several dictionary techniques into a practical example. Imagine you're building a simple grade tracker for a class:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Grade tracker using multiple dictionary patterns</span>
+<span class="k">def</span> <span class="nf">grade_tracker</span><span class="p">():</span>
+    <span class="n">grades</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># Add some test scores</span>
+    <span class="n">student_scores</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">95</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">87</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">91</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="mi">78</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">92</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">88</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="mi">85</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">79</span><span class="p">)</span>
+    <span class="p">]</span>
+
+    <span class="c1"># Group scores by student (grouping pattern)</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">student_scores</span><span class="p">:</span>
+        <span class="n">grades</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"All scores:"</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
+    <span class="c1"># {'Alice': [95, 91, 88], 'Bob': [87, 92, 79], 'Charlie': [78, 85]}</span>
+
+    <span class="c1"># Calculate averages (dictionary comprehension)</span>
+    <span class="n">averages</span> <span class="o">=</span> <span class="p">{</span><span class="n">name</span><span class="p">:</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">scores</span> <span class="ow">in</span> <span class="n">grades</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Averages:"</span><span class="p">,</span> <span class="n">averages</span><span class="p">)</span>
+    <span class="c1"># {'Alice': 91.33, 'Bob': 86.0, 'Charlie': 81.5}</span>
+
+    <span class="c1"># Assign letter grades</span>
+    <span class="n">letter_grades</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">avg</span> <span class="ow">in</span> <span class="n">averages</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">avg</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+            <span class="n">letter_grades</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"A"</span>
+        <span class="k">elif</span> <span class="n">avg</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+            <span class="n">letter_grades</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"B"</span>
+        <span class="k">elif</span> <span class="n">avg</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+            <span class="n">letter_grades</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"C"</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">letter_grades</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"F"</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Letter grades:"</span><span class="p">,</span> <span class="n">letter_grades</span><span class="p">)</span>
+    <span class="c1"># {'Alice': 'A', 'Bob': 'B', 'Charlie': 'B'}</span>
+
+<span class="n">grade_tracker</span><span class="p">()</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This example uses grouping with <code>setdefault</code>, dictionary comprehensions, and iteration — all in one natural, readable program. That's the power of dictionaries!</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Monty says: You've got this!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/monty-celebrates.png" data-desc-position="bottom"><img align="left" alt="Monty" src="../../img/monty-celebrates.png" width="80"></a>
+Amazing work, coder! You've just learned one of the most important and versatile tools in Python. Dictionaries are everywhere — in web development, data science, game programming, and beyond. Every time you need to connect one piece of data to another, think dictionary!</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li><strong>Dictionaries</strong> store data as <strong>key-value pairs</strong> — like a real dictionary maps words to definitions.</li>
+<li>Create dictionaries with curly braces: <code>{"key": "value"}</code> or the <code>dict()</code> constructor.</li>
+<li>Access values with square brackets <code>d["key"]</code> or the safer <code>get()</code> method with a default value.</li>
+<li>Essential methods: <code>keys()</code>, <code>values()</code>, <code>items()</code>, <code>update()</code>, <code>pop()</code>.</li>
+<li><strong>Dictionary iteration</strong> with <code>items()</code> gives you both keys and values in each loop.</li>
+<li><strong>Dictionary comprehensions</strong> let you build dictionaries in a single line: <code>{k: v for k, v in data}</code>.</li>
+<li><strong>Nested dictionaries</strong> store structured, multi-level data by putting dictionaries inside dictionaries.</li>
+<li><strong>Merge dictionaries</strong> with the <code>|</code> operator (Python 3.9+), <code>**</code> unpacking, or <code>update()</code>.</li>
+<li><strong>Counting</strong> and <strong>grouping</strong> are the two most common dictionary patterns in real-world code.</li>
+<li><strong>Caching</strong> (memoization) uses a dictionary to store previously computed results for speed.</li>
+<li><strong>Keys must be hashable</strong> (immutable): strings, numbers, and tuples work; lists and dicts don't.</li>
+<li><strong>Dict lookup is O(1)</strong> (constant time) vs list lookup which is <strong>O(n)</strong> (linear time) — dictionaries are dramatically faster for searching.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What happens if you try to use a list as a dictionary key?</summary>
+<p>Python raises a <code>TypeError: unhashable type: 'list'</code>. Lists are <strong>mutable</strong> (they can be changed), which means Python can't compute a reliable hash code for them. Only <strong>immutable</strong> types like strings, integers, floats, and tuples (containing only hashable elements) can be used as dictionary keys. If you need a list-like key, convert it to a tuple first: <code>d[tuple(my_list)] = value</code>.</p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: Write a dictionary comprehension that maps each number from 1 to 5 to its cube.</summary>
+<p></p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">cubes</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cubes</span><span class="p">)</span>
+<span class="c1"># Output: {1: 1, 2: 8, 3: 27, 4: 64, 5: 125}</span>
+</code></pre></div></td></tr></tbody></table></div>
+The expression <code>n ** 3</code> calculates the cube (n times n times n). The <code>range(1, 6)</code> generates numbers 1 through 5. The result is a dictionary where each key is a number and each value is its cube.<p></p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: Why are dictionary lookups faster than list lookups?</summary>
+<p>Dictionaries use <strong>hash codes</strong> to jump directly to where a key is stored, giving them <strong>O(1) constant time</strong> lookups — the speed doesn't depend on how many items are in the dictionary. Lists, on the other hand, must scan through elements one by one (<strong>O(n) linear time</strong>), so the more items in the list, the longer it takes. For a dictionary with a million entries, lookup is still essentially instant. For a list with a million entries, you might need to check all million items in the worst case.</p>
+</details>
 
 
 
@@ -1460,12 +3137,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       
