@@ -29,7 +29,7 @@ TODO: Describe how students should interact with this MicroSim.
 
 ```html
 <iframe src="main.html"
-        height="450px"
+        height="660px"
         width="100%"
         scrolling="no"></iframe>
 ```
