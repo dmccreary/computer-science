@@ -1,0 +1,4588 @@
+{
+  "metadata": {
+    "title": "AP Computer Science (Python Version)",
+    "description": "A college-level introduction to computer science using Python, covering computational thinking, algorithm design, OOP, data structures, and software engineering practices.",
+    "creator": "Dan McCreary",
+    "date": "2026-02-11",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "LightCoral",
+      "font": {
+        "color": "white"
+      }
+    },
+    "PYBASIC": {
+      "classifierName": "Python Basics",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "BOOL": {
+      "classifierName": "Boolean Logic",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CTRL": {
+      "classifierName": "Control Flow",
+      "color": "PaleGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "STR": {
+      "classifierName": "Strings",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FUNC": {
+      "classifierName": "Functions",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "REC": {
+      "classifierName": "Recursion",
+      "color": "LightPink",
+      "font": {
+        "color": "black"
+      }
+    },
+    "DATA": {
+      "classifierName": "Data Structures",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "OOP": {
+      "classifierName": "Object-Oriented Programming",
+      "color": "LightSteelBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FILEIO": {
+      "classifierName": "File I/O",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ERR": {
+      "classifierName": "Error Handling",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TEST": {
+      "classifierName": "Testing and Debugging",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ALGO": {
+      "classifierName": "Algorithms",
+      "color": "Aquamarine",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SENG": {
+      "classifierName": "Software Engineering",
+      "color": "Gainsboro",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ADVPY": {
+      "classifierName": "Advanced Python",
+      "color": "Plum",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Computer Science",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Computational Thinking",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Algorithms",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Abstraction",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Decomposition",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Pattern Recognition",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Stepwise Refinement",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Problem Solving",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Binary Number System",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Bits and Bytes",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Character Encoding",
+      "group": "FOUND"
+    },
+    {
+      "id": 12,
+      "label": "ASCII and Unicode",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Computer Hardware",
+      "group": "FOUND"
+    },
+    {
+      "id": 14,
+      "label": "CPU and Memory",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Input and Output Devices",
+      "group": "FOUND"
+    },
+    {
+      "id": 16,
+      "label": "Operating Systems",
+      "group": "FOUND"
+    },
+    {
+      "id": 17,
+      "label": "Programming Languages",
+      "group": "FOUND"
+    },
+    {
+      "id": 18,
+      "label": "Compiled vs Interpreted",
+      "group": "FOUND"
+    },
+    {
+      "id": 19,
+      "label": "Python Language",
+      "group": "FOUND"
+    },
+    {
+      "id": 20,
+      "label": "Python Interpreter",
+      "group": "FOUND"
+    },
+    {
+      "id": 21,
+      "label": "Python REPL",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 22,
+      "label": "Python Scripts",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 23,
+      "label": "Comments in Code",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 24,
+      "label": "Variables",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 25,
+      "label": "Variable Assignment",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 26,
+      "label": "Variable Naming Rules",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 27,
+      "label": "Data Types",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 28,
+      "label": "Integer Type",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 29,
+      "label": "Float Type",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 30,
+      "label": "Boolean Type",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 31,
+      "label": "String Type",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 32,
+      "label": "Type Function",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 33,
+      "label": "Type Conversion",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 34,
+      "label": "Implicit Type Conversion",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 35,
+      "label": "Explicit Type Casting",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 36,
+      "label": "Arithmetic Operators",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 37,
+      "label": "Integer Division",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 38,
+      "label": "Modulo Operator",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 39,
+      "label": "Operator Precedence",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 40,
+      "label": "String Concatenation",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 41,
+      "label": "String Repetition",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 42,
+      "label": "F-String Formatting",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 43,
+      "label": "Print Function",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 44,
+      "label": "Input Function",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 45,
+      "label": "Multiple Assignment",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 46,
+      "label": "Constants Convention",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 47,
+      "label": "Augmented Assignment",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 48,
+      "label": "Expressions",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 49,
+      "label": "Statements",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 50,
+      "label": "Code Readability",
+      "group": "PYBASIC"
+    },
+    {
+      "id": 51,
+      "label": "Boolean Expressions",
+      "group": "BOOL"
+    },
+    {
+      "id": 52,
+      "label": "Comparison Operators",
+      "group": "BOOL"
+    },
+    {
+      "id": 53,
+      "label": "Equal and Not Equal",
+      "group": "BOOL"
+    },
+    {
+      "id": 54,
+      "label": "Greater and Less Than",
+      "group": "BOOL"
+    },
+    {
+      "id": 55,
+      "label": "Logical Operators",
+      "group": "BOOL"
+    },
+    {
+      "id": 56,
+      "label": "And Operator",
+      "group": "BOOL"
+    },
+    {
+      "id": 57,
+      "label": "Or Operator",
+      "group": "BOOL"
+    },
+    {
+      "id": 58,
+      "label": "Not Operator",
+      "group": "BOOL"
+    },
+    {
+      "id": 59,
+      "label": "Short-Circuit Evaluation",
+      "group": "BOOL"
+    },
+    {
+      "id": 60,
+      "label": "Truthiness and Falsiness",
+      "group": "BOOL"
+    },
+    {
+      "id": 61,
+      "label": "Boolean Conversion",
+      "group": "BOOL"
+    },
+    {
+      "id": 62,
+      "label": "Chained Comparisons",
+      "group": "BOOL"
+    },
+    {
+      "id": 63,
+      "label": "Order of Operations",
+      "group": "BOOL"
+    },
+    {
+      "id": 64,
+      "label": "De Morgan's Laws",
+      "group": "BOOL"
+    },
+    {
+      "id": 65,
+      "label": "Truth Tables",
+      "group": "BOOL"
+    },
+    {
+      "id": 66,
+      "label": "Control Flow",
+      "group": "CTRL"
+    },
+    {
+      "id": 67,
+      "label": "Sequential Execution",
+      "group": "CTRL"
+    },
+    {
+      "id": 68,
+      "label": "Conditional Statements",
+      "group": "CTRL"
+    },
+    {
+      "id": 69,
+      "label": "If Statement",
+      "group": "CTRL"
+    },
+    {
+      "id": 70,
+      "label": "If-Else Statement",
+      "group": "CTRL"
+    },
+    {
+      "id": 71,
+      "label": "Elif Statement",
+      "group": "CTRL"
+    },
+    {
+      "id": 72,
+      "label": "Nested Conditionals",
+      "group": "CTRL"
+    },
+    {
+      "id": 73,
+      "label": "Ternary Expression",
+      "group": "CTRL"
+    },
+    {
+      "id": 74,
+      "label": "Match Statement",
+      "group": "CTRL"
+    },
+    {
+      "id": 75,
+      "label": "Loops",
+      "group": "CTRL"
+    },
+    {
+      "id": 76,
+      "label": "For Loop",
+      "group": "CTRL"
+    },
+    {
+      "id": 77,
+      "label": "While Loop",
+      "group": "CTRL"
+    },
+    {
+      "id": 78,
+      "label": "Range Function",
+      "group": "CTRL"
+    },
+    {
+      "id": 79,
+      "label": "Loop Variable",
+      "group": "CTRL"
+    },
+    {
+      "id": 80,
+      "label": "Loop Body",
+      "group": "CTRL"
+    },
+    {
+      "id": 81,
+      "label": "Infinite Loops",
+      "group": "CTRL"
+    },
+    {
+      "id": 82,
+      "label": "Break Statement",
+      "group": "CTRL"
+    },
+    {
+      "id": 83,
+      "label": "Continue Statement",
+      "group": "CTRL"
+    },
+    {
+      "id": 84,
+      "label": "Nested Loops",
+      "group": "CTRL"
+    },
+    {
+      "id": 85,
+      "label": "Loop Patterns",
+      "group": "CTRL"
+    },
+    {
+      "id": 86,
+      "label": "Accumulator Pattern",
+      "group": "CTRL"
+    },
+    {
+      "id": 87,
+      "label": "Counter Pattern",
+      "group": "CTRL"
+    },
+    {
+      "id": 88,
+      "label": "Sentinel Value Pattern",
+      "group": "CTRL"
+    },
+    {
+      "id": 89,
+      "label": "Flag Variable Pattern",
+      "group": "CTRL"
+    },
+    {
+      "id": 90,
+      "label": "Loop Else Clause",
+      "group": "CTRL"
+    },
+    {
+      "id": 91,
+      "label": "String Basics",
+      "group": "STR"
+    },
+    {
+      "id": 92,
+      "label": "String Indexing",
+      "group": "STR"
+    },
+    {
+      "id": 93,
+      "label": "Negative Indexing",
+      "group": "STR"
+    },
+    {
+      "id": 94,
+      "label": "String Slicing",
+      "group": "STR"
+    },
+    {
+      "id": 95,
+      "label": "Slice Notation",
+      "group": "STR"
+    },
+    {
+      "id": 96,
+      "label": "String Immutability",
+      "group": "STR"
+    },
+    {
+      "id": 97,
+      "label": "String Length",
+      "group": "STR"
+    },
+    {
+      "id": 98,
+      "label": "String Methods",
+      "group": "STR"
+    },
+    {
+      "id": 99,
+      "label": "Upper and Lower Methods",
+      "group": "STR"
+    },
+    {
+      "id": 100,
+      "label": "Strip Method",
+      "group": "STR"
+    },
+    {
+      "id": 101,
+      "label": "Split Method",
+      "group": "STR"
+    },
+    {
+      "id": 102,
+      "label": "Join Method",
+      "group": "STR"
+    },
+    {
+      "id": 103,
+      "label": "Find and Replace Methods",
+      "group": "STR"
+    },
+    {
+      "id": 104,
+      "label": "Startswith and Endswith",
+      "group": "STR"
+    },
+    {
+      "id": 105,
+      "label": "String Iteration",
+      "group": "STR"
+    },
+    {
+      "id": 106,
+      "label": "String Comparison",
+      "group": "STR"
+    },
+    {
+      "id": 107,
+      "label": "Escape Characters",
+      "group": "STR"
+    },
+    {
+      "id": 108,
+      "label": "Raw Strings",
+      "group": "STR"
+    },
+    {
+      "id": 109,
+      "label": "Multiline Strings",
+      "group": "STR"
+    },
+    {
+      "id": 110,
+      "label": "String Formatting",
+      "group": "STR"
+    },
+    {
+      "id": 111,
+      "label": "Format Method",
+      "group": "STR"
+    },
+    {
+      "id": 112,
+      "label": "String Validation Methods",
+      "group": "STR"
+    },
+    {
+      "id": 113,
+      "label": "In Operator for Strings",
+      "group": "STR"
+    },
+    {
+      "id": 114,
+      "label": "Character Methods",
+      "group": "STR"
+    },
+    {
+      "id": 115,
+      "label": "String Reversal",
+      "group": "STR"
+    },
+    {
+      "id": 116,
+      "label": "Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 117,
+      "label": "Function Definition",
+      "group": "FUNC"
+    },
+    {
+      "id": 118,
+      "label": "Function Call",
+      "group": "FUNC"
+    },
+    {
+      "id": 119,
+      "label": "Parameters",
+      "group": "FUNC"
+    },
+    {
+      "id": 120,
+      "label": "Arguments",
+      "group": "FUNC"
+    },
+    {
+      "id": 121,
+      "label": "Return Statement",
+      "group": "FUNC"
+    },
+    {
+      "id": 122,
+      "label": "Return Values",
+      "group": "FUNC"
+    },
+    {
+      "id": 123,
+      "label": "None Type",
+      "group": "FUNC"
+    },
+    {
+      "id": 124,
+      "label": "Default Parameters",
+      "group": "FUNC"
+    },
+    {
+      "id": 125,
+      "label": "Keyword Arguments",
+      "group": "FUNC"
+    },
+    {
+      "id": 126,
+      "label": "Positional Arguments",
+      "group": "FUNC"
+    },
+    {
+      "id": 127,
+      "label": "Multiple Return Values",
+      "group": "FUNC"
+    },
+    {
+      "id": 128,
+      "label": "Variable Scope",
+      "group": "FUNC"
+    },
+    {
+      "id": 129,
+      "label": "Local Variables",
+      "group": "FUNC"
+    },
+    {
+      "id": 130,
+      "label": "Global Variables",
+      "group": "FUNC"
+    },
+    {
+      "id": 131,
+      "label": "Global Keyword",
+      "group": "FUNC"
+    },
+    {
+      "id": 132,
+      "label": "Docstrings",
+      "group": "FUNC"
+    },
+    {
+      "id": 133,
+      "label": "Function Documentation",
+      "group": "FUNC"
+    },
+    {
+      "id": 134,
+      "label": "Helper Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 135,
+      "label": "Main Function Pattern",
+      "group": "FUNC"
+    },
+    {
+      "id": 136,
+      "label": "Name Equals Main",
+      "group": "FUNC"
+    },
+    {
+      "id": 137,
+      "label": "Lambda Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 138,
+      "label": "Higher-Order Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 139,
+      "label": "Map Function",
+      "group": "FUNC"
+    },
+    {
+      "id": 140,
+      "label": "Filter Function",
+      "group": "FUNC"
+    },
+    {
+      "id": 141,
+      "label": "Reduce Function",
+      "group": "FUNC"
+    },
+    {
+      "id": 142,
+      "label": "Function Composition",
+      "group": "FUNC"
+    },
+    {
+      "id": 143,
+      "label": "Recursion",
+      "group": "REC"
+    },
+    {
+      "id": 144,
+      "label": "Base Case",
+      "group": "REC"
+    },
+    {
+      "id": 145,
+      "label": "Recursive Case",
+      "group": "REC"
+    },
+    {
+      "id": 146,
+      "label": "Recursive Call Stack",
+      "group": "REC"
+    },
+    {
+      "id": 147,
+      "label": "Stack Overflow",
+      "group": "REC"
+    },
+    {
+      "id": 148,
+      "label": "Recursion vs Iteration",
+      "group": "REC"
+    },
+    {
+      "id": 149,
+      "label": "Recursive Patterns",
+      "group": "REC"
+    },
+    {
+      "id": 150,
+      "label": "Memoization",
+      "group": "REC"
+    },
+    {
+      "id": 151,
+      "label": "Lists",
+      "group": "DATA"
+    },
+    {
+      "id": 152,
+      "label": "List Creation",
+      "group": "DATA"
+    },
+    {
+      "id": 153,
+      "label": "List Indexing",
+      "group": "DATA"
+    },
+    {
+      "id": 154,
+      "label": "List Slicing",
+      "group": "DATA"
+    },
+    {
+      "id": 155,
+      "label": "List Mutability",
+      "group": "DATA"
+    },
+    {
+      "id": 156,
+      "label": "List Methods",
+      "group": "DATA"
+    },
+    {
+      "id": 157,
+      "label": "Append Method",
+      "group": "DATA"
+    },
+    {
+      "id": 158,
+      "label": "Insert Method",
+      "group": "DATA"
+    },
+    {
+      "id": 159,
+      "label": "Remove Method",
+      "group": "DATA"
+    },
+    {
+      "id": 160,
+      "label": "Pop Method",
+      "group": "DATA"
+    },
+    {
+      "id": 161,
+      "label": "Sort Method",
+      "group": "DATA"
+    },
+    {
+      "id": 162,
+      "label": "Reverse Method",
+      "group": "DATA"
+    },
+    {
+      "id": 163,
+      "label": "List Comprehension",
+      "group": "DATA"
+    },
+    {
+      "id": 164,
+      "label": "Nested Lists",
+      "group": "DATA"
+    },
+    {
+      "id": 165,
+      "label": "List of Lists",
+      "group": "DATA"
+    },
+    {
+      "id": 166,
+      "label": "List Traversal",
+      "group": "DATA"
+    },
+    {
+      "id": 167,
+      "label": "For Loop with Lists",
+      "group": "DATA"
+    },
+    {
+      "id": 168,
+      "label": "Enumerate Function",
+      "group": "DATA"
+    },
+    {
+      "id": 169,
+      "label": "List Unpacking",
+      "group": "DATA"
+    },
+    {
+      "id": 170,
+      "label": "Zip Function",
+      "group": "DATA"
+    },
+    {
+      "id": 171,
+      "label": "List Copying",
+      "group": "DATA"
+    },
+    {
+      "id": 172,
+      "label": "Shallow Copy",
+      "group": "DATA"
+    },
+    {
+      "id": 173,
+      "label": "Deep Copy",
+      "group": "DATA"
+    },
+    {
+      "id": 174,
+      "label": "List Concatenation",
+      "group": "DATA"
+    },
+    {
+      "id": 175,
+      "label": "List Repetition",
+      "group": "DATA"
+    },
+    {
+      "id": 176,
+      "label": "In Operator for Lists",
+      "group": "DATA"
+    },
+    {
+      "id": 177,
+      "label": "Index Method",
+      "group": "DATA"
+    },
+    {
+      "id": 178,
+      "label": "Count Method",
+      "group": "DATA"
+    },
+    {
+      "id": 179,
+      "label": "Min Max Sum Functions",
+      "group": "DATA"
+    },
+    {
+      "id": 180,
+      "label": "Len Function for Lists",
+      "group": "DATA"
+    },
+    {
+      "id": 181,
+      "label": "Sorted Function",
+      "group": "DATA"
+    },
+    {
+      "id": 182,
+      "label": "List as Stack",
+      "group": "DATA"
+    },
+    {
+      "id": 183,
+      "label": "List as Queue",
+      "group": "DATA"
+    },
+    {
+      "id": 184,
+      "label": "List Aliasing",
+      "group": "DATA"
+    },
+    {
+      "id": 185,
+      "label": "Identity vs Equality",
+      "group": "DATA"
+    },
+    {
+      "id": 186,
+      "label": "Tuples",
+      "group": "DATA"
+    },
+    {
+      "id": 187,
+      "label": "Tuple Creation",
+      "group": "DATA"
+    },
+    {
+      "id": 188,
+      "label": "Tuple Immutability",
+      "group": "DATA"
+    },
+    {
+      "id": 189,
+      "label": "Tuple Packing",
+      "group": "DATA"
+    },
+    {
+      "id": 190,
+      "label": "Tuple Unpacking",
+      "group": "DATA"
+    },
+    {
+      "id": 191,
+      "label": "Named Tuples",
+      "group": "DATA"
+    },
+    {
+      "id": 192,
+      "label": "Tuple Methods",
+      "group": "DATA"
+    },
+    {
+      "id": 193,
+      "label": "Tuples as Keys",
+      "group": "DATA"
+    },
+    {
+      "id": 194,
+      "label": "Tuples vs Lists",
+      "group": "DATA"
+    },
+    {
+      "id": 195,
+      "label": "Sets",
+      "group": "DATA"
+    },
+    {
+      "id": 196,
+      "label": "Set Creation",
+      "group": "DATA"
+    },
+    {
+      "id": 197,
+      "label": "Set Operations",
+      "group": "DATA"
+    },
+    {
+      "id": 198,
+      "label": "Set Union",
+      "group": "DATA"
+    },
+    {
+      "id": 199,
+      "label": "Set Intersection",
+      "group": "DATA"
+    },
+    {
+      "id": 200,
+      "label": "Set Difference",
+      "group": "DATA"
+    },
+    {
+      "id": 201,
+      "label": "Set Symmetric Difference",
+      "group": "DATA"
+    },
+    {
+      "id": 202,
+      "label": "Set Methods",
+      "group": "DATA"
+    },
+    {
+      "id": 203,
+      "label": "Membership Testing",
+      "group": "DATA"
+    },
+    {
+      "id": 204,
+      "label": "Frozenset",
+      "group": "DATA"
+    },
+    {
+      "id": 205,
+      "label": "Removing Duplicates",
+      "group": "DATA"
+    },
+    {
+      "id": 206,
+      "label": "Dictionaries",
+      "group": "DATA"
+    },
+    {
+      "id": 207,
+      "label": "Dictionary Creation",
+      "group": "DATA"
+    },
+    {
+      "id": 208,
+      "label": "Key-Value Pairs",
+      "group": "DATA"
+    },
+    {
+      "id": 209,
+      "label": "Dictionary Access",
+      "group": "DATA"
+    },
+    {
+      "id": 210,
+      "label": "Dictionary Methods",
+      "group": "DATA"
+    },
+    {
+      "id": 211,
+      "label": "Get Method",
+      "group": "DATA"
+    },
+    {
+      "id": 212,
+      "label": "Keys Method",
+      "group": "DATA"
+    },
+    {
+      "id": 213,
+      "label": "Values Method",
+      "group": "DATA"
+    },
+    {
+      "id": 214,
+      "label": "Items Method",
+      "group": "DATA"
+    },
+    {
+      "id": 215,
+      "label": "Dictionary Iteration",
+      "group": "DATA"
+    },
+    {
+      "id": 216,
+      "label": "Dictionary Comprehension",
+      "group": "DATA"
+    },
+    {
+      "id": 217,
+      "label": "Nested Dictionaries",
+      "group": "DATA"
+    },
+    {
+      "id": 218,
+      "label": "Default Values",
+      "group": "DATA"
+    },
+    {
+      "id": 219,
+      "label": "Update Method",
+      "group": "DATA"
+    },
+    {
+      "id": 220,
+      "label": "Pop Method for Dicts",
+      "group": "DATA"
+    },
+    {
+      "id": 221,
+      "label": "Dictionary Merging",
+      "group": "DATA"
+    },
+    {
+      "id": 222,
+      "label": "Counting with Dicts",
+      "group": "DATA"
+    },
+    {
+      "id": 223,
+      "label": "Grouping with Dicts",
+      "group": "DATA"
+    },
+    {
+      "id": 224,
+      "label": "Dictionary as Cache",
+      "group": "DATA"
+    },
+    {
+      "id": 225,
+      "label": "Hashable Keys",
+      "group": "DATA"
+    },
+    {
+      "id": 226,
+      "label": "Dict vs List Lookup",
+      "group": "DATA"
+    },
+    {
+      "id": 227,
+      "label": "JSON and Dictionaries",
+      "group": "DATA"
+    },
+    {
+      "id": 228,
+      "label": "OrderedDict",
+      "group": "DATA"
+    },
+    {
+      "id": 229,
+      "label": "DefaultDict",
+      "group": "DATA"
+    },
+    {
+      "id": 230,
+      "label": "Counter Class",
+      "group": "DATA"
+    },
+    {
+      "id": 231,
+      "label": "Object-Oriented Programming",
+      "group": "OOP"
+    },
+    {
+      "id": 232,
+      "label": "Classes",
+      "group": "OOP"
+    },
+    {
+      "id": 233,
+      "label": "Objects",
+      "group": "OOP"
+    },
+    {
+      "id": 234,
+      "label": "Class Definition",
+      "group": "OOP"
+    },
+    {
+      "id": 235,
+      "label": "Class Instantiation",
+      "group": "OOP"
+    },
+    {
+      "id": 236,
+      "label": "Instance Attributes",
+      "group": "OOP"
+    },
+    {
+      "id": 237,
+      "label": "Class Attributes",
+      "group": "OOP"
+    },
+    {
+      "id": 238,
+      "label": "The Self Parameter",
+      "group": "OOP"
+    },
+    {
+      "id": 239,
+      "label": "Init Method",
+      "group": "OOP"
+    },
+    {
+      "id": 240,
+      "label": "Constructor",
+      "group": "OOP"
+    },
+    {
+      "id": 241,
+      "label": "Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 242,
+      "label": "Instance Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 243,
+      "label": "Str Method",
+      "group": "OOP"
+    },
+    {
+      "id": 244,
+      "label": "Repr Method",
+      "group": "OOP"
+    },
+    {
+      "id": 245,
+      "label": "Encapsulation",
+      "group": "OOP"
+    },
+    {
+      "id": 246,
+      "label": "Private Attributes",
+      "group": "OOP"
+    },
+    {
+      "id": 247,
+      "label": "Getter Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 248,
+      "label": "Setter Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 249,
+      "label": "Property Decorator",
+      "group": "OOP"
+    },
+    {
+      "id": 250,
+      "label": "Class Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 251,
+      "label": "Static Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 252,
+      "label": "Composition",
+      "group": "OOP"
+    },
+    {
+      "id": 253,
+      "label": "Has-A Relationship",
+      "group": "OOP"
+    },
+    {
+      "id": 254,
+      "label": "Inheritance",
+      "group": "OOP"
+    },
+    {
+      "id": 255,
+      "label": "Is-A Relationship",
+      "group": "OOP"
+    },
+    {
+      "id": 256,
+      "label": "Parent Class",
+      "group": "OOP"
+    },
+    {
+      "id": 257,
+      "label": "Child Class",
+      "group": "OOP"
+    },
+    {
+      "id": 258,
+      "label": "Super Function",
+      "group": "OOP"
+    },
+    {
+      "id": 259,
+      "label": "Method Overriding",
+      "group": "OOP"
+    },
+    {
+      "id": 260,
+      "label": "Polymorphism",
+      "group": "OOP"
+    },
+    {
+      "id": 261,
+      "label": "Duck Typing",
+      "group": "OOP"
+    },
+    {
+      "id": 262,
+      "label": "Abstract Classes",
+      "group": "OOP"
+    },
+    {
+      "id": 263,
+      "label": "Multiple Inheritance",
+      "group": "OOP"
+    },
+    {
+      "id": 264,
+      "label": "Method Resolution Order",
+      "group": "OOP"
+    },
+    {
+      "id": 265,
+      "label": "Operator Overloading",
+      "group": "OOP"
+    },
+    {
+      "id": 266,
+      "label": "Eq and Lt Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 267,
+      "label": "Add and Mul Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 268,
+      "label": "Iterable Protocol",
+      "group": "OOP"
+    },
+    {
+      "id": 269,
+      "label": "Iterator Protocol",
+      "group": "OOP"
+    },
+    {
+      "id": 270,
+      "label": "Dunder Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 271,
+      "label": "Object Identity",
+      "group": "OOP"
+    },
+    {
+      "id": 272,
+      "label": "Object Comparison",
+      "group": "OOP"
+    },
+    {
+      "id": 273,
+      "label": "Class Hierarchies",
+      "group": "OOP"
+    },
+    {
+      "id": 274,
+      "label": "UML Class Diagrams",
+      "group": "OOP"
+    },
+    {
+      "id": 275,
+      "label": "Design Patterns Intro",
+      "group": "OOP"
+    },
+    {
+      "id": 276,
+      "label": "File Input Output",
+      "group": "FILEIO"
+    },
+    {
+      "id": 277,
+      "label": "Opening Files",
+      "group": "FILEIO"
+    },
+    {
+      "id": 278,
+      "label": "File Modes",
+      "group": "FILEIO"
+    },
+    {
+      "id": 279,
+      "label": "Read Method",
+      "group": "FILEIO"
+    },
+    {
+      "id": 280,
+      "label": "Readline Method",
+      "group": "FILEIO"
+    },
+    {
+      "id": 281,
+      "label": "Readlines Method",
+      "group": "FILEIO"
+    },
+    {
+      "id": 282,
+      "label": "Write Method",
+      "group": "FILEIO"
+    },
+    {
+      "id": 283,
+      "label": "Writelines Method",
+      "group": "FILEIO"
+    },
+    {
+      "id": 284,
+      "label": "With Statement",
+      "group": "FILEIO"
+    },
+    {
+      "id": 285,
+      "label": "Context Managers",
+      "group": "FILEIO"
+    },
+    {
+      "id": 286,
+      "label": "File Paths",
+      "group": "FILEIO"
+    },
+    {
+      "id": 287,
+      "label": "CSV Files",
+      "group": "FILEIO"
+    },
+    {
+      "id": 288,
+      "label": "JSON Files",
+      "group": "FILEIO"
+    },
+    {
+      "id": 289,
+      "label": "File Exceptions",
+      "group": "FILEIO"
+    },
+    {
+      "id": 290,
+      "label": "Text vs Binary Files",
+      "group": "FILEIO"
+    },
+    {
+      "id": 291,
+      "label": "Errors and Exceptions",
+      "group": "ERR"
+    },
+    {
+      "id": 292,
+      "label": "Syntax Errors",
+      "group": "ERR"
+    },
+    {
+      "id": 293,
+      "label": "Runtime Errors",
+      "group": "ERR"
+    },
+    {
+      "id": 294,
+      "label": "Logic Errors",
+      "group": "ERR"
+    },
+    {
+      "id": 295,
+      "label": "Exception Types",
+      "group": "ERR"
+    },
+    {
+      "id": 296,
+      "label": "TypeError",
+      "group": "ERR"
+    },
+    {
+      "id": 297,
+      "label": "ValueError",
+      "group": "ERR"
+    },
+    {
+      "id": 298,
+      "label": "IndexError",
+      "group": "ERR"
+    },
+    {
+      "id": 299,
+      "label": "KeyError",
+      "group": "ERR"
+    },
+    {
+      "id": 300,
+      "label": "Try-Except Block",
+      "group": "ERR"
+    },
+    {
+      "id": 301,
+      "label": "Multiple Except Blocks",
+      "group": "ERR"
+    },
+    {
+      "id": 302,
+      "label": "Finally Block",
+      "group": "ERR"
+    },
+    {
+      "id": 303,
+      "label": "Raising Exceptions",
+      "group": "ERR"
+    },
+    {
+      "id": 304,
+      "label": "Custom Exceptions",
+      "group": "ERR"
+    },
+    {
+      "id": 305,
+      "label": "Assertions",
+      "group": "ERR"
+    },
+    {
+      "id": 306,
+      "label": "Testing",
+      "group": "TEST"
+    },
+    {
+      "id": 307,
+      "label": "Manual Testing",
+      "group": "TEST"
+    },
+    {
+      "id": 308,
+      "label": "Unit Testing",
+      "group": "TEST"
+    },
+    {
+      "id": 309,
+      "label": "Test Cases",
+      "group": "TEST"
+    },
+    {
+      "id": 310,
+      "label": "Assert Statements",
+      "group": "TEST"
+    },
+    {
+      "id": 311,
+      "label": "Unittest Module",
+      "group": "TEST"
+    },
+    {
+      "id": 312,
+      "label": "Test Functions",
+      "group": "TEST"
+    },
+    {
+      "id": 313,
+      "label": "Edge Cases",
+      "group": "TEST"
+    },
+    {
+      "id": 314,
+      "label": "Boundary Testing",
+      "group": "TEST"
+    },
+    {
+      "id": 315,
+      "label": "Test-Driven Development",
+      "group": "TEST"
+    },
+    {
+      "id": 316,
+      "label": "Debugging",
+      "group": "TEST"
+    },
+    {
+      "id": 317,
+      "label": "Print Debugging",
+      "group": "TEST"
+    },
+    {
+      "id": 318,
+      "label": "Debugger Tools",
+      "group": "TEST"
+    },
+    {
+      "id": 319,
+      "label": "Breakpoints",
+      "group": "TEST"
+    },
+    {
+      "id": 320,
+      "label": "Step Through Code",
+      "group": "TEST"
+    },
+    {
+      "id": 321,
+      "label": "Code Tracing",
+      "group": "TEST"
+    },
+    {
+      "id": 322,
+      "label": "Rubber Duck Debugging",
+      "group": "TEST"
+    },
+    {
+      "id": 323,
+      "label": "Defensive Programming",
+      "group": "TEST"
+    },
+    {
+      "id": 324,
+      "label": "Input Validation",
+      "group": "TEST"
+    },
+    {
+      "id": 325,
+      "label": "Code Review",
+      "group": "TEST"
+    },
+    {
+      "id": 326,
+      "label": "Algorithm Design",
+      "group": "ALGO"
+    },
+    {
+      "id": 327,
+      "label": "Pseudocode",
+      "group": "ALGO"
+    },
+    {
+      "id": 328,
+      "label": "Flowcharts",
+      "group": "ALGO"
+    },
+    {
+      "id": 329,
+      "label": "Linear Search",
+      "group": "ALGO"
+    },
+    {
+      "id": 330,
+      "label": "Binary Search",
+      "group": "ALGO"
+    },
+    {
+      "id": 331,
+      "label": "Search Comparison",
+      "group": "ALGO"
+    },
+    {
+      "id": 332,
+      "label": "Selection Sort",
+      "group": "ALGO"
+    },
+    {
+      "id": 333,
+      "label": "Insertion Sort",
+      "group": "ALGO"
+    },
+    {
+      "id": 334,
+      "label": "Merge Sort",
+      "group": "ALGO"
+    },
+    {
+      "id": 335,
+      "label": "Merge Sort Recursion",
+      "group": "ALGO"
+    },
+    {
+      "id": 336,
+      "label": "Sorting Comparison",
+      "group": "ALGO"
+    },
+    {
+      "id": 337,
+      "label": "Stable vs Unstable Sort",
+      "group": "ALGO"
+    },
+    {
+      "id": 338,
+      "label": "Algorithm Correctness",
+      "group": "ALGO"
+    },
+    {
+      "id": 339,
+      "label": "Loop Invariants",
+      "group": "ALGO"
+    },
+    {
+      "id": 340,
+      "label": "Big-O Notation",
+      "group": "ALGO"
+    },
+    {
+      "id": 341,
+      "label": "Time Complexity",
+      "group": "ALGO"
+    },
+    {
+      "id": 342,
+      "label": "Space Complexity",
+      "group": "ALGO"
+    },
+    {
+      "id": 343,
+      "label": "Constant Time O(1)",
+      "group": "ALGO"
+    },
+    {
+      "id": 344,
+      "label": "Linear Time O(n)",
+      "group": "ALGO"
+    },
+    {
+      "id": 345,
+      "label": "Quadratic Time O(n^2)",
+      "group": "ALGO"
+    },
+    {
+      "id": 346,
+      "label": "Logarithmic Time O(log n)",
+      "group": "ALGO"
+    },
+    {
+      "id": 347,
+      "label": "Linearithmic Time",
+      "group": "ALGO"
+    },
+    {
+      "id": 348,
+      "label": "Best Average Worst Case",
+      "group": "ALGO"
+    },
+    {
+      "id": 349,
+      "label": "Empirical Analysis",
+      "group": "ALGO"
+    },
+    {
+      "id": 350,
+      "label": "Counting Operations",
+      "group": "ALGO"
+    },
+    {
+      "id": 351,
+      "label": "Brute Force Approach",
+      "group": "ALGO"
+    },
+    {
+      "id": 352,
+      "label": "Divide and Conquer",
+      "group": "ALGO"
+    },
+    {
+      "id": 353,
+      "label": "Greedy Algorithms",
+      "group": "ALGO"
+    },
+    {
+      "id": 354,
+      "label": "Algorithm Tradeoffs",
+      "group": "ALGO"
+    },
+    {
+      "id": 355,
+      "label": "Efficiency vs Readability",
+      "group": "ALGO"
+    },
+    {
+      "id": 356,
+      "label": "Two Pointer Technique",
+      "group": "ALGO"
+    },
+    {
+      "id": 357,
+      "label": "Sliding Window Pattern",
+      "group": "ALGO"
+    },
+    {
+      "id": 358,
+      "label": "Frequency Counter Pattern",
+      "group": "ALGO"
+    },
+    {
+      "id": 359,
+      "label": "Recursion in Algorithms",
+      "group": "ALGO"
+    },
+    {
+      "id": 360,
+      "label": "Algorithm Visualization",
+      "group": "ALGO"
+    },
+    {
+      "id": 361,
+      "label": "Software Development",
+      "group": "SENG"
+    },
+    {
+      "id": 362,
+      "label": "Program Planning",
+      "group": "SENG"
+    },
+    {
+      "id": 363,
+      "label": "Requirements Analysis",
+      "group": "SENG"
+    },
+    {
+      "id": 364,
+      "label": "Modular Design",
+      "group": "SENG"
+    },
+    {
+      "id": 365,
+      "label": "Code Organization",
+      "group": "SENG"
+    },
+    {
+      "id": 366,
+      "label": "Import Statements",
+      "group": "SENG"
+    },
+    {
+      "id": 367,
+      "label": "Python Modules",
+      "group": "SENG"
+    },
+    {
+      "id": 368,
+      "label": "Python Packages",
+      "group": "SENG"
+    },
+    {
+      "id": 369,
+      "label": "Pip Package Manager",
+      "group": "SENG"
+    },
+    {
+      "id": 370,
+      "label": "Virtual Environments",
+      "group": "SENG"
+    },
+    {
+      "id": 371,
+      "label": "Version Control Intro",
+      "group": "SENG"
+    },
+    {
+      "id": 372,
+      "label": "Git Basics",
+      "group": "SENG"
+    },
+    {
+      "id": 373,
+      "label": "Code Style",
+      "group": "SENG"
+    },
+    {
+      "id": 374,
+      "label": "PEP 8 Guidelines",
+      "group": "SENG"
+    },
+    {
+      "id": 375,
+      "label": "Linting Tools",
+      "group": "SENG"
+    },
+    {
+      "id": 376,
+      "label": "Refactoring",
+      "group": "SENG"
+    },
+    {
+      "id": 377,
+      "label": "DRY Principle",
+      "group": "SENG"
+    },
+    {
+      "id": 378,
+      "label": "KISS Principle",
+      "group": "SENG"
+    },
+    {
+      "id": 379,
+      "label": "Code Comments",
+      "group": "SENG"
+    },
+    {
+      "id": 380,
+      "label": "Documentation",
+      "group": "SENG"
+    },
+    {
+      "id": 381,
+      "label": "Generators",
+      "group": "ADVPY"
+    },
+    {
+      "id": 382,
+      "label": "Yield Statement",
+      "group": "ADVPY"
+    },
+    {
+      "id": 383,
+      "label": "Generator Expressions",
+      "group": "ADVPY"
+    },
+    {
+      "id": 384,
+      "label": "Decorators",
+      "group": "ADVPY"
+    },
+    {
+      "id": 385,
+      "label": "Closures",
+      "group": "ADVPY"
+    },
+    {
+      "id": 386,
+      "label": "Args and Kwargs",
+      "group": "ADVPY"
+    },
+    {
+      "id": 387,
+      "label": "Unpacking Operators",
+      "group": "ADVPY"
+    },
+    {
+      "id": 388,
+      "label": "Walrus Operator",
+      "group": "ADVPY"
+    },
+    {
+      "id": 389,
+      "label": "Type Hints",
+      "group": "ADVPY"
+    },
+    {
+      "id": 390,
+      "label": "Type Annotations",
+      "group": "ADVPY"
+    },
+    {
+      "id": 391,
+      "label": "Dataclasses",
+      "group": "ADVPY"
+    },
+    {
+      "id": 392,
+      "label": "Enum Type",
+      "group": "ADVPY"
+    },
+    {
+      "id": 393,
+      "label": "Regular Expressions",
+      "group": "ADVPY"
+    },
+    {
+      "id": 394,
+      "label": "Collections Module",
+      "group": "ADVPY"
+    },
+    {
+      "id": 395,
+      "label": "Itertools Module",
+      "group": "ADVPY"
+    },
+    {
+      "id": 396,
+      "label": "Functools Module",
+      "group": "ADVPY"
+    },
+    {
+      "id": 397,
+      "label": "List vs Generator Memory",
+      "group": "ADVPY"
+    },
+    {
+      "id": 398,
+      "label": "Comprehension Patterns",
+      "group": "ADVPY"
+    },
+    {
+      "id": 399,
+      "label": "Context Manager Protocol",
+      "group": "ADVPY"
+    },
+    {
+      "id": 400,
+      "label": "Python Best Practices",
+      "group": "ADVPY"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 6,
+      "to": 2
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 8,
+      "to": 2
+    },
+    {
+      "from": 9,
+      "to": 1
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 1
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 13
+    },
+    {
+      "from": 16,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 1
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 22,
+      "to": 20
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 19
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 19
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 27
+    },
+    {
+      "from": 30,
+      "to": 27
+    },
+    {
+      "from": 31,
+      "to": 27
+    },
+    {
+      "from": 32,
+      "to": 27
+    },
+    {
+      "from": 33,
+      "to": 27
+    },
+    {
+      "from": 33,
+      "to": 28
+    },
+    {
+      "from": 33,
+      "to": 29
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 33
+    },
+    {
+      "from": 36,
+      "to": 28
+    },
+    {
+      "from": 36,
+      "to": 29
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 39,
+      "to": 36
+    },
+    {
+      "from": 40,
+      "to": 31
+    },
+    {
+      "from": 41,
+      "to": 31
+    },
+    {
+      "from": 42,
+      "to": 31
+    },
+    {
+      "from": 42,
+      "to": 25
+    },
+    {
+      "from": 43,
+      "to": 19
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 44,
+      "to": 31
+    },
+    {
+      "from": 45,
+      "to": 25
+    },
+    {
+      "from": 46,
+      "to": 26
+    },
+    {
+      "from": 47,
+      "to": 25
+    },
+    {
+      "from": 47,
+      "to": 36
+    },
+    {
+      "from": 48,
+      "to": 36
+    },
+    {
+      "from": 48,
+      "to": 25
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 23
+    },
+    {
+      "from": 50,
+      "to": 26
+    },
+    {
+      "from": 51,
+      "to": 30
+    },
+    {
+      "from": 51,
+      "to": 48
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 52
+    },
+    {
+      "from": 55,
+      "to": 51
+    },
+    {
+      "from": 56,
+      "to": 55
+    },
+    {
+      "from": 57,
+      "to": 55
+    },
+    {
+      "from": 58,
+      "to": 55
+    },
+    {
+      "from": 59,
+      "to": 56
+    },
+    {
+      "from": 59,
+      "to": 57
+    },
+    {
+      "from": 60,
+      "to": 30
+    },
+    {
+      "from": 60,
+      "to": 51
+    },
+    {
+      "from": 61,
+      "to": 60
+    },
+    {
+      "from": 61,
+      "to": 35
+    },
+    {
+      "from": 62,
+      "to": 52
+    },
+    {
+      "from": 63,
+      "to": 39
+    },
+    {
+      "from": 63,
+      "to": 55
+    },
+    {
+      "from": 64,
+      "to": 56
+    },
+    {
+      "from": 64,
+      "to": 57
+    },
+    {
+      "from": 64,
+      "to": 58
+    },
+    {
+      "from": 65,
+      "to": 55
+    },
+    {
+      "from": 65,
+      "to": 30
+    },
+    {
+      "from": 66,
+      "to": 49
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 51
+    },
+    {
+      "from": 69,
+      "to": 68
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 73,
+      "to": 70
+    },
+    {
+      "from": 74,
+      "to": 68
+    },
+    {
+      "from": 75,
+      "to": 66
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 51
+    },
+    {
+      "from": 78,
+      "to": 76
+    },
+    {
+      "from": 79,
+      "to": 76
+    },
+    {
+      "from": 80,
+      "to": 75
+    },
+    {
+      "from": 80,
+      "to": 49
+    },
+    {
+      "from": 81,
+      "to": 77
+    },
+    {
+      "from": 82,
+      "to": 75
+    },
+    {
+      "from": 83,
+      "to": 75
+    },
+    {
+      "from": 84,
+      "to": 76
+    },
+    {
+      "from": 84,
+      "to": 77
+    },
+    {
+      "from": 85,
+      "to": 75
+    },
+    {
+      "from": 85,
+      "to": 3
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 86,
+      "to": 47
+    },
+    {
+      "from": 87,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 47
+    },
+    {
+      "from": 88,
+      "to": 77
+    },
+    {
+      "from": 88,
+      "to": 82
+    },
+    {
+      "from": 89,
+      "to": 85
+    },
+    {
+      "from": 89,
+      "to": 30
+    },
+    {
+      "from": 90,
+      "to": 76
+    },
+    {
+      "from": 90,
+      "to": 77
+    },
+    {
+      "from": 90,
+      "to": 82
+    },
+    {
+      "from": 91,
+      "to": 31
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 94,
+      "to": 92
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 91
+    },
+    {
+      "from": 97,
+      "to": 91
+    },
+    {
+      "from": 98,
+      "to": 91
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 98
+    },
+    {
+      "from": 101,
+      "to": 98
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 103,
+      "to": 98
+    },
+    {
+      "from": 104,
+      "to": 98
+    },
+    {
+      "from": 105,
+      "to": 91
+    },
+    {
+      "from": 105,
+      "to": 76
+    },
+    {
+      "from": 106,
+      "to": 91
+    },
+    {
+      "from": 106,
+      "to": 52
+    },
+    {
+      "from": 107,
+      "to": 91
+    },
+    {
+      "from": 108,
+      "to": 107
+    },
+    {
+      "from": 109,
+      "to": 91
+    },
+    {
+      "from": 110,
+      "to": 91
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 98
+    },
+    {
+      "from": 113,
+      "to": 91
+    },
+    {
+      "from": 113,
+      "to": 51
+    },
+    {
+      "from": 114,
+      "to": 98
+    },
+    {
+      "from": 115,
+      "to": 94
+    },
+    {
+      "from": 115,
+      "to": 95
+    },
+    {
+      "from": 116,
+      "to": 4
+    },
+    {
+      "from": 116,
+      "to": 7
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 117
+    },
+    {
+      "from": 120,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 119
+    },
+    {
+      "from": 121,
+      "to": 117
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 27
+    },
+    {
+      "from": 123,
+      "to": 122
+    },
+    {
+      "from": 124,
+      "to": 119
+    },
+    {
+      "from": 125,
+      "to": 120
+    },
+    {
+      "from": 126,
+      "to": 120
+    },
+    {
+      "from": 127,
+      "to": 122
+    },
+    {
+      "from": 127,
+      "to": 186
+    },
+    {
+      "from": 128,
+      "to": 25
+    },
+    {
+      "from": 128,
+      "to": 117
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 128
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 117
+    },
+    {
+      "from": 132,
+      "to": 109
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 116
+    },
+    {
+      "from": 134,
+      "to": 5
+    },
+    {
+      "from": 135,
+      "to": 116
+    },
+    {
+      "from": 135,
+      "to": 22
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 136,
+      "to": 367
+    },
+    {
+      "from": 137,
+      "to": 116
+    },
+    {
+      "from": 137,
+      "to": 48
+    },
+    {
+      "from": 138,
+      "to": 116
+    },
+    {
+      "from": 138,
+      "to": 137
+    },
+    {
+      "from": 139,
+      "to": 138
+    },
+    {
+      "from": 139,
+      "to": 76
+    },
+    {
+      "from": 140,
+      "to": 138
+    },
+    {
+      "from": 140,
+      "to": 51
+    },
+    {
+      "from": 141,
+      "to": 138
+    },
+    {
+      "from": 142,
+      "to": 138
+    },
+    {
+      "from": 143,
+      "to": 116
+    },
+    {
+      "from": 143,
+      "to": 75
+    },
+    {
+      "from": 144,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 146,
+      "to": 143
+    },
+    {
+      "from": 146,
+      "to": 14
+    },
+    {
+      "from": 147,
+      "to": 146
+    },
+    {
+      "from": 148,
+      "to": 143
+    },
+    {
+      "from": 148,
+      "to": 76
+    },
+    {
+      "from": 149,
+      "to": 143
+    },
+    {
+      "from": 149,
+      "to": 85
+    },
+    {
+      "from": 150,
+      "to": 143
+    },
+    {
+      "from": 150,
+      "to": 224
+    },
+    {
+      "from": 151,
+      "to": 27
+    },
+    {
+      "from": 152,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 92
+    },
+    {
+      "from": 154,
+      "to": 153
+    },
+    {
+      "from": 154,
+      "to": 94
+    },
+    {
+      "from": 155,
+      "to": 151
+    },
+    {
+      "from": 155,
+      "to": 96
+    },
+    {
+      "from": 156,
+      "to": 151
+    },
+    {
+      "from": 157,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 156
+    },
+    {
+      "from": 159,
+      "to": 156
+    },
+    {
+      "from": 160,
+      "to": 156
+    },
+    {
+      "from": 161,
+      "to": 156
+    },
+    {
+      "from": 162,
+      "to": 156
+    },
+    {
+      "from": 163,
+      "to": 151
+    },
+    {
+      "from": 163,
+      "to": 76
+    },
+    {
+      "from": 163,
+      "to": 48
+    },
+    {
+      "from": 164,
+      "to": 151
+    },
+    {
+      "from": 165,
+      "to": 164
+    },
+    {
+      "from": 166,
+      "to": 151
+    },
+    {
+      "from": 166,
+      "to": 76
+    },
+    {
+      "from": 167,
+      "to": 166
+    },
+    {
+      "from": 167,
+      "to": 76
+    },
+    {
+      "from": 168,
+      "to": 167
+    },
+    {
+      "from": 169,
+      "to": 151
+    },
+    {
+      "from": 169,
+      "to": 45
+    },
+    {
+      "from": 170,
+      "to": 151
+    },
+    {
+      "from": 170,
+      "to": 186
+    },
+    {
+      "from": 171,
+      "to": 155
+    },
+    {
+      "from": 172,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 164
+    },
+    {
+      "from": 174,
+      "to": 151
+    },
+    {
+      "from": 174,
+      "to": 40
+    },
+    {
+      "from": 175,
+      "to": 151
+    },
+    {
+      "from": 175,
+      "to": 41
+    },
+    {
+      "from": 176,
+      "to": 151
+    },
+    {
+      "from": 176,
+      "to": 113
+    },
+    {
+      "from": 177,
+      "to": 156
+    },
+    {
+      "from": 178,
+      "to": 156
+    },
+    {
+      "from": 179,
+      "to": 151
+    },
+    {
+      "from": 180,
+      "to": 151
+    },
+    {
+      "from": 180,
+      "to": 97
+    },
+    {
+      "from": 181,
+      "to": 151
+    },
+    {
+      "from": 181,
+      "to": 161
+    },
+    {
+      "from": 182,
+      "to": 151
+    },
+    {
+      "from": 182,
+      "to": 160
+    },
+    {
+      "from": 183,
+      "to": 151
+    },
+    {
+      "from": 183,
+      "to": 160
+    },
+    {
+      "from": 183,
+      "to": 158
+    },
+    {
+      "from": 184,
+      "to": 155
+    },
+    {
+      "from": 184,
+      "to": 25
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 185,
+      "to": 53
+    },
+    {
+      "from": 186,
+      "to": 27
+    },
+    {
+      "from": 187,
+      "to": 186
+    },
+    {
+      "from": 188,
+      "to": 186
+    },
+    {
+      "from": 188,
+      "to": 96
+    },
+    {
+      "from": 189,
+      "to": 186
+    },
+    {
+      "from": 190,
+      "to": 189
+    },
+    {
+      "from": 190,
+      "to": 45
+    },
+    {
+      "from": 191,
+      "to": 186
+    },
+    {
+      "from": 191,
+      "to": 394
+    },
+    {
+      "from": 192,
+      "to": 186
+    },
+    {
+      "from": 193,
+      "to": 186
+    },
+    {
+      "from": 193,
+      "to": 206
+    },
+    {
+      "from": 193,
+      "to": 188
+    },
+    {
+      "from": 194,
+      "to": 186
+    },
+    {
+      "from": 194,
+      "to": 151
+    },
+    {
+      "from": 194,
+      "to": 155
+    },
+    {
+      "from": 194,
+      "to": 188
+    },
+    {
+      "from": 195,
+      "to": 27
+    },
+    {
+      "from": 196,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 195
+    },
+    {
+      "from": 198,
+      "to": 197
+    },
+    {
+      "from": 199,
+      "to": 197
+    },
+    {
+      "from": 200,
+      "to": 197
+    },
+    {
+      "from": 201,
+      "to": 197
+    },
+    {
+      "from": 202,
+      "to": 195
+    },
+    {
+      "from": 203,
+      "to": 195
+    },
+    {
+      "from": 203,
+      "to": 176
+    },
+    {
+      "from": 204,
+      "to": 195
+    },
+    {
+      "from": 204,
+      "to": 188
+    },
+    {
+      "from": 205,
+      "to": 195
+    },
+    {
+      "from": 205,
+      "to": 151
+    },
+    {
+      "from": 206,
+      "to": 27
+    },
+    {
+      "from": 207,
+      "to": 206
+    },
+    {
+      "from": 208,
+      "to": 206
+    },
+    {
+      "from": 209,
+      "to": 206
+    },
+    {
+      "from": 209,
+      "to": 208
+    },
+    {
+      "from": 210,
+      "to": 206
+    },
+    {
+      "from": 211,
+      "to": 210
+    },
+    {
+      "from": 212,
+      "to": 210
+    },
+    {
+      "from": 213,
+      "to": 210
+    },
+    {
+      "from": 214,
+      "to": 210
+    },
+    {
+      "from": 215,
+      "to": 206
+    },
+    {
+      "from": 215,
+      "to": 76
+    },
+    {
+      "from": 215,
+      "to": 214
+    },
+    {
+      "from": 216,
+      "to": 206
+    },
+    {
+      "from": 216,
+      "to": 163
+    },
+    {
+      "from": 217,
+      "to": 206
+    },
+    {
+      "from": 217,
+      "to": 164
+    },
+    {
+      "from": 218,
+      "to": 211
+    },
+    {
+      "from": 218,
+      "to": 124
+    },
+    {
+      "from": 219,
+      "to": 210
+    },
+    {
+      "from": 220,
+      "to": 210
+    },
+    {
+      "from": 221,
+      "to": 219
+    },
+    {
+      "from": 222,
+      "to": 206
+    },
+    {
+      "from": 222,
+      "to": 87
+    },
+    {
+      "from": 223,
+      "to": 206
+    },
+    {
+      "from": 223,
+      "to": 151
+    },
+    {
+      "from": 224,
+      "to": 206
+    },
+    {
+      "from": 224,
+      "to": 116
+    },
+    {
+      "from": 225,
+      "to": 206
+    },
+    {
+      "from": 225,
+      "to": 188
+    },
+    {
+      "from": 226,
+      "to": 206
+    },
+    {
+      "from": 226,
+      "to": 151
+    },
+    {
+      "from": 226,
+      "to": 341
+    },
+    {
+      "from": 227,
+      "to": 206
+    },
+    {
+      "from": 227,
+      "to": 288
+    },
+    {
+      "from": 228,
+      "to": 394
+    },
+    {
+      "from": 229,
+      "to": 394
+    },
+    {
+      "from": 229,
+      "to": 218
+    },
+    {
+      "from": 230,
+      "to": 394
+    },
+    {
+      "from": 230,
+      "to": 222
+    },
+    {
+      "from": 231,
+      "to": 4
+    },
+    {
+      "from": 231,
+      "to": 116
+    },
+    {
+      "from": 232,
+      "to": 231
+    },
+    {
+      "from": 233,
+      "to": 232
+    },
+    {
+      "from": 234,
+      "to": 232
+    },
+    {
+      "from": 235,
+      "to": 234
+    },
+    {
+      "from": 236,
+      "to": 235
+    },
+    {
+      "from": 236,
+      "to": 25
+    },
+    {
+      "from": 237,
+      "to": 234
+    },
+    {
+      "from": 237,
+      "to": 25
+    },
+    {
+      "from": 238,
+      "to": 234
+    },
+    {
+      "from": 239,
+      "to": 234
+    },
+    {
+      "from": 239,
+      "to": 119
+    },
+    {
+      "from": 240,
+      "to": 239
+    },
+    {
+      "from": 241,
+      "to": 234
+    },
+    {
+      "from": 241,
+      "to": 116
+    },
+    {
+      "from": 242,
+      "to": 241
+    },
+    {
+      "from": 242,
+      "to": 238
+    },
+    {
+      "from": 243,
+      "to": 241
+    },
+    {
+      "from": 243,
+      "to": 270
+    },
+    {
+      "from": 244,
+      "to": 241
+    },
+    {
+      "from": 244,
+      "to": 270
+    },
+    {
+      "from": 245,
+      "to": 231
+    },
+    {
+      "from": 245,
+      "to": 4
+    },
+    {
+      "from": 246,
+      "to": 236
+    },
+    {
+      "from": 246,
+      "to": 245
+    },
+    {
+      "from": 247,
+      "to": 246
+    },
+    {
+      "from": 248,
+      "to": 246
+    },
+    {
+      "from": 249,
+      "to": 247
+    },
+    {
+      "from": 249,
+      "to": 248
+    },
+    {
+      "from": 249,
+      "to": 384
+    },
+    {
+      "from": 250,
+      "to": 241
+    },
+    {
+      "from": 250,
+      "to": 237
+    },
+    {
+      "from": 251,
+      "to": 241
+    },
+    {
+      "from": 252,
+      "to": 231
+    },
+    {
+      "from": 252,
+      "to": 233
+    },
+    {
+      "from": 253,
+      "to": 252
+    },
+    {
+      "from": 254,
+      "to": 231
+    },
+    {
+      "from": 254,
+      "to": 232
+    },
+    {
+      "from": 255,
+      "to": 254
+    },
+    {
+      "from": 256,
+      "to": 254
+    },
+    {
+      "from": 257,
+      "to": 254
+    },
+    {
+      "from": 257,
+      "to": 256
+    },
+    {
+      "from": 258,
+      "to": 257
+    },
+    {
+      "from": 259,
+      "to": 257
+    },
+    {
+      "from": 259,
+      "to": 241
+    },
+    {
+      "from": 260,
+      "to": 254
+    },
+    {
+      "from": 260,
+      "to": 259
+    },
+    {
+      "from": 261,
+      "to": 260
+    },
+    {
+      "from": 262,
+      "to": 254
+    },
+    {
+      "from": 262,
+      "to": 260
+    },
+    {
+      "from": 263,
+      "to": 254
+    },
+    {
+      "from": 264,
+      "to": 263
+    },
+    {
+      "from": 265,
+      "to": 241
+    },
+    {
+      "from": 265,
+      "to": 270
+    },
+    {
+      "from": 266,
+      "to": 265
+    },
+    {
+      "from": 266,
+      "to": 53
+    },
+    {
+      "from": 267,
+      "to": 265
+    },
+    {
+      "from": 267,
+      "to": 36
+    },
+    {
+      "from": 268,
+      "to": 270
+    },
+    {
+      "from": 268,
+      "to": 76
+    },
+    {
+      "from": 269,
+      "to": 268
+    },
+    {
+      "from": 270,
+      "to": 241
+    },
+    {
+      "from": 271,
+      "to": 233
+    },
+    {
+      "from": 271,
+      "to": 185
+    },
+    {
+      "from": 272,
+      "to": 233
+    },
+    {
+      "from": 272,
+      "to": 266
+    },
+    {
+      "from": 273,
+      "to": 254
+    },
+    {
+      "from": 273,
+      "to": 257
+    },
+    {
+      "from": 274,
+      "to": 232
+    },
+    {
+      "from": 274,
+      "to": 254
+    },
+    {
+      "from": 274,
+      "to": 252
+    },
+    {
+      "from": 275,
+      "to": 231
+    },
+    {
+      "from": 275,
+      "to": 252
+    },
+    {
+      "from": 275,
+      "to": 254
+    },
+    {
+      "from": 276,
+      "to": 19
+    },
+    {
+      "from": 276,
+      "to": 15
+    },
+    {
+      "from": 277,
+      "to": 276
+    },
+    {
+      "from": 278,
+      "to": 277
+    },
+    {
+      "from": 279,
+      "to": 277
+    },
+    {
+      "from": 280,
+      "to": 279
+    },
+    {
+      "from": 281,
+      "to": 279
+    },
+    {
+      "from": 281,
+      "to": 151
+    },
+    {
+      "from": 282,
+      "to": 277
+    },
+    {
+      "from": 283,
+      "to": 282
+    },
+    {
+      "from": 283,
+      "to": 151
+    },
+    {
+      "from": 284,
+      "to": 277
+    },
+    {
+      "from": 284,
+      "to": 285
+    },
+    {
+      "from": 285,
+      "to": 276
+    },
+    {
+      "from": 286,
+      "to": 276
+    },
+    {
+      "from": 286,
+      "to": 31
+    },
+    {
+      "from": 287,
+      "to": 276
+    },
+    {
+      "from": 287,
+      "to": 101
+    },
+    {
+      "from": 287,
+      "to": 151
+    },
+    {
+      "from": 288,
+      "to": 276
+    },
+    {
+      "from": 288,
+      "to": 206
+    },
+    {
+      "from": 289,
+      "to": 276
+    },
+    {
+      "from": 289,
+      "to": 291
+    },
+    {
+      "from": 290,
+      "to": 276
+    },
+    {
+      "from": 290,
+      "to": 10
+    },
+    {
+      "from": 291,
+      "to": 19
+    },
+    {
+      "from": 292,
+      "to": 291
+    },
+    {
+      "from": 293,
+      "to": 291
+    },
+    {
+      "from": 294,
+      "to": 291
+    },
+    {
+      "from": 295,
+      "to": 291
+    },
+    {
+      "from": 296,
+      "to": 295
+    },
+    {
+      "from": 296,
+      "to": 27
+    },
+    {
+      "from": 297,
+      "to": 295
+    },
+    {
+      "from": 297,
+      "to": 33
+    },
+    {
+      "from": 298,
+      "to": 295
+    },
+    {
+      "from": 298,
+      "to": 92
+    },
+    {
+      "from": 299,
+      "to": 295
+    },
+    {
+      "from": 299,
+      "to": 209
+    },
+    {
+      "from": 300,
+      "to": 291
+    },
+    {
+      "from": 301,
+      "to": 300
+    },
+    {
+      "from": 301,
+      "to": 295
+    },
+    {
+      "from": 302,
+      "to": 300
+    },
+    {
+      "from": 303,
+      "to": 291
+    },
+    {
+      "from": 304,
+      "to": 303
+    },
+    {
+      "from": 304,
+      "to": 232
+    },
+    {
+      "from": 305,
+      "to": 291
+    },
+    {
+      "from": 305,
+      "to": 51
+    },
+    {
+      "from": 306,
+      "to": 8
+    },
+    {
+      "from": 306,
+      "to": 116
+    },
+    {
+      "from": 307,
+      "to": 306
+    },
+    {
+      "from": 308,
+      "to": 306
+    },
+    {
+      "from": 309,
+      "to": 308
+    },
+    {
+      "from": 310,
+      "to": 305
+    },
+    {
+      "from": 310,
+      "to": 308
+    },
+    {
+      "from": 311,
+      "to": 308
+    },
+    {
+      "from": 311,
+      "to": 367
+    },
+    {
+      "from": 312,
+      "to": 308
+    },
+    {
+      "from": 312,
+      "to": 116
+    },
+    {
+      "from": 313,
+      "to": 309
+    },
+    {
+      "from": 314,
+      "to": 313
+    },
+    {
+      "from": 315,
+      "to": 308
+    },
+    {
+      "from": 316,
+      "to": 291
+    },
+    {
+      "from": 317,
+      "to": 316
+    },
+    {
+      "from": 317,
+      "to": 43
+    },
+    {
+      "from": 318,
+      "to": 316
+    },
+    {
+      "from": 319,
+      "to": 318
+    },
+    {
+      "from": 320,
+      "to": 318
+    },
+    {
+      "from": 321,
+      "to": 66
+    },
+    {
+      "from": 321,
+      "to": 316
+    },
+    {
+      "from": 322,
+      "to": 316
+    },
+    {
+      "from": 323,
+      "to": 316
+    },
+    {
+      "from": 323,
+      "to": 300
+    },
+    {
+      "from": 324,
+      "to": 44
+    },
+    {
+      "from": 324,
+      "to": 300
+    },
+    {
+      "from": 324,
+      "to": 68
+    },
+    {
+      "from": 325,
+      "to": 306
+    },
+    {
+      "from": 325,
+      "to": 50
+    },
+    {
+      "from": 326,
+      "to": 3
+    },
+    {
+      "from": 326,
+      "to": 8
+    },
+    {
+      "from": 327,
+      "to": 326
+    },
+    {
+      "from": 328,
+      "to": 326
+    },
+    {
+      "from": 329,
+      "to": 326
+    },
+    {
+      "from": 329,
+      "to": 166
+    },
+    {
+      "from": 330,
+      "to": 329
+    },
+    {
+      "from": 330,
+      "to": 181
+    },
+    {
+      "from": 330,
+      "to": 143
+    },
+    {
+      "from": 331,
+      "to": 329
+    },
+    {
+      "from": 331,
+      "to": 330
+    },
+    {
+      "from": 331,
+      "to": 341
+    },
+    {
+      "from": 332,
+      "to": 326
+    },
+    {
+      "from": 332,
+      "to": 166
+    },
+    {
+      "from": 332,
+      "to": 52
+    },
+    {
+      "from": 333,
+      "to": 326
+    },
+    {
+      "from": 333,
+      "to": 166
+    },
+    {
+      "from": 333,
+      "to": 52
+    },
+    {
+      "from": 334,
+      "to": 326
+    },
+    {
+      "from": 334,
+      "to": 5
+    },
+    {
+      "from": 334,
+      "to": 151
+    },
+    {
+      "from": 335,
+      "to": 334
+    },
+    {
+      "from": 335,
+      "to": 143
+    },
+    {
+      "from": 336,
+      "to": 332
+    },
+    {
+      "from": 336,
+      "to": 333
+    },
+    {
+      "from": 336,
+      "to": 334
+    },
+    {
+      "from": 336,
+      "to": 341
+    },
+    {
+      "from": 337,
+      "to": 332
+    },
+    {
+      "from": 337,
+      "to": 333
+    },
+    {
+      "from": 337,
+      "to": 334
+    },
+    {
+      "from": 338,
+      "to": 326
+    },
+    {
+      "from": 339,
+      "to": 338
+    },
+    {
+      "from": 339,
+      "to": 75
+    },
+    {
+      "from": 340,
+      "to": 326
+    },
+    {
+      "from": 341,
+      "to": 340
+    },
+    {
+      "from": 342,
+      "to": 340
+    },
+    {
+      "from": 343,
+      "to": 341
+    },
+    {
+      "from": 344,
+      "to": 341
+    },
+    {
+      "from": 345,
+      "to": 341
+    },
+    {
+      "from": 345,
+      "to": 84
+    },
+    {
+      "from": 346,
+      "to": 341
+    },
+    {
+      "from": 346,
+      "to": 330
+    },
+    {
+      "from": 347,
+      "to": 341
+    },
+    {
+      "from": 347,
+      "to": 334
+    },
+    {
+      "from": 348,
+      "to": 341
+    },
+    {
+      "from": 349,
+      "to": 341
+    },
+    {
+      "from": 349,
+      "to": 306
+    },
+    {
+      "from": 350,
+      "to": 341
+    },
+    {
+      "from": 351,
+      "to": 326
+    },
+    {
+      "from": 352,
+      "to": 326
+    },
+    {
+      "from": 352,
+      "to": 5
+    },
+    {
+      "from": 352,
+      "to": 143
+    },
+    {
+      "from": 353,
+      "to": 326
+    },
+    {
+      "from": 354,
+      "to": 341
+    },
+    {
+      "from": 354,
+      "to": 342
+    },
+    {
+      "from": 355,
+      "to": 354
+    },
+    {
+      "from": 355,
+      "to": 50
+    },
+    {
+      "from": 356,
+      "to": 326
+    },
+    {
+      "from": 356,
+      "to": 151
+    },
+    {
+      "from": 357,
+      "to": 326
+    },
+    {
+      "from": 357,
+      "to": 151
+    },
+    {
+      "from": 358,
+      "to": 326
+    },
+    {
+      "from": 358,
+      "to": 206
+    },
+    {
+      "from": 359,
+      "to": 143
+    },
+    {
+      "from": 359,
+      "to": 326
+    },
+    {
+      "from": 360,
+      "to": 326
+    },
+    {
+      "from": 360,
+      "to": 328
+    },
+    {
+      "from": 361,
+      "to": 1
+    },
+    {
+      "from": 361,
+      "to": 8
+    },
+    {
+      "from": 362,
+      "to": 361
+    },
+    {
+      "from": 362,
+      "to": 5
+    },
+    {
+      "from": 363,
+      "to": 362
+    },
+    {
+      "from": 364,
+      "to": 4
+    },
+    {
+      "from": 364,
+      "to": 116
+    },
+    {
+      "from": 364,
+      "to": 5
+    },
+    {
+      "from": 365,
+      "to": 364
+    },
+    {
+      "from": 366,
+      "to": 367
+    },
+    {
+      "from": 367,
+      "to": 19
+    },
+    {
+      "from": 367,
+      "to": 365
+    },
+    {
+      "from": 368,
+      "to": 367
+    },
+    {
+      "from": 369,
+      "to": 368
+    },
+    {
+      "from": 370,
+      "to": 369
+    },
+    {
+      "from": 371,
+      "to": 361
+    },
+    {
+      "from": 372,
+      "to": 371
+    },
+    {
+      "from": 373,
+      "to": 50
+    },
+    {
+      "from": 374,
+      "to": 373
+    },
+    {
+      "from": 374,
+      "to": 19
+    },
+    {
+      "from": 375,
+      "to": 374
+    },
+    {
+      "from": 376,
+      "to": 365
+    },
+    {
+      "from": 376,
+      "to": 50
+    },
+    {
+      "from": 377,
+      "to": 364
+    },
+    {
+      "from": 378,
+      "to": 364
+    },
+    {
+      "from": 379,
+      "to": 23
+    },
+    {
+      "from": 379,
+      "to": 50
+    },
+    {
+      "from": 380,
+      "to": 132
+    },
+    {
+      "from": 380,
+      "to": 379
+    },
+    {
+      "from": 381,
+      "to": 269
+    },
+    {
+      "from": 381,
+      "to": 122
+    },
+    {
+      "from": 382,
+      "to": 381
+    },
+    {
+      "from": 383,
+      "to": 381
+    },
+    {
+      "from": 383,
+      "to": 163
+    },
+    {
+      "from": 384,
+      "to": 138
+    },
+    {
+      "from": 384,
+      "to": 128
+    },
+    {
+      "from": 385,
+      "to": 128
+    },
+    {
+      "from": 385,
+      "to": 138
+    },
+    {
+      "from": 386,
+      "to": 120
+    },
+    {
+      "from": 386,
+      "to": 206
+    },
+    {
+      "from": 387,
+      "to": 386
+    },
+    {
+      "from": 387,
+      "to": 190
+    },
+    {
+      "from": 388,
+      "to": 25
+    },
+    {
+      "from": 388,
+      "to": 77
+    },
+    {
+      "from": 389,
+      "to": 27
+    },
+    {
+      "from": 389,
+      "to": 119
+    },
+    {
+      "from": 390,
+      "to": 389
+    },
+    {
+      "from": 391,
+      "to": 232
+    },
+    {
+      "from": 391,
+      "to": 384
+    },
+    {
+      "from": 392,
+      "to": 232
+    },
+    {
+      "from": 393,
+      "to": 31
+    },
+    {
+      "from": 393,
+      "to": 6
+    },
+    {
+      "from": 394,
+      "to": 367
+    },
+    {
+      "from": 394,
+      "to": 206
+    },
+    {
+      "from": 394,
+      "to": 151
+    },
+    {
+      "from": 395,
+      "to": 367
+    },
+    {
+      "from": 395,
+      "to": 269
+    },
+    {
+      "from": 396,
+      "to": 367
+    },
+    {
+      "from": 396,
+      "to": 138
+    },
+    {
+      "from": 397,
+      "to": 151
+    },
+    {
+      "from": 397,
+      "to": 381
+    },
+    {
+      "from": 397,
+      "to": 342
+    },
+    {
+      "from": 398,
+      "to": 163
+    },
+    {
+      "from": 398,
+      "to": 216
+    },
+    {
+      "from": 399,
+      "to": 285
+    },
+    {
+      "from": 399,
+      "to": 270
+    },
+    {
+      "from": 400,
+      "to": 374
+    },
+    {
+      "from": 400,
+      "to": 50
+    },
+    {
+      "from": 400,
+      "to": 377
+    },
+    {
+      "from": 400,
+      "to": 378
+    }
+  ]
+}
