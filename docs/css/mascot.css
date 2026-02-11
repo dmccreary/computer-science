@@ -144,6 +144,17 @@
   margin-right: 0.4em;
 }
 
+/* Left-align title text and remove default icon spacing in mascot admonitions */
+.md-typeset [class*="mascot-"] > .admonition-title,
+.md-typeset [class*="mascot-"] > summary {
+  text-align: left;
+  padding-left: 0.8rem;
+}
+.md-typeset [class*="mascot-"] > .admonition-title::before,
+.md-typeset [class*="mascot-"] > summary::before {
+  display: none;
+}
+
 /* --- Mascot image in admonition body (larger, decorative) --- */
 .mascot-admonition-img {
   float: right;

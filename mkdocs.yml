@@ -36,7 +36,13 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
-    - MicroSim 1: sims/name-1/index.md
+    - ASCII Character Map: sims/ascii-character-map/index.md
+    - Binary Number Explorer: sims/binary-number-explorer/index.md
+    - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
+    - Computational Thinking Pillars: sims/computational-thinking-pillars/index.md
+    - Inside a Computer: sims/inside-a-computer/index.md
+
+
  
   - Learning Graph:
     - Introduction: learning-graph/index.md

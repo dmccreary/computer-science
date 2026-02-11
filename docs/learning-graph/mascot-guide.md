@@ -90,6 +90,8 @@ Save each generated image to `docs/img/mascot/` with the filename shown.
 **1. Welcome Pose** → `welcome.png`
 
 ```
+Please generate a new png image on a transparent background.
+The title is "Monty Welcome"
 A friendly cartoon illustration of Monty the Python, a pedagogical mascot
 for an AP Computer Science textbook. Monty is a bright green python snake
 with gold accents and a warm, expressive face. Monty wears a small gold
@@ -107,6 +109,8 @@ with a warm, welcoming expression. The pose suggests "welcome" and
 **2. Thinking Pose** → `thinking.png`
 
 ```
+Please generate a new png image on a transparent background.
+
 A friendly cartoon illustration of Monty the Python, a pedagogical mascot
 for an AP Computer Science textbook. Monty is a bright green python snake
 with gold accents and a warm, expressive face. Monty wears a small gold
@@ -124,6 +128,8 @@ suggests deep thinking and discovery.
 **3. Tip Pose** → `tip.png`
 
 ```
+Please generate a new png image on a transparent background.
+This one is called Monty shares a tip.
 A friendly cartoon illustration of Monty the Python, a pedagogical mascot
 for an AP Computer Science textbook. Monty is a bright green python snake
 with gold accents and a warm, expressive face. Monty wears a small gold
@@ -136,11 +142,14 @@ in image.
 Monty is pointing upward with the tip of his tail as if sharing an
 important tip. Expression is helpful and knowing. A small star sparkles
 near the pointing gesture.
+Do not put any extra padding around the image.
 ```
 
 **4. Warning Pose** → `warning.png`
 
 ```
+Please generate a new png image on a transparent background.
+The title is "Monty gives a gentle warning"
 A friendly cartoon illustration of Monty the Python, a pedagogical mascot
 for an AP Computer Science textbook. Monty is a bright green python snake
 with gold accents and a warm, expressive face. Monty wears a small gold
@@ -158,6 +167,8 @@ or caution symbol appears nearby.
 **5. Celebration Pose** → `celebration.png`
 
 ```
+Please generate a new png image on a transparent background.
+The title is "Monty Celebrates"
 A friendly cartoon illustration of Monty the Python, a pedagogical mascot
 for an AP Computer Science textbook. Monty is a bright green python snake
 with gold accents and a warm, expressive face. Monty wears a small gold
@@ -169,12 +180,14 @@ white background, suitable for embedding in educational content. No text
 in image.
 Monty is coiled in a joyful spiral with his tail raised high in
 celebration. Expression is joyful and proud. Small confetti and stars
-float around the character.
+float around the character. Remove all the extra space around the image.
 ```
 
 **6. Encouraging Pose** → `encouraging.png`
 
 ```
+Please generate a new png image on a transparent background.
+The title is "Monty Encourages"
 A friendly cartoon illustration of Monty the Python, a pedagogical mascot
 for an AP Computer Science textbook. Monty is a bright green python snake
 with gold accents and a warm, expressive face. Monty wears a small gold
