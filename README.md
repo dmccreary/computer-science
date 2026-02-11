@@ -36,12 +36,14 @@ The project follows a structured learning-graph approach with 400 mapped concept
 | Quiz Files | 0 |
 | Quiz Questions | 0 |
 | Glossary Terms | 400 |
-| FAQ Questions | 0 |
+| FAQ Questions | 45 |
+| FAQ Quality Score | 83/100 |
+| FAQ Concept Coverage | 63.2% (253/400) |
 | References Listed | 0 |
 | Images (`png/jpg/svg/gif/webp`) | 13 |
 | Mermaid Diagrams | 0 |
 
-**Completion Status:** Core textbook and learning graph are substantial; FAQ, references, and quiz coverage are not yet present in `docs/`.
+**Completion Status:** Core textbook, learning graph, and FAQ are in place. Reference and quiz coverage are still pending in `docs/`.
 
 ## Getting Started
 
