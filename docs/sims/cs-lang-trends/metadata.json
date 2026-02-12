@@ -1,0 +1,66 @@
+{
+  "title": "Python vs Java Language Popularity",
+  "description": "Interactive line chart comparing the popularity of Python and Java from 2010-2025, showing how Python overtook Java as the dominant language in computer science education",
+  "creator": "Dan McCreary",
+  "date": "2026-02-12",
+  "subject": [
+    "programming languages",
+    "Python",
+    "Java",
+    "CS education trends",
+    "TIOBE index"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "publisher": "dmccreary.github.io",
+  "educationalLevel": "high school",
+  "learningResourceType": "visualization",
+  "audience": "students, educators",
+  "bloomLevel": [
+    "Remember",
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "programming languages",
+    "data visualization",
+    "trend analysis",
+    "Python",
+    "Java"
+  ],
+  "prerequisites": [],
+  "library": "Chart.js",
+  "visualizationType": [
+    "chart",
+    "graph",
+    "interactive-demo",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the shift in programming language popularity from Java to Python over the past 15 years",
+    "Identify the approximate year when Python overtook Java in popularity",
+    "Explain why Python has become the dominant first language in CS education"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "remember",
+      "understand",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "identify",
+      "compare",
+      "explain"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate"
+    ],
+    "interactionStyle": "observe"
+  }
+}

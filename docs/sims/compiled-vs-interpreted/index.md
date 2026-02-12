@@ -11,7 +11,7 @@ quality_score: 0
 
 # Compiled vs. Interpreted Languages
 
-<iframe src="main.html" height="520px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="540px" width="100%" scrolling="no"></iframe>
 
 [Run the Compiled vs. Interpreted Languages MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -29,7 +29,7 @@ TODO: Describe how students should interact with this MicroSim.
 
 ```html
 <iframe src="main.html"
-        height="520px"
+        height="540px"
         width="100%"
         scrolling="no"></iframe>
 ```

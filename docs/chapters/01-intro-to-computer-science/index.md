@@ -655,6 +655,28 @@ Out of all those programming languages, why are we learning **Python**? Great qu
 
 Python was created in 1991 by Guido van Rossum, who named it after the British comedy group *Monty Python's Flying Circus* (not the snake — though snakes have become the unofficial mascot). Van Rossum wanted a language that was fun to use, and he succeeded.
 
+Don't just take our word for it — the data backs it up. The chart below shows how Python's popularity has skyrocketed while Java, once the go-to language for classrooms and businesses, has been on a steady decline since 2010.
+
+#### Diagram: Python vs Java Language Trends
+
+<iframe src="../../sims/cs-lang-trends/main.html" width="100%" height="502px" scrolling="no"></iframe>
+
+### Python Owns the Hottest Fields
+
+The areas where the most exciting work is happening — **data science, machine learning, and artificial intelligence** — are almost entirely Python territory. Libraries like NumPy, pandas, scikit-learn, TensorFlow, and PyTorch form the backbone of modern AI and data analysis, and they're all Python-first. Java simply isn't used in these fields. If you want to build a neural network, train a language model, or analyze a massive dataset, you're going to be writing Python.
+
+### Does Your First Language Matter?
+
+You'll sometimes hear people say "it doesn't matter what programming language you learn first — the concepts transfer." There's a grain of truth to that — loops, conditionals, and functions work the same way in most languages. But in today's job market, that advice is increasingly outdated. Employers aren't just looking for "someone who can code." They want candidates with **deep knowledge of the Python ecosystem** — the data science libraries, the ML frameworks, the automation tools. Knowing how to wrangle data with pandas or build a model with PyTorch is what differentiates job candidates, and those skills are Python-specific. Starting with Python means you're building job-ready skills from day one.
+
+### Python and AI: A Virtuous Cycle
+
+Here's a trend that's accelerating Python's dominance even further: **AI systems themselves prefer Python**. Because there is such a vast amount of high-quality open-source Python code on the internet, large language models (LLMs) have far more Python training data than any other language. When you ask an AI assistant to solve an analytics problem, write a data pipeline, or build a machine learning model, it will almost always generate Python code. This creates a virtuous cycle — more Python code means better AI training, which means more people using Python, which means even more Python code.
+
+### Python Beyond the Desktop
+
+Python isn't just for laptops and servers anymore. **MicroPython**, a lightweight version of Python designed for microcontrollers, has become increasingly popular for real-time control systems, robotics, and hardware projects. Students can use the same language they learn in class to control LEDs, read sensors, and build robots with devices like the Raspberry Pi Pico. The intelligent textbook [Learning MicroPython](https://dmccreary.github.io/learning-micropython/) is an excellent resource for students who want to explore this hands-on side of Python.
+
 ### The Python Interpreter
 
 Since Python is an interpreted language, it uses the **Python interpreter** to run your code. The interpreter reads your Python instructions, translates them into something the computer understands, and executes them.
