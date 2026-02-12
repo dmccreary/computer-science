@@ -33,6 +33,42 @@ let legendY;
 // Category colors
 let colorUppercase, colorLowercase, colorDigit, colorSymbol, colorSpace;
 
+// Symbol character names
+let symbolNames = {
+    33: 'Exclamation mark',
+    34: 'Double quote',
+    35: 'Hash / Number sign',
+    36: 'Dollar sign',
+    37: 'Percent sign',
+    38: 'Ampersand',
+    39: 'Single quote',
+    40: 'Left parenthesis',
+    41: 'Right parenthesis',
+    42: 'Asterisk',
+    43: 'Plus sign',
+    44: 'Comma',
+    45: 'Hyphen / Minus',
+    46: 'Period / Full stop',
+    47: 'Forward slash',
+    58: 'Colon',
+    59: 'Semicolon',
+    60: 'Less-than sign',
+    61: 'Equals sign',
+    62: 'Greater-than sign',
+    63: 'Question mark',
+    64: 'At sign',
+    91: 'Left square bracket',
+    92: 'Backslash',
+    93: 'Right square bracket',
+    94: 'Caret / Circumflex',
+    95: 'Underscore',
+    96: 'Backtick / Grave accent',
+    123: 'Left curly brace',
+    124: 'Vertical bar / Pipe',
+    125: 'Right curly brace',
+    126: 'Tilde'
+};
+
 function setup() {
     updateCanvasSize();
     const canvas = createCanvas(canvasWidth, canvasHeight);
@@ -182,8 +218,12 @@ function drawTooltip(code) {
     textSize(13);
     textAlign(LEFT, TOP);
 
-    // Measure tooltip size
-    let lines = [charLabel, decLabel, binLabel, catLabel];
+    // Build tooltip lines
+    let lines = [charLabel];
+    if (symbolNames[code]) {
+        lines.push('Name: ' + symbolNames[code]);
+    }
+    lines.push(decLabel, binLabel, catLabel);
     let maxW = 0;
     for (let i = 0; i < lines.length; i++) {
         let w = textWidth(lines[i]);

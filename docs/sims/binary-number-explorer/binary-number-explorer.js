@@ -29,7 +29,7 @@ function updateCanvasSize() {
   // Calculate the available width from the parent container
   let mainEl = document.querySelector('main');
   if (mainEl) {
-    canvasWidth = Math.min(mainEl.offsetWidth, 580);
+    canvasWidth = mainEl.offsetWidth;
   }
   if (canvasWidth < 300) canvasWidth = 300;
   canvasHeight = drawHeight + controlHeight;

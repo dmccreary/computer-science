@@ -1,0 +1,59 @@
+{
+  "title": "Symbol Character Quiz",
+  "creator": "Dan McCreary",
+  "subject": "High School Computer Science",
+  "description": "Interactive quiz where students identify ASCII symbol characters by name",
+  "date": "2026-02-12",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "ASCII Symbol Characters",
+    "learningObjectives": [
+      "Identify common programming symbols by their standard names",
+      "Recall the names of punctuation and special characters used in code"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "ASCII Character Map MicroSim"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 610
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Gamified quiz with immediate feedback",
+    "keyQuestions": [
+      "What is the name of the # character?",
+      "Which symbol is called a tilde?",
+      "What is the difference between a forward slash and a backslash?"
+    ],
+    "commonMisconceptions": [
+      "Confusing forward slash (/) with backslash (\\)",
+      "Calling curly braces 'parentheses'",
+      "Not knowing the name 'ampersand' for &"
+    ],
+    "assessmentOpportunities": [
+      "Quiz score tracking",
+      "Identifying commonly confused symbols"
+    ]
+  },
+  "chapter": "01-intro-to-computer-science"
+}
