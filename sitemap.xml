@@ -189,6 +189,10 @@
          <lastmod>2026-02-12</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/args-vs-params/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/arithmetic-operators/</loc>
          <lastmod>2026-02-12</lastmod>
     </url>
@@ -241,6 +245,18 @@
          <lastmod>2026-02-12</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/function-anatomy/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/function-call-flow/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/function-pattern-gallery/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/if-elif-else-flowchart/</loc>
          <lastmod>2026-02-12</lastmod>
     </url>
@@ -254,6 +270,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/loop-patterns-comparison/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/modular-design-builder/</loc>
          <lastmod>2026-02-12</lastmod>
     </url>
     <url>
@@ -306,6 +326,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/truthiness-tester/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/variable-scope-visualizer/</loc>
          <lastmod>2026-02-12</lastmod>
     </url>
 </urlset>
