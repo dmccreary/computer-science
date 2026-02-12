@@ -53,8 +53,8 @@ let symbolNames = {
 };
 
 // Grid layout: 8 columns x 4 rows = 32 cells for 31 symbols
-let cols = 8;
-let rows = 4;
+let gridCols = 8;
+let gridRows = 4;
 
 // Grid positioning
 let gridX, gridY, gridW, gridH, cellW, cellH;
@@ -136,8 +136,8 @@ function draw() {
     gridY = topPad;
     gridW = canvasWidth - margin * 2;
     gridH = 280;
-    cellW = gridW / cols;
-    cellH = gridH / rows;
+    cellW = gridW / gridCols;
+    cellH = gridH / gridRows;
 
     // Title
     noStroke();
@@ -149,10 +149,10 @@ function draw() {
     // Draw grid cells
     for (let i = 0; i < symbolCodes.length; i++) {
         let code = symbolCodes[i];
-        let col = i % cols;
-        let row = Math.floor(i / cols);
+        let col = i % gridCols;
+        let r = Math.floor(i / gridCols);
         let cx = gridX + col * cellW;
-        let cy = gridY + row * cellH;
+        let cy = gridY + r * cellH;
 
         // Check hover
         let isHovered = (mouseX >= cx && mouseX < cx + cellW &&
@@ -272,10 +272,10 @@ function mousePressed() {
     // Check if click is on a grid cell
     for (let i = 0; i < symbolCodes.length; i++) {
         let code = symbolCodes[i];
-        let col = i % cols;
-        let row = Math.floor(i / cols);
+        let col = i % gridCols;
+        let r = Math.floor(i / gridCols);
         let cx = gridX + col * cellW;
-        let cy = gridY + row * cellH;
+        let cy = gridY + r * cellH;
 
         if (mouseX >= cx && mouseX < cx + cellW &&
             mouseY >= cy && mouseY < cy + cellH) {
@@ -372,15 +372,6 @@ function updateAndDrawConfetti() {
 
 function isConfettiActive() {
     return confettiParticles.length > 0;
-}
-
-// ---- Shuffle utility ----
-function shuffle(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
 }
 
 // ---- Resize handling ----
