@@ -133,7 +133,7 @@ print(word[6])   # IndexError: string index out of range
 
 #### Diagram: String Indexing Visualizer
 
-<iframe src="../../sims/string-indexing-visualizer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/string-indexing-visualizer/main.html" width="100%" height="402px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>String Indexing Visualizer MicroSim</summary>
@@ -267,7 +267,7 @@ Here's a handy reference table for common slicing patterns:
 
 #### Diagram: String Slicing Playground
 
-<iframe src="../../sims/string-slicing-playground/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/string-slicing-playground/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>String Slicing Playground MicroSim</summary>
@@ -483,7 +483,7 @@ Notice the syntax: you call `.join()` on the *separator* string, not on the list
 
 #### Diagram: Split and Join Visualizer
 
-<iframe src="../../sims/split-join-visualizer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/split-join-visualizer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Split and Join Visualizer MicroSim</summary>
@@ -633,7 +633,7 @@ Both f-strings and `.format()` work great. In this course, we'll mostly use f-st
 
 #### Diagram: String Formatting Comparison
 
-<iframe src="../../sims/string-formatting-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/string-formatting-comparison/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>String Formatting Comparison MicroSim</summary>
@@ -857,7 +857,7 @@ print(is_palindrome("A man a plan a canal Panama"))  # True
 
 #### Diagram: Palindrome Checker
 
-<iframe src="../../sims/palindrome-checker/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/palindrome-checker/main.html" width="100%" height="452px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Palindrome Checker MicroSim</summary>
@@ -967,7 +967,7 @@ Here's a comprehensive reference for the string methods covered in this chapter:
 
 #### Diagram: String Methods Explorer
 
-<iframe src="../../sims/string-methods-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/string-methods-explorer/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>String Methods Explorer MicroSim</summary>
