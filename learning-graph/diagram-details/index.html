@@ -1,0 +1,4832 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/computer-science/learning-graph/diagram-details/">
+      
+      
+        <link rel="prev" href="../diagram-table/">
+      
+      
+        <link rel="next" href="../mascot-guide/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Diagram Details - Computer Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7V8E82XTCL"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7V8E82XTCL",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7V8E82XTCL",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Diagram Details - Computer Science">
+      
+        <meta property="og:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/learning-graph/diagram-details.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/computer-science/learning-graph/diagram-details/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Diagram Details - Computer Science">
+      
+        <meta name="twitter:description" content="An intelligent textbook for teaching AP Computer Science with Python.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/learning-graph/diagram-details.png">
+      
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#diagram-and-microsim-details" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Computer Science" class="md-header__button md-logo" aria-label="Computer Science" data-md-component="logo">
+      
+  <img src="../../img/monty-180.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Computer Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Diagram Details
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Computer Science" class="md-nav__button md-logo" aria-label="Computer Science" data-md-component="logo">
+      
+  <img src="../../img/monty-180.png" alt="logo">
+
+    </a>
+    Computer Science
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Learning Graph
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course-description-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description Assessment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Concept Enumeration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graph Quality Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-taxonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Concept Taxonomy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../taxonomy-distribution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Taxonomy Distribution Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary-quality-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary Quality Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq-quality-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ Quality Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq-coverage-gaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ Coverage Gaps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz-generation-report.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quiz Generation Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progress.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Progress Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../claude-usage-limits.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usage Limits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../book-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Book Metrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter Metrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagram-table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagram Table
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Diagram Details
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagram Details
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-1-intro-to-computer-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 1: Intro To Computer Science
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 1: Intro To Computer Science">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ascii-character-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASCII Character Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-number-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Number Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiled-vs-interpreted-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiled vs. Interpreted Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computational-thinking-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computational Thinking Pillars
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inside-a-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inside a Computer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-python-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 2: Python Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 2: Python Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operators-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Operators Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-readability-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Readability Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expressions-vs-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expressions vs. Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-data-types-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Data Types Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-repl-vs-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python REPL vs. Scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-operations-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Operations Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-boolean-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 3: Boolean Logic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 3: Boolean Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operator-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison Operator Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-morgans-laws-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      De Morgan's Laws Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-truth-table-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Truth Table Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical-operator-venn-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logical Operator Venn Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order-of-operations-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Operations Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#truthiness-tester" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truthiness Tester
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-control-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 4: Control Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 4: Control Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#break-vs-continue-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break vs Continue Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-flow-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control Flow Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-elif-else-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      If-Elif-Else Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-patterns-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Patterns Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-loop-grid-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Loop Grid Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Range Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-working-with-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 5: Working With Strings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 5: Working With Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#palindrome-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Palindrome Checker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-and-join-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Split and Join Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-formatting-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Formatting Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-indexing-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Indexing Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-methods-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Methods Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-slicing-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Slicing Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-6-functions-and-modular-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 6: Functions And Modular Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 6: Functions And Modular Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments-vs-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments vs Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-call-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Call Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-pattern-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Pattern Gallery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modular-design-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular Design Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-scope-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Scope Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-7-higher-order-functions-and-recursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 7: Higher Order Functions And Recursion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 7: Higher Order Functions And Recursion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#factorial-recursion-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factorial Recursion Tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibonacci-tree-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibonacci Tree Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#higher-order-functions-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher-Order Functions Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map-filter-reduce-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map Filter Reduce Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursion-vs-iteration-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion vs Iteration Side-by-Side
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursive-call-stack-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Call Stack Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-8-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 8: Lists
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 8: Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-creation-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Creation Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-indexing-and-slicing-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Indexing and Slicing Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-methods-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Methods Playground
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-traversal-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Traversal Animator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-list-grid-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested List Grid Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zip-function-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zip Function Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-9-advanced-list-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 9: Advanced List Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 9: Advanced List Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-aliasing-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Aliasing Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-operations-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Operations Cheat Sheet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-statistics-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Statistics Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queue-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Queue Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shallow-vs-deep-copy-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shallow vs Deep Copy Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-10-tuples-and-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 10: Tuples And Sets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 10: Tuples And Sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-collections-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Collections Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-duplicates-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing Duplicates Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple-and-set-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuple and Set Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple-vs-list-mutability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuple vs List Mutability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuples-vs-lists-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuples vs Lists Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#venn-diagram-set-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Venn Diagram Set Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-11-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 11: Dictionaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 11: Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#counting-and-grouping-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting and Grouping Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dict-vs-list-lookup-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dict vs List Lookup Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-iteration-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Iteration Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-structure-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Structure Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-use-cases-infographic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Use Cases Infographic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-dictionary-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Dictionary Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-12-classes-and-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 12: Classes And Objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 12: Classes And Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-vs-object-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class vs. Object Visual
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dog-class-complete-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dog Class Complete Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encapsulation-bank-vault-analogy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encapsulation Bank Vault Analogy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-vs-class-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance vs. Class Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oop-benefits-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      OOP Benefits Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-interaction-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Interaction Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-13-inheritance-and-polymorphism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 13: Inheritance And Polymorphism
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 13: Inheritance And Polymorphism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animal-class-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animal Class Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dunder-methods-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dunder Methods Cheat Sheet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music-library-class-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Music Library Class Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymorphism-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polymorphism Playground
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-hierarchy-with-abstract-base-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape Hierarchy with Abstract Base Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uml-class-diagram-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      UML Class Diagram Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-14-errors-and-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 14: Errors And Exceptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 14: Errors And Exceptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-type-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Type Identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-exception-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Exception Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#try-except-finally-flow-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Try-Except-Finally Flow Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-15-file-input-and-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 15: File Input And Output
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 15: File Input And Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv-file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV File Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-format-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Format Decision Tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-io-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      File I/O Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-to-dictionary-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON to Dictionary Mapping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-methods-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Read Methods Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-statement-vs-manual-close" class="md-nav__link">
+    <span class="md-ellipsis">
+      With Statement vs Manual Close
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-16-software-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 16: Software Engineering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 16: Software Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comment-quality-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment Quality Checker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-workflow-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Workflow Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-development-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Development Lifecycle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-17-testing-and-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 17: Testing And Debugging
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 17: Testing And Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tdd-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      TDD Cycle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-test-runner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Test Runner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-debugging-strategy-should-you-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which Debugging Strategy Should You Use?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-18-searching-and-sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 18: Searching And Sorting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 18: Searching And Sorting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#big-o-growth-rate-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Big-O Growth Rate Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-search-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search Step-by-Step
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-search-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear Search Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-19-algorithm-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 19: Algorithm Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 19: Algorithm Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chapters19-algorithm-analysisindexmddiagram-" class="md-nav__link">
+    <span class="md-ellipsis">
+      [](../chapters/19-algorithm-analysis/index.md#diagram-)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexity-class-name-example-operations-for-n-1000" class="md-nav__link">
+    <span class="md-ellipsis">
+      | Complexity Class | Name | Example | Operations for ( n = 1{,}000 ) |
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategy-approach-when-to-use-guarantee" class="md-nav__link">
+    <span class="md-ellipsis">
+      | Strategy | Approach | When to Use | Guarantee |
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-20-advanced-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 20: Advanced Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 20: Advanced Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collections-module-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collections Module Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-manager-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Manager Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generator-vs-list-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generator vs List Memory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-decorators-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Decorators Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-best-practices-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Best Practices Checklist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern-tester" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regex Pattern Tester
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../microsim-quality-report.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MicroSim Quality Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mascot-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mascot Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-1-intro-to-computer-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 1: Intro To Computer Science
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 1: Intro To Computer Science">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ascii-character-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASCII Character Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-number-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Number Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiled-vs-interpreted-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiled vs. Interpreted Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computational-thinking-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computational Thinking Pillars
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inside-a-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inside a Computer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-python-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 2: Python Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 2: Python Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operators-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Operators Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-readability-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Readability Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expressions-vs-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expressions vs. Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-data-types-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Data Types Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-repl-vs-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python REPL vs. Scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-operations-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Operations Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-boolean-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 3: Boolean Logic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 3: Boolean Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operator-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison Operator Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-morgans-laws-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      De Morgan's Laws Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-truth-table-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Truth Table Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical-operator-venn-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logical Operator Venn Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order-of-operations-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Operations Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#truthiness-tester" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truthiness Tester
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-control-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 4: Control Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 4: Control Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#break-vs-continue-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break vs Continue Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-flow-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control Flow Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-elif-else-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      If-Elif-Else Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-patterns-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Patterns Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-loop-grid-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Loop Grid Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Range Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-working-with-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 5: Working With Strings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 5: Working With Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#palindrome-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Palindrome Checker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-and-join-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Split and Join Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-formatting-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Formatting Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-indexing-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Indexing Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-methods-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Methods Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-slicing-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Slicing Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-6-functions-and-modular-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 6: Functions And Modular Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 6: Functions And Modular Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments-vs-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments vs Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-call-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Call Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-pattern-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Pattern Gallery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modular-design-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular Design Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-scope-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Scope Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-7-higher-order-functions-and-recursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 7: Higher Order Functions And Recursion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 7: Higher Order Functions And Recursion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#factorial-recursion-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factorial Recursion Tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibonacci-tree-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibonacci Tree Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#higher-order-functions-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher-Order Functions Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map-filter-reduce-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map Filter Reduce Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursion-vs-iteration-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion vs Iteration Side-by-Side
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursive-call-stack-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Call Stack Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-8-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 8: Lists
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 8: Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-creation-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Creation Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-indexing-and-slicing-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Indexing and Slicing Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-methods-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Methods Playground
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-traversal-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Traversal Animator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-list-grid-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested List Grid Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zip-function-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zip Function Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-9-advanced-list-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 9: Advanced List Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 9: Advanced List Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-aliasing-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Aliasing Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-operations-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Operations Cheat Sheet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-statistics-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Statistics Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queue-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Queue Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shallow-vs-deep-copy-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shallow vs Deep Copy Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-10-tuples-and-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 10: Tuples And Sets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 10: Tuples And Sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-collections-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Collections Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-duplicates-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing Duplicates Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple-and-set-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuple and Set Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple-vs-list-mutability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuple vs List Mutability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuples-vs-lists-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuples vs Lists Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#venn-diagram-set-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Venn Diagram Set Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-11-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 11: Dictionaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 11: Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#counting-and-grouping-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting and Grouping Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dict-vs-list-lookup-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dict vs List Lookup Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-iteration-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Iteration Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-structure-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Structure Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-use-cases-infographic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dictionary Use Cases Infographic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-dictionary-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Dictionary Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-12-classes-and-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 12: Classes And Objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 12: Classes And Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-vs-object-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class vs. Object Visual
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dog-class-complete-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dog Class Complete Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encapsulation-bank-vault-analogy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encapsulation Bank Vault Analogy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-vs-class-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance vs. Class Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oop-benefits-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      OOP Benefits Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-interaction-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Interaction Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-13-inheritance-and-polymorphism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 13: Inheritance And Polymorphism
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 13: Inheritance And Polymorphism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animal-class-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animal Class Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dunder-methods-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dunder Methods Cheat Sheet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music-library-class-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Music Library Class Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymorphism-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polymorphism Playground
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-hierarchy-with-abstract-base-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape Hierarchy with Abstract Base Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uml-class-diagram-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      UML Class Diagram Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-14-errors-and-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 14: Errors And Exceptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 14: Errors And Exceptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-type-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Type Identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-exception-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Exception Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#try-except-finally-flow-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Try-Except-Finally Flow Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-15-file-input-and-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 15: File Input And Output
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 15: File Input And Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv-file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV File Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-format-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Format Decision Tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-io-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      File I/O Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-to-dictionary-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON to Dictionary Mapping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-methods-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Read Methods Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-statement-vs-manual-close" class="md-nav__link">
+    <span class="md-ellipsis">
+      With Statement vs Manual Close
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-16-software-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 16: Software Engineering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 16: Software Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comment-quality-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment Quality Checker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-workflow-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Workflow Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-development-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Development Lifecycle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-17-testing-and-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 17: Testing And Debugging
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 17: Testing And Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tdd-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      TDD Cycle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-test-runner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Test Runner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-debugging-strategy-should-you-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which Debugging Strategy Should You Use?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-18-searching-and-sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 18: Searching And Sorting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 18: Searching And Sorting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#big-o-growth-rate-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Big-O Growth Rate Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-search-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search Step-by-Step
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-search-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear Search Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-19-algorithm-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 19: Algorithm Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 19: Algorithm Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chapters19-algorithm-analysisindexmddiagram-" class="md-nav__link">
+    <span class="md-ellipsis">
+      [](../chapters/19-algorithm-analysis/index.md#diagram-)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexity-class-name-example-operations-for-n-1000" class="md-nav__link">
+    <span class="md-ellipsis">
+      | Complexity Class | Name | Example | Operations for ( n = 1{,}000 ) |
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategy-approach-when-to-use-guarantee" class="md-nav__link">
+    <span class="md-ellipsis">
+      | Strategy | Approach | When to Use | Guarantee |
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-20-advanced-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 20: Advanced Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 20: Advanced Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collections-module-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collections Module Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-manager-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Manager Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generator-vs-list-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generator vs List Memory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-decorators-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Decorators Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-best-practices-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Best Practices Checklist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern-tester" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regex Pattern Tester
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/learning-graph/diagram-details.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="diagram-and-microsim-details">Diagram and MicroSim Details</h1>
+<p><strong>Total Visual Elements:</strong> 104
+<strong>Diagrams:</strong> 2
+<strong>MicroSims:</strong> 102</p>
+<h2 id="chapter-1-intro-to-computer-science">Chapter 1: Intro To Computer Science</h2>
+<p><strong>Total elements:</strong> 5</p>
+<h3 id="ascii-character-map"><a href="../../chapters/01-intro-to-computer-science/#diagram-ascii-character-map">ASCII Character Map</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to look up the ASCII numeric value for common characters and recognize the pattern of how letters and digits are organized in th...</li>
+</ul>
+<h3 id="binary-number-explorer"><a href="../../chapters/01-intro-to-computer-science/#diagram-binary-number-explorer">Binary Number Explorer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to convert between binary and decimal representations by toggling individual bits and observing the resulting decimal value....</li>
+</ul>
+<h3 id="compiled-vs-interpreted-languages"><a href="../../chapters/01-intro-to-computer-science/#diagram-compiled-vs-interpreted-languages">Compiled vs. Interpreted Languages</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to compare compiled and interpreted language execution models by stepping through a visual side-by-side demonstration of how sou...</li>
+</ul>
+<h3 id="computational-thinking-pillars"><a href="../../chapters/01-intro-to-computer-science/#diagram-computational-thinking-pillars">Computational Thinking Pillars</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify and explain the four pillars of computational thinking (decomposition, pattern recognition, abstraction, algorithms)...</li>
+</ul>
+<h3 id="inside-a-computer"><a href="../../chapters/01-intro-to-computer-science/#diagram-inside-a-computer">Inside a Computer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify the main hardware components of a computer (CPU, RAM, storage, input devices, output devices) and describe the role ...</li>
+</ul>
+<h2 id="chapter-2-python-fundamentals">Chapter 2: Python Fundamentals</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="arithmetic-operators-explorer"><a href="../../chapters/02-python-fundamentals/#diagram-arithmetic-operators-explorer">Arithmetic Operators Explorer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to apply Python's seven arithmetic operators to compute correct results, with special attention to integer division and modulo....</li>
+</ul>
+<h3 id="code-readability-comparison"><a href="../../chapters/02-python-fundamentals/#diagram-code-readability-comparison">Code Readability Comparison</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to evaluate Python code for readability and identify specific improvements (naming, spacing, comments, structure)....</li>
+</ul>
+<h3 id="expressions-vs-statements"><a href="../../chapters/02-python-fundamentals/#diagram-expressions-vs-statements">Expressions vs. Statements</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to classify Python code fragments as expressions (produce a value) or statements (perform an action) and explain the difference....</li>
+</ul>
+<h3 id="python-data-types-overview"><a href="../../chapters/02-python-fundamentals/#diagram-python-data-types-overview">Python Data Types Overview</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify the four fundamental Python data types (int, float, bool, str) and classify example values into the correct type....</li>
+</ul>
+<h3 id="python-repl-vs-scripts"><a href="../../chapters/02-python-fundamentals/#diagram-python-repl-vs-scripts">Python REPL vs. Scripts</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to distinguish between interactive REPL mode and script mode, understanding when to use each approach....</li>
+</ul>
+<h3 id="string-operations-playground"><a href="../../chapters/02-python-fundamentals/#diagram-string-operations-playground">String Operations Playground</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to construct string expressions using concatenation, repetition, and f-string formatting, and predict the output of string opera...</li>
+</ul>
+<h2 id="chapter-3-boolean-logic">Chapter 3: Boolean Logic</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="comparison-operator-explorer"><a href="../../chapters/03-boolean-logic/#diagram-comparison-operator-explorer">Comparison Operator Explorer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 14</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to predict and verify the result of comparison expressions by selecting operators and values, then checking the Boolean output....</li>
+</ul>
+<h3 id="de-morgans-laws-visualizer"><a href="../../chapters/03-boolean-logic/#diagram-de-morgans-laws-visualizer">De Morgan's Laws Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Very Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to apply De Morgan's Laws to transform Boolean expressions and verify equivalence using side-by-side truth tables....</li>
+</ul>
+<h3 id="interactive-truth-table-builder"><a href="../../chapters/03-boolean-logic/#diagram-interactive-truth-table-builder">Interactive Truth Table Builder</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to construct truth tables for compound Boolean expressions and evaluate whether two expressions are logically equivalent....</li>
+</ul>
+<h3 id="logical-operator-venn-diagrams"><a href="../../chapters/03-boolean-logic/#diagram-logical-operator-venn-diagrams">Logical Operator Venn Diagrams</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to visualize the behavior of <code>and</code>, <code>or</code>, and <code>not</code> operators using Venn diagrams and predict the result of combined Boolean exp...</li>
+</ul>
+<h3 id="order-of-operations-visualizer"><a href="../../chapters/03-boolean-logic/#diagram-order-of-operations-visualizer">Order of Operations Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace the step-by-step evaluation of complex Boolean expressions by applying the correct order of operations....</li>
+</ul>
+<h3 id="truthiness-tester"><a href="../../chapters/03-boolean-logic/#diagram-truthiness-tester">Truthiness Tester</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to classify Python values as truthy or falsy and predict the result of <code>bool()</code> conversion....</li>
+</ul>
+<h2 id="chapter-4-control-flow">Chapter 4: Control Flow</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="break-vs-continue-visualizer"><a href="../../chapters/04-control-flow/#diagram-break-vs-continue-visualizer">Break vs Continue Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to distinguish between break and continue by tracing the execution of loops that use each statement and predicting the output....</li>
+</ul>
+<h3 id="control-flow-patterns"><a href="../../chapters/04-control-flow/#diagram-control-flow-patterns">Control Flow Patterns</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify and distinguish the three fundamental control flow patterns (sequential, selection, iteration) and trace the path of...</li>
+</ul>
+<h3 id="if-elif-else-flowchart"><a href="../../chapters/04-control-flow/#diagram-if-elif-else-flowchart">If-Elif-Else Flowchart</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace the execution path through an if-elif-else chain by entering a test value and observing which branch is taken....</li>
+</ul>
+<h3 id="loop-patterns-comparison"><a href="../../chapters/04-control-flow/#diagram-loop-patterns-comparison">Loop Patterns Comparison</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify which loop pattern (accumulator, counter, sentinel, flag) is being used in a given code example and explain why that...</li>
+</ul>
+<h3 id="nested-loop-grid-visualizer"><a href="../../chapters/04-control-flow/#diagram-nested-loop-grid-visualizer">Nested Loop Grid Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace the execution order of nested loops by watching a cell-by-cell animation across a grid and predicting which cell is fil...</li>
+</ul>
+<h3 id="range-function-explorer"><a href="../../chapters/04-control-flow/#diagram-range-function-explorer">Range Function Explorer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to predict the output of the range() function with various start, stop, and step arguments by adjusting sliders and observing th...</li>
+</ul>
+<h2 id="chapter-5-working-with-strings">Chapter 5: Working With Strings</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="palindrome-checker"><a href="../../chapters/05-working-with-strings/#diagram-palindrome-checker">Palindrome Checker</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to apply string reversal and cleaning techniques to determine whether a given string is a palindrome, and trace through the comp...</li>
+</ul>
+<h3 id="split-and-join-visualizer"><a href="../../chapters/05-working-with-strings/#diagram-split-and-join-visualizer">Split and Join Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to explain how <code>split()</code> breaks a string into a list and how <code>join()</code> reassembles a list into a string, and predict the output f...</li>
+</ul>
+<h3 id="string-formatting-comparison"><a href="../../chapters/05-working-with-strings/#diagram-string-formatting-comparison">String Formatting Comparison</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to construct formatted strings using f-strings and the <code>.format()</code> method, and choose the appropriate formatting approach for a ...</li>
+</ul>
+<h3 id="string-indexing-visualizer"><a href="../../chapters/05-working-with-strings/#diagram-string-indexing-visualizer">String Indexing Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to determine the character at any given index (positive or negative) within a string....</li>
+</ul>
+<h3 id="string-methods-explorer"><a href="../../chapters/05-working-with-strings/#diagram-string-methods-explorer">String Methods Explorer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 14</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to apply common string methods to a given input string, predict the output before seeing it, and explain what each method does....</li>
+</ul>
+<h3 id="string-slicing-playground"><a href="../../chapters/05-working-with-strings/#diagram-string-slicing-playground">String Slicing Playground</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 16</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to use slice notation to extract substrings, predict the result of a slice expression, and experiment with start, stop, and step...</li>
+</ul>
+<h2 id="chapter-6-functions-and-modular-design">Chapter 6: Functions And Modular Design</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="arguments-vs-parameters"><a href="../../chapters/06-functions-and-modular-design/#diagram-arguments-vs-parameters">Arguments vs Parameters</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to distinguish between parameters (in the definition) and arguments (in the call), and between positional, keyword, and default ...</li>
+</ul>
+<h3 id="function-anatomy"><a href="../../chapters/06-functions-and-modular-design/#diagram-function-anatomy">Function Anatomy</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify the parts of a Python function definition — the <code>def</code> keyword, function name, parameters, colon, body, and return st...</li>
+</ul>
+<h3 id="function-call-flow"><a href="../../chapters/06-functions-and-modular-design/#diagram-function-call-flow">Function Call Flow</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace the flow of execution when a function is called, including how arguments are passed, how the function body runs, and ho...</li>
+</ul>
+<h3 id="function-pattern-gallery"><a href="../../chapters/06-functions-and-modular-design/#diagram-function-pattern-gallery">Function Pattern Gallery</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to recognize and apply common function patterns (input validation, multiple returns, result accumulation, function composition) ...</li>
+</ul>
+<h3 id="modular-design-builder"><a href="../../chapters/06-functions-and-modular-design/#diagram-modular-design-builder">Modular Design Builder</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to break a monolithic program into modular functions by identifying logical units of work and creating appropriate function boun...</li>
+</ul>
+<h3 id="variable-scope-visualizer"><a href="../../chapters/06-functions-and-modular-design/#diagram-variable-scope-visualizer">Variable Scope Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to predict the value of variables at different points in a program by understanding the rules of local and global variable scope...</li>
+</ul>
+<h2 id="chapter-7-higher-order-functions-and-recursion">Chapter 7: Higher Order Functions And Recursion</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="factorial-recursion-tree"><a href="../../chapters/07-higher-order-functions-and-recursion/#diagram-factorial-recursion-tree">Factorial Recursion Tree</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace through recursive factorial calls, identify the base case and recursive case, and explain how the return values cascade...</li>
+</ul>
+<h3 id="fibonacci-tree-visualization"><a href="../../chapters/07-higher-order-functions-and-recursion/#diagram-fibonacci-tree-visualization">Fibonacci Tree Visualization</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 13</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace Fibonacci recursion, identify redundant calculations in tree recursion, and compare the number of function calls for di...</li>
+</ul>
+<h3 id="higher-order-functions-flow"><a href="../../chapters/07-higher-order-functions-and-recursion/#diagram-higher-order-functions-flow">Higher-Order Functions Flow</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to explain what makes a function "higher-order" and classify examples as higher-order or regular functions....</li>
+</ul>
+<h3 id="map-filter-reduce-pipeline"><a href="../../chapters/07-higher-order-functions-and-recursion/#diagram-map-filter-reduce-pipeline">Map Filter Reduce Pipeline</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to chain map, filter, and reduce operations on a list and predict the output at each stage....</li>
+</ul>
+<h3 id="recursion-vs-iteration-side-by-side"><a href="../../chapters/07-higher-order-functions-and-recursion/#diagram-recursion-vs-iteration-side-by-side">Recursion vs Iteration Side-by-Side</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 19</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to compare recursive and iterative implementations of the same algorithm side by side, tracking execution steps, memory usage, a...</li>
+</ul>
+<h3 id="recursive-call-stack-visualizer"><a href="../../chapters/07-higher-order-functions-and-recursion/#diagram-recursive-call-stack-visualizer">Recursive Call Stack Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 24</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace the call stack during recursive execution, identify when frames are pushed and popped, and determine the value of local...</li>
+</ul>
+<h2 id="chapter-8-lists">Chapter 8: Lists</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="list-creation-visualizer"><a href="../../chapters/08-lists/#diagram-list-creation-visualizer">List Creation Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to create Python lists and visualize how items are stored in indexed positions....</li>
+</ul>
+<h3 id="list-indexing-and-slicing-explorer"><a href="../../chapters/08-lists/#diagram-list-indexing-and-slicing-explorer">List Indexing and Slicing Explorer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to use positive and negative indices to access specific list items and apply slice notation to extract sublists....</li>
+</ul>
+<h3 id="list-methods-playground"><a href="../../chapters/08-lists/#diagram-list-methods-playground">List Methods Playground</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to apply common list methods (append, insert, remove, pop, sort, reverse) and predict the resulting list state....</li>
+</ul>
+<h3 id="list-traversal-animator"><a href="../../chapters/08-lists/#diagram-list-traversal-animator">List Traversal Animator</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 15</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace the execution of a for loop over a list and predict the output for each iteration....</li>
+</ul>
+<h3 id="nested-list-grid-visualizer"><a href="../../chapters/08-lists/#diagram-nested-list-grid-visualizer">Nested List Grid Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to access elements in nested lists using double-index notation and interpret a list of lists as a 2D grid....</li>
+</ul>
+<h3 id="zip-function-visualizer"><a href="../../chapters/08-lists/#diagram-zip-function-visualizer">Zip Function Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to use the zip function to combine multiple lists element by element and predict the output of zip operations....</li>
+</ul>
+<h2 id="chapter-9-advanced-list-operations">Chapter 9: Advanced List Operations</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="list-aliasing-visualizer"><a href="../../chapters/09-advanced-list-operations/#diagram-list-aliasing-visualizer">List Aliasing Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to explain the difference between creating an alias and creating an independent copy by observing how variable names point to ob...</li>
+</ul>
+<h3 id="list-operations-cheat-sheet"><a href="../../chapters/09-advanced-list-operations/#diagram-list-operations-cheat-sheet">List Operations Cheat Sheet</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to quickly recall the syntax and purpose of all advanced list operations covered in this chapter....</li>
+</ul>
+<h3 id="list-statistics-dashboard"><a href="../../chapters/09-advanced-list-operations/#diagram-list-statistics-dashboard">List Statistics Dashboard</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to use len, min, max, and sum to compute basic statistics on a list of numbers and interpret the results visually....</li>
+</ul>
+<h3 id="queue-simulator"><a href="../../chapters/09-advanced-list-operations/#diagram-queue-simulator">Queue Simulator</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to demonstrate FIFO (First In, First Out) behavior by enqueuing and dequeuing items and contrast it with stack (LIFO) behavior....</li>
+</ul>
+<h3 id="shallow-vs-deep-copy-visualizer"><a href="../../chapters/09-advanced-list-operations/#diagram-shallow-vs-deep-copy-visualizer">Shallow vs Deep Copy Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to distinguish between shallow and deep copying by observing how changes to nested elements propagate (or don't) in each type of...</li>
+</ul>
+<h3 id="stack-simulator"><a href="../../chapters/09-advanced-list-operations/#diagram-stack-simulator">Stack Simulator</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to demonstrate LIFO (Last In, First Out) behavior by pushing and popping items on a visual stack and predicting the next item to...</li>
+</ul>
+<h2 id="chapter-10-tuples-and-sets">Chapter 10: Tuples And Sets</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="python-collections-overview"><a href="../../chapters/10-tuples-and-sets/#diagram-python-collections-overview">Python Collections Overview</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to classify Python's four core collection types (list, tuple, set, frozenset) by their properties and select the appropriate typ...</li>
+</ul>
+<h3 id="removing-duplicates-visualizer"><a href="../../chapters/10-tuples-and-sets/#diagram-removing-duplicates-visualizer">Removing Duplicates Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to use a set to remove duplicate values from a list by stepping through the conversion process and observing how duplicates are ...</li>
+</ul>
+<h3 id="tuple-and-set-concept-map"><a href="../../chapters/10-tuples-and-sets/#diagram-tuple-and-set-concept-map">Tuple and Set Concept Map</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to summarize the relationships between tuples, sets, frozensets, and lists by exploring a concept map that connects their shared...</li>
+</ul>
+<h3 id="tuple-vs-list-mutability"><a href="../../chapters/10-tuples-and-sets/#diagram-tuple-vs-list-mutability">Tuple vs List Mutability</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to explain the difference between mutable lists and immutable tuples by observing how modification operations succeed on lists b...</li>
+</ul>
+<h3 id="tuples-vs-lists-comparison"><a href="../../chapters/10-tuples-and-sets/#diagram-tuples-vs-lists-comparison">Tuples vs Lists Comparison</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to choose between tuples and lists for a given scenario by comparing their properties and trade-offs....</li>
+</ul>
+<h3 id="venn-diagram-set-operations"><a href="../../chapters/10-tuples-and-sets/#diagram-venn-diagram-set-operations">Venn Diagram Set Operations</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to compute union, intersection, difference, and symmetric difference of two sets by interacting with a Venn diagram and seeing t...</li>
+</ul>
+<h2 id="chapter-11-dictionaries">Chapter 11: Dictionaries</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="counting-and-grouping-patterns"><a href="../../chapters/11-dictionaries/#diagram-counting-and-grouping-patterns">Counting and Grouping Patterns</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to implement counting and grouping patterns by watching how a dictionary builds up step by step as data is processed....</li>
+</ul>
+<h3 id="dict-vs-list-lookup-performance"><a href="../../chapters/11-dictionaries/#diagram-dict-vs-list-lookup-performance">Dict vs List Lookup Performance</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to compare the lookup performance of lists vs dictionaries and explain why dictionaries are faster for membership testing....</li>
+</ul>
+<h3 id="dictionary-iteration-flowchart"><a href="../../chapters/11-dictionaries/#diagram-dictionary-iteration-flowchart">Dictionary Iteration Flowchart</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace through different dictionary iteration patterns (keys, values, items) and predict the output at each step....</li>
+</ul>
+<h3 id="dictionary-structure-visualizer"><a href="../../chapters/11-dictionaries/#diagram-dictionary-structure-visualizer">Dictionary Structure Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to visualize how a Python dictionary stores key-value pairs and understand the mapping relationship between keys and values....</li>
+</ul>
+<h3 id="dictionary-use-cases-infographic"><a href="../../chapters/11-dictionaries/#diagram-dictionary-use-cases-infographic">Dictionary Use Cases Infographic</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify common real-world scenarios where dictionaries are the appropriate data structure and explain why....</li>
+</ul>
+<h3 id="nested-dictionary-explorer"><a href="../../chapters/11-dictionaries/#diagram-nested-dictionary-explorer">Nested Dictionary Explorer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to navigate through nested dictionaries by clicking through levels of keys and constructing the bracket-chain notation needed to...</li>
+</ul>
+<h2 id="chapter-12-classes-and-objects">Chapter 12: Classes And Objects</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="class-vs-object-visual"><a href="../../chapters/12-classes-and-objects/#diagram-class-vs-object-visual">Class vs. Object Visual</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to distinguish between a class (blueprint/template) and an object (instance) by seeing a visual analogy of a cookie cutter produ...</li>
+</ul>
+<h3 id="dog-class-complete-structure"><a href="../../chapters/12-classes-and-objects/#diagram-dog-class-complete-structure">Dog Class Complete Structure</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to read a class diagram showing the structure of a Python class, identifying its attributes and methods....</li>
+</ul>
+<h3 id="encapsulation-bank-vault-analogy"><a href="../../chapters/12-classes-and-objects/#diagram-encapsulation-bank-vault-analogy">Encapsulation Bank Vault Analogy</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to explain how encapsulation protects an object's internal data by restricting direct access and using getter/setter methods as ...</li>
+</ul>
+<h3 id="instance-vs-class-attributes"><a href="../../chapters/12-classes-and-objects/#diagram-instance-vs-class-attributes">Instance vs. Class Attributes</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to differentiate between instance attributes (unique per object) and class attributes (shared across all objects) by viewing a m...</li>
+</ul>
+<h3 id="oop-benefits-concept-map"><a href="../../chapters/12-classes-and-objects/#diagram-oop-benefits-concept-map">OOP Benefits Concept Map</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to summarize the key benefits of OOP (organization, reusability, encapsulation, real-world modeling, teamwork) and explain why O...</li>
+</ul>
+<h3 id="object-interaction-playground"><a href="../../chapters/12-classes-and-objects/#diagram-object-interaction-playground">Object Interaction Playground</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to create Dog objects, call methods, and observe results in an interactive playground that demonstrates class instantiation, met...</li>
+</ul>
+<h2 id="chapter-13-inheritance-and-polymorphism">Chapter 13: Inheritance And Polymorphism</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="animal-class-hierarchy"><a href="../../chapters/13-inheritance-and-polymorphism/#diagram-animal-class-hierarchy">Animal Class Hierarchy</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace inheritance relationships in a class hierarchy and identify which attributes and methods each class inherits versus def...</li>
+</ul>
+<h3 id="dunder-methods-cheat-sheet"><a href="../../chapters/13-inheritance-and-polymorphism/#diagram-dunder-methods-cheat-sheet">Dunder Methods Cheat Sheet</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify common dunder methods, the operators they map to, and the purpose of each....</li>
+</ul>
+<h3 id="music-library-class-diagram"><a href="../../chapters/13-inheritance-and-polymorphism/#diagram-music-library-class-diagram">Music Library Class Diagram</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Easy</li>
+<li><strong>Learning Objective:</strong> Students will be able to analyze a multi-class system and identify inheritance, composition, abstract methods, operator overloading, and the iterator ...</li>
+</ul>
+<h3 id="polymorphism-playground"><a href="../../chapters/13-inheritance-and-polymorphism/#diagram-polymorphism-playground">Polymorphism Playground</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to demonstrate polymorphism by selecting different animal types, calling the same method on each, and observing different behavi...</li>
+</ul>
+<h3 id="shape-hierarchy-with-abstract-base-class"><a href="../../chapters/13-inheritance-and-polymorphism/#diagram-shape-hierarchy-with-abstract-base-class">Shape Hierarchy with Abstract Base Class</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify abstract classes and understand why they cannot be instantiated directly, by interacting with a visual hierarchy tha...</li>
+</ul>
+<h3 id="uml-class-diagram-builder"><a href="../../chapters/13-inheritance-and-polymorphism/#diagram-uml-class-diagram-builder">UML Class Diagram Builder</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to read and construct UML class diagrams that show inheritance and composition relationships between classes....</li>
+</ul>
+<h2 id="chapter-14-errors-and-exceptions">Chapter 14: Errors And Exceptions</h2>
+<p><strong>Total elements:</strong> 3</p>
+<h3 id="error-type-identifier"><a href="../../chapters/14-errors-and-exceptions/#diagram-error-type-identifier">Error Type Identifier</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to compare and contrast syntax errors, runtime errors, and logic errors by identifying when each occurs, how Python reports them...</li>
+</ul>
+<h3 id="python-exception-hierarchy"><a href="../../chapters/14-errors-and-exceptions/#diagram-python-exception-hierarchy">Python Exception Hierarchy</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to construct try-except blocks by dragging code statements into the correct positions within a try-except structure....</li>
+</ul>
+<h3 id="try-except-finally-flow-chart"><a href="../../chapters/14-errors-and-exceptions/#diagram-try-except-finally-flow-chart">Try-Except-Finally Flow Chart</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to predict the output of Python code containing try-except-else-finally blocks with various exception scenarios by tracing throu...</li>
+</ul>
+<h2 id="chapter-15-file-input-and-output">Chapter 15: File Input And Output</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="csv-file-structure"><a href="../../chapters/15-file-input-and-output/#diagram-csv-file-structure">CSV File Structure</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to interpret the structure of a CSV file by mapping raw comma-separated text to a table representation and back....</li>
+</ul>
+<h3 id="file-format-decision-tree"><a href="../../chapters/15-file-input-and-output/#diagram-file-format-decision-tree">File Format Decision Tree</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to choose the appropriate file format (plain text, CSV, or JSON) for a given data storage scenario and justify their choice....</li>
+</ul>
+<h3 id="file-io-flow"><a href="../../chapters/15-file-input-and-output/#diagram-file-i-o-flow">File I/O Flow</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to describe the sequence of operations in a file I/O workflow: open, read/write, and close....</li>
+</ul>
+<h3 id="json-to-dictionary-mapping"><a href="../../chapters/15-file-input-and-output/#diagram-json-to-dictionary-mapping">JSON to Dictionary Mapping</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to convert between JSON text and Python dictionary representations by editing one view and seeing the other update automatically...</li>
+</ul>
+<h3 id="read-methods-comparison"><a href="../../chapters/15-file-input-and-output/#diagram-read-methods-comparison">Read Methods Comparison</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to compare the behavior of <code>read()</code>, <code>readline()</code>, and <code>readlines()</code> and predict the output of each method for a given file....</li>
+</ul>
+<h3 id="with-statement-vs-manual-close"><a href="../../chapters/15-file-input-and-output/#diagram-with-statement-vs-manual-close">With Statement vs Manual Close</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to explain why the <code>with</code> statement is safer than manual <code>open()</code>/<code>close()</code> by observing what happens when an error occurs durin...</li>
+</ul>
+<h2 id="chapter-16-software-engineering">Chapter 16: Software Engineering</h2>
+<p><strong>Total elements:</strong> 3</p>
+<h3 id="comment-quality-checker"><a href="../../chapters/16-software-engineering/#diagram-comment-quality-checker">Comment Quality Checker</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to predict which code blocks execute when a Python file is run directly versus when it is imported as a module....</li>
+</ul>
+<h3 id="git-workflow-visualizer"><a href="../../chapters/16-software-engineering/#diagram-git-workflow-visualizer">Git Workflow Visualizer</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify code that violates the DRY principle and explain how to refactor it using functions....</li>
+</ul>
+<h3 id="software-development-lifecycle"><a href="../../chapters/16-software-engineering/#diagram-software-development-lifecycle">Software Development Lifecycle</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to distinguish between Python modules and packages, and explain how import statements connect them....</li>
+</ul>
+<h2 id="chapter-17-testing-and-debugging">Chapter 17: Testing And Debugging</h2>
+<p><strong>Total elements:</strong> 3</p>
+<h3 id="tdd-cycle"><a href="../../chapters/17-testing-and-debugging/#diagram-tdd-cycle">TDD Cycle</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to use breakpoints and step-through controls to trace the execution of a Python function and identify where a bug occurs....</li>
+</ul>
+<h3 id="unit-test-runner"><a href="../../chapters/17-testing-and-debugging/#diagram-unit-test-runner">Unit Test Runner</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify boundary values for a given function specification and predict whether each test input will pass or fail....</li>
+</ul>
+<h3 id="which-debugging-strategy-should-you-use"><a href="../../chapters/17-testing-and-debugging/#diagram-which-debugging-strategy-should-you-use?">Which Debugging Strategy Should You Use?</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to write and test input validation rules for common data types (age, email, password) and predict which inputs will pass or fail...</li>
+</ul>
+<h2 id="chapter-18-searching-and-sorting">Chapter 18: Searching And Sorting</h2>
+<p><strong>Total elements:</strong> 3</p>
+<h3 id="big-o-growth-rate-chart"><a href="../../chapters/18-searching-and-sorting/#diagram-big-o-growth-rate-chart">Big-O Growth Rate Chart</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to select an appropriate search or sort algorithm for a given scenario and justify their choice based on input characteristics a...</li>
+</ul>
+<h3 id="binary-search-step-by-step"><a href="../../chapters/18-searching-and-sorting/#diagram-binary-search-step-by-step">Binary Search Step-by-Step</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to compare the performance of selection sort, insertion sort, and merge sort by watching them sort identical arrays side by side...</li>
+</ul>
+<h3 id="linear-search-flowchart"><a href="../../chapters/18-searching-and-sorting/#diagram-linear-search-flowchart">Linear Search Flowchart</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to execute a linear search on a given array by stepping through the algorithm and predicting whether each element matches the ta...</li>
+</ul>
+<h2 id="chapter-19-algorithm-analysis">Chapter 19: Algorithm Analysis</h2>
+<p><strong>Total elements:</strong> 3</p>
+<h3 id="chapters19-algorithm-analysisindexmddiagram-">[<code>](../chapters/19-algorithm-analysis/index.md#diagram-</code>)</h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="complexity-class-name-example-operations-for-n-1000"><a href="../../chapters/19-algorithm-analysis/#diagram-|-complexity-class-|-name-|-example-|-operations-for--n-=-1{}000--|">| Complexity Class | Name | Example | Operations for ( n = 1{,}000 ) |</a></h3>
+<ul>
+<li><strong>Type:</strong> Diagram</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Easy</li>
+</ul>
+<h3 id="strategy-approach-when-to-use-guarantee"><a href="../../chapters/19-algorithm-analysis/#diagram-|-strategy-|-approach-|-when-to-use-|-guarantee-|">| Strategy | Approach | When to Use | Guarantee |</a></h3>
+<ul>
+<li><strong>Type:</strong> Diagram</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Easy</li>
+</ul>
+<h2 id="chapter-20-advanced-python">Chapter 20: Advanced Python</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="collections-module-overview"><a href="../../chapters/20-advanced-python/#diagram-collections-module-overview">Collections Module Overview</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to identify the four main collections module classes (Counter, defaultdict, OrderedDict, namedtuple) and describe when to use ea...</li>
+</ul>
+<h3 id="context-manager-flow"><a href="../../chapters/20-advanced-python/#diagram-context-manager-flow">Context Manager Flow</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace the execution flow of a context manager, identifying when <strong>enter</strong> and <strong>exit</strong> are called....</li>
+</ul>
+<h3 id="generator-vs-list-memory"><a href="../../chapters/20-advanced-python/#diagram-generator-vs-list-memory">Generator vs List Memory</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to compare memory usage between lists and generators by observing a visual representation of how each stores data....</li>
+</ul>
+<h3 id="how-decorators-work"><a href="../../chapters/20-advanced-python/#diagram-how-decorators-work">How Decorators Work</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Learning Objective:</strong> Students will be able to trace how a decorator wraps a function by watching an animated flow diagram of the decoration process....</li>
+</ul>
+<h3 id="python-best-practices-checklist"><a href="../../chapters/20-advanced-python/#diagram-python-best-practices-checklist">Python Best Practices Checklist</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to evaluate Python code snippets against best practices and identify areas for improvement....</li>
+</ul>
+<h3 id="regex-pattern-tester"><a href="../../chapters/20-advanced-python/#diagram-regex-pattern-tester">Regex Pattern Tester</a></h3>
+<ul>
+<li><strong>Status:</strong> Specified</li>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+<li><strong>Learning Objective:</strong> Students will be able to write and test simple regular expressions by entering patterns and seeing matches highlighted in real time....</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../diagram-table/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Diagram Table">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Diagram Table
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../mascot-guide/" class="md-footer__link md-footer__link--next" aria-label="Next: Mascot Guide">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Mascot Guide
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
