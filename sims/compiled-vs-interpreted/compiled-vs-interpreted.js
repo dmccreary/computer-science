@@ -2,11 +2,11 @@
 // A side-by-side step-through demonstration
 
 let canvasWidth = 400;
-let drawHeight = 450;
-let controlHeight = 50;
+let drawHeight = 480;
+let controlHeight = 55;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
-let sliderLeftMargin = 240;
+let sliderLeftMargin = 270;
 let defaultTextSize = 16;
 
 // State
@@ -80,8 +80,8 @@ function setup() {
   resetButton.style('padding', '4px 12px');
   resetButton.style('cursor', 'pointer');
 
-  // Speed slider: 500ms to 2000ms, default 1000ms
-  speedSlider = createSlider(500, 2000, 1000, 100);
+  // Speed slider: 0-1500, mapped so left=slow (2000ms) right=fast (500ms)
+  speedSlider = createSlider(0, 1500, 750, 100);
   speedSlider.parent(document.querySelector('main'));
   speedSlider.position(sliderLeftMargin, drawHeight + 15);
   speedSlider.style('width', (canvasWidth - sliderLeftMargin - margin) + 'px');
@@ -132,12 +132,18 @@ function draw() {
   noStroke();
   fill(80);
   textSize(12);
-  textAlign(LEFT, CENTER);
-  text('Speed', sliderLeftMargin, drawHeight + 8);
+  textAlign(CENTER, TOP);
+  text('Animation Speed', sliderLeftMargin + (canvasWidth - sliderLeftMargin - margin) / 2, drawHeight + 1);
+  textSize(11);
+  fill(120);
+  textAlign(LEFT, TOP);
+  text('Slow', sliderLeftMargin, drawHeight + 32);
+  textAlign(RIGHT, TOP);
+  text('Fast', canvasWidth - margin, drawHeight + 32);
 
   // Auto play logic
   if (autoPlaying && currentStep < totalSteps) {
-    let interval = speedSlider.value();
+    let interval = 2000 - speedSlider.value(); // left=slow (2000ms), right=fast (500ms)
     if (millis() - lastStepTime > interval) {
       advanceStep();
       lastStepTime = millis();
@@ -151,9 +157,9 @@ function draw() {
 
 function drawCompiledSide(xOff, w) {
   let cx = xOff + w / 2;
-  let stageY1 = 50;  // Source code stage
-  let stageY2 = 190; // Translation stage
-  let stageY3 = 330; // Execution stage
+  let stageY1 = 70;  // Source code stage
+  let stageY2 = 210; // Translation stage
+  let stageY3 = 350; // Execution stage
   let boxW = w - 30;
   let boxH = 90;
 
@@ -210,9 +216,9 @@ function drawCompiledSide(xOff, w) {
 
 function drawInterpretedSide(xOff, w) {
   let cx = xOff + w / 2;
-  let stageY1 = 50;
-  let stageY2 = 190;
-  let stageY3 = 330;
+  let stageY1 = 70;
+  let stageY2 = 210;
+  let stageY3 = 350;
   let boxW = w - 30;
   let boxH = 90;
 
