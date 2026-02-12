@@ -308,7 +308,11 @@ function drawSliceReference() {
   textFont('monospace');
   let ex = refX;
   for (let eg of examples) {
-    let w = textWidth(eg.label + ' ' + eg.desc) + 20;
+    let labelW = textWidth(eg.label);
+    textFont('Arial');
+    let descW = textWidth(eg.desc);
+    textFont('monospace');
+    let w = labelW + descW + 20;
     fill(240, 240, 255);
     stroke(200);
     strokeWeight(1);
@@ -320,7 +324,7 @@ function drawSliceReference() {
     fill(120);
     textFont('Arial');
     textSize(10);
-    text(eg.desc, ex + textWidth(eg.label) + 10, refY + 29);
+    text(eg.desc, ex + labelW + 10, refY + 29);
     textFont('monospace');
     textSize(10);
     ex += w + 6;
