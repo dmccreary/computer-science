@@ -46,6 +46,7 @@ nav:
     - Comparison Operator Explorer: sims/comparison-operator-explorer/index.md
     - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
     - Computational Thinking Pillars: sims/computational-thinking-pillars/index.md
+    - CS Language Trends: sims/cs-lang-trends/index.md
     - Control Flow Patterns: sims/control-flow-patterns/index.md
     - De Morgan's Laws Visualizer: sims/demorgans-laws/index.md
     - Expressions vs. Statements: sims/expressions-vs-statements/index.md

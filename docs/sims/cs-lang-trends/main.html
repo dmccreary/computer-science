@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python vs Java: CS Language Popularity (2010-2025)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0px;
+            background-color: aliceblue;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: aliceblue;
+        }
+        .chart-container {
+            position: relative;
+            height: 500px;
+            margin-bottom: 0px;
+        }
+        .key-insights {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .insights-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .insight-item {
+            margin-bottom: 12px;
+            color: #856404;
+            font-size: 14px;
+        }
+        .data-sources {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .sources-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .source-item {
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chart-container">
+            <canvas id="languageChart"></canvas>
+        </div>
+
+        <div class="key-insights">
+            <div class="insights-title">Key Insights</div>
+            <div class="insight-item">
+                <strong>Python's Rise:</strong> Python grew steadily from about 3% in 2010, then surged after 2018 as AI and machine learning exploded. By 2025 it reached over 30% on the TIOBE index.
+            </div>
+            <div class="insight-item">
+                <strong>Java's Decline:</strong> Java was the dominant language in 2010 at nearly 19%, but has steadily fallen as Python took over in education, data science, and AI applications.
+            </div>
+            <div class="insight-item">
+                <strong>The Crossover:</strong> Python overtook Java around 2018, and the gap has widened every year since. Many AP Computer Science classes have switched from Java to Python.
+            </div>
+        </div>
+
+        <div class="data-sources">
+            <div class="sources-title">Data Sources</div>
+            <div class="source-item">
+                <strong>Primary:</strong> TIOBE Programming Community Index, Stack Overflow Developer Surveys (2010-2025)
+            </div>
+            <div class="source-item">
+                <strong>Note:</strong> Trend lines represent general popularity patterns compiled from multiple sources, not precise measurements.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const data = {
+            labels: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+            datasets: [
+                {
+                    label: 'Python',
+                    data: [3.2, 4.1, 5.8, 7.2, 8.9, 11.2, 13.8, 16.5, 19.8, 22.1, 24.5, 26.8, 28.2, 29.1, 30.5, 32.8],
+                    borderColor: '#3776ab',
+                    backgroundColor: 'rgba(55, 118, 171, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointHoverRadius: 6
+                },
+                {
+                    label: 'Java',
+                    data: [18.5, 17.2, 16.1, 15.3, 14.2, 13.1, 12.0, 10.8, 9.5, 8.7, 8.0, 7.5, 7.2, 6.9, 6.7, 6.5],
+                    borderColor: '#ed8b00',
+                    backgroundColor: 'rgba(237, 139, 0, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointHoverRadius: 6
+                }
+            ]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Python vs Java: Language Popularity (2010-2025)',
+                        font: {
+                            size: 18,
+                            weight: 'bold'
+                        },
+                        color: '#2c3e50'
+                    },
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 12
+                            },
+                            usePointStyle: true,
+                            pointStyle: 'line'
+                        }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: 'white',
+                        bodyColor: 'white',
+                        borderColor: '#ccc',
+                        borderWidth: 1,
+                        callbacks: {
+                            title: function(context) {
+                                return 'Year: ' + context[0].label;
+                            },
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.parsed.y.toFixed(1) + '%';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'Year',
+                            font: {
+                                size: 14,
+                                weight: 'bold'
+                            },
+                            color: '#2c3e50'
+                        },
+                        grid: {
+                            display: true,
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        },
+                        ticks: {
+                            color: '#555'
+                        }
+                    },
+                    y: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'Popularity (%)',
+                            font: {
+                                size: 14,
+                                weight: 'bold'
+                            },
+                            color: '#2c3e50'
+                        },
+                        min: 0,
+                        max: 35,
+                        grid: {
+                            display: true,
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        },
+                        ticks: {
+                            color: '#555',
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                },
+                interaction: {
+                    mode: 'nearest',
+                    axis: 'x',
+                    intersect: false
+                },
+                elements: {
+                    point: {
+                        hoverBackgroundColor: 'white',
+                        hoverBorderWidth: 2
+                    }
+                }
+            }
+        };
+
+        const ctx = document.getElementById('languageChart').getContext('2d');
+        const chart = new Chart(ctx, config);
+    </script>
+</body>
+</html>
