@@ -18,7 +18,7 @@ let indexInput;
 
 // State
 let currentString = 'PYTHON';
-let selectedIndex = -999; // no selection
+let selectedIndex = 0;
 let errorMessage = '';
 let errorTimer = 0;
 
@@ -36,7 +36,7 @@ function setup() {
     errorMessage = '';
   });
 
-  indexInput = createInput('', 'number');
+  indexInput = createInput('0', 'number');
   indexInput.position(310, drawHeight + 12);
   indexInput.size(50);
   indexInput.input(onIndexInput);
@@ -121,8 +121,8 @@ function draw() {
   // Draw positive index label
   fill(70, 130, 220);
   textSize(11);
-  textAlign(CENTER, BOTTOM);
-  text('Positive Index', startX - 5, boxY - 2);
+  textAlign(LEFT, BOTTOM);
+  text('Positive Index', startX, boxY - 22);
 
   // Draw character boxes
   for (let i = 0; i < len; i++) {
@@ -171,7 +171,7 @@ function draw() {
   // Negative index label
   fill(200, 60, 60);
   textSize(11);
-  textAlign(CENTER, TOP);
+  textAlign(LEFT, TOP);
   text('Negative Index', startX - 5, boxY + boxH + 22);
 
   // Display selected character info
@@ -227,6 +227,13 @@ function draw() {
 
     if (errorTimer > 0) errorTimer--;
   }
+
+  // Instruction text
+  noStroke();
+  fill(150);
+  textAlign(CENTER, BOTTOM);
+  textSize(12);
+  text('Click index to move the selected character', canvasWidth / 2, drawHeight - 8);
 
   drawControlLabels();
 }
