@@ -1,0 +1,57 @@
+{
+  "title": "Class vs. Object Visual",
+  "creator": "Dan McCreary",
+  "subject": "Computer Science",
+  "description": "Interactive cookie-cutter analogy that contrasts a Dog class with the Dog objects it instantiates.",
+  "date": "2026-02-11",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Object-Oriented Programming",
+    "learningObjectives": [
+      "Differentiate between the shared structure of a class and the unique attribute values of each object instance."
+    ],
+    "bloomsTaxonomy": "Create",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Understands variables and functions in a beginner language (Python or Java)",
+      "Has seen or written a simple class definition"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 450
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "What stays the same between every Dog object that comes from the Dog class?",
+      "Where do an object's specific name, breed, and age live?"
+    ],
+    "commonMisconceptions": [
+      "Believing that changing one object's data changes the class for all objects",
+      "Thinking that methods belong to individual objects instead of the class definition"
+    ],
+    "assessmentOpportunities": [
+      "Prompt students to narrate the instantiation arrow for a new dog they create",
+      "Ask students to match attribute/value pairs to the correct cookie after hovering the tooltip"
+    ]
+  },
+  "chapter": "12-classes-and-objects"
+}

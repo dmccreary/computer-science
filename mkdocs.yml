@@ -40,6 +40,7 @@ nav:
     - ASCII Character Map: sims/ascii-character-map/index.md
     - Binary Number Explorer: sims/binary-number-explorer/index.md
     - Break vs Continue Visualizer: sims/break-vs-continue/index.md
+    - Class vs. Object Diagram: sims/class-vs-object-diagram/index.md
     - Code Readability Comparison: sims/code-readability/index.md
     - Comparison Operator Explorer: sims/comparison-operator-explorer/index.md
     - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
@@ -67,13 +68,6 @@ nav:
     - Truthiness Tester: sims/truthiness-tester/index.md
 
 
-
-
-
-
-
-
- 
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -153,6 +147,6 @@ extra:
   textbook_name: Computer Science
   textbook_version: "1.0"
   generator: false
-  #analytics:
-    #provider: google
-    #property: G-HPLDD3D3K2
+  analytics:
+    provider: google
+    property: G-7V8E82XTCL
