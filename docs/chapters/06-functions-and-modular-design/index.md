@@ -69,7 +69,7 @@ In short, functions turn spaghetti code into a well-organized recipe book.
 
 #### Diagram: Function Anatomy
 
-<iframe src="../../sims/function-anatomy/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/function-anatomy/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Function Anatomy Interactive Diagram</summary>
@@ -266,7 +266,7 @@ print(type(result)) # prints: <class 'NoneType'>
 
 #### Diagram: Function Call Flow
 
-<iframe src="../../sims/function-call-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/function-call-flow/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Function Call Flow MicroSim</summary>
@@ -433,7 +433,7 @@ The left side of the assignment uses **unpacking** — each variable on the left
 
 #### Diagram: Arguments vs Parameters
 
-<iframe src="../../sims/args-vs-params/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/args-vs-params/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Arguments vs Parameters Interactive Comparison</summary>
@@ -567,7 +567,7 @@ Here's a summary of scope rules:
 
 #### Diagram: Variable Scope Visualizer
 
-<iframe src="../../sims/variable-scope-visualizer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/variable-scope-visualizer/main.html" width="100%" height="552px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Variable Scope Visualizer MicroSim</summary>
@@ -740,7 +740,7 @@ Here are the principles of good modular design:
 
 #### Diagram: Modular Design Builder
 
-<iframe src="../../sims/modular-design-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/modular-design-builder/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Modular Design Builder MicroSim</summary>
@@ -862,7 +862,7 @@ print(is_passing(55))   # False
 
 #### Diagram: Function Pattern Gallery
 
-<iframe src="../../sims/function-pattern-gallery/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/function-pattern-gallery/main.html" width="100%" height="552px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Function Pattern Gallery Interactive Reference</summary>

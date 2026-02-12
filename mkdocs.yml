@@ -36,11 +36,12 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - Arguments vs Parameters: sims/args-vs-params/index.md
     - Arithmetic Operators Explorer: sims/arithmetic-operators/index.md
     - ASCII Character Map: sims/ascii-character-map/index.md
     - Binary Number Explorer: sims/binary-number-explorer/index.md
     - Break vs Continue Visualizer: sims/break-vs-continue/index.md
-    - Class vs. Object Diagram: sims/class-vs-object-diagram/index.md
+    - Class vs. Object Visual: sims/class-vs-object-diagram/index.md
     - Code Readability Comparison: sims/code-readability/index.md
     - Comparison Operator Explorer: sims/comparison-operator-explorer/index.md
     - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
@@ -48,11 +49,15 @@ nav:
     - Control Flow Patterns: sims/control-flow-patterns/index.md
     - De Morgan's Laws Visualizer: sims/demorgans-laws/index.md
     - Expressions vs. Statements: sims/expressions-vs-statements/index.md
+    - Function Anatomy: sims/function-anatomy/index.md
+    - Function Call Flow: sims/function-call-flow/index.md
+    - Function Pattern Gallery: sims/function-pattern-gallery/index.md
     - If-Elif-Else Flowchart: sims/if-elif-else-flowchart/index.md
     - Inside a Computer: sims/inside-a-computer/index.md
     - Interactive Truth Table Builder: sims/truth-table-builder/index.md
     - Logical Operator Venn Diagrams: sims/logical-operator-venn/index.md
     - Loop Patterns Comparison: sims/loop-patterns-comparison/index.md
+    - Modular Design Builder: sims/modular-design-builder/index.md
     - Nested Loop Grid Visualizer: sims/nested-loop-grid/index.md
     - Order of Operations Visualizer: sims/boolean-order-of-ops/index.md
     - Palindrome Checker: sims/palindrome-checker/index.md
@@ -66,6 +71,9 @@ nav:
     - String Operations Playground: sims/string-operations/index.md
     - String Slicing Playground: sims/string-slicing-playground/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
+    - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
+
+
 
 
   - Learning Graph:
