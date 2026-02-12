@@ -1,10 +1,12 @@
-Run the /microsim-generator skill on all the #### Diagram elements in @docs/chapters/06-functions-and-modular-design/index.md
-
 01-intro-to-computer-science
 02-python-fundamentals
 03-boolean-logic
 04-control-flow
 05-working-with-strings
+
+Run the /microsim-generator skill on all the #### Diagram elements in @docs/chapters/06-functions-and-modular-design/index.md
+
+
 06-functions-and-modular-design
 07-higher-order-functions-and-recursion
 08-lists
