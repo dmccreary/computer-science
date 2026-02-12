@@ -28,7 +28,7 @@ TODO: Describe how students should interact with this MicroSim.
 ## Iframe Embed Code
 
 ```html
-<iframe src="main.html"
+<iframe src="https://dmccreary.github.io/computer-science/sims/nested-loop-grid/main.html"
         height="450px"
         width="100%"
         scrolling="no"></iframe>
