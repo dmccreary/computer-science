@@ -156,7 +156,7 @@ function updateCanvasSize() {
 function buildNodes() {
   let cx = canvasWidth / 2;
   let cy = drawHeight / 2 + 10;
-  let nodeW = max(110, canvasWidth * 0.2);
+  let nodeW = max(110, canvasWidth * 0.2) + 15;
   let nodeH = max(55, canvasWidth * 0.1);
   let spreadX = max(140, canvasWidth * 0.3);
   let spreadY = max(120, drawHeight * 0.28);
@@ -300,8 +300,8 @@ function drawTooltip(nodeIndex) {
   let padding = 12;
   let lineH = max(16, canvasWidth * 0.03);
   let smallLineH = lineH * 0.9;
-  let titleSize = max(15, canvasWidth * 0.032);
-  let bodySize = max(13, canvasWidth * 0.028);
+  let titleSize = max(11, canvasWidth * 0.032 - 4);
+  let bodySize = max(9, canvasWidth * 0.028 - 4);
 
   // Calculate tooltip position - keep it within canvas
   let tx = n.x;

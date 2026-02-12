@@ -1,3 +1,9 @@
+## MicroSim Canvas Rules
+
+- **Never clamp canvasWidth.** In `updateCanvasSize()`, always use `canvasWidth = mainEl.clientWidth;` with no `min()` or `max()` wrappers. The canvas must match the container width exactly.
+
+---
+
 ## Tone and Writing Style
 
 ### Target Audience
