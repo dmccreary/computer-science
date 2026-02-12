@@ -70,6 +70,7 @@ nav:
     - String Methods Explorer: sims/string-methods-explorer/index.md
     - String Operations Playground: sims/string-operations/index.md
     - String Slicing Playground: sims/string-slicing-playground/index.md
+    - Symbol Character Quiz: sims/symbol-character-quiz/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
 

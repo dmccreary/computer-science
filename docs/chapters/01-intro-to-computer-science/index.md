@@ -457,7 +457,7 @@ The most common Unicode encoding is called **UTF-8**. It's cleverly designed to 
 
 #### Diagram: ASCII Character Map
 
-<iframe src="../../sims/ascii-character-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ascii-character-map/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>ASCII Character Map Interactive Explorer</summary>
@@ -498,6 +498,110 @@ Type: infographic
 **Responsive:** Grid adjusts column count based on window width
 
 **Instructional Rationale:** A visual grid layout supports the Remember level by letting students browse and locate characters spatially. Color-coding by category reveals the organizational structure of ASCII. The hover-to-reveal interaction encourages active exploration rather than passive reading of a table.
+</details>
+
+## Special Symbols for Coding
+
+Now that you know about ASCII and character encoding, let's talk about something that trips up almost every new programmer: **special symbols**. When you write an essay, you mostly use letters, spaces, and the occasional comma or period. But when you write code, you suddenly need *all sorts* of weird characters — curly braces, brackets, asterisks, tildes — many of which you've probably never typed on purpose before.
+
+Learning the names of these symbols is more important than you might think. When your teacher says "put the argument inside parentheses" or a tutorial says "use a backslash, not a forward slash," you need to know exactly which key to press. Let's sort out the most commonly confused ones.
+
+### The Bracket Family
+
+The three types of brackets are probably the #1 source of confusion for beginners. They look similar, but each one has a completely different job in most programming languages:
+
+| Symbol | Name | What Programmers Use It For |
+|:------:|------|---------------------------|
+| `( )` | **Parentheses** (or "parens") | Calling functions: `print("hello")` |
+| `[ ]` | **Square brackets** | Working with lists: `colors[0]` |
+| `{ }` | **Curly braces** (or just "braces") | Grouping blocks of code (in languages like JavaScript and C) |
+
+Here's a memory trick: parentheses are *round* like a phone receiver — you use them to *call* functions. Square brackets are *boxy* like a filing cabinet — you use them to look up items by their *index*. Curly braces are *fancy* like a decorative frame — they wrap around whole *blocks* of code.
+
+In Python, you'll use parentheses and square brackets constantly. Curly braces show up when you work with dictionaries (a topic for a later chapter).
+
+!!! mascot-tip "Monty says: Let's debug this together!"
+    ![Monty](../../img/monty-tip.png){ align=left width="80" }
+    When you get an error about a "missing closing bracket," check that every opening symbol has a matching closer — and that you used the *right type*. A `(` must close with `)`, not `]` or `}`. Most code editors highlight matching pairs when you click on one, so use that to your advantage!
+
+### Quotes and That Other One
+
+Three characters on your keyboard look almost identical but mean very different things:
+
+| Symbol | Name | Keyboard Location |
+|:------:|------|------------------|
+| `'` | **Single quote** (apostrophe) | Next to the Enter key |
+| `"` | **Double quote** | Shift + the single quote key |
+| `` ` `` | **Backtick** (grave accent) | Top-left corner, below Escape |
+
+In Python, single quotes and double quotes both create text strings — `'hello'` and `"hello"` do the same thing. The backtick, however, is *not* used in Python. You'll see it in other languages like JavaScript and in Markdown formatting. Beginners often hit the backtick when they mean to type a single quote, leading to mysterious errors.
+
+### Slash vs. Backslash
+
+These two get swapped all the time:
+
+| Symbol | Name | Example Use |
+|:------:|------|------------|
+| `/` | **Forward slash** | Web addresses: `https://example.com` |
+| `\` | **Backslash** | Escape characters in strings: `\n` means "new line" |
+
+An easy way to remember: a **forward** slash leans **forward** (to the right), like someone walking forward. A **back**slash leans **back** (to the left).
+
+### Underscore vs. Hyphen
+
+| Symbol | Name | Example Use |
+|:------:|------|------------|
+| `_` | **Underscore** | Variable names: `player_score` |
+| `-` | **Hyphen** (minus sign) | Subtraction: `10 - 3` |
+
+In Python, variable names can contain underscores but *not* hyphens. If you write `player-score`, Python thinks you're trying to subtract `score` from `player`. This catches a lot of beginners off guard.
+
+### Other Symbols Worth Knowing
+
+A few more characters that show up constantly in code:
+
+| Symbol | Name | What It Does in Python |
+|:------:|------|----------------------|
+| `#` | **Hash** (number sign) | Starts a comment: `# this is a note` |
+| `*` | **Asterisk** | Multiplication: `5 * 3` |
+| `&` | **Ampersand** | Bitwise AND operator |
+| `\|` | **Pipe** | Bitwise OR operator |
+| `^` | **Caret** | Exponentiation? Nope — it's bitwise XOR! (Use `**` for powers) |
+| `~` | **Tilde** | Bitwise NOT operator |
+| `@` | **At sign** | Decorators (an advanced topic) |
+
+Don't worry about memorizing every single one right now. You'll pick them up naturally as you start coding. The quiz below is a great way to start building that muscle memory.
+
+!!! mascot-encourage "Monty says: You've got this!"
+    ![Monty](../../img/monty-encourages.png){ align=left width="80" }
+    Feeling overwhelmed by all these symbols? Totally normal. Nobody memorizes them all on day one. Take the quiz below a few times, and before you know it you'll be reading code symbols as easily as you read words. Practice makes permanent!
+
+#### Diagram: Symbol Character Quiz
+
+<iframe src="../../sims/symbol-character-quiz/main.html" width="100%" height="512px" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Symbol Character Quiz MicroSim</summary>
+Type: microsim
+**sim-id:** symbol-character-quiz<br/>
+**Library:** p5.js<br/>
+**Status:** Running
+
+**Bloom Level:** Apply (L3)
+**Bloom Verb:** identify, recall
+
+**Learning Objective:** Students will be able to identify the 31 ASCII symbol characters by name when given the character name as a prompt.
+
+**Purpose:** An interactive quiz where a symbol name is displayed and the student must click the correct character in a grid of all printable ASCII symbols.
+
+**Interactive controls:**
+- Slider to set the number of quiz questions (1 to 31)
+- "Start Quiz" button to begin
+- Click any symbol cell to answer the current question
+
+**Visual style:** Grid of symbol cells with purple backgrounds, hover highlighting, score tracking, and confetti celebration on completion
+
+**Instructional Rationale:** Active recall through a quiz format supports the Apply level by requiring students to match symbol names to their visual representations. Immediate feedback (correct/try again) builds fluency. The adjustable question count lets students start small and build confidence.
 </details>
 
 ## Programming Languages: Talking to Computers
