@@ -65,7 +65,7 @@ const compInfo = {
 function updateCanvasSize() {
   let mainEl = document.querySelector('main');
   if (mainEl) {
-    canvasWidth = max(350, min(mainEl.clientWidth, 580));
+    canvasWidth = mainEl.clientWidth;
   }
   canvasHeight = drawHeight + controlHeight;
 }
@@ -489,7 +489,7 @@ function drawTooltip(id) {
   let lineH = 18;
   let th = lineH * 3 + 12;
   let tx = margin;
-  let ty = drawHeight - th - 10;
+  let ty = drawHeight - th - 15;
 
   // Background
   fill(255, 255, 255, 235);
