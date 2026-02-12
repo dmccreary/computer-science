@@ -31,7 +31,7 @@ This infographic-style MicroSim shows a Dog class as a blue cookie cutter on the
 ## Iframe Embed Code
 
 ```html
-<iframe src="main.html"
+<iframe src="https://dmccreary.github.io/computer-science/sims/class-vs-object-diagram/main.html"
         height="450px"
         width="100%"
         scrolling="no"></iframe>

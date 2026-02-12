@@ -35,7 +35,7 @@ map of what's happening inside the box on your desk.
 ## Iframe Embed Code
 
 ```html
-<iframe src="main.html"
+<iframe src="https://dmccreary.github.io/computer-science/sims/inside-a-computer/main.html"
         height="510px"
         width="100%"
         scrolling="no"></iframe>
