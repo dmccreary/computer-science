@@ -129,7 +129,7 @@ Write comments for your future self. Trust us — when you look at your code two
 
 #### Diagram: Python REPL vs. Scripts
 
-<iframe src="../../sims/repl-vs-scripts/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/repl-vs-scripts/main.html" width="100%" height="612px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Python REPL vs. Scripts Interactive Comparison</summary>
@@ -313,7 +313,7 @@ Strings can contain letters, digits, spaces, punctuation — anything you can ty
 
 #### Diagram: Python Data Types Overview
 
-<iframe src="../../sims/python-data-types/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/python-data-types/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Python Data Types Interactive Overview</summary>
@@ -494,7 +494,7 @@ leftover = students % team_size       # 3 students left over
 
 #### Diagram: Arithmetic Operators Explorer
 
-<iframe src="../../sims/arithmetic-operators/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/arithmetic-operators/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Arithmetic Operators Interactive Explorer</summary>
@@ -664,7 +664,7 @@ The `:.2f` part is a format specifier that rounds to 2 decimal places — handy 
 
 #### Diagram: String Operations Playground
 
-<iframe src="../../sims/string-operations/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/string-operations/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>String Operations Interactive Playground</summary>
@@ -780,7 +780,7 @@ Here's the easy way to remember: **expressions produce values, statements perfor
 
 #### Diagram: Expressions vs. Statements
 
-<iframe src="../../sims/expressions-vs-statements/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/expressions-vs-statements/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Expressions vs Statements Sorting Activity</summary>
@@ -876,7 +876,7 @@ Good readability isn't just being nice to other people — it's being nice to yo
 
 #### Diagram: Code Readability Comparison
 
-<iframe src="../../sims/code-readability/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/code-readability/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Code Readability Before-and-After Comparison</summary>

@@ -1,8 +1,8 @@
 ---
 title: "AP Computer Science with Python"
 description: A level 2.9 interactive intelligent textbook on AP computer science with Python
-image: /img/cover.jpg
-og:image: /img/cover.jpg
+image: /img/cover.png
+og:image: /img/cover.png
 hide:
     - toc
 ---

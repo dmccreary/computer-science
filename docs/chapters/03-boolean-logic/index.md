@@ -144,7 +144,7 @@ That last one might surprise you. Capital letters come before lowercase letters 
 
 #### Diagram: Comparison Operator Explorer
 
-<iframe src="../../sims/comparison-operator-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/comparison-operator-explorer/main.html" width="100%" height="462px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Comparison Operator Explorer MicroSim</summary>
@@ -286,7 +286,7 @@ Here's the truth table for `not`:
 
 #### Diagram: Logical Operator Venn Diagrams
 
-<iframe src="../../sims/logical-operator-venn/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/logical-operator-venn/main.html" width="100%" height="472px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Logical Operator Venn Diagrams MicroSim</summary>
@@ -362,7 +362,7 @@ With three variables we need 8 rows to cover every combination. This might seem 
 
 #### Diagram: Interactive Truth Table Builder
 
-<iframe src="../../sims/truth-table-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/truth-table-builder/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Truth Table Builder MicroSim</summary>
@@ -524,7 +524,7 @@ Here's a reference table for Boolean conversion:
 
 #### Diagram: Truthiness Tester
 
-<iframe src="../../sims/truthiness-tester/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/truthiness-tester/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Truthiness Tester MicroSim</summary>
@@ -677,7 +677,7 @@ This means you can write expressions like `x + 1 > 5 and y * 2 < 10` and Python 
 
 #### Diagram: Order of Operations Visualizer
 
-<iframe src="../../sims/boolean-order-of-ops/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/boolean-order-of-ops/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Boolean Order of Operations Visualizer MicroSim</summary>
@@ -789,7 +789,7 @@ The pattern: when you push `not` through parentheses, `and` becomes `or`, and `o
 
 #### Diagram: De Morgan's Laws Visualizer
 
-<iframe src="../../sims/demorgans-laws/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/demorgans-laws/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>De Morgan's Laws Interactive Visualizer</summary>
