@@ -39,20 +39,28 @@ nav:
     - Arithmetic Operators Explorer: sims/arithmetic-operators/index.md
     - ASCII Character Map: sims/ascii-character-map/index.md
     - Binary Number Explorer: sims/binary-number-explorer/index.md
+    - Break vs Continue Visualizer: sims/break-vs-continue/index.md
     - Code Readability Comparison: sims/code-readability/index.md
     - Comparison Operator Explorer: sims/comparison-operator-explorer/index.md
     - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
     - Computational Thinking Pillars: sims/computational-thinking-pillars/index.md
+    - Control Flow Patterns: sims/control-flow-patterns/index.md
     - De Morgan's Laws Visualizer: sims/demorgans-laws/index.md
     - Expressions vs. Statements: sims/expressions-vs-statements/index.md
+    - If-Elif-Else Flowchart: sims/if-elif-else-flowchart/index.md
     - Inside a Computer: sims/inside-a-computer/index.md
     - Interactive Truth Table Builder: sims/truth-table-builder/index.md
     - Logical Operator Venn Diagrams: sims/logical-operator-venn/index.md
+    - Loop Patterns Comparison: sims/loop-patterns-comparison/index.md
+    - Nested Loop Grid Visualizer: sims/nested-loop-grid/index.md
     - Order of Operations Visualizer: sims/boolean-order-of-ops/index.md
     - Python Data Types Overview: sims/python-data-types/index.md
     - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md
+    - Range Function Explorer: sims/range-function-explorer/index.md
     - String Operations Playground: sims/string-operations/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
+
+
 
 
 

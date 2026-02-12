@@ -86,7 +86,7 @@ Sequential execution is fine for simple tasks, but real programs need to make de
 
 #### Diagram: Control Flow Patterns
 
-<iframe src="../../sims/control-flow-patterns/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/control-flow-patterns/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Control Flow Patterns Flowchart</summary>
@@ -204,7 +204,7 @@ This is important: **order matters** with elif chains. Python takes the first ma
 
 #### Diagram: If-Elif-Else Flowchart
 
-<iframe src="../../sims/if-elif-else-flowchart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/if-elif-else-flowchart/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>If-Elif-Else Flowchart MicroSim</summary>
@@ -381,7 +381,7 @@ for i in range(5, 0, -1):
 
 #### Diagram: Range Function Explorer
 
-<iframe src="../../sims/range-function-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/range-function-explorer/main.html" width="100%" height="467px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Range Function Explorer MicroSim</summary>
@@ -516,7 +516,7 @@ Here's a comparison to keep them straight:
 
 #### Diagram: Break vs Continue Visualizer
 
-<iframe src="../../sims/break-vs-continue/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/break-vs-continue/main.html" width="100%" height="472px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Break vs Continue Visualizer MicroSim</summary>
@@ -599,7 +599,7 @@ Output:
 
 #### Diagram: Nested Loop Grid Visualizer
 
-<iframe src="../../sims/nested-loop-grid/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/nested-loop-grid/main.html" width="100%" height="472px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Nested Loop Grid Visualizer MicroSim</summary>
@@ -778,7 +778,7 @@ The flag starts as `False` and gets flipped to `True` when the condition is foun
 
 #### Diagram: Loop Patterns Comparison
 
-<iframe src="../../sims/loop-patterns-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/loop-patterns-comparison/main.html" width="100%" height="512px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Loop Patterns Comparison MicroSim</summary>
