@@ -54,11 +54,19 @@ nav:
     - Loop Patterns Comparison: sims/loop-patterns-comparison/index.md
     - Nested Loop Grid Visualizer: sims/nested-loop-grid/index.md
     - Order of Operations Visualizer: sims/boolean-order-of-ops/index.md
+    - Palindrome Checker: sims/palindrome-checker/index.md
     - Python Data Types Overview: sims/python-data-types/index.md
     - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md
     - Range Function Explorer: sims/range-function-explorer/index.md
+    - Split and Join Visualizer: sims/split-join-visualizer/index.md
+    - String Formatting Comparison: sims/string-formatting-comparison/index.md
+    - String Indexing Visualizer: sims/string-indexing-visualizer/index.md
+    - String Methods Explorer: sims/string-methods-explorer/index.md
     - String Operations Playground: sims/string-operations/index.md
+    - String Slicing Playground: sims/string-slicing-playground/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
+
+
 
 
 
