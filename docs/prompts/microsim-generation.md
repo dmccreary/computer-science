@@ -18,8 +18,11 @@ Run the /microsim-generator skill on all the #### Diagram elements in @docs/chap
                                                   
 ## TODO
 
+ parallel on all the #### Diagram elements in @docs/chapters/12-classes-and-objects/index.md
 
-Run the /microsim-generator skill on all the first three #### Diagram elements in @docs/chapters/09-advanced-list-operations/index.md
+
+
+Run the /microsim-generator skill sequentially on the #### Diagram elements in @docs/chapters/13-inheritance-and-polymorphism/index.md - DO NOT RUN IN PARALLEL!
 
 09-advanced-list-operations
 10-tuples-and-sets
