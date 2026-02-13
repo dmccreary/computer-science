@@ -92,10 +92,13 @@ nav:
     - String Slicing Playground: sims/string-slicing-playground/index.md
     - Symbol Character Quiz: sims/symbol-character-quiz/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
+    - Tuple and Set Concept Map: sims/tuple-set-concept-map/index.md
     - Tuple vs List Mutability: sims/tuple-vs-list-mutability/index.md
     - Tuples vs Lists Decision Helper: sims/tuples-vs-lists/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
     - Zip Function Visualizer: sims/zip-function-visualizer/index.md
+
+
 
 
 
