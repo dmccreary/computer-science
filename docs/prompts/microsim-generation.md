@@ -26,6 +26,8 @@ Run the /microsim-generator skill sequentially on the #### Diagram elements in @
 
 Run the /microsim-generator skill sequentially on the #### Diagram elements in @docs/chapters/14-errors-and-exceptions/index.md - DO NOT RUN IN PARALLEL!
 
+Run the /microsim-generator skill sequentially on the #### Diagram elements in @docs/chapters/15-file-input-and-output/index.md - DO NOT RUN IN PARALLEL!
+
 09-advanced-list-operations
 10-tuples-and-sets
 11-dictionaries
