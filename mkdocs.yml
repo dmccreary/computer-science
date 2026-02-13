@@ -46,25 +46,31 @@ nav:
     - Comparison Operator Explorer: sims/comparison-operator-explorer/index.md
     - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
     - Computational Thinking Pillars: sims/computational-thinking-pillars/index.md
-    - CS Language Trends: sims/cs-lang-trends/index.md
     - Control Flow Patterns: sims/control-flow-patterns/index.md
     - De Morgan's Laws Visualizer: sims/demorgans-laws/index.md
     - Expressions vs. Statements: sims/expressions-vs-statements/index.md
+    - Factorial Recursion Tree: sims/factorial-recursion-tree/index.md
+    - Fibonacci Tree Visualization: sims/fibonacci-tree/index.md
     - Function Anatomy: sims/function-anatomy/index.md
     - Function Call Flow: sims/function-call-flow/index.md
     - Function Pattern Gallery: sims/function-pattern-gallery/index.md
+    - Higher-Order Functions Flow: sims/higher-order-functions-flow/index.md
     - If-Elif-Else Flowchart: sims/if-elif-else-flowchart/index.md
     - Inside a Computer: sims/inside-a-computer/index.md
     - Interactive Truth Table Builder: sims/truth-table-builder/index.md
     - Logical Operator Venn Diagrams: sims/logical-operator-venn/index.md
     - Loop Patterns Comparison: sims/loop-patterns-comparison/index.md
+    - Map Filter Reduce Pipeline: sims/map-filter-reduce-pipeline/index.md
     - Modular Design Builder: sims/modular-design-builder/index.md
     - Nested Loop Grid Visualizer: sims/nested-loop-grid/index.md
     - Order of Operations Visualizer: sims/boolean-order-of-ops/index.md
     - Palindrome Checker: sims/palindrome-checker/index.md
     - Python Data Types Overview: sims/python-data-types/index.md
     - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md
+    - Python vs Java Language Popularity: sims/cs-lang-trends/index.md
     - Range Function Explorer: sims/range-function-explorer/index.md
+    - Recursion vs Iteration Side-by-Side: sims/recursion-vs-iteration/index.md
+    - Recursive Call Stack Visualizer: sims/recursive-call-stack/index.md
     - Split and Join Visualizer: sims/split-join-visualizer/index.md
     - String Formatting Comparison: sims/string-formatting-comparison/index.md
     - String Indexing Visualizer: sims/string-indexing-visualizer/index.md
@@ -74,6 +80,8 @@ nav:
     - Symbol Character Quiz: sims/symbol-character-quiz/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
+
+
 
 
 

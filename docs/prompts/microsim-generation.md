@@ -1,3 +1,6 @@
+# MicroSim Generation Prompts
+
+## Done
 01-intro-to-computer-science
 02-python-fundamentals
 03-boolean-logic
@@ -6,10 +9,22 @@
 
 Run the /microsim-generator skill on all the #### Diagram elements in @docs/chapters/06-functions-and-modular-design/index.md
 
+# In Progress
 
-06-functions-and-modular-design
-07-higher-order-functions-and-recursion
-08-lists
+Run the /microsim-generator skill on all the #### Diagram elements in @docs/chapters/07-higher-order-functions-and-recursion/index.md
+
+ ◼ Implement higher-order-functions-flow MicroSim                                                                   
+     ◼ Implement map-filter-reduce-pipeline MicroSim                                                                    
+     ◼ Implement factorial-recursion-tree MicroSim                                                                    
+     ◼ Implement recursive-call-stack MicroSim                                                                          
+     ◼ Implement fibonacci-tree MicroSim                                                                                
+     ◼ Implement recursion-vs-iteration MicroSim                                                                        
+                                                  
+## TODO
+
+Run the /microsim-generator skill on all the #### Diagram elements in @docs/chapters/08-lists/index.md
+
+
 09-advanced-list-operations
 10-tuples-and-sets
 11-dictionaries
