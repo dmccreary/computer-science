@@ -1,0 +1,62 @@
+{
+  "title": "Set Operations with Venn Diagrams",
+  "creator": "Dan McCreary",
+  "subject": "Computer Science and Discrete Mathematics",
+  "description": "Interactive p5.js Venn diagram that computes union, intersection, difference, and symmetric difference while showing equivalent Python set code.",
+  "date": "2026-02-13",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Set Operations with Venn Diagrams",
+    "learningObjectives": [
+      "Compute union, intersection, difference, and symmetric difference for two sets.",
+      "Demonstrate how visual Venn regions correspond to Python set operators |, &, -, and ^.",
+      "Explain how swapping sets changes directional difference (A-B vs B-A)."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Basic set notation",
+      "Python literal syntax",
+      "Understanding of membership and equality"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 590
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Visual-to-code bridging with immediate computational feedback",
+    "keyQuestions": [
+      "Which region of the Venn diagram corresponds to each set operator?",
+      "Why does A-B change when sets are swapped, while union does not?"
+    ],
+    "commonMisconceptions": [
+      "Difference is commutative like union",
+      "Symmetric difference includes overlap"
+    ],
+    "assessmentOpportunities": [
+      "Ask students to compute output before pressing operation buttons",
+      "Modify set contents and verify computed code output"
+    ]
+  },
+  "chapter": ""
+}

@@ -341,7 +341,7 @@ So when should you use a tuple, and when should you use a list? Here's a clear c
 
 #### Diagram: Tuples vs Lists Comparison
 
-<iframe src="../../sims/tuples-vs-lists/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/tuples-vs-lists/main.html" width="100%" height="520px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Tuples vs Lists Interactive Comparison</summary>

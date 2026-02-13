@@ -80,6 +80,8 @@ nav:
     - Range Function Explorer: sims/range-function-explorer/index.md
     - Recursion vs Iteration Side-by-Side: sims/recursion-vs-iteration/index.md
     - Recursive Call Stack Visualizer: sims/recursive-call-stack/index.md
+    - Removing Duplicates with a Set: sims/removing-duplicates/index.md
+    - Set Operations with Venn Diagrams: sims/venn-diagram-sets/index.md
     - Shallow vs Deep Copy Visualizer: sims/shallow-vs-deep-copy/index.md
     - Split and Join Visualizer: sims/split-join-visualizer/index.md
     - Stack Simulator: sims/stack-simulator/index.md
@@ -90,8 +92,18 @@ nav:
     - String Slicing Playground: sims/string-slicing-playground/index.md
     - Symbol Character Quiz: sims/symbol-character-quiz/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
+    - Tuple vs List Mutability: sims/tuple-vs-list-mutability/index.md
+    - Tuples vs Lists Decision Helper: sims/tuples-vs-lists/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
     - Zip Function Visualizer: sims/zip-function-visualizer/index.md
+
+
+
+
+
+
+
+
 
 
 
