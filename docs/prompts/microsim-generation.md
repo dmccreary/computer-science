@@ -13,17 +13,13 @@ Run the /microsim-generator skill on all the #### Diagram elements in @docs/chap
 
 Run the /microsim-generator skill on all the #### Diagram elements in @docs/chapters/07-higher-order-functions-and-recursion/index.md
 
- ◼ Implement higher-order-functions-flow MicroSim                                                                   
-     ◼ Implement map-filter-reduce-pipeline MicroSim                                                                    
-     ◼ Implement factorial-recursion-tree MicroSim                                                                    
-     ◼ Implement recursive-call-stack MicroSim                                                                          
-     ◼ Implement fibonacci-tree MicroSim                                                                                
-     ◼ Implement recursion-vs-iteration MicroSim                                                                        
+Run the /microsim-generator skill on all the #### Diagram elements in @docs/chapters/08-lists/index.md
+                                                                       
                                                   
 ## TODO
 
-Run the /microsim-generator skill on all the #### Diagram elements in @docs/chapters/08-lists/index.md
 
+Run the /microsim-generator skill on all the first three #### Diagram elements in @docs/chapters/09-advanced-list-operations/index.md
 
 09-advanced-list-operations
 10-tuples-and-sets

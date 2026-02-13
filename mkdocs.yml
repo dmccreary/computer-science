@@ -58,9 +58,12 @@ nav:
     - If-Elif-Else Flowchart: sims/if-elif-else-flowchart/index.md
     - Inside a Computer: sims/inside-a-computer/index.md
     - Interactive Truth Table Builder: sims/truth-table-builder/index.md
+    - List Aliasing Visualizer: sims/list-aliasing-visualizer/index.md
     - List Creation Visualizer: sims/list-creation-visualizer/index.md
     - List Indexing and Slicing Explorer: sims/list-index-slice-explorer/index.md
     - List Methods Playground: sims/list-methods-playground/index.md
+    - List Operations Cheat Sheet: sims/list-operations-cheat-sheet/index.md
+    - List Statistics Dashboard: sims/list-statistics-dashboard/index.md
     - List Traversal Animator: sims/list-traversal-animator/index.md
     - Logical Operator Venn Diagrams: sims/logical-operator-venn/index.md
     - Loop Patterns Comparison: sims/loop-patterns-comparison/index.md
@@ -73,10 +76,13 @@ nav:
     - Python Data Types Overview: sims/python-data-types/index.md
     - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md
     - Python vs Java Language Popularity: sims/cs-lang-trends/index.md
+    - Queue Simulator: sims/queue-simulator/index.md
     - Range Function Explorer: sims/range-function-explorer/index.md
     - Recursion vs Iteration Side-by-Side: sims/recursion-vs-iteration/index.md
     - Recursive Call Stack Visualizer: sims/recursive-call-stack/index.md
+    - Shallow vs Deep Copy Visualizer: sims/shallow-vs-deep-copy/index.md
     - Split and Join Visualizer: sims/split-join-visualizer/index.md
+    - Stack Simulator: sims/stack-simulator/index.md
     - String Formatting Comparison: sims/string-formatting-comparison/index.md
     - String Indexing Visualizer: sims/string-indexing-visualizer/index.md
     - String Methods Explorer: sims/string-methods-explorer/index.md
@@ -86,6 +92,10 @@ nav:
     - Truthiness Tester: sims/truthiness-tester/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
     - Zip Function Visualizer: sims/zip-function-visualizer/index.md
+
+
+
+
 
 
 
