@@ -1,0 +1,59 @@
+{
+  "title": "Removing Duplicates with a Set",
+  "creator": "Dan McCreary",
+  "subject": "Computer Science",
+  "description": "Interactive MicroSim that demonstrates removing duplicate values by converting a list to a set and then converting back to a list.",
+  "date": "2026-02-13",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Sets and Duplicate Removal",
+    "learningObjectives": [
+      "Students will be able to use a set to remove duplicate values from a list by stepping through conversion and observing duplicates being discarded."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "List literals and traversal",
+      "Basic set concept (unique membership)"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 600
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js CDN"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Step-by-step guided visualization with immediate feedback",
+    "keyQuestions": [
+      "Why does the set reject repeated values?",
+      "How does converting back to a list preserve uniqueness?"
+    ],
+    "commonMisconceptions": [
+      "A set keeps every repeated value",
+      "Converting to a set and back keeps original duplicates"
+    ],
+    "assessmentOpportunities": [
+      "Predict output list before conversion",
+      "Explain acceptance vs rejection at each step"
+    ]
+  },
+  "chapter": "10-tuples-and-sets"
+}

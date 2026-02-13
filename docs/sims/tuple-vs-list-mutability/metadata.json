@@ -1,0 +1,61 @@
+{
+  "title": "Tuple vs List Mutability",
+  "creator": "Dan McCreary",
+  "subject": "Computer Science",
+  "description": "Interactive p5.js MicroSim comparing mutable lists with immutable tuples using identical operations and immediate visual feedback.",
+  "date": "2026-02-13",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Tuple vs List Mutability",
+    "learningObjectives": [
+      "Explain the difference between mutable lists and immutable tuples by comparing outcomes of change, add, and remove operations.",
+      "Identify why tuple modification attempts raise runtime errors while list modifications succeed."
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Basic Python syntax",
+      "List indexing",
+      "Tuple syntax"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 480
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Direct side-by-side comparison with immediate success/error feedback",
+    "keyQuestions": [
+      "Why does changing an item succeed for a list but fail for a tuple?",
+      "What does immutable mean in practical coding terms?"
+    ],
+    "commonMisconceptions": [
+      "Tuples and lists are interchangeable for all operations",
+      "Parentheses vs brackets is only stylistic"
+    ],
+    "assessmentOpportunities": [
+      "Students explain observed behavior after each operation",
+      "Students classify new operations as valid for list, tuple, or both"
+    ]
+  },
+  "chapter": ""
+}
