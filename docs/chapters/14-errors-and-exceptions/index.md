@@ -138,6 +138,8 @@ SyntaxError: EOL while scanning string literal
 
 The fix for syntax errors is straightforward: read the error message, look at the line it points to, and fix the typo or missing character. Think of it like a spell-checker for code.
 
+<iframe src="../../sims/error-type-identifier/main.html" width="100%" height="472px" scrolling="no" style="overflow: hidden; border: 1px solid silver;"></iframe>
+
 <details markdown="1">
 <summary>MicroSim: Error Type Identifier</summary>
 
@@ -240,6 +242,8 @@ Logic errors are the hardest to find because you don't get a helpful error messa
 !!! mascot-thinking "Monty says: You've got this!"
     ![Monty](../../img/monty-thinking.png){ align=left width="80" }
     Here's how I remember the three error types: **Syntax errors** = you spoke bad grammar and Python couldn't understand you. **Runtime errors** = Python understood you but ran into a problem while doing what you asked. **Logic errors** = Python did exactly what you asked, but what you asked was wrong. The first two give you error messages. The third one? You're on your own, detective!
+
+<iframe src="../../sims/error-types-comparison/main.html" width="100%" height="462px" scrolling="no" style="overflow: hidden; border: 1px solid silver;"></iframe>
 
 <details markdown="1">
 <summary>Diagram: Three Types of Errors Comparison</summary>
@@ -445,6 +449,8 @@ email = student.get("email", "No email on file")
 print(email)  # "No email on file"
 ```
 
+<iframe src="../../sims/exception-hierarchy/main.html" width="100%" height="462px" scrolling="no" style="overflow: hidden; border: 1px solid silver;"></iframe>
+
 <details markdown="1">
 <summary>Diagram: Python Exception Hierarchy</summary>
 
@@ -603,6 +609,8 @@ except (ValueError, ZeroDivisionError):
     print("Please enter a valid non-zero number.")
 ```
 
+<iframe src="../../sims/try-except-builder/main.html" width="100%" height="572px" scrolling="no" style="overflow: hidden; border: 1px solid silver;"></iframe>
+
 <details markdown="1">
 <summary>MicroSim: Try-Except Block Builder</summary>
 
@@ -719,6 +727,8 @@ finally:
     # This ALWAYS runs
     print("Thanks for playing!")
 ```
+
+<iframe src="../../sims/try-except-flow/main.html" width="100%" height="572px" scrolling="no" style="overflow: hidden; border: 1px solid silver;"></iframe>
 
 <details markdown="1">
 <summary>Diagram: Try-Except-Finally Flow Chart</summary>
@@ -918,6 +928,8 @@ except InsufficientFundsError as e:
 Cannot withdraw $75. Balance: $50. Short by: $25
 You need $25 more
 ```
+
+<iframe src="../../sims/exception-handling-sim/main.html" width="100%" height="572px" scrolling="no" style="overflow: hidden; border: 1px solid silver;"></iframe>
 
 <details markdown="1">
 <summary>MicroSim: Exception Handling Simulator</summary>
