@@ -3,7 +3,7 @@
 Interactive simulations that let you explore computer science concepts
 by experimenting in real time. Click any card to launch the MicroSim.
 
-**Total MicroSims:** 50 | **Chapters covered:** 8
+**Total MicroSims:** 56 | **Chapters covered:** 9
 
 ## Chapter 1: Intro to Computer Science
 
@@ -344,6 +344,48 @@ by experimenting in real time. Click any card to launch the MicroSim.
     ![Zip Function Visualizer](./zip-function-visualizer/zip-function-visualizer.png)
 
     Watch zip() pair elements from multiple lists together with an animated zipper metaphor.
+
+</div>
+
+## Chapter 9: Advanced List Operations
+
+<div class="grid cards" markdown>
+
+-   **[List Aliasing Visualizer](./list-aliasing-visualizer/index.md)**
+
+    ![List Aliasing Visualizer](./list-aliasing-visualizer/list-aliasing-visualizer.png)
+
+    See how variable names map to list objects in memory and discover the difference between aliases and copies.
+
+-   **[Shallow vs Deep Copy Visualizer](./shallow-vs-deep-copy/index.md)**
+
+    ![Shallow vs Deep Copy Visualizer](./shallow-vs-deep-copy/shallow-vs-deep-copy.png)
+
+    Compare shallow and deep copies side by side and see how changes to nested elements propagate differently.
+
+-   **[List Statistics Dashboard](./list-statistics-dashboard/index.md)**
+
+    ![List Statistics Dashboard](./list-statistics-dashboard/list-statistics-dashboard.png)
+
+    Enter or generate a list of numbers and see len, min, max, sum, and average update in real time with a bar chart.
+
+-   **[Stack Simulator](./stack-simulator/index.md)**
+
+    ![Stack Simulator](./stack-simulator/stack-simulator.png)
+
+    Push and pop items on an interactive stack to experience LIFO (Last In, First Out) behavior.
+
+-   **[Queue Simulator](./queue-simulator/index.md)**
+
+    ![Queue Simulator](./queue-simulator/queue-simulator.png)
+
+    Enqueue and dequeue items to experience FIFO (First In, First Out) behavior, with a compare mode against a stack.
+
+-   **[List Operations Cheat Sheet](./list-operations-cheat-sheet/index.md)**
+
+    ![List Operations Cheat Sheet](./list-operations-cheat-sheet/list-operations-cheat-sheet.png)
+
+    Interactive reference for all advanced list operations organized by category with a Quiz Me mode.
 
 </div>
 
