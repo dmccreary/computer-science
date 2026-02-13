@@ -1,0 +1,52 @@
+{
+  "title": "Dog Class Interactive Playground",
+  "creator": "Dan McCreary",
+  "subject": "High School Computer Science",
+  "description": "Interactive MicroSim for creating Dog objects and calling methods",
+  "date": "2026-02-13",
+  "educational": {
+    "gradeLevel": ["9", "10", "11", "12"],
+    "subjectArea": "Computer Science",
+    "topic": "Classes and Objects",
+    "learningObjectives": [
+      "Create Dog objects with different attribute values",
+      "Call instance methods and observe their output",
+      "Understand the difference between __str__ and __repr__"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": ["Classes", "Objects", "Constructors", "Methods"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 600
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "What happens when you create a Dog object?",
+      "How does birthday() change the object's state?",
+      "What is the difference between str and repr output?"
+    ],
+    "commonMisconceptions": [
+      "Students may confuse __str__ with __repr__",
+      "Students may not realize each object has its own independent data"
+    ],
+    "assessmentOpportunities": [
+      "Predict method output before clicking",
+      "Explain why two dogs can have different ages"
+    ]
+  },
+  "chapter": "12-classes-and-objects"
+}

@@ -1,0 +1,52 @@
+{
+  "title": "OOP Benefits Concept Map",
+  "creator": "Dan McCreary",
+  "subject": "High School Computer Science",
+  "description": "Interactive concept map showing the five key benefits of Object-Oriented Programming",
+  "date": "2026-02-13",
+  "educational": {
+    "gradeLevel": ["9", "10", "11", "12"],
+    "subjectArea": "Computer Science",
+    "topic": "Benefits of Object-Oriented Programming",
+    "learningObjectives": [
+      "Summarize the key benefits of OOP",
+      "Explain why OOP is preferred for larger programs",
+      "Connect OOP benefits to concrete code examples"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "10-15 minutes",
+    "prerequisites": ["Classes", "Objects", "Methods", "Encapsulation"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 550
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with concept mapping",
+    "keyQuestions": [
+      "What are the five key benefits of OOP?",
+      "How does encapsulation protect data?",
+      "Why is OOP better than procedural code for large projects?"
+    ],
+    "commonMisconceptions": [
+      "OOP is always better than procedural programming",
+      "Encapsulation means data cannot be accessed at all"
+    ],
+    "assessmentOpportunities": [
+      "Name three benefits and give examples",
+      "Explain which benefit matters most for team projects"
+    ]
+  },
+  "chapter": "12-classes-and-objects"
+}

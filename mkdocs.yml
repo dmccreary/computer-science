@@ -36,6 +36,7 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - Animal Class Hierarchy: sims/animal-class-hierarchy/index.md
     - Arguments vs Parameters: sims/args-vs-params/index.md
     - Arithmetic Operators Explorer: sims/arithmetic-operators/index.md
     - ASCII Character Map: sims/ascii-character-map/index.md
@@ -48,6 +49,10 @@ nav:
     - Computational Thinking Pillars: sims/computational-thinking-pillars/index.md
     - Control Flow Patterns: sims/control-flow-patterns/index.md
     - De Morgan's Laws Visualizer: sims/demorgans-laws/index.md
+    - Dog Class Complete Structure: sims/dog-class-uml-diagram/index.md
+    - Dog Class Interactive Playground: sims/dog-class-playground/index.md
+    - Dunder Methods Cheat Sheet: sims/dunder-methods-cheatsheet/index.md
+    - Encapsulation Bank Vault Analogy: sims/encapsulation-bank-vault/index.md
     - Expressions vs. Statements: sims/expressions-vs-statements/index.md
     - Factorial Recursion Tree: sims/factorial-recursion-tree/index.md
     - Fibonacci Tree Visualization: sims/fibonacci-tree/index.md
@@ -57,6 +62,7 @@ nav:
     - Higher-Order Functions Flow: sims/higher-order-functions-flow/index.md
     - If-Elif-Else Flowchart: sims/if-elif-else-flowchart/index.md
     - Inside a Computer: sims/inside-a-computer/index.md
+    - Instance vs. Class Attributes: sims/instance-vs-class-attributes/index.md
     - Interactive Truth Table Builder: sims/truth-table-builder/index.md
     - List Aliasing Visualizer: sims/list-aliasing-visualizer/index.md
     - List Creation Visualizer: sims/list-creation-visualizer/index.md
@@ -69,10 +75,13 @@ nav:
     - Loop Patterns Comparison: sims/loop-patterns-comparison/index.md
     - Map Filter Reduce Pipeline: sims/map-filter-reduce-pipeline/index.md
     - Modular Design Builder: sims/modular-design-builder/index.md
+    - Music Library Class Diagram: sims/music-library-diagram/index.md
     - Nested List Grid Visualizer: sims/nested-list-grid/index.md
     - Nested Loop Grid Visualizer: sims/nested-loop-grid/index.md
+    - OOP Benefits Concept Map: sims/oop-benefits-concept-map/index.md
     - Order of Operations Visualizer: sims/boolean-order-of-ops/index.md
     - Palindrome Checker: sims/palindrome-checker/index.md
+    - Polymorphism Playground: sims/polymorphism-playground/index.md
     - Python Data Types Overview: sims/python-data-types/index.md
     - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md
     - Python vs Java Language Popularity: sims/cs-lang-trends/index.md
@@ -83,6 +92,7 @@ nav:
     - Removing Duplicates with a Set: sims/removing-duplicates/index.md
     - Set Operations with Venn Diagrams: sims/venn-diagram-sets/index.md
     - Shallow vs Deep Copy Visualizer: sims/shallow-vs-deep-copy/index.md
+    - Shape Hierarchy with Abstract Base Class: sims/shape-abstract-hierarchy/index.md
     - Split and Join Visualizer: sims/split-join-visualizer/index.md
     - Stack Simulator: sims/stack-simulator/index.md
     - String Formatting Comparison: sims/string-formatting-comparison/index.md
@@ -95,8 +105,11 @@ nav:
     - Tuple and Set Concept Map: sims/tuple-set-concept-map/index.md
     - Tuple vs List Mutability: sims/tuple-vs-list-mutability/index.md
     - Tuples vs Lists Decision Helper: sims/tuples-vs-lists/index.md
+    - UML Class Diagram Builder: sims/uml-class-diagram-builder/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
     - Zip Function Visualizer: sims/zip-function-visualizer/index.md
+
+
 
 
 
