@@ -53,6 +53,8 @@ nav:
     - Dog Class Interactive Playground: sims/dog-class-playground/index.md
     - Dunder Methods Cheat Sheet: sims/dunder-methods-cheatsheet/index.md
     - Encapsulation Bank Vault Analogy: sims/encapsulation-bank-vault/index.md
+    - Error Type Identifier: sims/error-type-identifier/index.md
+    - Exception Handling Simulator: sims/exception-handling-sim/index.md
     - Expressions vs. Statements: sims/expressions-vs-statements/index.md
     - Factorial Recursion Tree: sims/factorial-recursion-tree/index.md
     - Fibonacci Tree Visualization: sims/fibonacci-tree/index.md
@@ -83,6 +85,7 @@ nav:
     - Palindrome Checker: sims/palindrome-checker/index.md
     - Polymorphism Playground: sims/polymorphism-playground/index.md
     - Python Data Types Overview: sims/python-data-types/index.md
+    - Python Exception Hierarchy: sims/exception-hierarchy/index.md
     - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md
     - Python vs Java Language Popularity: sims/cs-lang-trends/index.md
     - Queue Simulator: sims/queue-simulator/index.md
@@ -101,13 +104,18 @@ nav:
     - String Operations Playground: sims/string-operations/index.md
     - String Slicing Playground: sims/string-slicing-playground/index.md
     - Symbol Character Quiz: sims/symbol-character-quiz/index.md
+    - Three Types of Errors: sims/error-types-comparison/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
+    - Try-Except Block Builder: sims/try-except-builder/index.md
+    - Try-Except-Finally Flow Chart: sims/try-except-flow/index.md
     - Tuple and Set Concept Map: sims/tuple-set-concept-map/index.md
     - Tuple vs List Mutability: sims/tuple-vs-list-mutability/index.md
     - Tuples vs Lists Decision Helper: sims/tuples-vs-lists/index.md
     - UML Class Diagram Builder: sims/uml-class-diagram-builder/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
     - Zip Function Visualizer: sims/zip-function-visualizer/index.md
+
+
 
 
 
