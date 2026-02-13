@@ -48,6 +48,7 @@ nav:
     - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
     - Computational Thinking Pillars: sims/computational-thinking-pillars/index.md
     - Control Flow Patterns: sims/control-flow-patterns/index.md
+    - CSV File Structure: sims/csv-file-structure/index.md
     - De Morgan's Laws Visualizer: sims/demorgans-laws/index.md
     - Dog Class Complete Structure: sims/dog-class-uml-diagram/index.md
     - Dog Class Interactive Playground: sims/dog-class-playground/index.md
@@ -58,6 +59,8 @@ nav:
     - Expressions vs. Statements: sims/expressions-vs-statements/index.md
     - Factorial Recursion Tree: sims/factorial-recursion-tree/index.md
     - Fibonacci Tree Visualization: sims/fibonacci-tree/index.md
+    - File Format Decision Tree: sims/file-format-decision/index.md
+    - File I/O Flow: sims/file-io-flow/index.md
     - Function Anatomy: sims/function-anatomy/index.md
     - Function Call Flow: sims/function-call-flow/index.md
     - Function Pattern Gallery: sims/function-pattern-gallery/index.md
@@ -66,6 +69,7 @@ nav:
     - Inside a Computer: sims/inside-a-computer/index.md
     - Instance vs. Class Attributes: sims/instance-vs-class-attributes/index.md
     - Interactive Truth Table Builder: sims/truth-table-builder/index.md
+    - JSON to Dictionary Mapping: sims/json-dict-mapping/index.md
     - List Aliasing Visualizer: sims/list-aliasing-visualizer/index.md
     - List Creation Visualizer: sims/list-creation-visualizer/index.md
     - List Indexing and Slicing Explorer: sims/list-index-slice-explorer/index.md
@@ -90,6 +94,7 @@ nav:
     - Python vs Java Language Popularity: sims/cs-lang-trends/index.md
     - Queue Simulator: sims/queue-simulator/index.md
     - Range Function Explorer: sims/range-function-explorer/index.md
+    - Read Methods Comparison: sims/read-methods-comparison/index.md
     - Recursion vs Iteration Side-by-Side: sims/recursion-vs-iteration/index.md
     - Recursive Call Stack Visualizer: sims/recursive-call-stack/index.md
     - Removing Duplicates with a Set: sims/removing-duplicates/index.md
@@ -113,7 +118,10 @@ nav:
     - Tuples vs Lists Decision Helper: sims/tuples-vs-lists/index.md
     - UML Class Diagram Builder: sims/uml-class-diagram-builder/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
+    - With Statement vs Manual Close: sims/with-vs-manual/index.md
     - Zip Function Visualizer: sims/zip-function-visualizer/index.md
+
+
 
 
 
