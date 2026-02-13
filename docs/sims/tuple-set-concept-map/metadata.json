@@ -1,0 +1,62 @@
+{
+  "title": "Tuple and Set Concept Map",
+  "creator": "Dan McCreary",
+  "subject": "Computer Science",
+  "description": "Interactive concept map of list, tuple, set, and frozenset relationships with shared properties and set operations.",
+  "date": "2026-02-13",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Tuples, Sets, and Related Collection Types",
+    "learningObjectives": [
+      "Students will be able to summarize relationships between tuples, sets, frozensets, and lists by exploring connected properties in a concept map."
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Python collection literals",
+      "Mutable vs immutable concepts",
+      "Ordered vs unordered collections"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 550
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js CDN"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive concept mapping with hover-based relationship highlighting",
+    "keyQuestions": [
+      "Which collection types are ordered?",
+      "Why are immutable types valid dictionary keys?",
+      "What properties are shared by set and frozenset?"
+    ],
+    "commonMisconceptions": [
+      "Tuples and sets both preserve insertion order in all contexts",
+      "Frozenset supports item mutation",
+      "All collections can be used as dictionary keys"
+    ],
+    "assessmentOpportunities": [
+      "Explain highlighted relationship paths",
+      "Summarize similarities and differences among collection types"
+    ]
+  },
+  "chapter": "10-tuples-and-sets"
+}
