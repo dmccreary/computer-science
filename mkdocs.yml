@@ -36,7 +36,7 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
-    - Algorithm Visualization: Sorting Comparison MicroSim: sims/sorting-comparison-visualization/index.md
+    - "Algorithm Visualization: Sorting Comparison MicroSim": sims/sorting-comparison-visualization/index.md
     - Animal Class Hierarchy: sims/animal-class-hierarchy/index.md
     - Arguments vs Parameters: sims/args-vs-params/index.md
     - Arithmetic Operators Explorer: sims/arithmetic-operators/index.md
