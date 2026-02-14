@@ -197,6 +197,10 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/algorithm-decision-flowchart/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/animal-class-hierarchy/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
@@ -213,7 +217,15 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/big-o-growth-chart/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/binary-number-explorer/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/binary-search-visualization/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -237,6 +249,10 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/collections-overview/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/comment-quality-checker/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
@@ -249,7 +265,15 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/complexity-class-comparison-chart/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/computational-thinking-pillars/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/context-manager-flow/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -269,7 +293,31 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/decorator-flow/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/demorgans-laws/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/dict-patterns/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/dict-use-cases/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/dict-vs-list/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/dictionary-iteration/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/dictionary-structure/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -341,6 +389,10 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/generator-vs-list-memory/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/git-workflow-visualizer/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
@@ -366,6 +418,14 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/json-dict-mapping/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/linear-search-flowchart/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/linear-search-visualization/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -425,6 +485,10 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/nested-dictionary/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/nested-list-grid/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
@@ -437,11 +501,19 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/operation-counting-walkthrough/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/palindrome-checker/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/polymorphism-playground/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/python-best-practices/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -461,11 +533,19 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/recursion-tree-power/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/recursion-vs-iteration/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/recursive-call-stack/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/regex-pattern-tester/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -485,7 +565,19 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/sliding-window-visualization/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/software-development-lifecycle/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/sorting-algorithm-race/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/sorting-comparison-visualization/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -494,6 +586,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/stack-simulator/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/strategy-comparison-diagram/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>

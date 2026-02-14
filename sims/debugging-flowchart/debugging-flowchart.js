@@ -100,8 +100,8 @@ function drawTitle() {
 
 function drawFlowCard() {
   const node = nodes[currentNode];
-  const x = (canvasWidth - 620) / 2;
-  const w = 620;
+  const w = min(620, canvasWidth - 40);
+  const x = (canvasWidth - w) / 2;
   const y = 78;
   const h = 320;
 
@@ -123,7 +123,7 @@ function drawFlowCard() {
   textAlign(CENTER, TOP);
   textSize(18);
   if (node.type === 'leaf') text(node.title, x + w / 2, y + 16);
-  else text(node.text, x + w / 2, y + 16, w - 40, 50);
+  else text(node.text, x + 20, y + 16, w - 40, 50);
 
   if (node.type === 'leaf') {
     fill('#334155');
