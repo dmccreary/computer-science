@@ -41,6 +41,7 @@ nav:
     - Arithmetic Operators Explorer: sims/arithmetic-operators/index.md
     - ASCII Character Map: sims/ascii-character-map/index.md
     - Binary Number Explorer: sims/binary-number-explorer/index.md
+    - Boundary Testing Playground: sims/boundary-testing/index.md
     - Break vs Continue Visualizer: sims/break-vs-continue/index.md
     - Class vs. Object Visual: sims/class-vs-object-diagram/index.md
     - Code Readability Comparison: sims/code-readability/index.md
@@ -69,6 +70,7 @@ nav:
     - Git Workflow Visualizer: sims/git-workflow-visualizer/index.md
     - Higher-Order Functions Flow: sims/higher-order-functions-flow/index.md
     - If-Elif-Else Flowchart: sims/if-elif-else-flowchart/index.md
+    - Input Validation Tester: sims/input-validation-tester/index.md
     - Inside a Computer: sims/inside-a-computer/index.md
     - Instance vs. Class Attributes: sims/instance-vs-class-attributes/index.md
     - Interactive Truth Table Builder: sims/truth-table-builder/index.md
@@ -115,6 +117,7 @@ nav:
     - String Operations Playground: sims/string-operations/index.md
     - String Slicing Playground: sims/string-slicing-playground/index.md
     - Symbol Character Quiz: sims/symbol-character-quiz/index.md
+    - TDD Cycle: sims/tdd-cycle/index.md
     - Three Types of Errors: sims/error-types-comparison/index.md
     - Truthiness Tester: sims/truthiness-tester/index.md
     - Try-Except Block Builder: sims/try-except-builder/index.md
@@ -123,9 +126,14 @@ nav:
     - Tuple vs List Mutability: sims/tuple-vs-list-mutability/index.md
     - Tuples vs Lists Decision Helper: sims/tuples-vs-lists/index.md
     - UML Class Diagram Builder: sims/uml-class-diagram-builder/index.md
+    - Unit Test Runner: sims/unit-test-runner/index.md
     - Variable Scope Visualizer: sims/variable-scope-visualizer/index.md
+    - Visual Debugger Simulator: sims/visual-debugger/index.md
+    - Which Debugging Strategy Should You Use?: sims/debugging-flowchart/index.md
     - With Statement vs Manual Close: sims/with-vs-manual/index.md
     - Zip Function Visualizer: sims/zip-function-visualizer/index.md
+
+
 
 
 
