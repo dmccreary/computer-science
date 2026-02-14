@@ -86,10 +86,12 @@ Think of it as "do something logarithmic for each of the \( n \) items." Merge s
 
 Here's the key fact: **you cannot sort a list of arbitrary items faster than \( O(n \log n) \) using comparisons.** This is a mathematical proof, not just a practical limit. So when you see an \( O(n \log n) \) sorting algorithm, you're looking at the best possible general-purpose sort.
 
+#### Diagram: Complexity Class Comparison Chart
+
+<iframe src="../../sims/complexity-class-comparison-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Complexity Class Comparison Chart</summary>
-
-#### Diagram:
 
 | Complexity Class | Name | Example | Operations for \( n = 1{,}000 \) |
 |:---|:---|:---|---:|
@@ -148,10 +150,12 @@ def all_pairs(items):
 
 The inner operation runs \( n \times n = n^2 \) times, so this is \( O(n^2) \).
 
+#### Diagram: Operation Counting Walkthrough
+
+<iframe src="../../sims/operation-counting-walkthrough/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Operation Counting Walkthrough</summary>
-
-#### Diagram:
 
 Here's a step-by-step trace for `sum_of_squares(4)`:
 
@@ -296,10 +300,12 @@ print(greedy_coin_change(67))
 
 The greedy approach works perfectly for US coins. But beware: greedy algorithms don't always give the optimal solution. If our coin denominations were [25, 15, 1], trying to make 30 cents greedily gives [25, 1, 1, 1, 1, 1] (6 coins), but the optimal answer is [15, 15] (2 coins). Greedy algorithms need to be proven correct for each specific problem.
 
+#### Diagram: Strategy Comparison Diagram
+
+<iframe src="../../sims/strategy-comparison-diagram/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Strategy Comparison Diagram</summary>
-
-#### Diagram:
 
 | Strategy | Approach | When to Use | Guarantee |
 |:---|:---|:---|:---|
@@ -432,10 +438,12 @@ print(max_subarray_sum(data, 3))
 
 Without the sliding window, you'd recalculate the sum of each subarray from scratch: \( O(n \times k) \). With the sliding window, each element is added once and removed once: \( O(n) \).
 
+#### Diagram: Sliding Window Visualization
+
+<iframe src="../../sims/sliding-window-visualization/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Sliding Window Visualization</summary>
-
-#### Diagram:
 
 Here's how the window slides through `[2, 1, 5, 1, 3, 2]` with \( k = 3 \):
 
@@ -514,10 +522,12 @@ print(power(2, 10))  # 1024
 
 This is divide and conquer in action! Instead of multiplying `base` by itself \( n \) times (\( O(n) \)), we halve the exponent at each step, giving us \( O(\log n) \). For \( 2^{1000} \), that's about 10 multiplications instead of 1,000.
 
+#### Diagram: Recursion Tree for power(2, 8)
+
+<iframe src="../../sims/recursion-tree-power/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Recursion Tree for power(2, 8)</summary>
-
-#### Diagram:
 
 ```
 power(2, 8)
@@ -545,10 +555,12 @@ You can visualize algorithms in many ways:
 - **Tree diagrams** — show recursive call structures
 - **Animated simulations** — interactive programs that let you step through an algorithm
 
+#### Diagram: Algorithm Visualization: Sorting Comparison MicroSim
+
+<iframe src="../../sims/sorting-comparison-visualization/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Algorithm Visualization: Sorting Comparison MicroSim</summary>
-
-#### Diagram:
 
 Imagine a MicroSim where you can watch three sorting algorithms race side by side. Each algorithm gets the same shuffled array. You can see:
 
