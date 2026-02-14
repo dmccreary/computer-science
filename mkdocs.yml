@@ -49,11 +49,13 @@ nav:
     - Choosing a Search or Sort Algorithm: sims/algorithm-decision-flowchart/index.md
     - Class vs. Object Visual: sims/class-vs-object-diagram/index.md
     - Code Readability Comparison: sims/code-readability/index.md
+    - Collections Module Overview: sims/collections-overview/index.md
     - Comment Quality Checker: sims/comment-quality-checker/index.md
     - Comparison Operator Explorer: sims/comparison-operator-explorer/index.md
     - Compiled vs. Interpreted Languages: sims/compiled-vs-interpreted/index.md
     - Complexity Class Comparison Chart: sims/complexity-class-comparison-chart/index.md
     - Computational Thinking Pillars: sims/computational-thinking-pillars/index.md
+    - Context Manager Flow: sims/context-manager-flow/index.md
     - Control Flow Patterns: sims/control-flow-patterns/index.md
     - Counting and Grouping Patterns: sims/dict-patterns/index.md
     - CSV File Structure: sims/csv-file-structure/index.md
@@ -77,8 +79,10 @@ nav:
     - Function Anatomy: sims/function-anatomy/index.md
     - Function Call Flow: sims/function-call-flow/index.md
     - Function Pattern Gallery: sims/function-pattern-gallery/index.md
+    - Generator vs List Memory: sims/generator-vs-list-memory/index.md
     - Git Workflow Visualizer: sims/git-workflow-visualizer/index.md
     - Higher-Order Functions Flow: sims/higher-order-functions-flow/index.md
+    - How Decorators Work: sims/decorator-flow/index.md
     - If-Elif-Else Flowchart: sims/if-elif-else-flowchart/index.md
     - Input Validation Tester: sims/input-validation-tester/index.md
     - Inside a Computer: sims/inside-a-computer/index.md
@@ -109,6 +113,7 @@ nav:
     - Order of Operations Visualizer: sims/boolean-order-of-ops/index.md
     - Palindrome Checker: sims/palindrome-checker/index.md
     - Polymorphism Playground: sims/polymorphism-playground/index.md
+    - Python Best Practices Checklist: sims/python-best-practices/index.md
     - Python Data Types Overview: sims/python-data-types/index.md
     - Python Exception Hierarchy: sims/exception-hierarchy/index.md
     - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md
@@ -119,6 +124,7 @@ nav:
     - Recursion Tree for power(2, 8): sims/recursion-tree-power/index.md
     - Recursion vs Iteration Side-by-Side: sims/recursion-vs-iteration/index.md
     - Recursive Call Stack Visualizer: sims/recursive-call-stack/index.md
+    - Regex Pattern Tester: sims/regex-pattern-tester/index.md
     - Removing Duplicates with a Set: sims/removing-duplicates/index.md
     - Set Operations with Venn Diagrams: sims/venn-diagram-sets/index.md
     - Shallow vs Deep Copy Visualizer: sims/shallow-vs-deep-copy/index.md
@@ -150,6 +156,8 @@ nav:
     - Which Debugging Strategy Should You Use?: sims/debugging-flowchart/index.md
     - With Statement vs Manual Close: sims/with-vs-manual/index.md
     - Zip Function Visualizer: sims/zip-function-visualizer/index.md
+
+
 
 
 
