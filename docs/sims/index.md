@@ -3,7 +3,7 @@
 Interactive simulations that let you explore computer science concepts
 by experimenting in real time. Click any card to launch the MicroSim.
 
-**Total MicroSims:** 56 | **Chapters covered:** 9
+**Total MicroSims:** 78 | **Chapters covered:** 14
 
 ## Chapter 1: Intro to Computer Science
 
@@ -389,7 +389,43 @@ by experimenting in real time. Click any card to launch the MicroSim.
 
 </div>
 
-## Other
+## Chapter 10: Tuples and Sets
+
+<div class="grid cards" markdown>
+
+-   **[Tuple vs List Mutability](./tuple-vs-list-mutability/index.md)**
+
+    ![Tuple vs List Mutability](./tuple-vs-list-mutability/tuple-vs-list-mutability.png)
+
+    Compare mutable list and immutable tuple behavior through interactive button operations.
+
+-   **[Tuples vs Lists Decision Helper](./tuples-vs-lists/index.md)**
+
+    ![Tuples vs Lists Decision Helper](./tuples-vs-lists/tuples-vs-lists.png)
+
+    Choose between tuples and lists for real-world coding scenarios with explanatory feedback.
+
+-   **[Set Operations with Venn Diagrams](./venn-diagram-sets/index.md)**
+
+    ![Set Operations with Venn Diagrams](./venn-diagram-sets/venn-diagram-sets.png)
+
+    Visualize union, intersection, difference, and symmetric difference with interactive Venn diagram regions.
+
+-   **[Removing Duplicates with a Set](./removing-duplicates/index.md)**
+
+    ![Removing Duplicates with a Set](./removing-duplicates/removing-duplicates.png)
+
+    Watch list values move into a set container, rejecting duplicates and converting back to a unique list.
+
+-   **[Tuple and Set Concept Map](./tuple-set-concept-map/index.md)**
+
+    ![Tuple and Set Concept Map](./tuple-set-concept-map/tuple-set-concept-map.png)
+
+    Explore relationships between lists, tuples, sets, and frozensets through interactive concept nodes.
+
+</div>
+
+## Chapter 12: Classes and Objects
 
 <div class="grid cards" markdown>
 
@@ -397,6 +433,246 @@ by experimenting in real time. Click any card to launch the MicroSim.
 
     ![Class vs. Object Visual](./class-vs-object-diagram/class-vs-object-diagram.png)
 
-    See the difference between a class blueprint and the objects created from it.
+    Compare a class blueprint (cookie cutter) to multiple object instances (decorated cookies).
+
+-   **[Instance vs. Class Attributes](./instance-vs-class-attributes/index.md)**
+
+    ![Instance vs. Class Attributes](./instance-vs-class-attributes/instance-vs-class-attributes.png)
+
+    Demonstrate the difference between attributes shared by a class and those unique to each instance.
+
+-   **[Dog Class UML Diagram](./dog-class-uml-diagram/index.md)**
+
+    ![Dog Class UML Diagram](./dog-class-uml-diagram/dog-class-uml-diagram.png)
+
+    Display the complete UML structure of a Dog class with attributes and methods.
+
+-   **[Encapsulation Bank Vault](./encapsulation-bank-vault/index.md)**
+
+    ![Encapsulation Bank Vault](./encapsulation-bank-vault/encapsulation-bank-vault.png)
+
+    Use a bank vault metaphor to explain encapsulation and data protection in OOP.
+
+-   **[Dog Class Playground](./dog-class-playground/index.md)**
+
+    ![Dog Class Playground](./dog-class-playground/dog-class-playground.png)
+
+    Create Dog objects, call methods, and observe output in an interactive console.
+
+-   **[OOP Benefits Concept Map](./oop-benefits-concept-map/index.md)**
+
+    ![OOP Benefits Concept Map](./oop-benefits-concept-map/oop-benefits-concept-map.png)
+
+    Explore five key benefits of Object-Oriented Programming through interactive concept nodes.
+
+</div>
+
+## Chapter 13: Inheritance and Polymorphism
+
+<div class="grid cards" markdown>
+
+-   **[Animal Class Hierarchy](./animal-class-hierarchy/index.md)**
+
+    ![Animal Class Hierarchy](./animal-class-hierarchy/animal-class-hierarchy.png)
+
+    Show inheritance relationships between parent and child animal classes.
+
+-   **[Shape Hierarchy with Abstract Base Class](./shape-abstract-hierarchy/index.md)**
+
+    ![Shape Hierarchy with Abstract Base Class](./shape-abstract-hierarchy/shape-abstract-hierarchy.png)
+
+    Demonstrate abstract base classes and inheritance in a shape hierarchy.
+
+-   **[Dunder Methods Cheat Sheet](./dunder-methods-cheatsheet/index.md)**
+
+    ![Dunder Methods Cheat Sheet](./dunder-methods-cheatsheet/dunder-methods-cheatsheet.png)
+
+    Reference guide for Python's special double-underscore methods.
+
+-   **[UML Class Diagram Builder](./uml-class-diagram-builder/index.md)**
+
+    ![UML Class Diagram Builder](./uml-class-diagram-builder/uml-class-diagram-builder.png)
+
+    Interactively build and explore UML class diagrams.
+
+-   **[Music Library Class Diagram](./music-library-diagram/index.md)**
+
+    ![Music Library Class Diagram](./music-library-diagram/music-library-diagram.png)
+
+    Model a music library system with class relationships and structure.
+
+-   **[Polymorphism Playground](./polymorphism-playground/index.md)**
+
+    ![Polymorphism Playground](./polymorphism-playground/polymorphism-playground.png)
+
+    Explore polymorphism through interactive demonstrations of method overriding.
+
+</div>
+
+## Chapter 14: Errors and Exceptions
+
+<div class="grid cards" markdown>
+
+-   **[Error Type Identifier](./error-type-identifier/index.md)**
+
+    ![Error Type Identifier](./error-type-identifier/error-type-identifier.png)
+
+    Identify and classify different Python error types from code examples.
+
+-   **[Three Types of Errors](./error-types-comparison/index.md)**
+
+    ![Three Types of Errors](./error-types-comparison/error-types-comparison.png)
+
+    Compare syntax errors, runtime errors, and logic errors with examples.
+
+-   **[Python Exception Hierarchy](./exception-hierarchy/index.md)**
+
+    ![Python Exception Hierarchy](./exception-hierarchy/exception-hierarchy.png)
+
+    Visualize the inheritance tree of Python exception classes.
+
+-   **[Try-Except Block Builder](./try-except-builder/index.md)**
+
+    ![Try-Except Block Builder](./try-except-builder/try-except-builder.png)
+
+    Construct and understand try-except error handling blocks interactively.
+
+-   **[Try-Except-Finally Flow Chart](./try-except-flow/index.md)**
+
+    ![Try-Except-Finally Flow Chart](./try-except-flow/try-except-flow.png)
+
+    Trace execution flow through try, except, and finally blocks.
+
+-   **[Exception Handling Simulator](./exception-handling-sim/index.md)**
+
+    ![Exception Handling Simulator](./exception-handling-sim/exception-handling-sim.png)
+
+    Simulate exception handling scenarios and predict their outcomes.
+
+</div>
+
+## Chapter 15: File Input and Output
+
+<div class="grid cards" markdown>
+
+-   **[File I/O Flow](./file-io-flow/index.md)**
+
+    ![File I/O Flow](./file-io-flow/file-io-flow.png)
+
+    Visualize the flow of file input/output operations.
+
+-   **[Read Methods Comparison](./read-methods-comparison/index.md)**
+
+    ![Read Methods Comparison](./read-methods-comparison/read-methods-comparison.png)
+
+    Compare different file reading methods and their effects.
+
+-   **[With Statement vs Manual Close](./with-vs-manual/index.md)**
+
+    ![With Statement vs Manual Close](./with-vs-manual/with-vs-manual.png)
+
+    Show the difference between context managers and manual file closing.
+
+-   **[CSV File Structure](./csv-file-structure/index.md)**
+
+    ![CSV File Structure](./csv-file-structure/csv-file-structure.png)
+
+    Understand how CSV files organize data in rows and columns.
+
+-   **[JSON to Dictionary Mapping](./json-dict-mapping/index.md)**
+
+    ![JSON to Dictionary Mapping](./json-dict-mapping/json-dict-mapping.png)
+
+    See how JSON data maps to Python dictionaries.
+
+-   **[File Format Decision Tree](./file-format-decision/index.md)**
+
+    ![File Format Decision Tree](./file-format-decision/file-format-decision.png)
+
+    Choose appropriate file formats based on data characteristics.
+
+</div>
+
+## Chapter 16: Software Engineering
+
+<div class="grid cards" markdown>
+
+-   **[Software Development Lifecycle](./software-development-lifecycle/index.md)**
+
+    ![Software Development Lifecycle](./software-development-lifecycle/software-development-lifecycle.png)
+
+    Trace the phases of software development from conception to deployment.
+
+-   **[Module and Package Structure](./module-and-package-structure/index.md)**
+
+    ![Module and Package Structure](./module-and-package-structure/module-and-package-structure.png)
+
+    Explore how Python modules and packages are organized.
+
+-   **[Git Workflow Visualizer](./git-workflow-visualizer/index.md)**
+
+    ![Git Workflow Visualizer](./git-workflow-visualizer/git-workflow-visualizer.png)
+
+    Visualize Git operations and version control workflow.
+
+-   **[DRY vs. WET Code Comparison](./dry-vs-wet-code-comparison/index.md)**
+
+    ![DRY vs. WET Code Comparison](./dry-vs-wet-code-comparison/dry-vs-wet-code-comparison.png)
+
+    Compare Don't Repeat Yourself principles with code repetition examples.
+
+-   **[Comment Quality Checker](./comment-quality-checker/index.md)**
+
+    ![Comment Quality Checker](./comment-quality-checker/comment-quality-checker.png)
+
+    Evaluate and improve code comment quality.
+
+-   **[Name Equals Main Simulator](./name-equals-main-simulator/index.md)**
+
+    ![Name Equals Main Simulator](./name-equals-main-simulator/name-equals-main-simulator.png)
+
+    Demonstrate the purpose and behavior of the if \_\_name\_\_ == '\_\_main\_\_' pattern.
+
+</div>
+
+## Chapter 17: Testing and Debugging
+
+<div class="grid cards" markdown>
+
+-   **[Unit Test Runner](./unit-test-runner/index.md)**
+
+    ![Unit Test Runner](./unit-test-runner/unit-test-runner.png)
+
+    Run and visualize unit test execution and results.
+
+-   **[Boundary Testing Playground](./boundary-testing/index.md)**
+
+    ![Boundary Testing Playground](./boundary-testing/boundary-testing.png)
+
+    Test edge cases and boundary conditions in software.
+
+-   **[TDD Cycle](./tdd-cycle/index.md)**
+
+    ![TDD Cycle](./tdd-cycle/tdd-cycle.png)
+
+    Walk through the Test-Driven Development cycle of red-green-refactor.
+
+-   **[Visual Debugger Simulator](./visual-debugger/index.md)**
+
+    ![Visual Debugger Simulator](./visual-debugger/visual-debugger.png)
+
+    Step through code execution with visual variable state tracking.
+
+-   **[Debugging Strategy Flowchart](./debugging-flowchart/index.md)**
+
+    ![Debugging Strategy Flowchart](./debugging-flowchart/debugging-flowchart.png)
+
+    Decision flowchart to select appropriate debugging strategies.
+
+-   **[Input Validation Tester](./input-validation-tester/index.md)**
+
+    ![Input Validation Tester](./input-validation-tester/input-validation-tester.png)
+
+    Test input validation logic and error handling.
 
 </div>
