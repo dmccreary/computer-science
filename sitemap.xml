@@ -221,6 +221,10 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/boundary-testing/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/break-vs-continue/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
@@ -258,6 +262,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/csv-file-structure/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/debugging-flowchart/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -342,6 +350,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/if-elif-else-flowchart/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/input-validation-tester/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
@@ -509,6 +521,10 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/tdd-cycle/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/truth-table-builder/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
@@ -541,11 +557,19 @@
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/unit-test-runner/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/computer-science/sims/variable-scope-visualizer/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/venn-diagram-sets/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/visual-debugger/</loc>
          <lastmod>2026-02-14</lastmod>
     </url>
     <url>
