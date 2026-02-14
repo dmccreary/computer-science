@@ -108,10 +108,13 @@ For a school project, requirements analysis might look like this:
 
 Notice how each requirement is specific and testable. "Make a cool grade thing" is *not* a good requirement. "Calculate the average of a list of scores and assign a letter grade" — that's a requirement you can actually build and verify.
 
-<details markdown="1">
-<summary>MicroSim: Software Development Lifecycle</summary>
-
 #### Diagram: Software Development Lifecycle
+
+<iframe src="../../sims/software-development-lifecycle/main.html" width="100%" height="522px" scrolling="no"></iframe>
+
+<details markdown="1">
+
+<summary>MicroSim: Software Development Lifecycle</summary>
 
 Type: infographic
 **sim-id:** sdlc-stages<br/>
@@ -303,11 +306,12 @@ from shapes.rectangles import area_of_rectangle
 ```
 
 Packages help you organize larger projects into logical groups. As your programs grow, you'll appreciate having this structure.
+#### Diagram: Module and Package Structure
+
+<iframe src="../../sims/module-and-package-structure/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>MicroSim: Module and Package Structure Explorer</summary>
-
-#### Diagram: Module and Package Structure
 
 Type: diagram
 **sim-id:** module-package-explorer<br/>
@@ -479,10 +483,12 @@ git commit -m "Refactor area functions into geometry module"
 
 Good commit messages are a gift to your future self. When you look back at your project six months from now, you'll be glad you wrote "Fix crash when user enters empty string" instead of "stuff."
 
+#### Diagram: Git Workflow Visualizer
+
+<iframe src="../../sims/git-workflow-visualizer/main.html" width="100%" height="552px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>MicroSim: Git Workflow Visualizer</summary>
-
-#### Diagram: Git Workflow Visualizer
 
 Type: microsim
 **sim-id:** git-workflow-visualizer<br/>
@@ -676,10 +682,13 @@ Both functions work, but the KISS version is one line instead of six. It's immed
     ![Monty](../../img/monty-warning.png){ align=left width="80" }
     Beware of "clever" code! If you have to read a line three times to understand it, it's too clever. Future-you (and your teammates) will thank you for keeping things simple. Remember: code is read ten times more than it's written.
 
+#### Diagram: DRY vs. WET Code Comparison
+
+<iframe src="../../sims/dry-vs-wet-code-comparison/main.html" width="100%" height="542px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>MicroSim: DRY vs. WET Code Comparison</summary>
 
-#### Diagram: DRY vs. WET Code Comparison
 
 Type: microsim
 **sim-id:** dry-vs-wet-code<br/>
@@ -858,10 +867,13 @@ For larger projects, documentation might also include:
 - **Inline comments** for tricky sections
 - **Docstrings** for every public function and class
 
+#### Diagram: Comment Quality Checker
+
+<iframe src="../../sims/comment-quality-checker/main.html" width="100%" height="552px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>MicroSim: Comment Quality Checker</summary>
 
-#### Diagram: Comment Quality Checker
 
 Type: microsim
 **sim-id:** comment-quality-checker<br/>
@@ -940,10 +952,13 @@ Think of it like a sign on a door: "Test area — employees only." The code insi
     ![Monty](../../img/monty-encourages.png){ align=left width="80" }
     The `if __name__ == "__main__"` pattern might look weird at first, but every Python developer uses it. Once you get the hang of it, you'll put it at the bottom of every module you write. It's a mark of a thoughtful programmer!
 
+#### Diagram: Name Equals Main Simulator
+
+<iframe src="../../sims/name-equals-main-simulator/main.html" width="100%" height="572px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>MicroSim: Name Equals Main Simulator</summary>
 
-#### Diagram: Name Equals Main Simulator
 
 Type: microsim
 **sim-id:** name-equals-main<br/>
