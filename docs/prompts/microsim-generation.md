@@ -42,6 +42,9 @@ Run the /microsim-generator skill sequentially on the #### Diagram elements in @
 
 Run the /microsim-generator skill sequentially on the #### Diagram elements in @docs/chapters/17-testing-and-debugging/index.md - DO NOT RUN IN PARALLEL!
 
-18-searching-and-sorting
-19-algorithm-analysis
-20-advanced-python
+Run the /microsim-generator skill on the #### Diagram elements in @docs/chapters/18-searching-and-sorting/index.md
+
+Run the /microsim-generator skill on the #### Diagram elements in @docs/chapters/19-algorithm-analysis/index.md
+
+Run the /microsim-generator skill on the #### Diagram elements in @docs/chapters/20-advanced-python/index.md
+
