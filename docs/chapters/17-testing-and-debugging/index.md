@@ -267,7 +267,6 @@ Here are the most common unittest assertion methods:
 #### Diagram: Unit Test Runner
 
 <iframe src="../../sims/unit-test-runner/main.html" width="100%" height="600px" scrolling="no"></iframe>
-
 <details markdown="1">
 <summary>MicroSim: Unit Test Runner Visualization</summary>
 Type: microsim
@@ -729,10 +728,12 @@ Here's a handy reference comparing all the debugging techniques we've covered:
 
 Each strategy has its place. Smart debuggers use *multiple* techniques. Start with the simple ones (print, rubber duck), and reach for the debugger when those aren't enough.
 
+#### Diagram: Which Debugging Strategy Should You Use?
+<iframe src="../../sims/debugging-flowchart/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Diagram: Debugging Decision Flowchart</summary>
 
-#### Diagram: Which Debugging Strategy Should You Use?
 
 Type: infographic
 **sim-id:** debugging-flowchart<br/>
@@ -869,10 +870,12 @@ print(messages)    # ['Password must be at least 8 characters',
     ![Monty](../../img/monty-warning.png){ align=left width="80" }
     Never trust user input! Even if your program is just a class project, get in the habit of validating inputs. In professional software, unvalidated input is one of the top causes of security vulnerabilities and crashes. Build the habit now, and future-you will thank you.
 
+#### Diagram: Input Validation Tester
+<iframe src="../../sims/input-validation-tester/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>MicroSim: Input Validation Tester</summary>
 
-#### Diagram: Input Validation Tester
 
 Type: microsim
 **sim-id:** input-validation-tester<br/>
