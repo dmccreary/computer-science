@@ -22,6 +22,12 @@ Run the /microsim-generator skill on all the #### Diagram elements in @docs/chap
 
 
 
+09-advanced-list-operations
+10-tuples-and-sets
+11-dictionaries
+12-classes-and-objects
+13-inheritance-and-polymorphism
+
 Run the /microsim-generator skill sequentially on the #### Diagram elements in @docs/chapters/13-inheritance-and-polymorphism/index.md - DO NOT RUN IN PARALLEL!
 
 Run the /microsim-generator skill sequentially on the #### Diagram elements in @docs/chapters/14-errors-and-exceptions/index.md - DO NOT RUN IN PARALLEL!
@@ -32,15 +38,8 @@ Run the /microsim-generator skill sequentially on the #### Diagram elements in @
 Run the /microsim-generator skill sequentially on the #### Diagram elements in @docs/chapters/16-software-engineering/index.md - DO NOT RUN IN PARALLEL!
 
 
-09-advanced-list-operations
-10-tuples-and-sets
-11-dictionaries
-12-classes-and-objects
-13-inheritance-and-polymorphism
+Run the /microsim-generator skill sequentially on the #### Diagram elements in @docs/chapters/17-testing-and-debugging/index.md - DO NOT RUN IN PARALLEL!
 
-
-
-17-testing-and-debugging
 18-searching-and-sorting
 19-algorithm-analysis
 20-advanced-python
