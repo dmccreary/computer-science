@@ -2,482 +2,558 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/computer-science/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/about/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/contact/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/course-description/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/faq/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/glossary/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/license/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/01-intro-to-computer-science/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/02-python-fundamentals/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/03-boolean-logic/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/04-control-flow/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/05-working-with-strings/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/06-functions-and-modular-design/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/07-higher-order-functions-and-recursion/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/08-lists/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/09-advanced-list-operations/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/10-tuples-and-sets/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/11-dictionaries/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/12-classes-and-objects/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/13-inheritance-and-polymorphism/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/14-errors-and-exceptions/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/15-file-input-and-output/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/16-software-engineering/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/17-testing-and-debugging/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/18-searching-and-sorting/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/19-algorithm-analysis/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/chapters/20-advanced-python/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/book-metrics/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/chapter-metrics/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/concept-list/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/concept-taxonomy/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/course-description-assessment/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/diagram-details/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/diagram-table/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/faq-coverage-gaps/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/faq-quality-report/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/glossary-quality-report/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/linked-in-announcement-full/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/mascot-guide/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/quality-metrics/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/learning-graph/taxonomy-distribution/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/prompts/faq-generation-codex/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/prompts/fix-iframe-absolute-reference/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/prompts/generate-course-description/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/prompts/microsim-generation/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/prompts/monty-does-rubber-duck-testing/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/animal-class-hierarchy/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/args-vs-params/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/arithmetic-operators/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/ascii-character-map/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/binary-number-explorer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/boolean-order-of-ops/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/break-vs-continue/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/class-vs-object-diagram/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/code-readability/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/comment-quality-checker/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/comparison-operator-explorer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/compiled-vs-interpreted/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/computational-thinking-pillars/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/control-flow-patterns/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/cs-lang-trends/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/csv-file-structure/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/demorgans-laws/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/dog-class-playground/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/dog-class-uml-diagram/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/dry-vs-wet-code-comparison/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/dunder-methods-cheatsheet/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/encapsulation-bank-vault/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/error-type-identifier/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/error-types-comparison/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/exception-handling-sim/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/exception-hierarchy/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/expressions-vs-statements/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/factorial-recursion-tree/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/fibonacci-tree/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/file-format-decision/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/file-io-flow/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/function-anatomy/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/function-call-flow/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/function-pattern-gallery/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/git-workflow-visualizer/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/higher-order-functions-flow/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/if-elif-else-flowchart/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/inside-a-computer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/instance-vs-class-attributes/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/json-dict-mapping/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/list-aliasing-visualizer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/list-creation-visualizer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/list-index-slice-explorer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/list-methods-playground/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/list-operations-cheat-sheet/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/list-statistics-dashboard/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/list-traversal-animator/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/logical-operator-venn/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/loop-patterns-comparison/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/map-filter-reduce-pipeline/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/modular-design-builder/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/module-and-package-structure/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/music-library-diagram/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/name-equals-main-simulator/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/nested-list-grid/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/nested-loop-grid/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/oop-benefits-concept-map/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/palindrome-checker/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/polymorphism-playground/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/python-data-types/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/queue-simulator/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/range-function-explorer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/read-methods-comparison/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/recursion-vs-iteration/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/recursive-call-stack/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/removing-duplicates/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/repl-vs-scripts/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/shallow-vs-deep-copy/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/shape-abstract-hierarchy/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/software-development-lifecycle/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/split-join-visualizer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/stack-simulator/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/string-formatting-comparison/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/string-indexing-visualizer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/string-methods-explorer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/string-operations/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/string-slicing-playground/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/symbol-character-quiz/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/truth-table-builder/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/truthiness-tester/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/try-except-builder/</loc>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/try-except-flow/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/tuple-set-concept-map/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/tuple-vs-list-mutability/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/tuples-vs-lists/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/uml-class-diagram-builder/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/variable-scope-visualizer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/venn-diagram-sets/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/computer-science/sims/with-vs-manual/</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/computer-science/sims/zip-function-visualizer/</loc>
-         <lastmod>2026-02-13</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
 </urlset>
