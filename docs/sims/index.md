@@ -3,7 +3,7 @@
 Interactive simulations that let you explore computer science concepts
 by experimenting in real time. Click any card to launch the MicroSim.
 
-**Total MicroSims:** 78 | **Chapters covered:** 14
+**Total MicroSims:** 84 | **Chapters covered:** 15
 
 ## Chapter 1: Intro to Computer Science
 
@@ -52,6 +52,7 @@ by experimenting in real time. Click any card to launch the MicroSim.
     Compare how compiled and interpreted languages turn source code into running programs.
 
 </div>
+
 
 ## Chapter 2: Python Fundamentals
 
@@ -674,5 +675,47 @@ by experimenting in real time. Click any card to launch the MicroSim.
     ![Input Validation Tester](./input-validation-tester/input-validation-tester.png)
 
     Test input validation logic and error handling.
+
+</div>
+
+## Chapter 20: Advanced Python
+
+<div class="grid cards" markdown>
+
+-   **[Generator vs List Memory](./generator-vs-list-memory/index.md)**
+
+    ![Generator vs List Memory](./generator-vs-list-memory/generator-vs-list-memory.png)
+
+    Compare eager list allocation with lazy generator evaluation through side-by-side memory usage visuals.
+
+-   **[How Decorators Work](./decorator-flow/index.md)**
+
+    ![How Decorators Work](./decorator-flow/decorator-flow.png)
+
+    Step through how a decorator receives a function, creates a wrapper, and intercepts calls.
+
+-   **[Regex Pattern Tester](./regex-pattern-tester/index.md)**
+
+    ![Regex Pattern Tester](./regex-pattern-tester/regex-pattern-tester.png)
+
+    Enter regex patterns and test text with real-time match highlighting and example presets.
+
+-   **[Collections Module Overview](./collections-overview/index.md)**
+
+    ![Collections Module Overview](./collections-overview/collections-overview.png)
+
+    Explore `Counter`, `defaultdict`, `OrderedDict`, and `namedtuple` with expandable cards and quiz mode.
+
+-   **[Context Manager Flow](./context-manager-flow/index.md)**
+
+    ![Context Manager Flow](./context-manager-flow/context-manager-flow.png)
+
+    Trace normal and exception paths in a `with` statement to see why cleanup always runs.
+
+-   **[Python Best Practices Checklist](./python-best-practices/index.md)**
+
+    ![Python Best Practices Checklist](./python-best-practices/python-best-practices.png)
+
+    Evaluate code snippets against a best-practices checklist and score your assessments.
 
 </div>
