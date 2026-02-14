@@ -263,11 +263,13 @@ Here are the most common unittest assertion methods:
 | `assertRaises(Error)` | A specific exception is raised |
 | `assertIsNone(x)` | `x is None` |
 
-<details markdown="1">
-<summary>MicroSim: Unit Test Runner Visualization</summary>
 
 #### Diagram: Unit Test Runner
 
+<iframe src="../../sims/unit-test-runner/main.html" width="100%" height="600px" scrolling="no">
+
+<details markdown="1">
+<summary>MicroSim: Unit Test Runner Visualization</summary>
 Type: microsim
 **sim-id:** unit-test-runner<br/>
 **Library:** p5.js<br/>
@@ -369,10 +371,12 @@ assert is_valid_grade(101) == False   # Just outside upper
     ![Monty](../../img/monty-thinking.png){ align=left width="80" }
     Here's a pattern to remember: whenever you write a function, ask yourself "What's the weirdest thing someone could pass in?" An empty list, a negative number, a string with only spaces, `None`... Testing the weird stuff is where you find the most bugs!
 
+#### Diagram: Boundary Testing Playground
+
+<iframe src="../../sims/boundary-testing/main.html" width="100%" height="600px" scrolling="no">
+
 <details markdown="1">
 <summary>MicroSim: Boundary Testing Playground</summary>
-
-#### Diagram: Boundary Testing Playground
 
 Type: microsim
 **sim-id:** boundary-testing<br/>
@@ -479,10 +483,12 @@ class TestFizzBuzz(unittest.TestCase):
 
 Why does TDD work so well? Because you always know exactly what you're trying to build. The tests are your roadmap. You never write code that isn't needed, and you always know when you're done.
 
+#### Diagram: TDD Cycle
+
+<iframe src="../../sims/tdd-cycle/main.html" width="100%" height="600px" scrolling="no">
+
 <details markdown="1">
 <summary>Diagram: TDD Red-Green-Refactor Cycle</summary>
-
-#### Diagram: TDD Cycle
 
 Type: infographic
 **sim-id:** tdd-cycle<br/>
@@ -492,7 +498,7 @@ Type: infographic
 **Bloom Level:** Understand (L2)
 **Bloom Verb:** describe, explain
 
-**Learning Objective:** Students will be able to describe the three phases of the TDD cycle (Red, Green, Refactor) and explain the purpose of each phase.
+**Learning Objective:** Students will be able to describe the three phases of the Test Driven Development (TDD) cycle (Red, Green, Refactor) and explain the purpose of each phase.
 
 **Purpose:** An animated circular diagram showing the TDD cycle with three nodes connected by arrows. Each phase includes a brief description and a code snippet example.
 
@@ -615,10 +621,10 @@ Once your program is paused at a breakpoint, you can **step through code** — e
 
 Stepping through code is like watching a movie in slow motion. You see exactly what happens at each moment, which makes it much easier to spot the frame where things go wrong.
 
+#### Diagram: Visual Debugger Simulator
+<iframe src="../../sims/visual-debugger/main.html" width="100%" height="600px" scrolling="no">
 <details markdown="1">
 <summary>MicroSim: Visual Debugger Simulator</summary>
-
-#### Diagram: Visual Debugger Simulator
 
 Type: microsim
 **sim-id:** visual-debugger<br/>
@@ -686,6 +692,8 @@ To trace it, you create a table that tracks every variable at each step:
 The function computes 1 + 2 + 3 + 4 = 10. Code tracing is a skill that's tested on the AP exam, so practicing it now will pay off later. It's also a great way to understand someone else's code — or to figure out why your own code isn't doing what you expected.
 
 ## Rubber Duck Debugging
+
+![](./monty-rubber-duck-testing.png){ width="200px", align="right"}
 
 This is going to sound silly, but bear with us. **Rubber duck debugging** is a technique where you explain your code, line by line, to a rubber duck (or any inanimate object — a stuffed animal, a houseplant, a very patient pet).
 
