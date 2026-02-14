@@ -266,7 +266,7 @@ Here are the most common unittest assertion methods:
 
 #### Diagram: Unit Test Runner
 
-<iframe src="../../sims/unit-test-runner/main.html" width="100%" height="600px" scrolling="no">
+<iframe src="../../sims/unit-test-runner/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>MicroSim: Unit Test Runner Visualization</summary>
@@ -373,7 +373,7 @@ assert is_valid_grade(101) == False   # Just outside upper
 
 #### Diagram: Boundary Testing Playground
 
-<iframe src="../../sims/boundary-testing/main.html" width="100%" height="600px" scrolling="no">
+<iframe src="../../sims/boundary-testing/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>MicroSim: Boundary Testing Playground</summary>
@@ -485,7 +485,7 @@ Why does TDD work so well? Because you always know exactly what you're trying to
 
 #### Diagram: TDD Cycle
 
-<iframe src="../../sims/tdd-cycle/main.html" width="100%" height="600px" scrolling="no">
+<iframe src="../../sims/tdd-cycle/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Diagram: TDD Red-Green-Refactor Cycle</summary>
@@ -622,7 +622,7 @@ Once your program is paused at a breakpoint, you can **step through code** — e
 Stepping through code is like watching a movie in slow motion. You see exactly what happens at each moment, which makes it much easier to spot the frame where things go wrong.
 
 #### Diagram: Visual Debugger Simulator
-<iframe src="../../sims/visual-debugger/main.html" width="100%" height="600px" scrolling="no">
+<iframe src="../../sims/visual-debugger/main.html" width="100%" height="600px" scrolling="no"></iframe>
 <details markdown="1">
 <summary>MicroSim: Visual Debugger Simulator</summary>
 
@@ -693,7 +693,7 @@ The function computes 1 + 2 + 3 + 4 = 10. Code tracing is a skill that's tested 
 
 ## Rubber Duck Debugging
 
-![](./monty-rubber-duck-testing.png){ width="200px", align="right"}
+![](./monty-rubber-duck-testing.png){ width="400px", align="right"}
 
 This is going to sound silly, but bear with us. **Rubber duck debugging** is a technique where you explain your code, line by line, to a rubber duck (or any inanimate object — a stuffed animal, a houseplant, a very patient pet).
 
