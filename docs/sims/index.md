@@ -3,7 +3,7 @@
 Interactive simulations that let you explore computer science concepts
 by experimenting in real time. Click any card to launch the MicroSim.
 
-**Total MicroSims:** 84 | **Chapters covered:** 15
+**Total MicroSims:** 114 | **Chapters covered:** 19
 
 ## Chapter 1: Intro to Computer Science
 
@@ -675,6 +675,90 @@ by experimenting in real time. Click any card to launch the MicroSim.
     ![Input Validation Tester](./input-validation-tester/input-validation-tester.png)
 
     Test input validation logic and error handling.
+
+</div>
+
+## Chapter 18: Searching and Sorting
+
+<div class="grid cards" markdown>
+
+-   **[Linear Search Flowchart](./linear-search-flowchart/index.md)**
+
+    ![Linear Search Flowchart](./linear-search-flowchart/linear-search-flowchart.png)
+
+    Visualize the control flow of linear search from first element to match or not found.
+
+-   **[Linear Search Step-by-Step](./linear-search-visualization/index.md)**
+
+    ![Linear Search Step-by-Step](./linear-search-visualization/linear-search-visualization.png)
+
+    Step through linear search one index at a time to see comparisons and stopping conditions.
+
+-   **[Binary Search Step-by-Step](./binary-search-visualization/index.md)**
+
+    ![Binary Search Step-by-Step](./binary-search-visualization/binary-search-visualization.png)
+
+    Follow midpoint checks and interval halving to understand binary search decisions.
+
+-   **[Sorting Algorithm Race](./sorting-algorithm-race/index.md)**
+
+    ![Sorting Algorithm Race](./sorting-algorithm-race/sorting-algorithm-race.png)
+
+    Compare sorting algorithms side by side on the same data to observe speed differences.
+
+-   **[Big-O Growth Rate Chart](./big-o-growth-chart/index.md)**
+
+    ![Big-O Growth Rate Chart](./big-o-growth-chart/big-o-growth-chart.png)
+
+    Explore how runtime classes grow as input size increases.
+
+-   **[Choosing a Search or Sort Algorithm](./algorithm-decision-flowchart/index.md)**
+
+    ![Choosing a Search or Sort Algorithm](./algorithm-decision-flowchart/algorithm-decision-flowchart.png)
+
+    Use a decision flowchart to choose suitable search and sorting approaches by context.
+
+</div>
+
+## Chapter 19: Algorithm Analysis
+
+<div class="grid cards" markdown>
+
+-   **[Complexity Class Comparison Chart](./complexity-class-comparison-chart/index.md)**
+
+    ![Complexity Class Comparison Chart](./complexity-class-comparison-chart/complexity-class-comparison-chart.png)
+
+    Compare O(1), O(log n), O(n), O(n log n), O(n^2), and O(2^n) with dynamic operation counts.
+
+-   **[Operation Counting Walkthrough](./operation-counting-walkthrough/index.md)**
+
+    ![Operation Counting Walkthrough](./operation-counting-walkthrough/operation-counting-walkthrough.png)
+
+    Trace algorithm steps and count operations to connect code execution with Big-O reasoning.
+
+-   **[Strategy Comparison Diagram](./strategy-comparison-diagram/index.md)**
+
+    ![Strategy Comparison Diagram](./strategy-comparison-diagram/strategy-comparison-diagram.png)
+
+    Contrast brute force, divide and conquer, and greedy strategies with use cases and tradeoffs.
+
+-   **[Sliding Window Visualization](./sliding-window-visualization/index.md)**
+
+    ![Sliding Window Visualization](./sliding-window-visualization/sliding-window-visualization.png)
+
+    Watch a fixed-size window move across an array while updating sums incrementally.
+
+-   **[Recursion Tree for power(2, 8)](./recursion-tree-power/index.md)**
+
+    ![Recursion Tree for power(2, 8)](./recursion-tree-power/recursion-tree-power.png)
+
+    Step through recursive calls and returns in fast exponentiation.
+
+-   **[Algorithm Visualization: Sorting Comparison MicroSim](./sorting-comparison-visualization/index.md)**
+
+    ![Algorithm Visualization: Sorting Comparison MicroSim](./sorting-comparison-visualization/sorting-comparison-visualization.png)
+
+    Compare selection, insertion, and merge sort progression frame-by-frame.
 
 </div>
 
