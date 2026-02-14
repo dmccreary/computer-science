@@ -93,10 +93,12 @@ A **flowchart** is a diagram that shows the steps of an algorithm visually. Diff
 
 Flowcharts are especially helpful when your algorithm has branches (if/else) or loops, because you can literally *see* where the path splits and where it loops back.
 
+#### Diagram: Linear Search Flowchart
+
+<iframe src="../../sims/linear-search-flowchart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Linear Search Flowchart</summary>
-
-#### Diagram: Linear Search Flowchart
 
 Type: diagram
 **sim-id:** linear-search-flowchart<br/>
@@ -178,10 +180,12 @@ print(f"Found at index: {result}")  # Output: Found at index: 3
 
 Linear search works on *any* list — sorted or unsorted. But here's the downside: if the list has a million elements and your target is the very last one (or not in the list at all), you'll have to check all million elements. That's a lot of flipping.
 
+#### Diagram: Linear Search Step-by-Step
+
+<iframe src="../../sims/linear-search-visualization/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Linear Search Visualization MicroSim</summary>
-
-#### Diagram: Linear Search Step-by-Step
 
 Type: microsim
 **sim-id:** linear-search-visualization<br/>
@@ -271,10 +275,13 @@ print(f"Found at index: {result}")  # Output: Found at index: 5
 
 **Important caveat:** Binary search only works on sorted data. If your list isn't sorted, you have to sort it first (or use linear search instead).
 
+#### Diagram: Binary Search Step-by-Step
+
+<iframe src="../../sims/binary-search-visualization/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Binary Search Visualization MicroSim</summary>
 
-#### Diagram: Binary Search Step-by-Step
 
 Type: microsim
 **sim-id:** binary-search-visualization<br/>
@@ -479,10 +486,13 @@ Notice the base case: a list with zero or one elements is already sorted. That's
 
 Merge sort's time complexity is \( O(n \log n) \) in *all* cases — best, average, and worst. That's significantly faster than \( O(n^2) \) for large lists. The tradeoff? It uses extra memory to store the temporary merged lists.
 
+#### Diagram: Sorting Algorithm Race
+
+<iframe src="../../sims/sorting-algorithm-race/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Sorting Algorithm Comparison MicroSim</summary>
 
-#### Diagram: Sorting Algorithm Race
 
 Type: microsim
 **sim-id:** sorting-algorithm-race<br/>
@@ -652,10 +662,13 @@ Here's a table that shows how these growth rates compare as the input size \( n 
 
 Look at that last row. At \( n = 100{,}000 \), an \( O(n^2) \) algorithm performs *ten billion* operations while an \( O(n \log n) \) algorithm does about 1.7 million. That's the difference between a few seconds and several hours.
 
+#### Diagram: Big-O Growth Rate Chart
+
+<iframe src="../../sims/big-o-growth-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Big-O Growth Rate Chart MicroSim</summary>
 
-#### Diagram: Big-O Growth Rate Chart
 
 Type: microsim
 **sim-id:** big-o-growth-chart<br/>
@@ -729,10 +742,13 @@ Algorithm design is all about tradeoffs. Here's a decision guide for searching a
 
 In practice, Python's built-in `sorted()` and `.sort()` use Timsort, which intelligently combines insertion sort for small runs with merge sort for combining them. So when you write `sorted(my_list)` in Python, you're getting the best of both worlds.
 
+#### Diagram: Choosing a Search or Sort Algorithm
+
+<iframe src="../../sims/algorithm-decision-flowchart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Algorithm Decision Flowchart</summary>
 
-#### Diagram: Choosing a Search or Sort Algorithm
 
 Type: diagram
 **sim-id:** algorithm-decision-flowchart<br/>

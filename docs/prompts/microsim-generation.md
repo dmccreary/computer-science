@@ -18,6 +18,8 @@ Run the /microsim-generator skill on all the #### Diagram elements in @docs/chap
                                                   
 ## TODO
 
+Run the /microsim-generator skill sequentially on all the #### Diagram elements in @docs/chapters/11-dictionaries/index.md
+
  parallel on all the #### Diagram elements in @docs/chapters/12-classes-and-objects/index.md
 
 
