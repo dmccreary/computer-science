@@ -89,6 +89,7 @@ nav:
     - Instance vs. Class Attributes: sims/instance-vs-class-attributes/index.md
     - Interactive Truth Table Builder: sims/truth-table-builder/index.md
     - JSON to Dictionary Mapping: sims/json-dict-mapping/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
     - Linear Search Flowchart: sims/linear-search-flowchart/index.md
     - Linear Search Step-by-Step: sims/linear-search-visualization/index.md
     - List Aliasing Visualizer: sims/list-aliasing-visualizer/index.md
