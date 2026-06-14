@@ -217,6 +217,10 @@ nav:
     - MicroSim Quality Report: learning-graph/microsim-quality-report.md
     - Mascot Guide: learning-graph/mascot-guide.md
 
+  - Stories:
+    - Overview: stories/index.md
+    - Jeannette Wing - The Thinking Revolution: stories/jeannette-wing/index.md
+
   - Prompts:
     - List of Prompts: prompts/index.md
     - Course Description: prompts/generate-course-description.md
