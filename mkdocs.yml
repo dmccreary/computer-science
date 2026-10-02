@@ -115,6 +115,7 @@ nav:
     - Palindrome Checker: sims/palindrome-checker/index.md
     - Polymorphism Playground: sims/polymorphism-playground/index.md
     - Python Best Practices Checklist: sims/python-best-practices/index.md
+    - Python Collections Overview: sims/python-collections-overview/index.md
     - Python Data Types Overview: sims/python-data-types/index.md
     - Python Exception Hierarchy: sims/exception-hierarchy/index.md
     - Python REPL vs. Scripts: sims/repl-vs-scripts/index.md

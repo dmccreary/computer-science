@@ -3,7 +3,7 @@
 Interactive simulations that let you explore computer science concepts
 by experimenting in real time. Click any card to launch the MicroSim.
 
-**Total MicroSims:** 114 | **Chapters covered:** 19
+**Total MicroSims:** 115 | **Chapters covered:** 19
 
 ## Chapter 1: Intro to Computer Science
 
@@ -417,6 +417,12 @@ by experimenting in real time. Click any card to launch the MicroSim.
     ![Removing Duplicates with a Set](./removing-duplicates/removing-duplicates.png)
 
     Watch list values move into a set container, rejecting duplicates and converting back to a unique list.
+
+-   **[Python Collections Overview](./python-collections-overview/index.md)**
+
+    ![Python Collections Overview](./python-collections-overview/python-collections-overview.png)
+
+    Sort list, tuple, set, and frozenset on a 2x2 matrix of ordered vs unordered and mutable vs immutable, then take a quiz to pick the right type.
 
 -   **[Tuple and Set Concept Map](./tuple-set-concept-map/index.md)**
 
