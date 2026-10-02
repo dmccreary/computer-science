@@ -41,5 +41,8 @@
     "commonMisconceptions": [],
     "assessmentOpportunities": []
   },
-  "chapter": "07-higher-order-functions-and-recursion"
+  "chapter": "07-higher-order-functions-and-recursion",
+  "search": {
+    "showcase": true
+  }
 }
