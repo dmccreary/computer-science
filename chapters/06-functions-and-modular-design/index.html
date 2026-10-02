@@ -18,8 +18,11 @@
         <link rel="next" href="../07-higher-order-functions-and-recursion/">
       
       
+        
+      
+      
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -27,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -43,7 +46,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
@@ -69,34 +72,20 @@
 
     
     
-      
-        <meta property="og:type" content="website">
-      
-        <meta property="og:title" content="Functions and Modular Design - Computer Science">
-      
-        <meta property="og:description" content="Defining functions with parameters and return values, variable scope, default arguments, and docstrings in Python.">
-      
-        <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/06-functions-and-modular-design/index.png">
-      
-        <meta property="og:image:type" content="image/png">
-      
-        <meta property="og:image:width" content="1200">
-      
-        <meta property="og:image:height" content="630">
-      
-        <meta property="og:url" content="https://dmccreary.github.io/computer-science/chapters/06-functions-and-modular-design/">
-      
-        <meta name="twitter:card" content="summary_large_image">
-      
-        <meta name="twitter:title" content="Functions and Modular Design - Computer Science">
-      
-        <meta name="twitter:description" content="Defining functions with parameters and return values, variable scope, default arguments, and docstrings in Python.">
-      
-        <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/06-functions-and-modular-design/index.png">
-      
-    
-    
-  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Functions and Modular Design - Computer Science">
+<meta property="og:description" content="Defining functions with parameters and return values, variable scope, default arguments, and docstrings in Python.">
+<meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/06-functions-and-modular-design/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/computer-science/chapters/06-functions-and-modular-design/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Functions and Modular Design - Computer Science">
+<meta property="twitter:description" content="Defining functions with parameters and return values, variable scope, default arguments, and docstrings in Python.">
+<meta property="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/06-functions-and-modular-design/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -170,15 +159,17 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -195,7 +186,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -206,13 +197,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -257,7 +249,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -265,7 +257,7 @@
 </a>
     </div>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -277,9 +269,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -297,9 +296,16 @@
       <a href="../../about/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     About
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -317,9 +323,16 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Course Description
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -343,85 +356,46 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
+    
     
     
     
@@ -431,17 +405,23 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
         
-          
           
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Chapters
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -456,9 +436,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Chapters
+            
+  
+    Chapters
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -472,9 +456,16 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     1. Intro to Computer Science
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -493,9 +484,16 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     2. Python Fundamentals
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -514,9 +512,16 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     3. Boolean Logic
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -535,9 +540,16 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     4. Control Flow
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -556,9 +568,16 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     5. Working with Strings
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -586,9 +605,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     6. Functions and Modular Design
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -597,9 +623,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     6. Functions and Modular Design
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -617,12 +650,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -631,7 +666,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -640,7 +677,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -649,7 +688,9 @@
         <li class="md-nav__item">
   <a href="#what-are-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      What Are Functions?
+      
+        What Are Functions?
+      
     </span>
   </a>
   
@@ -659,7 +700,9 @@
           <li class="md-nav__item">
   <a href="#diagram-function-anatomy" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Function Anatomy
+      
+        Diagram: Function Anatomy
+      
     </span>
   </a>
   
@@ -673,7 +716,9 @@
         <li class="md-nav__item">
   <a href="#defining-your-first-function" class="md-nav__link">
     <span class="md-ellipsis">
-      Defining Your First Function
+      
+        Defining Your First Function
+      
     </span>
   </a>
   
@@ -683,7 +728,9 @@
           <li class="md-nav__item">
   <a href="#naming-your-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Naming Your Functions
+      
+        Naming Your Functions
+      
     </span>
   </a>
   
@@ -697,7 +744,9 @@
         <li class="md-nav__item">
   <a href="#parameters-and-arguments" class="md-nav__link">
     <span class="md-ellipsis">
-      Parameters and Arguments
+      
+        Parameters and Arguments
+      
     </span>
   </a>
   
@@ -706,7 +755,9 @@
         <li class="md-nav__item">
   <a href="#return-values-getting-results-back" class="md-nav__link">
     <span class="md-ellipsis">
-      Return Values: Getting Results Back
+      
+        Return Values: Getting Results Back
+      
     </span>
   </a>
   
@@ -716,7 +767,9 @@
           <li class="md-nav__item">
   <a href="#the-none-type" class="md-nav__link">
     <span class="md-ellipsis">
-      The None Type
+      
+        The None Type
+      
     </span>
   </a>
   
@@ -726,7 +779,9 @@
           <li class="md-nav__item">
   <a href="#diagram-function-call-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Function Call Flow
+      
+        Diagram: Function Call Flow
+      
     </span>
   </a>
   
@@ -745,7 +800,9 @@
         <li class="md-nav__item">
   <a href="#positional-and-keyword-arguments" class="md-nav__link">
     <span class="md-ellipsis">
-      Positional and Keyword Arguments
+      
+        Positional and Keyword Arguments
+      
     </span>
   </a>
   
@@ -754,7 +811,9 @@
         <li class="md-nav__item">
   <a href="#default-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Default Parameters
+      
+        Default Parameters
+      
     </span>
   </a>
   
@@ -763,7 +822,9 @@
         <li class="md-nav__item">
   <a href="#multiple-return-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Multiple Return Values
+      
+        Multiple Return Values
+      
     </span>
   </a>
   
@@ -773,7 +834,9 @@
           <li class="md-nav__item">
   <a href="#diagram-arguments-vs-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Arguments vs Parameters
+      
+        Diagram: Arguments vs Parameters
+      
     </span>
   </a>
   
@@ -787,7 +850,9 @@
         <li class="md-nav__item">
   <a href="#variable-scope-who-can-see-what" class="md-nav__link">
     <span class="md-ellipsis">
-      Variable Scope: Who Can See What?
+      
+        Variable Scope: Who Can See What?
+      
     </span>
   </a>
   
@@ -797,7 +862,9 @@
           <li class="md-nav__item">
   <a href="#local-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Local Variables
+      
+        Local Variables
+      
     </span>
   </a>
   
@@ -806,7 +873,9 @@
           <li class="md-nav__item">
   <a href="#global-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Global Variables
+      
+        Global Variables
+      
     </span>
   </a>
   
@@ -815,7 +884,9 @@
           <li class="md-nav__item">
   <a href="#the-global-keyword" class="md-nav__link">
     <span class="md-ellipsis">
-      The Global Keyword
+      
+        The Global Keyword
+      
     </span>
   </a>
   
@@ -825,7 +896,9 @@
           <li class="md-nav__item">
   <a href="#diagram-variable-scope-visualizer" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Variable Scope Visualizer
+      
+        Diagram: Variable Scope Visualizer
+      
     </span>
   </a>
   
@@ -844,7 +917,9 @@
         <li class="md-nav__item">
   <a href="#docstrings-documenting-your-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Docstrings: Documenting Your Functions
+      
+        Docstrings: Documenting Your Functions
+      
     </span>
   </a>
   
@@ -853,7 +928,9 @@
         <li class="md-nav__item">
   <a href="#modular-design-putting-it-all-together" class="md-nav__link">
     <span class="md-ellipsis">
-      Modular Design: Putting It All Together
+      
+        Modular Design: Putting It All Together
+      
     </span>
   </a>
   
@@ -863,7 +940,9 @@
           <li class="md-nav__item">
   <a href="#diagram-modular-design-builder" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Modular Design Builder
+      
+        Diagram: Modular Design Builder
+      
     </span>
   </a>
   
@@ -877,7 +956,9 @@
         <li class="md-nav__item">
   <a href="#common-patterns-and-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Common Patterns and Best Practices
+      
+        Common Patterns and Best Practices
+      
     </span>
   </a>
   
@@ -887,7 +968,9 @@
           <li class="md-nav__item">
   <a href="#pattern-1-input-validation" class="md-nav__link">
     <span class="md-ellipsis">
-      Pattern 1: Input Validation
+      
+        Pattern 1: Input Validation
+      
     </span>
   </a>
   
@@ -896,7 +979,9 @@
           <li class="md-nav__item">
   <a href="#pattern-2-multiple-return-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      Pattern 2: Multiple Return Paths
+      
+        Pattern 2: Multiple Return Paths
+      
     </span>
   </a>
   
@@ -905,7 +990,9 @@
           <li class="md-nav__item">
   <a href="#pattern-3-building-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Pattern 3: Building Results
+      
+        Pattern 3: Building Results
+      
     </span>
   </a>
   
@@ -914,7 +1001,9 @@
           <li class="md-nav__item">
   <a href="#pattern-4-functions-calling-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Pattern 4: Functions Calling Functions
+      
+        Pattern 4: Functions Calling Functions
+      
     </span>
   </a>
   
@@ -924,7 +1013,9 @@
           <li class="md-nav__item">
   <a href="#diagram-function-pattern-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Function Pattern Gallery
+      
+        Diagram: Function Pattern Gallery
+      
     </span>
   </a>
   
@@ -943,7 +1034,9 @@
         <li class="md-nav__item">
   <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Putting It All Together: A Complete Example
+      
+        Putting It All Together: A Complete Example
+      
     </span>
   </a>
   
@@ -952,7 +1045,9 @@
         <li class="md-nav__item">
   <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Takeaways
+      
+        Key Takeaways
+      
     </span>
   </a>
   
@@ -977,9 +1072,16 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     7. Higher-Order Functions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -998,9 +1100,16 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     8. Lists
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1019,9 +1128,16 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     9. Advanced List Operations
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1040,9 +1156,16 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     10. Tuples and Sets
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1061,9 +1184,16 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     11. Dictionaries
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1082,9 +1212,16 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     12. Classes and Objects
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1103,9 +1240,16 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     13. Inheritance and Polymorphism
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1124,9 +1268,16 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     14. Errors and Exceptions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1145,9 +1296,16 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     15. File Input and Output
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1166,9 +1324,16 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     16. Software Engineering
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1187,9 +1352,16 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     17. Testing and Debugging
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1208,9 +1380,16 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     18. Searching and Sorting
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1229,9 +1408,16 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     19. Algorithm Analysis
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1250,9 +1436,16 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     20. Advanced Python
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1282,489 +1475,250 @@
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
+      
         
       
+    
     
     
     
@@ -1776,14 +1730,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     MicroSims
+  
+
+    
   </span>
+  
   
 
       
@@ -1847,6 +1809,7 @@
     
     
     
+    
       
         
         
@@ -1855,14 +1818,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Learning Graph
+  
+
+    
   </span>
+  
   
 
       
@@ -1890,9 +1861,8 @@
         
       
         
-          
-        
       
+    
     
     
     
@@ -1904,14 +1874,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../stories/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Stories
+  
+
+    
   </span>
+  
   
 
       
@@ -1941,6 +1919,7 @@
     
     
     
+    
       
         
         
@@ -1951,12 +1930,20 @@
         
   
   
+  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Prompts
+  
+
+    
   </span>
+  
   
 
       
@@ -1980,9 +1967,16 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Glossary
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2000,9 +1994,16 @@
       <a href="../../faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2020,9 +2021,16 @@
       <a href="../../references.md" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     References
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2040,9 +2048,16 @@
       <a href="../../license/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     License
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2060,9 +2075,16 @@
       <a href="../../contact/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contact
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2094,12 +2116,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -2108,7 +2132,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -2117,7 +2143,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -2126,7 +2154,9 @@
         <li class="md-nav__item">
   <a href="#what-are-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      What Are Functions?
+      
+        What Are Functions?
+      
     </span>
   </a>
   
@@ -2136,7 +2166,9 @@
           <li class="md-nav__item">
   <a href="#diagram-function-anatomy" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Function Anatomy
+      
+        Diagram: Function Anatomy
+      
     </span>
   </a>
   
@@ -2150,7 +2182,9 @@
         <li class="md-nav__item">
   <a href="#defining-your-first-function" class="md-nav__link">
     <span class="md-ellipsis">
-      Defining Your First Function
+      
+        Defining Your First Function
+      
     </span>
   </a>
   
@@ -2160,7 +2194,9 @@
           <li class="md-nav__item">
   <a href="#naming-your-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Naming Your Functions
+      
+        Naming Your Functions
+      
     </span>
   </a>
   
@@ -2174,7 +2210,9 @@
         <li class="md-nav__item">
   <a href="#parameters-and-arguments" class="md-nav__link">
     <span class="md-ellipsis">
-      Parameters and Arguments
+      
+        Parameters and Arguments
+      
     </span>
   </a>
   
@@ -2183,7 +2221,9 @@
         <li class="md-nav__item">
   <a href="#return-values-getting-results-back" class="md-nav__link">
     <span class="md-ellipsis">
-      Return Values: Getting Results Back
+      
+        Return Values: Getting Results Back
+      
     </span>
   </a>
   
@@ -2193,7 +2233,9 @@
           <li class="md-nav__item">
   <a href="#the-none-type" class="md-nav__link">
     <span class="md-ellipsis">
-      The None Type
+      
+        The None Type
+      
     </span>
   </a>
   
@@ -2203,7 +2245,9 @@
           <li class="md-nav__item">
   <a href="#diagram-function-call-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Function Call Flow
+      
+        Diagram: Function Call Flow
+      
     </span>
   </a>
   
@@ -2222,7 +2266,9 @@
         <li class="md-nav__item">
   <a href="#positional-and-keyword-arguments" class="md-nav__link">
     <span class="md-ellipsis">
-      Positional and Keyword Arguments
+      
+        Positional and Keyword Arguments
+      
     </span>
   </a>
   
@@ -2231,7 +2277,9 @@
         <li class="md-nav__item">
   <a href="#default-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Default Parameters
+      
+        Default Parameters
+      
     </span>
   </a>
   
@@ -2240,7 +2288,9 @@
         <li class="md-nav__item">
   <a href="#multiple-return-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Multiple Return Values
+      
+        Multiple Return Values
+      
     </span>
   </a>
   
@@ -2250,7 +2300,9 @@
           <li class="md-nav__item">
   <a href="#diagram-arguments-vs-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Arguments vs Parameters
+      
+        Diagram: Arguments vs Parameters
+      
     </span>
   </a>
   
@@ -2264,7 +2316,9 @@
         <li class="md-nav__item">
   <a href="#variable-scope-who-can-see-what" class="md-nav__link">
     <span class="md-ellipsis">
-      Variable Scope: Who Can See What?
+      
+        Variable Scope: Who Can See What?
+      
     </span>
   </a>
   
@@ -2274,7 +2328,9 @@
           <li class="md-nav__item">
   <a href="#local-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Local Variables
+      
+        Local Variables
+      
     </span>
   </a>
   
@@ -2283,7 +2339,9 @@
           <li class="md-nav__item">
   <a href="#global-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Global Variables
+      
+        Global Variables
+      
     </span>
   </a>
   
@@ -2292,7 +2350,9 @@
           <li class="md-nav__item">
   <a href="#the-global-keyword" class="md-nav__link">
     <span class="md-ellipsis">
-      The Global Keyword
+      
+        The Global Keyword
+      
     </span>
   </a>
   
@@ -2302,7 +2362,9 @@
           <li class="md-nav__item">
   <a href="#diagram-variable-scope-visualizer" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Variable Scope Visualizer
+      
+        Diagram: Variable Scope Visualizer
+      
     </span>
   </a>
   
@@ -2321,7 +2383,9 @@
         <li class="md-nav__item">
   <a href="#docstrings-documenting-your-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Docstrings: Documenting Your Functions
+      
+        Docstrings: Documenting Your Functions
+      
     </span>
   </a>
   
@@ -2330,7 +2394,9 @@
         <li class="md-nav__item">
   <a href="#modular-design-putting-it-all-together" class="md-nav__link">
     <span class="md-ellipsis">
-      Modular Design: Putting It All Together
+      
+        Modular Design: Putting It All Together
+      
     </span>
   </a>
   
@@ -2340,7 +2406,9 @@
           <li class="md-nav__item">
   <a href="#diagram-modular-design-builder" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Modular Design Builder
+      
+        Diagram: Modular Design Builder
+      
     </span>
   </a>
   
@@ -2354,7 +2422,9 @@
         <li class="md-nav__item">
   <a href="#common-patterns-and-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Common Patterns and Best Practices
+      
+        Common Patterns and Best Practices
+      
     </span>
   </a>
   
@@ -2364,7 +2434,9 @@
           <li class="md-nav__item">
   <a href="#pattern-1-input-validation" class="md-nav__link">
     <span class="md-ellipsis">
-      Pattern 1: Input Validation
+      
+        Pattern 1: Input Validation
+      
     </span>
   </a>
   
@@ -2373,7 +2445,9 @@
           <li class="md-nav__item">
   <a href="#pattern-2-multiple-return-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      Pattern 2: Multiple Return Paths
+      
+        Pattern 2: Multiple Return Paths
+      
     </span>
   </a>
   
@@ -2382,7 +2456,9 @@
           <li class="md-nav__item">
   <a href="#pattern-3-building-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Pattern 3: Building Results
+      
+        Pattern 3: Building Results
+      
     </span>
   </a>
   
@@ -2391,7 +2467,9 @@
           <li class="md-nav__item">
   <a href="#pattern-4-functions-calling-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Pattern 4: Functions Calling Functions
+      
+        Pattern 4: Functions Calling Functions
+      
     </span>
   </a>
   
@@ -2401,7 +2479,9 @@
           <li class="md-nav__item">
   <a href="#diagram-function-pattern-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Function Pattern Gallery
+      
+        Diagram: Function Pattern Gallery
+      
     </span>
   </a>
   
@@ -2420,7 +2500,9 @@
         <li class="md-nav__item">
   <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Putting It All Together: A Complete Example
+      
+        Putting It All Together: A Complete Example
+      
     </span>
   </a>
   
@@ -2429,7 +2511,9 @@
         <li class="md-nav__item">
   <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Takeaways
+      
+        Key Takeaways
+      
     </span>
   </a>
   
@@ -2445,12 +2529,62 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
+
   
-    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/06-functions-and-modular-design/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/06-functions-and-modular-design/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
@@ -2527,7 +2661,7 @@ Welcome back, coders! This chapter is a <em>huge</em> milestone. You're about to
 </p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Say hello to someone."""</span>
     <span class="n">message</span> <span class="o">=</span> <span class="s2">"Hello, "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">"!"</span>
     <span class="k">return</span> <span class="n">message</span>
@@ -2563,7 +2697,7 @@ Welcome back, coders! This chapter is a <em>huge</em> milestone. You're about to
 <h2 id="defining-your-first-function">Defining Your First Function</h2>
 <p>Let's write our first function. A <strong>function definition</strong> is the code that creates a new function. It starts with the <code>def</code> keyword, followed by the function's name, parentheses, and a colon. The function's code goes on the next lines, indented by four spaces.</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, world!"</span><span class="p">)</span>
 </code></pre></div></td></tr></tbody></table></div>
 <p>That's it! You just defined a function called <code>say_hello</code>. But here's the important part: <strong>defining a function doesn't run it.</strong> It's like writing a recipe in your recipe book — the cookies don't magically appear until you actually follow the recipe.</p>
@@ -2616,7 +2750,7 @@ Welcome back, coders! This chapter is a <em>huge</em> milestone. You're about to
 <p>A function that does the exact same thing every time is useful, but limited. What if you want to customize what it does? That's where <strong>parameters</strong> come in.</p>
 <p><strong>Parameters</strong> are variables listed inside the parentheses of a function definition. They act as placeholders for data that will be provided when the function is called. Think of them like blank lines on a form — the function says "I need a name here," and you fill it in when you use the function.</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
 </code></pre></div></td></tr></tbody></table></div>
 <p>In this example, <code>name</code> is a parameter. When you call the function, you provide a value for that parameter — and that value is called an <strong>argument</strong>:</p>
@@ -2661,7 +2795,7 @@ Hello, Monty!
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
@@ -2680,7 +2814,7 @@ Think of a function like a vending machine. The parameters are the slots where y
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 
 <span class="n">result</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -2693,7 +2827,7 @@ Think of a function like a vending machine. The parameters are the slots where y
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">n</span>
 
 <span class="n">area</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>           <span class="c1"># area is now 49</span>
@@ -2714,7 +2848,7 @@ Think of a function like a vending machine. The parameters are the slots where y
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Hello!"</span><span class="p">)</span>
 
 <span class="n">result</span> <span class="o">=</span> <span class="n">say_hello</span><span class="p">()</span>
@@ -2743,7 +2877,7 @@ Think of a function like a vending machine. The parameters are the slots where y
 </code></pre></div></td></tr></tbody></table></div>
 - Right side: "Function Definition" panel showing:
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div></td></tr></tbody></table></div>
 - Between the panels: animated arrows and value "bubbles" showing data flow
@@ -2777,7 +2911,7 @@ Think of a function like a vending machine. The parameters are the slots where y
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">describe_pet</span><span class="p">(</span><span class="n">animal</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">describe_pet</span><span class="p">(</span><span class="n">animal</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I have a </span><span class="si">{</span><span class="n">animal</span><span class="si">}</span><span class="s2"> named </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
 
 <span class="n">describe_pet</span><span class="p">(</span><span class="s2">"cat"</span><span class="p">,</span> <span class="s2">"Whiskers"</span><span class="p">)</span>   <span class="c1"># I have a cat named Whiskers.</span>
@@ -2836,7 +2970,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">greeting</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
 
 <span class="n">greet</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span>              <span class="c1"># prints "Hello, Alice!" (uses default)</span>
@@ -2850,7 +2984,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_tip</span><span class="p">(</span><span class="n">bill</span><span class="p">,</span> <span class="n">tip_rate</span><span class="o">=</span><span class="mf">0.18</span><span class="p">):</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_tip</span><span class="p">(</span><span class="n">bill</span><span class="p">,</span> <span class="n">tip_rate</span><span class="o">=</span><span class="mf">0.18</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Calculate the tip amount for a restaurant bill."""</span>
     <span class="k">return</span> <span class="n">bill</span> <span class="o">*</span> <span class="n">tip_rate</span>
 
@@ -2863,10 +2997,10 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>  <span class="c1"># ERROR! Default before non-default</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>  <span class="c1"># ERROR! Default before non-default</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">greeting</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">):</span>  <span class="c1"># Correct! Non-default first</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">greeting</span><span class="o">=</span><span class="s2">"Hello"</span><span class="p">):</span>  <span class="c1"># Correct! Non-default first</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">greeting</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="multiple-return-values">Multiple Return Values</h2>
@@ -2876,7 +3010,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_min_max</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_min_max</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">numbers</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 
 <span class="n">lowest</span><span class="p">,</span> <span class="n">highest</span> <span class="o">=</span> <span class="n">get_min_max</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
@@ -2894,7 +3028,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">analyze_scores</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">analyze_scores</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
     <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
     <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
     <span class="n">highest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
@@ -2923,7 +3057,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <p><strong>Canvas layout:</strong>
 - Top half: Function definition displayed prominently:
 </p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">make_profile</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="s2">"Unknown"</span><span class="p">):</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">make_profile</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="s2">"Unknown"</span><span class="p">):</span>
     <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">, age </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">, from </span><span class="si">{</span><span class="n">city</span><span class="si">}</span><span class="s2">"</span>
 </code></pre></div></td></tr></tbody></table></div>
 - Each parameter is color-coded: <code>name</code> (blue), <code>age</code> (green), <code>city</code> (orange)
@@ -2958,7 +3092,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
     <span class="n">area</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>   <span class="c1"># 'area' is a local variable</span>
     <span class="k">return</span> <span class="n">area</span>
 
@@ -2976,7 +3110,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal">5</span>
 <span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">school_name</span> <span class="o">=</span> <span class="s2">"Westside High"</span>   <span class="c1"># global variable</span>
 
-<span class="k">def</span> <span class="nf">print_welcome</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">print_welcome</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Welcome to </span><span class="si">{</span><span class="n">school_name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>  <span class="c1"># can READ the global variable</span>
 
 <span class="n">print_welcome</span><span class="p">()</span>   <span class="c1"># prints "Welcome to Westside High!"</span>
@@ -2990,7 +3124,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal">6</span>
 <span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># global variable</span>
 
-<span class="k">def</span> <span class="nf">increment</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">increment</span><span class="p">():</span>
     <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>   <span class="c1"># ERROR! Python thinks 'count' is local</span>
                          <span class="c1"># but it hasn't been assigned yet</span>
 
@@ -3010,7 +3144,7 @@ A common mistake is putting keyword arguments before positional ones. Python wil
 <span class="normal"> 9</span>
 <span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># global variable</span>
 
-<span class="k">def</span> <span class="nf">increment</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">increment</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">count</span>         <span class="c1"># "I want the GLOBAL count"</span>
     <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>    <span class="c1"># Now this works!</span>
 
@@ -3083,7 +3217,7 @@ Think of scope like rooms in a house. A local variable is like a note pinned to 
 <span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>              <span class="c1"># Line 1</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>              <span class="c1"># Line 2</span>
 
-<span class="k">def</span> <span class="nf">double</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>       <span class="c1"># Line 4</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">double</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>       <span class="c1"># Line 4</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="mi">2</span>   <span class="c1"># Line 5</span>
     <span class="k">return</span> <span class="n">result</span>    <span class="c1"># Line 6</span>
 
@@ -3137,7 +3271,7 @@ Think of scope like rooms in a house. A local variable is like a note pinned to 
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_bmi</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">,</span> <span class="n">height_m</span><span class="p">):</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_bmi</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">,</span> <span class="n">height_m</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Calculate Body Mass Index (BMI).</span>
 
 <span class="sd">    Parameters:</span>
@@ -3185,7 +3319,7 @@ calculate_bmi(weight_kg, height_m)
 <p>Even a simple one-liner helps:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Return the square of n."""</span>
     <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">n</span>
 </code></pre></div></td></tr></tbody></table></div>
@@ -3218,21 +3352,21 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
 <span class="normal">19</span>
 <span class="normal">20</span>
 <span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_numbers</span><span class="p">():</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_numbers</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">"""Get two numbers from the user."""</span>
     <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter first number: "</span><span class="p">))</span>
     <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter second number: "</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span>
 
-<span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Return the sum of a and b."""</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 
-<span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Return the difference of a and b."""</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
 
-<span class="k">def</span> <span class="nf">display_result</span><span class="p">(</span><span class="n">operation</span><span class="p">,</span> <span class="n">result</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">display_result</span><span class="p">(</span><span class="n">operation</span><span class="p">,</span> <span class="n">result</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Display the result of a calculation."""</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The result of </span><span class="si">{</span><span class="n">operation</span><span class="si">}</span><span class="s2"> is: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
@@ -3315,7 +3449,7 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_average</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Calculate the average of a list of scores."""</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">None</span>   <span class="c1"># Can't average an empty list!</span>
@@ -3334,7 +3468,7 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">letter_grade</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">letter_grade</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Convert a numeric score to a letter grade."""</span>
     <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">"A"</span>
@@ -3357,7 +3491,7 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">count_vowels</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">count_vowels</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Count the number of vowels in a string."""</span>
     <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
@@ -3375,7 +3509,7 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_passing</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">is_passing</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Check if a score earns a passing grade."""</span>
     <span class="n">grade</span> <span class="o">=</span> <span class="n">letter_grade</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>   <span class="c1"># Calls the function we wrote earlier</span>
     <span class="k">return</span> <span class="n">grade</span> <span class="o">!=</span> <span class="s2">"F"</span>
@@ -3475,11 +3609,11 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
 <span class="normal">48</span>
 <span class="normal">49</span>
 <span class="normal">50</span>
-<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_student_name</span><span class="p">():</span>
+<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_student_name</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">"""Get the student's name from user input."""</span>
     <span class="k">return</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter student name: "</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">get_scores</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_scores</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">"""Get a list of test scores from user input."""</span>
     <span class="n">scores</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -3489,7 +3623,7 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
         <span class="n">scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">entry</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">scores</span>
 
-<span class="k">def</span> <span class="nf">calculate_stats</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate_stats</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Calculate and return average, highest, and lowest scores."""</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
@@ -3498,7 +3632,7 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
     <span class="n">lowest</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">average</span><span class="p">,</span> <span class="n">highest</span><span class="p">,</span> <span class="n">lowest</span>
 
-<span class="k">def</span> <span class="nf">letter_grade</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">letter_grade</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Convert a numeric score to a letter grade."""</span>
     <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">"A"</span>
@@ -3511,7 +3645,7 @@ Here's a tip from the pros: write your docstring <em>before</em> you write the f
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">"F"</span>
 
-<span class="k">def</span> <span class="nf">print_report</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">scores</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">print_report</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">scores</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Print a formatted grade report for a student."""</span>
     <span class="n">avg</span><span class="p">,</span> <span class="n">high</span><span class="p">,</span> <span class="n">low</span> <span class="o">=</span> <span class="n">calculate_stats</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
     <span class="n">grade</span> <span class="o">=</span> <span class="n">letter_grade</span><span class="p">(</span><span class="n">avg</span><span class="p">)</span>
@@ -3557,7 +3691,7 @@ Look at you, writing clean, modular, well-documented code with functions! You've
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">say_hi</span><span class="p">():</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hi</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Hi!"</span><span class="p">)</span>
 
 <span class="n">result</span> <span class="o">=</span> <span class="n">say_hi</span><span class="p">()</span>
@@ -3593,7 +3727,7 @@ Look at you, writing clean, modular, well-documented code with functions! You've
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
@@ -3664,10 +3798,13 @@ Look at you, writing clean, modular, well-documented code with functions! You've
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

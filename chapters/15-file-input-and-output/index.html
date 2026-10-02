@@ -18,8 +18,11 @@
         <link rel="next" href="../16-software-engineering/">
       
       
+        
+      
+      
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -27,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -43,7 +46,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
@@ -69,34 +72,20 @@
 
     
     
-      
-        <meta property="og:type" content="website">
-      
-        <meta property="og:title" content="File Input and Output - Computer Science">
-      
-        <meta property="og:description" content="Reading and writing files, context managers, CSV and JSON processing, and file path handling in Python.">
-      
-        <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/15-file-input-and-output/index.png">
-      
-        <meta property="og:image:type" content="image/png">
-      
-        <meta property="og:image:width" content="1200">
-      
-        <meta property="og:image:height" content="630">
-      
-        <meta property="og:url" content="https://dmccreary.github.io/computer-science/chapters/15-file-input-and-output/">
-      
-        <meta name="twitter:card" content="summary_large_image">
-      
-        <meta name="twitter:title" content="File Input and Output - Computer Science">
-      
-        <meta name="twitter:description" content="Reading and writing files, context managers, CSV and JSON processing, and file path handling in Python.">
-      
-        <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/15-file-input-and-output/index.png">
-      
-    
-    
-  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="File Input and Output - Computer Science">
+<meta property="og:description" content="Reading and writing files, context managers, CSV and JSON processing, and file path handling in Python.">
+<meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/15-file-input-and-output/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/computer-science/chapters/15-file-input-and-output/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="File Input and Output - Computer Science">
+<meta property="twitter:description" content="Reading and writing files, context managers, CSV and JSON processing, and file path handling in Python.">
+<meta property="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/15-file-input-and-output/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -170,15 +159,17 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -195,7 +186,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -206,13 +197,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -257,7 +249,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -265,7 +257,7 @@
 </a>
     </div>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -277,9 +269,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -297,9 +296,16 @@
       <a href="../../about/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     About
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -317,9 +323,16 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Course Description
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -343,85 +356,46 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
+    
     
     
     
@@ -431,17 +405,23 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
         
-          
           
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Chapters
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -456,9 +436,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Chapters
+            
+  
+    Chapters
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -472,9 +456,16 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     1. Intro to Computer Science
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -493,9 +484,16 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     2. Python Fundamentals
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -514,9 +512,16 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     3. Boolean Logic
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -535,9 +540,16 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     4. Control Flow
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -556,9 +568,16 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     5. Working with Strings
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -577,9 +596,16 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     6. Functions and Modular Design
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -598,9 +624,16 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     7. Higher-Order Functions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -619,9 +652,16 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     8. Lists
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -640,9 +680,16 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     9. Advanced List Operations
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -661,9 +708,16 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     10. Tuples and Sets
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -682,9 +736,16 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     11. Dictionaries
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -703,9 +764,16 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     12. Classes and Objects
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -724,9 +792,16 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     13. Inheritance and Polymorphism
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -745,9 +820,16 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     14. Errors and Exceptions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -775,9 +857,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     15. File Input and Output
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -786,9 +875,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     15. File Input and Output
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -806,12 +902,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -820,7 +918,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -829,7 +929,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -838,7 +940,9 @@
         <li class="md-nav__item">
   <a href="#why-files-matter" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Files Matter
+      
+        Why Files Matter
+      
     </span>
   </a>
   
@@ -847,7 +951,9 @@
         <li class="md-nav__item">
   <a href="#opening-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Opening Files
+      
+        Opening Files
+      
     </span>
   </a>
   
@@ -857,7 +963,9 @@
           <li class="md-nav__item">
   <a href="#diagram-file-io-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: File I/O Flow
+      
+        Diagram: File I/O Flow
+      
     </span>
   </a>
   
@@ -871,7 +979,9 @@
         <li class="md-nav__item">
   <a href="#file-modes" class="md-nav__link">
     <span class="md-ellipsis">
-      File Modes
+      
+        File Modes
+      
     </span>
   </a>
   
@@ -880,7 +990,9 @@
         <li class="md-nav__item">
   <a href="#reading-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Reading Files
+      
+        Reading Files
+      
     </span>
   </a>
   
@@ -890,7 +1002,9 @@
           <li class="md-nav__item">
   <a href="#the-read-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Read Method
+      
+        The Read Method
+      
     </span>
   </a>
   
@@ -899,7 +1013,9 @@
           <li class="md-nav__item">
   <a href="#the-readline-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Readline Method
+      
+        The Readline Method
+      
     </span>
   </a>
   
@@ -908,7 +1024,9 @@
           <li class="md-nav__item">
   <a href="#the-readlines-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Readlines Method
+      
+        The Readlines Method
+      
     </span>
   </a>
   
@@ -918,7 +1036,9 @@
           <li class="md-nav__item">
   <a href="#diagram-read-methods-comparison" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Read Methods Comparison
+      
+        Diagram: Read Methods Comparison
+      
     </span>
   </a>
   
@@ -937,7 +1057,9 @@
         <li class="md-nav__item">
   <a href="#writing-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Writing Files
+      
+        Writing Files
+      
     </span>
   </a>
   
@@ -947,7 +1069,9 @@
           <li class="md-nav__item">
   <a href="#the-write-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Write Method
+      
+        The Write Method
+      
     </span>
   </a>
   
@@ -956,7 +1080,9 @@
           <li class="md-nav__item">
   <a href="#the-writelines-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Writelines Method
+      
+        The Writelines Method
+      
     </span>
   </a>
   
@@ -970,7 +1096,9 @@
         <li class="md-nav__item">
   <a href="#the-with-statement-and-context-managers" class="md-nav__link">
     <span class="md-ellipsis">
-      The With Statement and Context Managers
+      
+        The With Statement and Context Managers
+      
     </span>
   </a>
   
@@ -980,7 +1108,9 @@
           <li class="md-nav__item">
   <a href="#diagram-with-statement-vs-manual-close" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: With Statement vs Manual Close
+      
+        Diagram: With Statement vs Manual Close
+      
     </span>
   </a>
   
@@ -994,7 +1124,9 @@
         <li class="md-nav__item">
   <a href="#file-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      File Paths
+      
+        File Paths
+      
     </span>
   </a>
   
@@ -1003,7 +1135,9 @@
         <li class="md-nav__item">
   <a href="#text-vs-binary-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Text vs Binary Files
+      
+        Text vs Binary Files
+      
     </span>
   </a>
   
@@ -1012,7 +1146,9 @@
         <li class="md-nav__item">
   <a href="#working-with-csv-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Working with CSV Files
+      
+        Working with CSV Files
+      
     </span>
   </a>
   
@@ -1022,7 +1158,9 @@
           <li class="md-nav__item">
   <a href="#diagram-csv-file-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: CSV File Structure
+      
+        Diagram: CSV File Structure
+      
     </span>
   </a>
   
@@ -1036,7 +1174,9 @@
         <li class="md-nav__item">
   <a href="#working-with-json-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Working with JSON Files
+      
+        Working with JSON Files
+      
     </span>
   </a>
   
@@ -1046,7 +1186,9 @@
           <li class="md-nav__item">
   <a href="#json-and-dictionaries" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON and Dictionaries
+      
+        JSON and Dictionaries
+      
     </span>
   </a>
   
@@ -1056,7 +1198,9 @@
           <li class="md-nav__item">
   <a href="#diagram-json-to-dictionary-mapping" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: JSON to Dictionary Mapping
+      
+        Diagram: JSON to Dictionary Mapping
+      
     </span>
   </a>
   
@@ -1075,7 +1219,9 @@
         <li class="md-nav__item">
   <a href="#handling-file-exceptions" class="md-nav__link">
     <span class="md-ellipsis">
-      Handling File Exceptions
+      
+        Handling File Exceptions
+      
     </span>
   </a>
   
@@ -1084,7 +1230,9 @@
         <li class="md-nav__item">
   <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Putting It All Together: A Complete Example
+      
+        Putting It All Together: A Complete Example
+      
     </span>
   </a>
   
@@ -1094,7 +1242,9 @@
           <li class="md-nav__item">
   <a href="#diagram-file-format-decision-tree" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: File Format Decision Tree
+      
+        Diagram: File Format Decision Tree
+      
     </span>
   </a>
   
@@ -1108,7 +1258,9 @@
         <li class="md-nav__item">
   <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Takeaways
+      
+        Key Takeaways
+      
     </span>
   </a>
   
@@ -1133,9 +1285,16 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     16. Software Engineering
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1154,9 +1313,16 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     17. Testing and Debugging
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1175,9 +1341,16 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     18. Searching and Sorting
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1196,9 +1369,16 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     19. Algorithm Analysis
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1217,9 +1397,16 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     20. Advanced Python
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1249,489 +1436,250 @@
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
+      
         
       
+    
     
     
     
@@ -1743,14 +1691,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     MicroSims
+  
+
+    
   </span>
+  
   
 
       
@@ -1814,6 +1770,7 @@
     
     
     
+    
       
         
         
@@ -1822,14 +1779,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Learning Graph
+  
+
+    
   </span>
+  
   
 
       
@@ -1857,9 +1822,8 @@
         
       
         
-          
-        
       
+    
     
     
     
@@ -1871,14 +1835,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../stories/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Stories
+  
+
+    
   </span>
+  
   
 
       
@@ -1908,6 +1880,7 @@
     
     
     
+    
       
         
         
@@ -1918,12 +1891,20 @@
         
   
   
+  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Prompts
+  
+
+    
   </span>
+  
   
 
       
@@ -1947,9 +1928,16 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Glossary
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1967,9 +1955,16 @@
       <a href="../../faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1987,9 +1982,16 @@
       <a href="../../references.md" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     References
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2007,9 +2009,16 @@
       <a href="../../license/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     License
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2027,9 +2036,16 @@
       <a href="../../contact/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contact
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2061,12 +2077,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -2075,7 +2093,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -2084,7 +2104,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -2093,7 +2115,9 @@
         <li class="md-nav__item">
   <a href="#why-files-matter" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Files Matter
+      
+        Why Files Matter
+      
     </span>
   </a>
   
@@ -2102,7 +2126,9 @@
         <li class="md-nav__item">
   <a href="#opening-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Opening Files
+      
+        Opening Files
+      
     </span>
   </a>
   
@@ -2112,7 +2138,9 @@
           <li class="md-nav__item">
   <a href="#diagram-file-io-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: File I/O Flow
+      
+        Diagram: File I/O Flow
+      
     </span>
   </a>
   
@@ -2126,7 +2154,9 @@
         <li class="md-nav__item">
   <a href="#file-modes" class="md-nav__link">
     <span class="md-ellipsis">
-      File Modes
+      
+        File Modes
+      
     </span>
   </a>
   
@@ -2135,7 +2165,9 @@
         <li class="md-nav__item">
   <a href="#reading-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Reading Files
+      
+        Reading Files
+      
     </span>
   </a>
   
@@ -2145,7 +2177,9 @@
           <li class="md-nav__item">
   <a href="#the-read-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Read Method
+      
+        The Read Method
+      
     </span>
   </a>
   
@@ -2154,7 +2188,9 @@
           <li class="md-nav__item">
   <a href="#the-readline-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Readline Method
+      
+        The Readline Method
+      
     </span>
   </a>
   
@@ -2163,7 +2199,9 @@
           <li class="md-nav__item">
   <a href="#the-readlines-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Readlines Method
+      
+        The Readlines Method
+      
     </span>
   </a>
   
@@ -2173,7 +2211,9 @@
           <li class="md-nav__item">
   <a href="#diagram-read-methods-comparison" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Read Methods Comparison
+      
+        Diagram: Read Methods Comparison
+      
     </span>
   </a>
   
@@ -2192,7 +2232,9 @@
         <li class="md-nav__item">
   <a href="#writing-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Writing Files
+      
+        Writing Files
+      
     </span>
   </a>
   
@@ -2202,7 +2244,9 @@
           <li class="md-nav__item">
   <a href="#the-write-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Write Method
+      
+        The Write Method
+      
     </span>
   </a>
   
@@ -2211,7 +2255,9 @@
           <li class="md-nav__item">
   <a href="#the-writelines-method" class="md-nav__link">
     <span class="md-ellipsis">
-      The Writelines Method
+      
+        The Writelines Method
+      
     </span>
   </a>
   
@@ -2225,7 +2271,9 @@
         <li class="md-nav__item">
   <a href="#the-with-statement-and-context-managers" class="md-nav__link">
     <span class="md-ellipsis">
-      The With Statement and Context Managers
+      
+        The With Statement and Context Managers
+      
     </span>
   </a>
   
@@ -2235,7 +2283,9 @@
           <li class="md-nav__item">
   <a href="#diagram-with-statement-vs-manual-close" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: With Statement vs Manual Close
+      
+        Diagram: With Statement vs Manual Close
+      
     </span>
   </a>
   
@@ -2249,7 +2299,9 @@
         <li class="md-nav__item">
   <a href="#file-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      File Paths
+      
+        File Paths
+      
     </span>
   </a>
   
@@ -2258,7 +2310,9 @@
         <li class="md-nav__item">
   <a href="#text-vs-binary-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Text vs Binary Files
+      
+        Text vs Binary Files
+      
     </span>
   </a>
   
@@ -2267,7 +2321,9 @@
         <li class="md-nav__item">
   <a href="#working-with-csv-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Working with CSV Files
+      
+        Working with CSV Files
+      
     </span>
   </a>
   
@@ -2277,7 +2333,9 @@
           <li class="md-nav__item">
   <a href="#diagram-csv-file-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: CSV File Structure
+      
+        Diagram: CSV File Structure
+      
     </span>
   </a>
   
@@ -2291,7 +2349,9 @@
         <li class="md-nav__item">
   <a href="#working-with-json-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Working with JSON Files
+      
+        Working with JSON Files
+      
     </span>
   </a>
   
@@ -2301,7 +2361,9 @@
           <li class="md-nav__item">
   <a href="#json-and-dictionaries" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON and Dictionaries
+      
+        JSON and Dictionaries
+      
     </span>
   </a>
   
@@ -2311,7 +2373,9 @@
           <li class="md-nav__item">
   <a href="#diagram-json-to-dictionary-mapping" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: JSON to Dictionary Mapping
+      
+        Diagram: JSON to Dictionary Mapping
+      
     </span>
   </a>
   
@@ -2330,7 +2394,9 @@
         <li class="md-nav__item">
   <a href="#handling-file-exceptions" class="md-nav__link">
     <span class="md-ellipsis">
-      Handling File Exceptions
+      
+        Handling File Exceptions
+      
     </span>
   </a>
   
@@ -2339,7 +2405,9 @@
         <li class="md-nav__item">
   <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Putting It All Together: A Complete Example
+      
+        Putting It All Together: A Complete Example
+      
     </span>
   </a>
   
@@ -2349,7 +2417,9 @@
           <li class="md-nav__item">
   <a href="#diagram-file-format-decision-tree" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: File Format Decision Tree
+      
+        Diagram: File Format Decision Tree
+      
     </span>
   </a>
   
@@ -2363,7 +2433,9 @@
         <li class="md-nav__item">
   <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Takeaways
+      
+        Key Takeaways
+      
     </span>
   </a>
   
@@ -2379,12 +2451,62 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
+
   
-    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/15-file-input-and-output/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/15-file-input-and-output/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
@@ -2891,7 +3013,7 @@ Here's a common gotcha: forgetting the <code>\n</code> in your <code>write()</co
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="c1"># Build a path that works on Windows, Mac, and Linux</span>
 <span class="n">folder</span> <span class="o">=</span> <span class="s2">"data"</span>
@@ -2910,7 +3032,7 @@ Here's a common gotcha: forgetting the <code>\n</code> in your <code>write()</co
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">"data.txt"</span><span class="p">):</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"data.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
@@ -3002,7 +3124,7 @@ Diana,12,88
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">csv</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"students.csv"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
@@ -3038,7 +3160,7 @@ Diana (Grade 12): 88
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">csv</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
 
 <span class="n">students</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"grade"</span><span class="p">,</span> <span class="s2">"score"</span><span class="p">],</span>
@@ -3167,7 +3289,7 @@ CSV files are everywhere in the real world -- from school grade exports to scien
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 
 <span class="c1"># Reading JSON from a file</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"student.json"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
@@ -3189,7 +3311,7 @@ CSV files are everywhere in the real world -- from school grade exports to scien
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 
 <span class="n">student</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Bob"</span><span class="p">,</span>
@@ -3221,7 +3343,7 @@ CSV files are everywhere in the real world -- from school grade exports to scien
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 
 <span class="c1"># Load existing data</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"class_roster.json"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
@@ -3252,7 +3374,7 @@ CSV files are everywhere in the real world -- from school grade exports to scien
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 
 <span class="c1"># Python dict -&gt; JSON string</span>
 <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"score"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">"level"</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
@@ -3358,7 +3480,7 @@ CSV files are everywhere in the real world -- from school grade exports to scien
 <span class="normal">13</span>
 <span class="normal">14</span>
 <span class="normal">15</span>
-<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">safe_read</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">safe_read</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Read a file safely, handling common errors."""</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
@@ -3390,9 +3512,9 @@ CSV files are everywhere in the real world -- from school grade exports to scien
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
 
-<span class="k">def</span> <span class="nf">write_log</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">write_log</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Append a timestamped message to the log file."""</span>
     <span class="n">timestamp</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S"</span><span class="p">)</span>
     <span class="k">try</span><span class="p">:</span>
@@ -3467,13 +3589,13 @@ Error handling might feel like extra work, but it's what separates a hobby scrip
 <span class="normal">45</span>
 <span class="normal">46</span>
 <span class="normal">47</span>
-<span class="normal">48</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">csv</span>
+<span class="normal">48</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
 
 <span class="n">GRADES_FILE</span> <span class="o">=</span> <span class="s2">"grades.json"</span>
 
-<span class="k">def</span> <span class="nf">load_grades</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">load_grades</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">"""Load grades from JSON file, or create empty data if file doesn't exist."""</span>
     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">GRADES_FILE</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
@@ -3483,19 +3605,19 @@ Error handling might feel like extra work, but it's what separates a hobby scrip
             <span class="nb">print</span><span class="p">(</span><span class="s2">"Warning: Grades file is corrupted. Starting fresh."</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">{}</span>
 
-<span class="k">def</span> <span class="nf">save_grades</span><span class="p">(</span><span class="n">grades</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">save_grades</span><span class="p">(</span><span class="n">grades</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Save grades to JSON file."""</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">GRADES_FILE</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
         <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">grades</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Grades saved!"</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">add_grade</span><span class="p">(</span><span class="n">grades</span><span class="p">,</span> <span class="n">student</span><span class="p">,</span> <span class="n">assignment</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">add_grade</span><span class="p">(</span><span class="n">grades</span><span class="p">,</span> <span class="n">student</span><span class="p">,</span> <span class="n">assignment</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Add a grade for a student."""</span>
     <span class="k">if</span> <span class="n">student</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">grades</span><span class="p">:</span>
         <span class="n">grades</span><span class="p">[</span><span class="n">student</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">grades</span><span class="p">[</span><span class="n">student</span><span class="p">][</span><span class="n">assignment</span><span class="p">]</span> <span class="o">=</span> <span class="n">score</span>
 
-<span class="k">def</span> <span class="nf">export_to_csv</span><span class="p">(</span><span class="n">grades</span><span class="p">,</span> <span class="n">csv_filename</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">export_to_csv</span><span class="p">(</span><span class="n">grades</span><span class="p">,</span> <span class="n">csv_filename</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Export grades to a CSV file."""</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_filename</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
         <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
@@ -3600,7 +3722,7 @@ You just unlocked a superpower, coder! Your programs can now remember things, sh
 </p><div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"data.json"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">my_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
@@ -3632,7 +3754,7 @@ The <code>json.load()</code> function reads the JSON text from the file and conv
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
@@ -3703,10 +3825,13 @@ The <code>json.load()</code> function reads the JSON text from the file and conv
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

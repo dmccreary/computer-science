@@ -1,0 +1,64 @@
+{
+  "title": "Python Collections Overview",
+  "creator": "Dan McCreary",
+  "subject": "Computer Science",
+  "description": "Interactive p5.js 2x2 matrix that organizes Python's list, tuple, set, and frozenset by ordered vs unordered and mutable vs immutable, with hover details, expandable code examples, and a 12-question classification quiz.",
+  "date": "2026-10-01",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Python Collections Overview",
+    "learningObjectives": [
+      "Classify Python's four core collection types (list, tuple, set, frozenset) by whether they are ordered and whether they are mutable.",
+      "Compare the types on duplicates, indexing, and use as a dictionary key.",
+      "Select the appropriate collection type for a given scenario and justify the choice."
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Lists, tuples, and sets",
+      "Mutable vs immutable objects",
+      "Dictionary keys must be immutable"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 520
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Classification on a 2x2 matrix with hover comparison, worked code examples, and a quiz with hints and retry",
+    "keyQuestions": [
+      "Does this collection keep its items in order?",
+      "Can this collection change after it is created?",
+      "Why can a tuple or a frozenset be a dictionary key when a list or a set cannot?"
+    ],
+    "commonMisconceptions": [
+      "Tuples are just lists with different brackets",
+      "Sets keep items in the order you added them",
+      "Any collection can be used as a dictionary key"
+    ],
+    "assessmentOpportunities": [
+      "First-try score on the 12-question classification quiz",
+      "Students invent a scenario and justify which quadrant it belongs in"
+    ]
+  },
+  "chapter": "10-tuples-and-sets"
+}

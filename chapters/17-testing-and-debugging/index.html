@@ -18,8 +18,11 @@
         <link rel="next" href="../18-searching-and-sorting/">
       
       
+        
+      
+      
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -27,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -43,7 +46,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
@@ -69,34 +72,20 @@
 
     
     
-      
-        <meta property="og:type" content="website">
-      
-        <meta property="og:title" content="Testing and Debugging - Computer Science">
-      
-        <meta property="og:description" content="Unit testing, test-driven development, debugging strategies, defensive programming, and code review in Python.">
-      
-        <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/17-testing-and-debugging/index.png">
-      
-        <meta property="og:image:type" content="image/png">
-      
-        <meta property="og:image:width" content="1200">
-      
-        <meta property="og:image:height" content="630">
-      
-        <meta property="og:url" content="https://dmccreary.github.io/computer-science/chapters/17-testing-and-debugging/">
-      
-        <meta name="twitter:card" content="summary_large_image">
-      
-        <meta name="twitter:title" content="Testing and Debugging - Computer Science">
-      
-        <meta name="twitter:description" content="Unit testing, test-driven development, debugging strategies, defensive programming, and code review in Python.">
-      
-        <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/17-testing-and-debugging/index.png">
-      
-    
-    
-  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Testing and Debugging - Computer Science">
+<meta property="og:description" content="Unit testing, test-driven development, debugging strategies, defensive programming, and code review in Python.">
+<meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/17-testing-and-debugging/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/computer-science/chapters/17-testing-and-debugging/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Testing and Debugging - Computer Science">
+<meta property="twitter:description" content="Unit testing, test-driven development, debugging strategies, defensive programming, and code review in Python.">
+<meta property="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/17-testing-and-debugging/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -170,15 +159,17 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -195,7 +186,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -206,13 +197,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -257,7 +249,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -265,7 +257,7 @@
 </a>
     </div>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -277,9 +269,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -297,9 +296,16 @@
       <a href="../../about/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     About
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -317,9 +323,16 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Course Description
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -343,85 +356,46 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
+    
     
     
     
@@ -431,17 +405,23 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
         
-          
           
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Chapters
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -456,9 +436,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Chapters
+            
+  
+    Chapters
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -472,9 +456,16 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     1. Intro to Computer Science
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -493,9 +484,16 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     2. Python Fundamentals
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -514,9 +512,16 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     3. Boolean Logic
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -535,9 +540,16 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     4. Control Flow
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -556,9 +568,16 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     5. Working with Strings
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -577,9 +596,16 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     6. Functions and Modular Design
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -598,9 +624,16 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     7. Higher-Order Functions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -619,9 +652,16 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     8. Lists
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -640,9 +680,16 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     9. Advanced List Operations
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -661,9 +708,16 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     10. Tuples and Sets
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -682,9 +736,16 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     11. Dictionaries
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -703,9 +764,16 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     12. Classes and Objects
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -724,9 +792,16 @@
       <a href="../13-inheritance-and-polymorphism/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     13. Inheritance and Polymorphism
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -745,9 +820,16 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     14. Errors and Exceptions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -766,9 +848,16 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     15. File Input and Output
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -787,9 +876,16 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     16. Software Engineering
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -817,9 +913,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     17. Testing and Debugging
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -828,9 +931,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     17. Testing and Debugging
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -848,12 +958,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -862,7 +974,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -871,7 +985,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -880,7 +996,9 @@
         <li class="md-nav__item">
   <a href="#why-testing-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Testing Matters
+      
+        Why Testing Matters
+      
     </span>
   </a>
   
@@ -889,7 +1007,9 @@
         <li class="md-nav__item">
   <a href="#manual-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Manual Testing
+      
+        Manual Testing
+      
     </span>
   </a>
   
@@ -898,7 +1018,9 @@
         <li class="md-nav__item">
   <a href="#unit-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Unit Testing
+      
+        Unit Testing
+      
     </span>
   </a>
   
@@ -907,7 +1029,9 @@
         <li class="md-nav__item">
   <a href="#test-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      Test Cases
+      
+        Test Cases
+      
     </span>
   </a>
   
@@ -916,7 +1040,9 @@
         <li class="md-nav__item">
   <a href="#assert-statements" class="md-nav__link">
     <span class="md-ellipsis">
-      Assert Statements
+      
+        Assert Statements
+      
     </span>
   </a>
   
@@ -925,7 +1051,9 @@
         <li class="md-nav__item">
   <a href="#the-unittest-module" class="md-nav__link">
     <span class="md-ellipsis">
-      The Unittest Module
+      
+        The Unittest Module
+      
     </span>
   </a>
   
@@ -935,7 +1063,9 @@
           <li class="md-nav__item">
   <a href="#diagram-unit-test-runner" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Unit Test Runner
+      
+        Diagram: Unit Test Runner
+      
     </span>
   </a>
   
@@ -949,7 +1079,9 @@
         <li class="md-nav__item">
   <a href="#edge-cases-and-boundary-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Edge Cases and Boundary Testing
+      
+        Edge Cases and Boundary Testing
+      
     </span>
   </a>
   
@@ -959,7 +1091,9 @@
           <li class="md-nav__item">
   <a href="#diagram-boundary-testing-playground" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Boundary Testing Playground
+      
+        Diagram: Boundary Testing Playground
+      
     </span>
   </a>
   
@@ -973,7 +1107,9 @@
         <li class="md-nav__item">
   <a href="#test-driven-development" class="md-nav__link">
     <span class="md-ellipsis">
-      Test-Driven Development
+      
+        Test-Driven Development
+      
     </span>
   </a>
   
@@ -983,7 +1119,9 @@
           <li class="md-nav__item">
   <a href="#diagram-tdd-cycle" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: TDD Cycle
+      
+        Diagram: TDD Cycle
+      
     </span>
   </a>
   
@@ -997,7 +1135,9 @@
         <li class="md-nav__item">
   <a href="#what-is-debugging" class="md-nav__link">
     <span class="md-ellipsis">
-      What Is Debugging?
+      
+        What Is Debugging?
+      
     </span>
   </a>
   
@@ -1006,7 +1146,9 @@
         <li class="md-nav__item">
   <a href="#print-debugging" class="md-nav__link">
     <span class="md-ellipsis">
-      Print Debugging
+      
+        Print Debugging
+      
     </span>
   </a>
   
@@ -1015,7 +1157,9 @@
         <li class="md-nav__item">
   <a href="#debugger-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Debugger Tools
+      
+        Debugger Tools
+      
     </span>
   </a>
   
@@ -1025,7 +1169,9 @@
           <li class="md-nav__item">
   <a href="#breakpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      Breakpoints
+      
+        Breakpoints
+      
     </span>
   </a>
   
@@ -1034,7 +1180,9 @@
           <li class="md-nav__item">
   <a href="#step-through-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Step Through Code
+      
+        Step Through Code
+      
     </span>
   </a>
   
@@ -1044,7 +1192,9 @@
           <li class="md-nav__item">
   <a href="#diagram-visual-debugger-simulator" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Visual Debugger Simulator
+      
+        Diagram: Visual Debugger Simulator
+      
     </span>
   </a>
   
@@ -1063,7 +1213,9 @@
         <li class="md-nav__item">
   <a href="#code-tracing" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Tracing
+      
+        Code Tracing
+      
     </span>
   </a>
   
@@ -1072,7 +1224,9 @@
         <li class="md-nav__item">
   <a href="#rubber-duck-debugging" class="md-nav__link">
     <span class="md-ellipsis">
-      Rubber Duck Debugging
+      
+        Rubber Duck Debugging
+      
     </span>
   </a>
   
@@ -1081,7 +1235,9 @@
         <li class="md-nav__item">
   <a href="#debugging-strategies-comparison" class="md-nav__link">
     <span class="md-ellipsis">
-      Debugging Strategies Comparison
+      
+        Debugging Strategies Comparison
+      
     </span>
   </a>
   
@@ -1091,7 +1247,9 @@
           <li class="md-nav__item">
   <a href="#diagram-which-debugging-strategy-should-you-use" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Which Debugging Strategy Should You Use?
+      
+        Diagram: Which Debugging Strategy Should You Use?
+      
     </span>
   </a>
   
@@ -1105,7 +1263,9 @@
         <li class="md-nav__item">
   <a href="#defensive-programming" class="md-nav__link">
     <span class="md-ellipsis">
-      Defensive Programming
+      
+        Defensive Programming
+      
     </span>
   </a>
   
@@ -1114,7 +1274,9 @@
         <li class="md-nav__item">
   <a href="#input-validation" class="md-nav__link">
     <span class="md-ellipsis">
-      Input Validation
+      
+        Input Validation
+      
     </span>
   </a>
   
@@ -1124,7 +1286,9 @@
           <li class="md-nav__item">
   <a href="#diagram-input-validation-tester" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Input Validation Tester
+      
+        Diagram: Input Validation Tester
+      
     </span>
   </a>
   
@@ -1138,7 +1302,9 @@
         <li class="md-nav__item">
   <a href="#code-review" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Review
+      
+        Code Review
+      
     </span>
   </a>
   
@@ -1147,7 +1313,9 @@
         <li class="md-nav__item">
   <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Putting It All Together: A Complete Example
+      
+        Putting It All Together: A Complete Example
+      
     </span>
   </a>
   
@@ -1156,7 +1324,9 @@
         <li class="md-nav__item">
   <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Takeaways
+      
+        Key Takeaways
+      
     </span>
   </a>
   
@@ -1181,9 +1351,16 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     18. Searching and Sorting
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1202,9 +1379,16 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     19. Algorithm Analysis
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1223,9 +1407,16 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     20. Advanced Python
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1255,489 +1446,250 @@
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
+      
         
       
+    
     
     
     
@@ -1749,14 +1701,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     MicroSims
+  
+
+    
   </span>
+  
   
 
       
@@ -1820,6 +1780,7 @@
     
     
     
+    
       
         
         
@@ -1828,14 +1789,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Learning Graph
+  
+
+    
   </span>
+  
   
 
       
@@ -1863,9 +1832,8 @@
         
       
         
-          
-        
       
+    
     
     
     
@@ -1877,14 +1845,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../stories/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Stories
+  
+
+    
   </span>
+  
   
 
       
@@ -1914,6 +1890,7 @@
     
     
     
+    
       
         
         
@@ -1924,12 +1901,20 @@
         
   
   
+  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Prompts
+  
+
+    
   </span>
+  
   
 
       
@@ -1953,9 +1938,16 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Glossary
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1973,9 +1965,16 @@
       <a href="../../faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1993,9 +1992,16 @@
       <a href="../../references.md" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     References
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2013,9 +2019,16 @@
       <a href="../../license/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     License
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2033,9 +2046,16 @@
       <a href="../../contact/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contact
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2067,12 +2087,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -2081,7 +2103,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -2090,7 +2114,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -2099,7 +2125,9 @@
         <li class="md-nav__item">
   <a href="#why-testing-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Testing Matters
+      
+        Why Testing Matters
+      
     </span>
   </a>
   
@@ -2108,7 +2136,9 @@
         <li class="md-nav__item">
   <a href="#manual-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Manual Testing
+      
+        Manual Testing
+      
     </span>
   </a>
   
@@ -2117,7 +2147,9 @@
         <li class="md-nav__item">
   <a href="#unit-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Unit Testing
+      
+        Unit Testing
+      
     </span>
   </a>
   
@@ -2126,7 +2158,9 @@
         <li class="md-nav__item">
   <a href="#test-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      Test Cases
+      
+        Test Cases
+      
     </span>
   </a>
   
@@ -2135,7 +2169,9 @@
         <li class="md-nav__item">
   <a href="#assert-statements" class="md-nav__link">
     <span class="md-ellipsis">
-      Assert Statements
+      
+        Assert Statements
+      
     </span>
   </a>
   
@@ -2144,7 +2180,9 @@
         <li class="md-nav__item">
   <a href="#the-unittest-module" class="md-nav__link">
     <span class="md-ellipsis">
-      The Unittest Module
+      
+        The Unittest Module
+      
     </span>
   </a>
   
@@ -2154,7 +2192,9 @@
           <li class="md-nav__item">
   <a href="#diagram-unit-test-runner" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Unit Test Runner
+      
+        Diagram: Unit Test Runner
+      
     </span>
   </a>
   
@@ -2168,7 +2208,9 @@
         <li class="md-nav__item">
   <a href="#edge-cases-and-boundary-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Edge Cases and Boundary Testing
+      
+        Edge Cases and Boundary Testing
+      
     </span>
   </a>
   
@@ -2178,7 +2220,9 @@
           <li class="md-nav__item">
   <a href="#diagram-boundary-testing-playground" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Boundary Testing Playground
+      
+        Diagram: Boundary Testing Playground
+      
     </span>
   </a>
   
@@ -2192,7 +2236,9 @@
         <li class="md-nav__item">
   <a href="#test-driven-development" class="md-nav__link">
     <span class="md-ellipsis">
-      Test-Driven Development
+      
+        Test-Driven Development
+      
     </span>
   </a>
   
@@ -2202,7 +2248,9 @@
           <li class="md-nav__item">
   <a href="#diagram-tdd-cycle" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: TDD Cycle
+      
+        Diagram: TDD Cycle
+      
     </span>
   </a>
   
@@ -2216,7 +2264,9 @@
         <li class="md-nav__item">
   <a href="#what-is-debugging" class="md-nav__link">
     <span class="md-ellipsis">
-      What Is Debugging?
+      
+        What Is Debugging?
+      
     </span>
   </a>
   
@@ -2225,7 +2275,9 @@
         <li class="md-nav__item">
   <a href="#print-debugging" class="md-nav__link">
     <span class="md-ellipsis">
-      Print Debugging
+      
+        Print Debugging
+      
     </span>
   </a>
   
@@ -2234,7 +2286,9 @@
         <li class="md-nav__item">
   <a href="#debugger-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Debugger Tools
+      
+        Debugger Tools
+      
     </span>
   </a>
   
@@ -2244,7 +2298,9 @@
           <li class="md-nav__item">
   <a href="#breakpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      Breakpoints
+      
+        Breakpoints
+      
     </span>
   </a>
   
@@ -2253,7 +2309,9 @@
           <li class="md-nav__item">
   <a href="#step-through-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Step Through Code
+      
+        Step Through Code
+      
     </span>
   </a>
   
@@ -2263,7 +2321,9 @@
           <li class="md-nav__item">
   <a href="#diagram-visual-debugger-simulator" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Visual Debugger Simulator
+      
+        Diagram: Visual Debugger Simulator
+      
     </span>
   </a>
   
@@ -2282,7 +2342,9 @@
         <li class="md-nav__item">
   <a href="#code-tracing" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Tracing
+      
+        Code Tracing
+      
     </span>
   </a>
   
@@ -2291,7 +2353,9 @@
         <li class="md-nav__item">
   <a href="#rubber-duck-debugging" class="md-nav__link">
     <span class="md-ellipsis">
-      Rubber Duck Debugging
+      
+        Rubber Duck Debugging
+      
     </span>
   </a>
   
@@ -2300,7 +2364,9 @@
         <li class="md-nav__item">
   <a href="#debugging-strategies-comparison" class="md-nav__link">
     <span class="md-ellipsis">
-      Debugging Strategies Comparison
+      
+        Debugging Strategies Comparison
+      
     </span>
   </a>
   
@@ -2310,7 +2376,9 @@
           <li class="md-nav__item">
   <a href="#diagram-which-debugging-strategy-should-you-use" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Which Debugging Strategy Should You Use?
+      
+        Diagram: Which Debugging Strategy Should You Use?
+      
     </span>
   </a>
   
@@ -2324,7 +2392,9 @@
         <li class="md-nav__item">
   <a href="#defensive-programming" class="md-nav__link">
     <span class="md-ellipsis">
-      Defensive Programming
+      
+        Defensive Programming
+      
     </span>
   </a>
   
@@ -2333,7 +2403,9 @@
         <li class="md-nav__item">
   <a href="#input-validation" class="md-nav__link">
     <span class="md-ellipsis">
-      Input Validation
+      
+        Input Validation
+      
     </span>
   </a>
   
@@ -2343,7 +2415,9 @@
           <li class="md-nav__item">
   <a href="#diagram-input-validation-tester" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Input Validation Tester
+      
+        Diagram: Input Validation Tester
+      
     </span>
   </a>
   
@@ -2357,7 +2431,9 @@
         <li class="md-nav__item">
   <a href="#code-review" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Review
+      
+        Code Review
+      
     </span>
   </a>
   
@@ -2366,7 +2442,9 @@
         <li class="md-nav__item">
   <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Putting It All Together: A Complete Example
+      
+        Putting It All Together: A Complete Example
+      
     </span>
   </a>
   
@@ -2375,7 +2453,9 @@
         <li class="md-nav__item">
   <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Takeaways
+      
+        Key Takeaways
+      
     </span>
   </a>
   
@@ -2391,12 +2471,62 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
+
   
-    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/17-testing-and-debugging/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/17-testing-and-debugging/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
@@ -2465,7 +2595,7 @@ Welcome back, coders! Every programmer — from beginners to experts at Google �
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 
 <span class="c1"># Manual testing</span>
@@ -2525,19 +2655,19 @@ Welcome back, coders! Every programmer — from beginners to experts at Google �
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">celsius_to_fahrenheit</span><span class="p">(</span><span class="n">celsius</span><span class="p">):</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">celsius_to_fahrenheit</span><span class="p">(</span><span class="n">celsius</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">celsius</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
 
 <span class="c1"># Unit tests (simple version)</span>
-<span class="k">def</span> <span class="nf">test_boiling_point</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">test_boiling_point</span><span class="p">():</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">celsius_to_fahrenheit</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="k">assert</span> <span class="n">result</span> <span class="o">==</span> <span class="mi">212</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"Expected 212, got </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span>
 
-<span class="k">def</span> <span class="nf">test_freezing_point</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">test_freezing_point</span><span class="p">():</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">celsius_to_fahrenheit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">assert</span> <span class="n">result</span> <span class="o">==</span> <span class="mi">32</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"Expected 32, got </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span>
 
-<span class="k">def</span> <span class="nf">test_body_temperature</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">test_body_temperature</span><span class="p">():</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">celsius_to_fahrenheit</span><span class="p">(</span><span class="mi">37</span><span class="p">)</span>
     <span class="k">assert</span> <span class="n">result</span> <span class="o">==</span> <span class="mf">98.6</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"Expected 98.6, got </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span>
 
@@ -2578,7 +2708,7 @@ Welcome back, coders! Every programmer — from beginners to experts at Google �
 <span class="normal">20</span>
 <span class="normal">21</span>
 <span class="normal">22</span>
-<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">find_max</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">find_max</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">numbers</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">None</span>
     <span class="n">biggest</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -2658,34 +2788,34 @@ Pro tip: Always include a descriptive error message in your assert statements. W
 <span class="normal">29</span>
 <span class="normal">30</span>
 <span class="normal">31</span>
-<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">unittest</span>
 
-<span class="k">def</span> <span class="nf">is_palindrome</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">is_palindrome</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Check if a string reads the same forward and backward."""</span>
     <span class="n">cleaned</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">cleaned</span> <span class="o">==</span> <span class="n">cleaned</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
-<span class="k">class</span> <span class="nc">TestPalindrome</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">TestPalindrome</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
 
-    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">"""Runs before each test method."""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">simple_palindrome</span> <span class="o">=</span> <span class="s2">"racecar"</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">sentence_palindrome</span> <span class="o">=</span> <span class="s2">"A man a plan a canal Panama"</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">not_palindrome</span> <span class="o">=</span> <span class="s2">"hello"</span>
 
-    <span class="k">def</span> <span class="nf">test_simple_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_simple_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">is_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">simple_palindrome</span><span class="p">))</span>
 
-    <span class="k">def</span> <span class="nf">test_sentence_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_sentence_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">is_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sentence_palindrome</span><span class="p">))</span>
 
-    <span class="k">def</span> <span class="nf">test_not_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_not_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">is_palindrome</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">not_palindrome</span><span class="p">))</span>
 
-    <span class="k">def</span> <span class="nf">test_single_character</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_single_character</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">is_palindrome</span><span class="p">(</span><span class="s2">"a"</span><span class="p">))</span>
 
-    <span class="k">def</span> <span class="nf">test_empty_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_empty_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">is_palindrome</span><span class="p">(</span><span class="s2">""</span><span class="p">))</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
@@ -2821,7 +2951,7 @@ OK
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">grades</span><span class="p">):</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_average</span><span class="p">(</span><span class="n">grades</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Calculate the average of a list of grades."""</span>
     <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span>
@@ -2843,7 +2973,7 @@ OK
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">grades</span><span class="p">):</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_average</span><span class="p">(</span><span class="n">grades</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Calculate the average of a list of grades."""</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">grades</span><span class="p">:</span>
         <span class="k">return</span> <span class="mf">0.0</span>
@@ -2871,7 +3001,7 @@ OK
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_valid_grade</span><span class="p">(</span><span class="n">grade</span><span class="p">):</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">is_valid_grade</span><span class="p">(</span><span class="n">grade</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Return True if grade is between 0 and 100 inclusive."""</span>
     <span class="k">return</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">grade</span> <span class="o">&lt;=</span> <span class="mi">100</span>
 
@@ -2941,19 +3071,19 @@ Here's a pattern to remember: whenever you write a function, ask yourself "What'
 <span class="normal">15</span>
 <span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># === STEP 1: RED ===</span>
 <span class="c1"># Write the test first (the function doesn't exist yet!)</span>
-<span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">unittest</span>
 
-<span class="k">class</span> <span class="nc">TestFizzBuzz</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_regular_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">TestFizzBuzz</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_regular_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="s2">"1"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_divisible_by_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_divisible_by_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="s2">"Fizz"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_divisible_by_5</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_divisible_by_5</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="s2">"Buzz"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_divisible_by_15</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_divisible_by_15</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">15</span><span class="p">),</span> <span class="s2">"FizzBuzz"</span><span class="p">)</span>
 </code></pre></div></td></tr></tbody></table></div>
 <p>If you try to run these tests now, they'll crash because <code>fizzbuzz</code> doesn't exist. That's the Red step — your tests are failing.</p>
@@ -2969,7 +3099,7 @@ Here's a pattern to remember: whenever you write a function, ask yourself "What'
 <span class="normal">10</span>
 <span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># === STEP 2: GREEN ===</span>
 <span class="c1"># Write the simplest code to pass the tests</span>
-<span class="k">def</span> <span class="nf">fizzbuzz</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fizzbuzz</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">15</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">"FizzBuzz"</span>
     <span class="k">elif</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -3003,23 +3133,23 @@ Here's a pattern to remember: whenever you write a function, ask yourself "What'
 <span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># === STEP 3: REFACTOR ===</span>
 <span class="c1"># The code is already clean, but maybe we want to add more tests</span>
 <span class="c1"># for edge cases before moving on</span>
-<span class="k">class</span> <span class="nc">TestFizzBuzz</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_regular_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">TestFizzBuzz</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_regular_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="s2">"1"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_divisible_by_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_divisible_by_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="s2">"Fizz"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_divisible_by_5</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_divisible_by_5</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="s2">"Buzz"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_divisible_by_15</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_divisible_by_15</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">15</span><span class="p">),</span> <span class="s2">"FizzBuzz"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_large_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_large_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">30</span><span class="p">),</span> <span class="s2">"FizzBuzz"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_number_two</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_number_two</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fizzbuzz</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="s2">"2"</span><span class="p">)</span>
 </code></pre></div></td></tr></tbody></table></div>
 <p>Why does TDD work so well? Because you always know exactly what you're trying to build. The tests are your roadmap. You never write code that isn't needed, and you always know when you're done.</p>
@@ -3086,7 +3216,7 @@ Here's a pattern to remember: whenever you write a function, ask yourself "What'
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">find_second_largest</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">find_second_largest</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
     <span class="c1"># print debugging to trace values</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Input: </span><span class="si">{</span><span class="n">numbers</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
@@ -3159,7 +3289,7 @@ Here's a pattern to remember: whenever you write a function, ask yourself "What'
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_discount</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">discount_percent</span><span class="p">):</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_discount</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">discount_percent</span><span class="p">):</span>
     <span class="c1"># Set a breakpoint on the next line to inspect values</span>
     <span class="n">discount_amount</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="n">discount_percent</span> <span class="o">/</span> <span class="mi">100</span>  <span class="c1"># &lt;-- breakpoint here</span>
     <span class="n">final_price</span> <span class="o">=</span> <span class="n">price</span> <span class="o">-</span> <span class="n">discount_amount</span>
@@ -3213,7 +3343,7 @@ Here's a pattern to remember: whenever you write a function, ask yourself "What'
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">mystery</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">mystery</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="n">i</span>
@@ -3430,7 +3560,7 @@ If you don't have a rubber duck, you can always explain your code to me! But ser
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Fragile — crashes on bad input</span>
-<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
 </code></pre></div></td></tr></tbody></table></div>
 <p>And here's the same function written <em>with</em> defensive programming:</p>
@@ -3443,7 +3573,7 @@ If you don't have a rubber duck, you can always explain your code to me! But ser
 <span class="normal">7</span>
 <span class="normal">8</span>
 <span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Defensive — handles problems gracefully</span>
-<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
         <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Expected a number, got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
@@ -3473,7 +3603,7 @@ If you don't have a rubber duck, you can always explain your code to me! But ser
 <span class="normal">15</span>
 <span class="normal">16</span>
 <span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_age</span><span class="p">():</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_age</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">"""Get a valid age from the user."""</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your age: "</span><span class="p">)</span>
@@ -3519,7 +3649,7 @@ If you don't have a rubber duck, you can always explain your code to me! But ser
 <span class="normal">23</span>
 <span class="normal">24</span>
 <span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">validate_password</span><span class="p">(</span><span class="n">password</span><span class="p">):</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">validate_password</span><span class="p">(</span><span class="n">password</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Check if a password meets security requirements."""</span>
     <span class="n">errors</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -3766,15 +3896,15 @@ Never trust user input! Even if your program is just a class project, get in the
 <span class="normal">118</span>
 <span class="normal">119</span>
 <span class="normal">120</span>
-<span class="normal">121</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="normal">121</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">unittest</span>
 
-<span class="k">class</span> <span class="nc">GradeBook</span><span class="p">:</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">GradeBook</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">"""A simple grade book that stores and analyzes student grades."""</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">grades</span> <span class="o">=</span> <span class="p">{}</span>
 
-    <span class="k">def</span> <span class="nf">add_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">student</span><span class="p">,</span> <span class="n">grade</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">add_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">student</span><span class="p">,</span> <span class="n">grade</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">"""Add a grade for a student. Validates inputs."""</span>
         <span class="c1"># Input validation</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">student</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
@@ -3789,14 +3919,14 @@ Never trust user input! Even if your program is just a class project, get in the
             <span class="bp">self</span><span class="o">.</span><span class="n">grades</span><span class="p">[</span><span class="n">student</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">grades</span><span class="p">[</span><span class="n">student</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grade</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">get_average</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">student</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_average</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">student</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">"""Get a student's average grade."""</span>
         <span class="k">if</span> <span class="n">student</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">grades</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Student '</span><span class="si">{</span><span class="n">student</span><span class="si">}</span><span class="s2">' not found"</span><span class="p">)</span>
         <span class="n">grades</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">grades</span><span class="p">[</span><span class="n">student</span><span class="p">]</span>
         <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">get_highest</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_highest</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">"""Get the student with the highest average."""</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">grades</span><span class="p">:</span>
             <span class="k">return</span> <span class="kc">None</span>
@@ -3810,62 +3940,62 @@ Never trust user input! Even if your program is just a class project, get in the
         <span class="k">return</span> <span class="n">best_student</span><span class="p">,</span> <span class="n">best_avg</span>
 
 
-<span class="k">class</span> <span class="nc">TestGradeBook</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">TestGradeBook</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
 
-    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">"""Create a fresh grade book for each test."""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span> <span class="o">=</span> <span class="n">GradeBook</span><span class="p">()</span>
 
     <span class="c1"># --- Test add_grade ---</span>
-    <span class="k">def</span> <span class="nf">test_add_single_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_add_single_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">95</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">grades</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">grades</span><span class="p">[</span><span class="s2">"Alice"</span><span class="p">],</span> <span class="p">[</span><span class="mi">95</span><span class="p">])</span>
 
-    <span class="k">def</span> <span class="nf">test_add_multiple_grades</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_add_multiple_grades</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">grades</span><span class="p">[</span><span class="s2">"Bob"</span><span class="p">],</span> <span class="p">[</span><span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">])</span>
 
     <span class="c1"># --- Test input validation ---</span>
-    <span class="k">def</span> <span class="nf">test_invalid_student_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_invalid_student_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">""</span><span class="p">,</span> <span class="mi">85</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_grade_too_high</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_grade_too_high</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">105</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_grade_too_low</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_grade_too_low</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_non_numeric_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_non_numeric_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"A+"</span><span class="p">)</span>
 
     <span class="c1"># --- Test get_average ---</span>
-    <span class="k">def</span> <span class="nf">test_average_single_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_average_single_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">get_average</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">),</span> <span class="mf">90.0</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_average_multiple_grades</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_average_multiple_grades</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">get_average</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">),</span> <span class="mf">90.0</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_average_unknown_student</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_average_unknown_student</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">KeyError</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">get_average</span><span class="p">(</span><span class="s2">"Nobody"</span><span class="p">)</span>
 
     <span class="c1"># --- Test get_highest ---</span>
-    <span class="k">def</span> <span class="nf">test_highest_single_student</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_highest_single_student</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">95</span><span class="p">)</span>
         <span class="n">name</span><span class="p">,</span> <span class="n">avg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">get_highest</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">"Alice"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_highest_multiple_students</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_highest_multiple_students</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">85</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">92</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="mi">88</span><span class="p">)</span>
@@ -3873,14 +4003,14 @@ Never trust user input! Even if your program is just a class project, get in the
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">)</span>
 
     <span class="c1"># --- Edge cases ---</span>
-    <span class="k">def</span> <span class="nf">test_highest_empty_gradebook</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_highest_empty_gradebook</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertIsNone</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">get_highest</span><span class="p">())</span>
 
-    <span class="k">def</span> <span class="nf">test_boundary_grade_zero</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_boundary_grade_zero</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">get_average</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_boundary_grade_hundred</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_boundary_grade_hundred</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">add_grade</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gb</span><span class="o">.</span><span class="n">get_average</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">),</span> <span class="mf">100.0</span><span class="p">)</span>
 
@@ -3945,7 +4075,7 @@ Amazing work getting through this chapter, coders! You now have a complete testi
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
@@ -4016,10 +4146,13 @@ Amazing work getting through this chapter, coders! You now have a complete testi
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       

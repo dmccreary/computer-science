@@ -18,8 +18,11 @@
         <link rel="next" href="../14-errors-and-exceptions/">
       
       
+        
+      
+      
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -27,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -43,7 +46,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
@@ -69,34 +72,20 @@
 
     
     
-      
-        <meta property="og:type" content="website">
-      
-        <meta property="og:title" content="Inheritance and Polymorphism - Computer Science">
-      
-        <meta property="og:description" content="Class hierarchies, inheritance, polymorphism, duck typing, operator overloading, iterators, and UML diagrams in Python.">
-      
-        <meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/13-inheritance-and-polymorphism/index.png">
-      
-        <meta property="og:image:type" content="image/png">
-      
-        <meta property="og:image:width" content="1200">
-      
-        <meta property="og:image:height" content="630">
-      
-        <meta property="og:url" content="https://dmccreary.github.io/computer-science/chapters/13-inheritance-and-polymorphism/">
-      
-        <meta name="twitter:card" content="summary_large_image">
-      
-        <meta name="twitter:title" content="Inheritance and Polymorphism - Computer Science">
-      
-        <meta name="twitter:description" content="Class hierarchies, inheritance, polymorphism, duck typing, operator overloading, iterators, and UML diagrams in Python.">
-      
-        <meta name="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/13-inheritance-and-polymorphism/index.png">
-      
-    
-    
-  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Inheritance and Polymorphism - Computer Science">
+<meta property="og:description" content="Class hierarchies, inheritance, polymorphism, duck typing, operator overloading, iterators, and UML diagrams in Python.">
+<meta property="og:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/13-inheritance-and-polymorphism/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/computer-science/chapters/13-inheritance-and-polymorphism/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Inheritance and Polymorphism - Computer Science">
+<meta property="twitter:description" content="Class hierarchies, inheritance, polymorphism, duck typing, operator overloading, iterators, and UML diagrams in Python.">
+<meta property="twitter:image" content="https://dmccreary.github.io/computer-science/assets/images/social/chapters/13-inheritance-and-polymorphism/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -170,15 +159,17 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -195,7 +186,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -206,13 +197,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -257,7 +249,7 @@
       <a href="https://github.com/dmccreary/computer-science" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -265,7 +257,7 @@
 </a>
     </div>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -277,9 +269,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -297,9 +296,16 @@
       <a href="../../about/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     About
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -317,9 +323,16 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Course Description
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -343,85 +356,46 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
+    
     
     
     
@@ -431,17 +405,23 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
         
-          
           
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Chapters
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -456,9 +436,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Chapters
+            
+  
+    Chapters
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -472,9 +456,16 @@
       <a href="../01-intro-to-computer-science/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     1. Intro to Computer Science
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -493,9 +484,16 @@
       <a href="../02-python-fundamentals/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     2. Python Fundamentals
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -514,9 +512,16 @@
       <a href="../03-boolean-logic/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     3. Boolean Logic
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -535,9 +540,16 @@
       <a href="../04-control-flow/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     4. Control Flow
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -556,9 +568,16 @@
       <a href="../05-working-with-strings/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     5. Working with Strings
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -577,9 +596,16 @@
       <a href="../06-functions-and-modular-design/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     6. Functions and Modular Design
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -598,9 +624,16 @@
       <a href="../07-higher-order-functions-and-recursion/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     7. Higher-Order Functions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -619,9 +652,16 @@
       <a href="../08-lists/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     8. Lists
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -640,9 +680,16 @@
       <a href="../09-advanced-list-operations/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     9. Advanced List Operations
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -661,9 +708,16 @@
       <a href="../10-tuples-and-sets/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     10. Tuples and Sets
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -682,9 +736,16 @@
       <a href="../11-dictionaries/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     11. Dictionaries
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -703,9 +764,16 @@
       <a href="../12-classes-and-objects/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     12. Classes and Objects
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -733,9 +801,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     13. Inheritance and Polymorphism
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -744,9 +819,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     13. Inheritance and Polymorphism
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -764,12 +846,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -778,7 +862,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -787,7 +873,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -796,7 +884,9 @@
         <li class="md-nav__item">
   <a href="#building-on-what-you-know-static-methods-and-composition" class="md-nav__link">
     <span class="md-ellipsis">
-      Building on What You Know: Static Methods and Composition
+      
+        Building on What You Know: Static Methods and Composition
+      
     </span>
   </a>
   
@@ -806,7 +896,9 @@
           <li class="md-nav__item">
   <a href="#static-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      Static Methods
+      
+        Static Methods
+      
     </span>
   </a>
   
@@ -815,7 +907,9 @@
           <li class="md-nav__item">
   <a href="#composition-the-has-a-relationship" class="md-nav__link">
     <span class="md-ellipsis">
-      Composition: The Has-A Relationship
+      
+        Composition: The Has-A Relationship
+      
     </span>
   </a>
   
@@ -829,7 +923,9 @@
         <li class="md-nav__item">
   <a href="#inheritance-the-is-a-relationship" class="md-nav__link">
     <span class="md-ellipsis">
-      Inheritance: The Is-A Relationship
+      
+        Inheritance: The Is-A Relationship
+      
     </span>
   </a>
   
@@ -839,7 +935,9 @@
           <li class="md-nav__item">
   <a href="#the-super-function" class="md-nav__link">
     <span class="md-ellipsis">
-      The Super Function
+      
+        The Super Function
+      
     </span>
   </a>
   
@@ -848,7 +946,9 @@
           <li class="md-nav__item">
   <a href="#class-hierarchies" class="md-nav__link">
     <span class="md-ellipsis">
-      Class Hierarchies
+      
+        Class Hierarchies
+      
     </span>
   </a>
   
@@ -858,7 +958,9 @@
           <li class="md-nav__item">
   <a href="#diagram-animal-class-hierarchy" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Animal Class Hierarchy
+      
+        Diagram: Animal Class Hierarchy
+      
     </span>
   </a>
   
@@ -877,7 +979,9 @@
         <li class="md-nav__item">
   <a href="#method-overriding" class="md-nav__link">
     <span class="md-ellipsis">
-      Method Overriding
+      
+        Method Overriding
+      
     </span>
   </a>
   
@@ -886,7 +990,9 @@
         <li class="md-nav__item">
   <a href="#polymorphism-one-interface-many-forms" class="md-nav__link">
     <span class="md-ellipsis">
-      Polymorphism: One Interface, Many Forms
+      
+        Polymorphism: One Interface, Many Forms
+      
     </span>
   </a>
   
@@ -896,7 +1002,9 @@
           <li class="md-nav__item">
   <a href="#duck-typing" class="md-nav__link">
     <span class="md-ellipsis">
-      Duck Typing
+      
+        Duck Typing
+      
     </span>
   </a>
   
@@ -910,7 +1018,9 @@
         <li class="md-nav__item">
   <a href="#abstract-classes" class="md-nav__link">
     <span class="md-ellipsis">
-      Abstract Classes
+      
+        Abstract Classes
+      
     </span>
   </a>
   
@@ -920,7 +1030,9 @@
           <li class="md-nav__item">
   <a href="#diagram-shape-hierarchy-with-abstract-base-class" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Shape Hierarchy with Abstract Base Class
+      
+        Diagram: Shape Hierarchy with Abstract Base Class
+      
     </span>
   </a>
   
@@ -934,7 +1046,9 @@
         <li class="md-nav__item">
   <a href="#multiple-inheritance-and-method-resolution-order" class="md-nav__link">
     <span class="md-ellipsis">
-      Multiple Inheritance and Method Resolution Order
+      
+        Multiple Inheritance and Method Resolution Order
+      
     </span>
   </a>
   
@@ -943,7 +1057,9 @@
         <li class="md-nav__item">
   <a href="#dunder-methods-and-operator-overloading" class="md-nav__link">
     <span class="md-ellipsis">
-      Dunder Methods and Operator Overloading
+      
+        Dunder Methods and Operator Overloading
+      
     </span>
   </a>
   
@@ -953,7 +1069,9 @@
           <li class="md-nav__item">
   <a href="#object-identity-vs-object-comparison" class="md-nav__link">
     <span class="md-ellipsis">
-      Object Identity vs. Object Comparison
+      
+        Object Identity vs. Object Comparison
+      
     </span>
   </a>
   
@@ -962,7 +1080,9 @@
           <li class="md-nav__item">
   <a href="#the-eq-and-lt-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      The eq and lt Methods
+      
+        The eq and lt Methods
+      
     </span>
   </a>
   
@@ -971,7 +1091,9 @@
           <li class="md-nav__item">
   <a href="#the-add-and-mul-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      The add and mul Methods
+      
+        The add and mul Methods
+      
     </span>
   </a>
   
@@ -981,7 +1103,9 @@
           <li class="md-nav__item">
   <a href="#diagram-dunder-methods-cheat-sheet" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Dunder Methods Cheat Sheet
+      
+        Diagram: Dunder Methods Cheat Sheet
+      
     </span>
   </a>
   
@@ -1000,7 +1124,9 @@
         <li class="md-nav__item">
   <a href="#the-iterable-and-iterator-protocols" class="md-nav__link">
     <span class="md-ellipsis">
-      The Iterable and Iterator Protocols
+      
+        The Iterable and Iterator Protocols
+      
     </span>
   </a>
   
@@ -1009,7 +1135,9 @@
         <li class="md-nav__item">
   <a href="#uml-class-diagrams" class="md-nav__link">
     <span class="md-ellipsis">
-      UML Class Diagrams
+      
+        UML Class Diagrams
+      
     </span>
   </a>
   
@@ -1019,7 +1147,9 @@
           <li class="md-nav__item">
   <a href="#diagram-uml-class-diagram-builder" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: UML Class Diagram Builder
+      
+        Diagram: UML Class Diagram Builder
+      
     </span>
   </a>
   
@@ -1033,7 +1163,9 @@
         <li class="md-nav__item">
   <a href="#a-complete-example-putting-it-all-together" class="md-nav__link">
     <span class="md-ellipsis">
-      A Complete Example: Putting It All Together
+      
+        A Complete Example: Putting It All Together
+      
     </span>
   </a>
   
@@ -1043,7 +1175,9 @@
           <li class="md-nav__item">
   <a href="#diagram-music-library-class-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Music Library Class Diagram
+      
+        Diagram: Music Library Class Diagram
+      
     </span>
   </a>
   
@@ -1057,7 +1191,9 @@
         <li class="md-nav__item">
   <a href="#design-patterns-a-preview" class="md-nav__link">
     <span class="md-ellipsis">
-      Design Patterns: A Preview
+      
+        Design Patterns: A Preview
+      
     </span>
   </a>
   
@@ -1067,7 +1203,9 @@
           <li class="md-nav__item">
   <a href="#diagram-polymorphism-playground" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Polymorphism Playground
+      
+        Diagram: Polymorphism Playground
+      
     </span>
   </a>
   
@@ -1081,7 +1219,9 @@
         <li class="md-nav__item">
   <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Takeaways
+      
+        Key Takeaways
+      
     </span>
   </a>
   
@@ -1106,9 +1246,16 @@
       <a href="../14-errors-and-exceptions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     14. Errors and Exceptions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1127,9 +1274,16 @@
       <a href="../15-file-input-and-output/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     15. File Input and Output
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1148,9 +1302,16 @@
       <a href="../16-software-engineering/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     16. Software Engineering
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1169,9 +1330,16 @@
       <a href="../17-testing-and-debugging/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     17. Testing and Debugging
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1190,9 +1358,16 @@
       <a href="../18-searching-and-sorting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     18. Searching and Sorting
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1211,9 +1386,16 @@
       <a href="../19-algorithm-analysis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     19. Algorithm Analysis
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1232,9 +1414,16 @@
       <a href="../20-advanced-python/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     20. Advanced Python
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1264,489 +1453,250 @@
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
+      
         
       
+    
     
     
     
@@ -1758,14 +1708,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     MicroSims
+  
+
+    
   </span>
+  
   
 
       
@@ -1829,6 +1787,7 @@
     
     
     
+    
       
         
         
@@ -1837,14 +1796,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Learning Graph
+  
+
+    
   </span>
+  
   
 
       
@@ -1872,9 +1839,8 @@
         
       
         
-          
-        
       
+    
     
     
     
@@ -1886,14 +1852,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../stories/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Stories
+  
+
+    
   </span>
+  
   
 
       
@@ -1923,6 +1897,7 @@
     
     
     
+    
       
         
         
@@ -1933,12 +1908,20 @@
         
   
   
+  
     <a href="../../prompts/index.md" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Prompts
+  
+
+    
   </span>
+  
   
 
       
@@ -1962,9 +1945,16 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Glossary
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1982,9 +1972,16 @@
       <a href="../../faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2002,9 +1999,16 @@
       <a href="../../references.md" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     References
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2022,9 +2026,16 @@
       <a href="../../license/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     License
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2042,9 +2053,16 @@
       <a href="../../contact/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contact
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2076,12 +2094,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -2090,7 +2110,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -2099,7 +2121,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -2108,7 +2132,9 @@
         <li class="md-nav__item">
   <a href="#building-on-what-you-know-static-methods-and-composition" class="md-nav__link">
     <span class="md-ellipsis">
-      Building on What You Know: Static Methods and Composition
+      
+        Building on What You Know: Static Methods and Composition
+      
     </span>
   </a>
   
@@ -2118,7 +2144,9 @@
           <li class="md-nav__item">
   <a href="#static-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      Static Methods
+      
+        Static Methods
+      
     </span>
   </a>
   
@@ -2127,7 +2155,9 @@
           <li class="md-nav__item">
   <a href="#composition-the-has-a-relationship" class="md-nav__link">
     <span class="md-ellipsis">
-      Composition: The Has-A Relationship
+      
+        Composition: The Has-A Relationship
+      
     </span>
   </a>
   
@@ -2141,7 +2171,9 @@
         <li class="md-nav__item">
   <a href="#inheritance-the-is-a-relationship" class="md-nav__link">
     <span class="md-ellipsis">
-      Inheritance: The Is-A Relationship
+      
+        Inheritance: The Is-A Relationship
+      
     </span>
   </a>
   
@@ -2151,7 +2183,9 @@
           <li class="md-nav__item">
   <a href="#the-super-function" class="md-nav__link">
     <span class="md-ellipsis">
-      The Super Function
+      
+        The Super Function
+      
     </span>
   </a>
   
@@ -2160,7 +2194,9 @@
           <li class="md-nav__item">
   <a href="#class-hierarchies" class="md-nav__link">
     <span class="md-ellipsis">
-      Class Hierarchies
+      
+        Class Hierarchies
+      
     </span>
   </a>
   
@@ -2170,7 +2206,9 @@
           <li class="md-nav__item">
   <a href="#diagram-animal-class-hierarchy" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Animal Class Hierarchy
+      
+        Diagram: Animal Class Hierarchy
+      
     </span>
   </a>
   
@@ -2189,7 +2227,9 @@
         <li class="md-nav__item">
   <a href="#method-overriding" class="md-nav__link">
     <span class="md-ellipsis">
-      Method Overriding
+      
+        Method Overriding
+      
     </span>
   </a>
   
@@ -2198,7 +2238,9 @@
         <li class="md-nav__item">
   <a href="#polymorphism-one-interface-many-forms" class="md-nav__link">
     <span class="md-ellipsis">
-      Polymorphism: One Interface, Many Forms
+      
+        Polymorphism: One Interface, Many Forms
+      
     </span>
   </a>
   
@@ -2208,7 +2250,9 @@
           <li class="md-nav__item">
   <a href="#duck-typing" class="md-nav__link">
     <span class="md-ellipsis">
-      Duck Typing
+      
+        Duck Typing
+      
     </span>
   </a>
   
@@ -2222,7 +2266,9 @@
         <li class="md-nav__item">
   <a href="#abstract-classes" class="md-nav__link">
     <span class="md-ellipsis">
-      Abstract Classes
+      
+        Abstract Classes
+      
     </span>
   </a>
   
@@ -2232,7 +2278,9 @@
           <li class="md-nav__item">
   <a href="#diagram-shape-hierarchy-with-abstract-base-class" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Shape Hierarchy with Abstract Base Class
+      
+        Diagram: Shape Hierarchy with Abstract Base Class
+      
     </span>
   </a>
   
@@ -2246,7 +2294,9 @@
         <li class="md-nav__item">
   <a href="#multiple-inheritance-and-method-resolution-order" class="md-nav__link">
     <span class="md-ellipsis">
-      Multiple Inheritance and Method Resolution Order
+      
+        Multiple Inheritance and Method Resolution Order
+      
     </span>
   </a>
   
@@ -2255,7 +2305,9 @@
         <li class="md-nav__item">
   <a href="#dunder-methods-and-operator-overloading" class="md-nav__link">
     <span class="md-ellipsis">
-      Dunder Methods and Operator Overloading
+      
+        Dunder Methods and Operator Overloading
+      
     </span>
   </a>
   
@@ -2265,7 +2317,9 @@
           <li class="md-nav__item">
   <a href="#object-identity-vs-object-comparison" class="md-nav__link">
     <span class="md-ellipsis">
-      Object Identity vs. Object Comparison
+      
+        Object Identity vs. Object Comparison
+      
     </span>
   </a>
   
@@ -2274,7 +2328,9 @@
           <li class="md-nav__item">
   <a href="#the-eq-and-lt-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      The eq and lt Methods
+      
+        The eq and lt Methods
+      
     </span>
   </a>
   
@@ -2283,7 +2339,9 @@
           <li class="md-nav__item">
   <a href="#the-add-and-mul-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      The add and mul Methods
+      
+        The add and mul Methods
+      
     </span>
   </a>
   
@@ -2293,7 +2351,9 @@
           <li class="md-nav__item">
   <a href="#diagram-dunder-methods-cheat-sheet" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Dunder Methods Cheat Sheet
+      
+        Diagram: Dunder Methods Cheat Sheet
+      
     </span>
   </a>
   
@@ -2312,7 +2372,9 @@
         <li class="md-nav__item">
   <a href="#the-iterable-and-iterator-protocols" class="md-nav__link">
     <span class="md-ellipsis">
-      The Iterable and Iterator Protocols
+      
+        The Iterable and Iterator Protocols
+      
     </span>
   </a>
   
@@ -2321,7 +2383,9 @@
         <li class="md-nav__item">
   <a href="#uml-class-diagrams" class="md-nav__link">
     <span class="md-ellipsis">
-      UML Class Diagrams
+      
+        UML Class Diagrams
+      
     </span>
   </a>
   
@@ -2331,7 +2395,9 @@
           <li class="md-nav__item">
   <a href="#diagram-uml-class-diagram-builder" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: UML Class Diagram Builder
+      
+        Diagram: UML Class Diagram Builder
+      
     </span>
   </a>
   
@@ -2345,7 +2411,9 @@
         <li class="md-nav__item">
   <a href="#a-complete-example-putting-it-all-together" class="md-nav__link">
     <span class="md-ellipsis">
-      A Complete Example: Putting It All Together
+      
+        A Complete Example: Putting It All Together
+      
     </span>
   </a>
   
@@ -2355,7 +2423,9 @@
           <li class="md-nav__item">
   <a href="#diagram-music-library-class-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Music Library Class Diagram
+      
+        Diagram: Music Library Class Diagram
+      
     </span>
   </a>
   
@@ -2369,7 +2439,9 @@
         <li class="md-nav__item">
   <a href="#design-patterns-a-preview" class="md-nav__link">
     <span class="md-ellipsis">
-      Design Patterns: A Preview
+      
+        Design Patterns: A Preview
+      
     </span>
   </a>
   
@@ -2379,7 +2451,9 @@
           <li class="md-nav__item">
   <a href="#diagram-polymorphism-playground" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Polymorphism Playground
+      
+        Diagram: Polymorphism Playground
+      
     </span>
   </a>
   
@@ -2393,7 +2467,9 @@
         <li class="md-nav__item">
   <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Takeaways
+      
+        Key Takeaways
+      
     </span>
   </a>
   
@@ -2409,12 +2485,62 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
+
   
-    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/13-inheritance-and-polymorphism/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/computer-science/blob/master/docs/chapters/13-inheritance-and-polymorphism/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
@@ -2478,9 +2604,9 @@ Welcome back, coders! In the last chapter you learned how to build classes and c
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">MathHelper</span><span class="p">:</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MathHelper</span><span class="p">:</span>
     <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">is_even</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">is_even</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
 
 <span class="c1"># No need to create an instance</span>
@@ -2509,20 +2635,20 @@ Welcome back, coders! In the last chapter you learned how to build classes and c
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Engine</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">horsepower</span><span class="p">):</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Engine</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">horsepower</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">horsepower</span> <span class="o">=</span> <span class="n">horsepower</span>
 
-    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">"Vroom! Engine running."</span>
 
-<span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">horsepower</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Car</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">horsepower</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">engine</span> <span class="o">=</span> <span class="n">Engine</span><span class="p">(</span><span class="n">horsepower</span><span class="p">)</span>  <span class="c1"># has-a relationship</span>
 
-    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">make</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="o">.</span><span class="n">start</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span>
 
 <span class="n">my_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s2">"Toyota"</span><span class="p">,</span> <span class="s2">"Camry"</span><span class="p">,</span> <span class="mi">203</span><span class="p">)</span>
@@ -2559,31 +2685,31 @@ Welcome back, coders! In the last chapter you learned how to build classes and c
 <span class="normal">23</span>
 <span class="normal">24</span>
 <span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">sound</span><span class="p">):</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Animal</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">sound</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">=</span> <span class="n">sound</span>
 
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> says </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sound</span><span class="si">}</span><span class="s2">!"</span>
 
-    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"Animal(</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">)"</span>
 
 <span class="c1"># Dog inherits from Animal</span>
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">"Woof"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> fetches the ball!"</span>
 
 <span class="c1"># Cat inherits from Animal</span>
-<span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">"Meow"</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">purr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">purr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> purrs softly."</span>
 </code></pre></div></td></tr></tbody></table></div>
 <p>The <code>Dog</code> and <code>Cat</code> classes automatically get everything <code>Animal</code> has -- the <code>name</code> attribute, the <code>sound</code> attribute, the <code>speak()</code> method, and the <code>__str__()</code> method. But they can also add their <em>own</em> methods like <code>fetch()</code> and <code>purr()</code>.</p>
@@ -2611,8 +2737,8 @@ Welcome back, coders! In the last chapter you learned how to build classes and c
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Puppy</span><span class="p">(</span><span class="n">Dog</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">toy</span><span class="p">):</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Puppy</span><span class="p">(</span><span class="n">Dog</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">toy</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>  <span class="c1"># Calls Dog.__init__, which calls Animal.__init__</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">favorite_toy</span> <span class="o">=</span> <span class="n">toy</span>
 
@@ -2693,19 +2819,19 @@ Think of inheritance like a family tree. A <code>Puppy</code> inherits traits fr
 <span class="normal">19</span>
 <span class="normal">20</span>
 <span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Animal</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> makes a sound."</span>
 
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># Overrides Animal.speak()</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># Overrides Animal.speak()</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> says Woof!"</span>
 
-<span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># Overrides Animal.speak()</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># Overrides Animal.speak()</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> says Meow!"</span>
 
 <span class="n">generic</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">(</span><span class="s2">"Critter"</span><span class="p">)</span>
@@ -2761,16 +2887,16 @@ Luna says Meow!
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Dog</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Dog</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">"Woof!"</span>
 
-<span class="k">class</span> <span class="nc">Cat</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Cat</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">"Meow!"</span>
 
-<span class="k">class</span> <span class="nc">RobotPet</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">RobotPet</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">"Beep boop! I am your pet."</span>
 
 <span class="c1"># These classes don't share a parent, but they all have speak()</span>
@@ -2818,36 +2944,36 @@ Duck typing is one of Python's superpowers. It makes your code flexible because 
 <span class="normal">28</span>
 <span class="normal">29</span>
 <span class="normal">30</span>
-<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
 
-<span class="k">class</span> <span class="nc">Shape</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Shape</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
     <span class="nd">@abstractmethod</span>
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">pass</span>
 
     <span class="nd">@abstractmethod</span>
-    <span class="k">def</span> <span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">pass</span>
 
-<span class="k">class</span> <span class="nc">Circle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Circle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
 
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="mf">3.14159</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
 
-    <span class="k">def</span> <span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="mf">3.14159</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span>
 
-<span class="k">class</span> <span class="nc">Rectangle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Rectangle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
 
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>
 
-    <span class="k">def</span> <span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
 </code></pre></div></td></tr></tbody></table></div>
 <p>You can't create an instance of <code>Shape</code> directly -- it's abstract. But you <em>can</em> create <code>Circle</code> and <code>Rectangle</code> objects because they implement all the required methods.</p>
@@ -2906,15 +3032,15 @@ Duck typing is one of Python's superpowers. It makes your code flexible because 
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Flyer</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Flyer</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">"I fly through the air!"</span>
 
-<span class="k">class</span> <span class="nc">Swimmer</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Swimmer</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">"I swim through the water!"</span>
 
-<span class="k">class</span> <span class="nc">Duck</span><span class="p">(</span><span class="n">Flyer</span><span class="p">,</span> <span class="n">Swimmer</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Duck</span><span class="p">(</span><span class="n">Flyer</span><span class="p">,</span> <span class="n">Swimmer</span><span class="p">):</span>
     <span class="k">pass</span>
 
 <span class="n">donald</span> <span class="o">=</span> <span class="n">Duck</span><span class="p">()</span>
@@ -2976,18 +3102,18 @@ Multiple inheritance can make your code confusing if overused. When two parent c
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">gpa</span><span class="p">):</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Student</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">gpa</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gpa</span> <span class="o">=</span> <span class="n">gpa</span>
 
-    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">name</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">gpa</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">gpa</span>
 
-    <span class="k">def</span> <span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">gpa</span> <span class="o">&lt;</span> <span class="n">other</span><span class="o">.</span><span class="n">gpa</span>
 
-    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> (GPA: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">gpa</span><span class="si">}</span><span class="s2">)"</span>
 
 <span class="n">alice</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">)</span>
@@ -3038,21 +3164,21 @@ Multiple inheritance can make your code confusing if overused. When two parent c
 <span class="normal">20</span>
 <span class="normal">21</span>
 <span class="normal">22</span>
-<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Vector</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Vector</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
 
-    <span class="k">def</span> <span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">Vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scalar</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scalar</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">Vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">scalar</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">scalar</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">x</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">y</span>
 
-    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"Vector(</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span>
 
 <span class="n">v1</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -3109,15 +3235,15 @@ Multiple inheritance can make your code confusing if overused. When two parent c
 <span class="normal">15</span>
 <span class="normal">16</span>
 <span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Countdown</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start</span><span class="p">):</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Countdown</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">start</span> <span class="o">=</span> <span class="n">start</span>
 
-    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">current</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">start</span>
         <span class="k">return</span> <span class="bp">self</span>
 
-    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">current</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">StopIteration</span>
         <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">current</span>
@@ -3302,77 +3428,77 @@ UML diagrams are like blueprints for your code. Professional software developers
 <span class="normal">71</span>
 <span class="normal">72</span>
 <span class="normal">73</span>
-<span class="normal">74</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+<span class="normal">74</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
 
-<span class="k">class</span> <span class="nc">MediaItem</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MediaItem</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Abstract base class for all media items."""</span>
     <span class="nd">@abstractmethod</span>
-    <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">pass</span>
 
     <span class="nd">@abstractmethod</span>
-    <span class="k">def</span> <span class="nf">duration_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">duration_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">pass</span>
 
-<span class="k">class</span> <span class="nc">Song</span><span class="p">(</span><span class="n">MediaItem</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">duration</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">(</span><span class="n">MediaItem</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">duration</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">artist</span> <span class="o">=</span> <span class="n">artist</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">=</span> <span class="n">duration</span>  <span class="c1"># in seconds</span>
 
-    <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"Now playing: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> by </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">artist</span><span class="si">}</span><span class="s2">"</span>
 
-    <span class="k">def</span> <span class="nf">duration_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">duration_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mins</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">//</span> <span class="mi">60</span>
         <span class="n">secs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">%</span> <span class="mi">60</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">mins</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">secs</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">"</span>
 
     <span class="c1"># Operator overloading</span>
-    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">title</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">artist</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">artist</span>
 
-    <span class="k">def</span> <span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">&lt;</span> <span class="n">other</span><span class="o">.</span><span class="n">title</span>
 
-    <span class="k">def</span> <span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">"""Adding two songs creates a playlist."""</span>
         <span class="k">return</span> <span class="n">Playlist</span><span class="p">(</span><span class="s2">"New Playlist"</span><span class="p">,</span> <span class="p">[</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">])</span>
 
-    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">artist</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">duration_str</span><span class="p">()</span><span class="si">}</span><span class="s2">)"</span>
 
-<span class="k">class</span> <span class="nc">Playlist</span><span class="p">:</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Playlist</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">"""A playlist has-a list of songs (composition)."""</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">songs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">songs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">songs</span> <span class="o">=</span> <span class="n">songs</span> <span class="k">if</span> <span class="n">songs</span> <span class="k">else</span> <span class="p">[]</span>
 
-    <span class="k">def</span> <span class="nf">add_song</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">song</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">add_song</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">song</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">songs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
 
     <span class="c1"># Iterable protocol</span>
-    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_index</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">return</span> <span class="bp">self</span>
 
-    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">songs</span><span class="p">):</span>
             <span class="k">raise</span> <span class="ne">StopIteration</span>
         <span class="n">song</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">songs</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_index</span><span class="p">]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_index</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">return</span> <span class="n">song</span>
 
-    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">songs</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">header</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"Playlist: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s2"> songs)"</span>
         <span class="n">tracks</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">songs</span><span class="p">))</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">header</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">tracks</span><span class="si">}</span><span class="s2">"</span>
 
     <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="n">playlist1</span><span class="p">,</span> <span class="n">playlist2</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Merged"</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="n">playlist1</span><span class="p">,</span> <span class="n">playlist2</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Merged"</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">"""Static method to merge two playlists."""</span>
         <span class="n">combined</span> <span class="o">=</span> <span class="n">playlist1</span><span class="o">.</span><span class="n">songs</span> <span class="o">+</span> <span class="n">playlist2</span><span class="o">.</span><span class="n">songs</span>
         <span class="k">return</span> <span class="n">Playlist</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">combined</span><span class="p">)</span>
@@ -3574,7 +3700,7 @@ Wow, you just powered through one of the biggest chapters in this course! You've
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
@@ -3645,10 +3771,13 @@ Wow, you just powered through one of the biggest chapters in this course! You've
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       
